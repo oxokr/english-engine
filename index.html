@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="영어엔진">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>영어 엔진</title>
+<style>
+  :root{
+    --bg:#0A0A0C; --card:#15151B; --card2:#1C1C24; --line:#27272F;
+    --txt:#F3F3F5; --dim:#8C8C95; --accent:#F5B14C; --accent-d:#1f1709;
+    --ok:#46D39A; --no:#FF6B6B;
+    --pad: max(20px, env(safe-area-inset-left));
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent; -webkit-user-select:none; user-select:none;}
+  html,body{margin:0; height:100%;}
+  body{
+    background:var(--bg); color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Apple SD Gothic Neo",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100dvh;
+  }
+  .screen{display:none; flex-direction:column; min-height:100dvh;
+    padding-top:env(safe-area-inset-top); padding-bottom:env(safe-area-inset-bottom);}
+  .screen.on{display:flex;}
+
+  /* ===== 홈 ===== */
+  #home{padding:0 var(--pad);}
+  .brand{font-size:15px; font-weight:700; letter-spacing:.12em; color:var(--dim);
+         text-transform:uppercase; margin:28px 2px 18px;}
+  .dday{background:linear-gradient(150deg,#211a0d,#15151B); border:1px solid #3a2f15;
+        border-radius:24px; padding:24px 26px; margin-bottom:26px;}
+  .dday .label{color:var(--dim); font-size:15px; font-weight:600;}
+  .dday .num{font-size:54px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:4px;}
+  .dday .num b{color:var(--accent);}
+  .dday .sub{color:var(--dim); font-size:14px; margin-top:8px;}
+
+  .phase-h{font-size:13px; font-weight:700; letter-spacing:.1em; color:var(--accent);
+           text-transform:uppercase; margin:22px 4px 12px;}
+  .day-card{display:flex; align-items:center; gap:14px; width:100%; text-align:left;
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:18px 18px; margin-bottom:10px; color:var(--txt);}
+  .day-card .no{font-size:13px; font-weight:800; color:var(--dim); width:46px; flex:none;}
+  .day-card .verb{font-size:13px; font-weight:800; color:var(--accent-d); background:var(--accent);
+    border-radius:8px; padding:4px 9px; flex:none;}
+  .day-card .ti{font-size:17px; font-weight:600; flex:1;}
+  .day-card .lock{font-size:12px; color:var(--dim); flex:none;}
+  .day-card:not(.ready){opacity:.42;}
+  .day-card.ready{border-color:#3a2f15;}
+  .day-card.ready:active{background:var(--card2); transform:scale(.99);}
+  .day-card .verb.muted{background:var(--line); color:var(--dim);}
+  #home .pad-b{height:30px;}
+
+  /* ===== 개념 ===== */
+  #intro{padding:0 var(--pad); justify-content:center;}
+  .topbar{display:flex; align-items:center; gap:14px; padding:18px 0;}
+  .back{background:var(--card); border:1px solid var(--line); color:var(--txt);
+    width:42px; height:42px; border-radius:12px; font-size:20px; flex:none;}
+  .topbar .crumb{font-size:15px; font-weight:700; color:var(--dim); letter-spacing:.02em;}
+  .intro-body{flex:1; display:flex; flex-direction:column; justify-content:center; gap:24px; padding-bottom:30px;}
+  .intro-verb{font-size:64px; font-weight:800; letter-spacing:-.02em; color:var(--accent);}
+  .intro-verb small{display:block; font-size:17px; font-weight:700; color:var(--dim); letter-spacing:.08em; text-transform:uppercase; margin-bottom:6px;}
+  .concept{font-size:23px; line-height:1.6; font-weight:500; color:var(--txt);}
+  .intro-btns{display:flex; flex-direction:column; gap:12px; padding-bottom:26px;}
+
+  /* ===== 드릴 ===== */
+  #drill{padding:0 var(--pad);}
+  .dhead{display:flex; align-items:center; justify-content:space-between; padding:16px 0; border-bottom:1px solid var(--line);}
+  .dhead .left{display:flex; align-items:center; gap:12px;}
+  .dhead .crumb{font-size:14px; font-weight:700; color:var(--dim);}
+  .count{color:var(--dim); font-size:14px; font-variant-numeric:tabular-nums;}
+  .modes{display:flex; gap:6px;}
+  .modes button{background:transparent; color:var(--dim); border:1px solid var(--line);
+    border-radius:999px; padding:8px 13px; font-size:13px; font-weight:700;}
+  .modes button.on{background:var(--accent); color:var(--accent-d); border-color:var(--accent);}
+
+  .dmain{flex:1; display:flex; flex-direction:column; justify-content:center; gap:24px; padding:18px 0;}
+  .tag{align-self:flex-start; color:var(--accent); font-size:13px; font-weight:800;
+    letter-spacing:.04em; text-transform:lowercase; border:1px solid var(--accent);
+    border-radius:9px; padding:4px 11px;}
+  .ko{font-size:40px; font-weight:800; line-height:1.3; letter-spacing:-.01em;}
+
+  .reveal-wrap{display:flex; flex-direction:column; gap:16px;}
+  .bar{height:5px; background:var(--line); border-radius:999px; overflow:hidden;}
+  .bar > i{display:block; height:100%; width:0%; background:var(--accent);}
+  .en{font-size:33px; font-weight:700; line-height:1.4; min-height:46px;
+    filter:blur(13px); opacity:.3; transition:filter .55s ease, opacity .55s ease;}
+  .en.show{filter:blur(0); opacity:1;}
+  .replay{align-self:flex-start; background:var(--card); border:1px solid var(--line);
+    color:var(--txt); border-radius:13px; padding:11px 18px; font-size:15px; font-weight:600; display:none;}
+  .replay.show{display:inline-block;}
+
+  .slots{min-height:62px; display:flex; flex-wrap:wrap; gap:9px; align-content:flex-start;
+    border-bottom:2px dashed var(--line); padding-bottom:14px;}
+  .slots.ok{border-color:var(--ok);} .slots.no{border-color:var(--no);}
+  .chips{display:flex; flex-wrap:wrap; gap:11px;}
+  .chip{background:var(--card); border:1px solid var(--line); color:var(--txt);
+    border-radius:15px; padding:14px 19px; font-size:21px; font-weight:700;}
+  .chip.used{opacity:.22; pointer-events:none;}
+  .placed{background:#241c0c; border:1px solid var(--accent); color:var(--txt);
+    border-radius:15px; padding:14px 19px; font-size:21px; font-weight:700;}
+  .verdict{font-size:17px; font-weight:700; min-height:22px;}
+  .verdict.ok{color:var(--ok);} .verdict.no{color:var(--no);}
+
+  footer{padding:14px 0 24px; border-top:1px solid var(--line); display:flex; gap:12px; align-items:center;}
+  .big{flex:1; background:var(--accent); color:var(--accent-d); border:none; border-radius:17px;
+    padding:19px; font-size:19px; font-weight:800;}
+  .ghost{background:var(--card); color:var(--txt); border:1px solid var(--line);
+    border-radius:17px; padding:19px 22px; font-size:17px; font-weight:700;}
+  .auto{display:flex; align-items:center; gap:7px; color:var(--dim); font-size:14px; font-weight:600;}
+  .auto input{width:18px; height:18px; accent-color:var(--accent);}
+</style>
+</head>
+<body>
+
+<!-- ===== 홈 ===== -->
+<section id="home" class="screen on">
+  <div class="brand">영어 엔진</div>
+  <div class="dday">
+    <div class="label" id="ddayLabel">칸쿤 동굴 다이빙까지</div>
+    <div class="num" id="ddayNum">D-—</div>
+    <div class="sub" id="ddaySub">핵심동사 몇 개로, 출퇴근 20분.</div>
+  </div>
+  <div id="dayList"></div>
+  <div class="pad-b"></div>
+</section>
+
+<!-- ===== 개념 ===== -->
+<section id="intro" class="screen">
+  <div class="topbar">
+    <button class="back" data-home>←</button>
+    <div class="crumb" id="introCrumb">DAY 1</div>
+  </div>
+  <div class="intro-body">
+    <div class="intro-verb"><small>오늘의 엔진</small><span id="introVerb">be</span></div>
+    <div class="concept" id="introConcept">—</div>
+  </div>
+  <div class="intro-btns">
+    <button class="ghost" id="introListen">🔊 개념 다시 듣기</button>
+    <button class="big" id="introStart">연습 시작 ▶</button>
+  </div>
+</section>
+
+<!-- ===== 드릴 ===== -->
+<section id="drill" class="screen">
+  <div class="dhead">
+    <div class="left">
+      <button class="back" data-home>←</button>
+      <span class="crumb" id="drillCrumb">DAY 1 · be</span>
+    </div>
+    <div class="modes">
+      <button id="mListen" class="on">🔊 듣기</button>
+      <button id="mOrder">🧩 정렬</button>
+    </div>
+  </div>
+
+  <div class="dmain">
+    <div class="tag" id="tag">be</div>
+    <div class="ko" id="ko">—</div>
+
+    <div class="reveal-wrap" id="listenUI">
+      <div class="bar"><i id="barFill"></i></div>
+      <div class="en" id="en">—</div>
+      <button class="replay" id="replay">🔊 다시 듣기</button>
+    </div>
+
+    <div id="orderUI" style="display:none">
+      <div class="slots" id="slots"></div>
+      <div class="chips" id="chips"></div>
+      <div class="verdict" id="verdict"></div>
+    </div>
+  </div>
+
+  <footer>
+    <button class="ghost" id="prev">◀</button>
+    <span class="count"><span id="cur">1</span> / <span id="total">0</span></span>
+    <button class="big" id="next">다음 ▶</button>
+    <label class="auto"><input type="checkbox" id="autoChk"> 자동</label>
+  </footer>
+</section>
+
+<script src="curriculum.js"></script>
+<script>
+const C = window.CURRICULUM;
+const $ = s => document.querySelector(s);
+
+// ===== 음성 =====
+const audioEl = new Audio(); audioEl.preload = "auto";
+function playSrc(src, onend){
+  audioEl.pause(); audioEl.onended = onend || null;
+  audioEl.onerror = ()=>{ if(onend) setTimeout(onend, 1200); };
+  audioEl.src = src;
+  const p = audioEl.play(); if(p && p.catch) p.catch(()=>{});
+}
+const clip = (id,lang)=> "audio/" + id + "_" + lang + ".mp3";
+const introSrc = day => "audio/d" + day.day + "_intro.mp3";
+
+// ===== 화면 전환 =====
+function show(name){ document.querySelectorAll(".screen").forEach(s=>s.classList.remove("on")); $("#"+name).classList.add("on"); window.scrollTo(0,0); }
+
+// ===== 홈 =====
+function dday(){
+  const t = new Date(C.trip.start + "T00:00:00");
+  const now = new Date(); now.setHours(0,0,0,0);
+  return Math.round((t - now) / 86400000);
+}
+function renderHome(){
+  const n = dday();
+  $("#ddayLabel").textContent = C.trip.name + "까지";
+  $("#ddayNum").innerHTML = n > 0 ? "D-<b>"+n+"</b>" : (n===0 ? "D-<b>DAY</b>" : "여행 후");
+  const list = $("#dayList"); list.innerHTML = "";
+  let phase = "";
+  C.days.forEach((d,i)=>{
+    if(d.phase !== phase){ phase = d.phase;
+      const h = document.createElement("div"); h.className="phase-h"; h.textContent=phase; list.appendChild(h); }
+    const b = document.createElement("button");
+    b.className = "day-card" + (d.ready ? " ready" : "");
+    b.innerHTML =
+      '<span class="no">DAY '+d.day+'</span>' +
+      '<span class="verb'+(d.ready?'':' muted')+'">'+d.verb+'</span>' +
+      '<span class="ti">'+d.title.replace(/^.*·\s*/,'')+'</span>' +
+      (d.ready ? '<span class="lock">▶</span>' : '<span class="lock">준비 중</span>');
+    if(d.ready) b.onclick = ()=> openDay(i);
+    list.appendChild(b);
+  });
+}
+
+// ===== 개념 =====
+let dayIdx = 0, day = null, idx = 0, mode = "listen", timer = null;
+function openDay(i){
+  dayIdx = i; day = C.days[i];
+  $("#introCrumb").textContent = "DAY " + day.day;
+  $("#introVerb").textContent = day.verb;
+  $("#introConcept").textContent = day.concept || "";
+  show("intro");
+  playSrc(introSrc(day)); // 홈 탭 제스처 직후라 재생 허용됨
+}
+
+// ===== 드릴 =====
+const koEl=$("#ko"), enEl=$("#en"), tagEl=$("#tag"), barFill=$("#barFill");
+const curEl=$("#cur"), totalEl=$("#total"), replayBtn=$("#replay");
+const listenUI=$("#listenUI"), orderUI=$("#orderUI");
+const slotsEl=$("#slots"), chipsEl=$("#chips"), verdictEl=$("#verdict"), autoChk=$("#autoChk");
+
+function startDrill(){
+  idx = 0; mode = "listen";
+  $("#mListen").classList.add("on"); $("#mOrder").classList.remove("on");
+  $("#drillCrumb").textContent = "DAY " + day.day + " · " + day.verb;
+  totalEl.textContent = day.items.length;
+  show("drill"); render();
+}
+function curItem(){ return day.items[idx]; }
+
+function runListen(){
+  const it = curItem();
+  clearTimeout(timer);
+  enEl.classList.remove("show"); replayBtn.classList.remove("show");
+  barFill.style.transition="none"; barFill.style.width="0%";
+  playSrc(clip(it.id,"ko"), startCountdown);
+}
+function startCountdown(){
+  requestAnimationFrame(()=>{ barFill.style.transition="width 3s linear"; barFill.style.width="100%"; });
+  timer = setTimeout(()=>{
+    enEl.classList.add("show"); replayBtn.classList.add("show");
+    playSrc(clip(curItem().id,"en"), ()=>{ if(autoChk.checked) timer=setTimeout(nextItem, 1400); });
+  }, 3000);
+}
+
+function norm(w){ return w.toLowerCase().replace(/[^a-z0-9']/g,""); }
+function toks(en){ return en.split(/\s+/); }
+function shuffle(a){ const r=a.slice(); for(let i=r.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [r[i],r[j]]=[r[j],r[i]]; } return r; }
+let chosen = [];
+function runOrder(){
+  const it = curItem();
+  chosen = []; verdictEl.textContent=""; verdictEl.className="verdict"; slotsEl.className="slots";
+  chipsEl.dataset.key = ""; playSrc(clip(it.id,"ko")); renderOrder();
+}
+function renderOrder(){
+  const it = curItem(), T = toks(it.en);
+  slotsEl.innerHTML="";
+  chosen.forEach((w,i)=>{ const b=document.createElement("button"); b.className="placed"; b.textContent=w;
+    b.onclick=()=>{ chosen.splice(i,1); renderOrder(); }; slotsEl.appendChild(b); });
+  if(chipsEl.dataset.key!==it.en){ chipsEl.dataset.key=it.en; chipsEl._order=shuffle(T); }
+  chipsEl.innerHTML="";
+  chipsEl._order.forEach(w=>{ const b=document.createElement("button"); b.className="chip"; b.textContent=w;
+    b.onclick=()=>{ chosen.push(w); renderOrder(); checkOrder(); }; chipsEl.appendChild(b); });
+  let pool=chosen.slice();
+  [...chipsEl.children].forEach(c=>{ const k=pool.indexOf(c.textContent); if(k>-1){ c.classList.add("used"); pool.splice(k,1); } });
+}
+function checkOrder(){
+  const it = curItem(), T = toks(it.en);
+  if(chosen.length < T.length) return;
+  if(chosen.map(norm).join(" ") === T.map(norm).join(" ")){
+    slotsEl.className="slots ok"; verdictEl.textContent="맞아요 ✓"; verdictEl.className="verdict ok";
+    playSrc(clip(it.id,"en"), ()=>{ if(autoChk.checked) timer=setTimeout(nextItem, 1400); });
+  }else{
+    slotsEl.className="slots no"; verdictEl.textContent="순서 다시 — 단어를 눌러 빼고 다시 놔봐"; verdictEl.className="verdict no";
+  }
+}
+function render(){
+  const it = curItem();
+  curEl.textContent = idx+1;
+  tagEl.textContent = it.tag || day.verb;
+  koEl.textContent = it.ko; enEl.textContent = it.en;
+  clearTimeout(timer);
+  if(mode==="listen"){ listenUI.style.display=""; orderUI.style.display="none"; runListen(); }
+  else { orderUI.style.display=""; listenUI.style.display="none"; runOrder(); }
+}
+function nextItem(){ idx=(idx+1)%day.items.length; render(); }
+function prevItem(){ idx=(idx-1+day.items.length)%day.items.length; render(); }
+
+// ===== 이벤트 =====
+document.querySelectorAll("[data-home]").forEach(b=> b.onclick=()=>{ clearTimeout(timer); audioEl.pause(); show("home"); });
+$("#introListen").onclick=()=> playSrc(introSrc(day));
+$("#introStart").onclick=startDrill;
+$("#next").onclick=nextItem;
+$("#prev").onclick=prevItem;
+replayBtn.onclick=()=> playSrc(clip(curItem().id,"en"));
+$("#mListen").onclick=()=>{ mode="listen"; $("#mListen").classList.add("on"); $("#mOrder").classList.remove("on"); render(); };
+$("#mOrder").onclick=()=>{ mode="order"; $("#mOrder").classList.add("on"); $("#mListen").classList.remove("on"); render(); };
+
+renderHome();
+
+// 오프라인 캐시(서비스워커) — https에서만 등록됨
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body>
+</html>

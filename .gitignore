@@ -1,0 +1,9 @@
+# 절대 커밋 금지 — OpenAI API 키
+tts_api.txt
+
+# 빌드 보조
+make_icon.py
+
+# 시스템
+.DS_Store
+*.log
