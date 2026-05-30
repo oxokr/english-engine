@@ -20,12 +20,18 @@ MODEL = "gpt-4o-mini-tts"
 INSTR = {
     "en": "Speak clearly and warmly at a slightly slow, easy pace, like a friendly tutor for a beginner.",
     "ko": "또렷하고 자연스럽게, 친절한 선생님처럼 말해줘.",
+    "ko_q": "이 문장은 질문이야. 문장 끝의 억양을 분명하게 올려서, 누가 들어도 물어보는 의문문이라는 게 느껴지게 또렷이 읽어줘.",
 }
+
+def instr_for(text, lang):
+    if lang == "ko" and text.strip().endswith("?"):
+        return INSTR["ko_q"]
+    return INSTR[lang]
 
 def synth(text, lang, out, tries=4):
     body = json.dumps({
         "model": MODEL, "voice": VOICE, "input": text,
-        "response_format": "mp3", "instructions": INSTR[lang],
+        "response_format": "mp3", "instructions": instr_for(text, lang),
     }).encode("utf-8")
     for attempt in range(tries):
         try:

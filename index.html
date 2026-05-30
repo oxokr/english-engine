@@ -16,6 +16,9 @@
     --txt:#F3F3F5; --dim:#8C8C95; --accent:#F5B14C; --accent-d:#1f1709;
     --ok:#46D39A; --no:#FF6B6B;
     --pad: max(20px, env(safe-area-inset-left));
+    /* 다이내믹 아일랜드/상단정보 여백: env가 0이어도 최소 52px 확보 */
+    --safetop: max(calc(env(safe-area-inset-top) + 14px), 52px);
+    --safebot: calc(env(safe-area-inset-bottom) + 12px);
   }
   *{box-sizing:border-box; -webkit-tap-highlight-color:transparent; -webkit-user-select:none; user-select:none;}
   html,body{margin:0; height:100%;}
@@ -26,13 +29,12 @@
     min-height:100dvh;
   }
   .screen{display:none; flex-direction:column; min-height:100dvh;
-    padding-top:env(safe-area-inset-top); padding-bottom:env(safe-area-inset-bottom);}
+    padding:var(--safetop) var(--pad) var(--safebot);}
   .screen.on{display:flex;}
 
   /* ===== 홈 ===== */
-  #home{padding:0 var(--pad);}
   .brand{font-size:15px; font-weight:700; letter-spacing:.12em; color:var(--dim);
-         text-transform:uppercase; margin:28px 2px 18px;}
+         text-transform:uppercase; margin:6px 2px 18px;}
   .dday{background:linear-gradient(150deg,#211a0d,#15151B); border:1px solid #3a2f15;
         border-radius:24px; padding:24px 26px; margin-bottom:26px;}
   .dday .label{color:var(--dim); font-size:15px; font-weight:600;}
@@ -54,13 +56,13 @@
   .day-card.ready{border-color:#3a2f15;}
   .day-card.ready:active{background:var(--card2); transform:scale(.99);}
   .day-card .verb.muted{background:var(--line); color:var(--dim);}
-  #home .pad-b{height:30px;}
+  .pad-b{height:30px;}
 
   /* ===== 개념 ===== */
-  #intro{padding:0 var(--pad); justify-content:center;}
-  .topbar{display:flex; align-items:center; gap:14px; padding:18px 0;}
+  #intro{justify-content:center;}
+  .topbar{display:flex; align-items:center; gap:14px; padding:2px 0 18px;}
   .back{background:var(--card); border:1px solid var(--line); color:var(--txt);
-    width:42px; height:42px; border-radius:12px; font-size:20px; flex:none;}
+    width:48px; height:48px; border-radius:13px; font-size:22px; flex:none;}
   .topbar .crumb{font-size:15px; font-weight:700; color:var(--dim); letter-spacing:.02em;}
   .intro-body{flex:1; display:flex; flex-direction:column; justify-content:center; gap:24px; padding-bottom:30px;}
   .intro-verb{font-size:64px; font-weight:800; letter-spacing:-.02em; color:var(--accent);}
@@ -69,15 +71,16 @@
   .intro-btns{display:flex; flex-direction:column; gap:12px; padding-bottom:26px;}
 
   /* ===== 드릴 ===== */
-  #drill{padding:0 var(--pad);}
-  .dhead{display:flex; align-items:center; justify-content:space-between; padding:16px 0; border-bottom:1px solid var(--line);}
-  .dhead .left{display:flex; align-items:center; gap:12px;}
-  .dhead .crumb{font-size:14px; font-weight:700; color:var(--dim);}
-  .count{color:var(--dim); font-size:14px; font-variant-numeric:tabular-nums;}
+  .dhead{display:flex; align-items:center; gap:12px; padding:2px 0 12px; border-bottom:1px solid var(--line);}
+  .dhead .crumb{flex:1; font-size:15px; font-weight:700; color:var(--dim);}
+  .count{color:var(--dim); font-size:14px; font-variant-numeric:tabular-nums; font-weight:600;}
+  .subrow{display:flex; align-items:center; justify-content:space-between; padding:12px 0 2px;}
   .modes{display:flex; gap:6px;}
   .modes button{background:transparent; color:var(--dim); border:1px solid var(--line);
-    border-radius:999px; padding:8px 13px; font-size:13px; font-weight:700;}
+    border-radius:999px; padding:9px 15px; font-size:14px; font-weight:700;}
   .modes button.on{background:var(--accent); color:var(--accent-d); border-color:var(--accent);}
+  .auto{display:flex; align-items:center; gap:7px; color:var(--dim); font-size:14px; font-weight:600;}
+  .auto input{width:20px; height:20px; accent-color:var(--accent);}
 
   .dmain{flex:1; display:flex; flex-direction:column; justify-content:center; gap:24px; padding:18px 0;}
   .tag{align-self:flex-start; color:var(--accent); font-size:13px; font-weight:800;
@@ -107,13 +110,14 @@
   .verdict{font-size:17px; font-weight:700; min-height:22px;}
   .verdict.ok{color:var(--ok);} .verdict.no{color:var(--no);}
 
-  footer{padding:14px 0 24px; border-top:1px solid var(--line); display:flex; gap:12px; align-items:center;}
+  footer{padding:14px 0 8px; border-top:1px solid var(--line); display:flex; gap:10px; align-items:stretch;}
   .big{flex:1; background:var(--accent); color:var(--accent-d); border:none; border-radius:17px;
-    padding:19px; font-size:19px; font-weight:800;}
+    padding:20px; font-size:20px; font-weight:800;}
+  .big:active{filter:brightness(.93);}
   .ghost{background:var(--card); color:var(--txt); border:1px solid var(--line);
-    border-radius:17px; padding:19px 22px; font-size:17px; font-weight:700;}
-  .auto{display:flex; align-items:center; gap:7px; color:var(--dim); font-size:14px; font-weight:600;}
-  .auto input{width:18px; height:18px; accent-color:var(--accent);}
+    border-radius:17px; font-size:16px; font-weight:700;}
+  .nav{flex:0 0 auto; padding:20px 16px;}
+  .nav:active{background:var(--card2);}
 </style>
 </head>
 <body>
@@ -149,14 +153,16 @@
 <!-- ===== 드릴 ===== -->
 <section id="drill" class="screen">
   <div class="dhead">
-    <div class="left">
-      <button class="back" data-home>←</button>
-      <span class="crumb" id="drillCrumb">DAY 1 · be</span>
-    </div>
+    <button class="back" data-home>←</button>
+    <span class="crumb" id="drillCrumb">DAY 1 · be</span>
+    <span class="count"><span id="cur">1</span> / <span id="total">0</span></span>
+  </div>
+  <div class="subrow">
     <div class="modes">
       <button id="mListen" class="on">🔊 듣기</button>
       <button id="mOrder">🧩 정렬</button>
     </div>
+    <label class="auto"><input type="checkbox" id="autoChk"> 자동</label>
   </div>
 
   <div class="dmain">
@@ -177,10 +183,9 @@
   </div>
 
   <footer>
-    <button class="ghost" id="prev">◀</button>
-    <span class="count"><span id="cur">1</span> / <span id="total">0</span></span>
-    <button class="big" id="next">다음 ▶</button>
-    <label class="auto"><input type="checkbox" id="autoChk"> 자동</label>
+    <button class="ghost nav" id="prev">◀ 이전</button>
+    <button class="big" id="playPause">⏸ 정지</button>
+    <button class="ghost nav" id="next">다음 ▶</button>
   </footer>
 </section>
 
@@ -231,14 +236,14 @@ function renderHome(){
 }
 
 // ===== 개념 =====
-let dayIdx = 0, day = null, idx = 0, mode = "listen", timer = null;
+let dayIdx = 0, day = null, idx = 0, mode = "listen", timer = null, paused = false;
 function openDay(i){
   dayIdx = i; day = C.days[i];
   $("#introCrumb").textContent = "DAY " + day.day;
   $("#introVerb").textContent = day.verb;
   $("#introConcept").textContent = day.concept || "";
   show("intro");
-  playSrc(introSrc(day)); // 홈 탭 제스처 직후라 재생 허용됨
+  playSrc(introSrc(day));
 }
 
 // ===== 드릴 =====
@@ -246,9 +251,20 @@ const koEl=$("#ko"), enEl=$("#en"), tagEl=$("#tag"), barFill=$("#barFill");
 const curEl=$("#cur"), totalEl=$("#total"), replayBtn=$("#replay");
 const listenUI=$("#listenUI"), orderUI=$("#orderUI");
 const slotsEl=$("#slots"), chipsEl=$("#chips"), verdictEl=$("#verdict"), autoChk=$("#autoChk");
+const ppBtn=$("#playPause");
+
+function setPP(){ ppBtn.textContent = paused ? "▶ 재생" : "⏸ 정지"; }
+function togglePlay(){
+  if(paused){ paused=false; setPP(); render(); }
+  else {
+    paused=true; audioEl.pause(); clearTimeout(timer);
+    const w = getComputedStyle(barFill).width; barFill.style.transition="none"; barFill.style.width=w;
+    setPP();
+  }
+}
 
 function startDrill(){
-  idx = 0; mode = "listen";
+  idx = 0; mode = "listen"; paused = false; setPP();
   $("#mListen").classList.add("on"); $("#mOrder").classList.remove("on");
   $("#drillCrumb").textContent = "DAY " + day.day + " · " + day.verb;
   totalEl.textContent = day.items.length;
@@ -264,10 +280,11 @@ function runListen(){
   playSrc(clip(it.id,"ko"), startCountdown);
 }
 function startCountdown(){
+  if(paused) return;
   requestAnimationFrame(()=>{ barFill.style.transition="width 3s linear"; barFill.style.width="100%"; });
   timer = setTimeout(()=>{
     enEl.classList.add("show"); replayBtn.classList.add("show");
-    playSrc(clip(curItem().id,"en"), ()=>{ if(autoChk.checked) timer=setTimeout(nextItem, 1400); });
+    playSrc(clip(curItem().id,"en"), ()=>{ if(autoChk.checked && !paused) timer=setTimeout(nextItem, 1400); });
   }, 3000);
 }
 
@@ -297,12 +314,13 @@ function checkOrder(){
   if(chosen.length < T.length) return;
   if(chosen.map(norm).join(" ") === T.map(norm).join(" ")){
     slotsEl.className="slots ok"; verdictEl.textContent="맞아요 ✓"; verdictEl.className="verdict ok";
-    playSrc(clip(it.id,"en"), ()=>{ if(autoChk.checked) timer=setTimeout(nextItem, 1400); });
+    playSrc(clip(it.id,"en"), ()=>{ if(autoChk.checked && !paused) timer=setTimeout(nextItem, 1400); });
   }else{
     slotsEl.className="slots no"; verdictEl.textContent="순서 다시 — 단어를 눌러 빼고 다시 놔봐"; verdictEl.className="verdict no";
   }
 }
 function render(){
+  paused = false; setPP();
   const it = curItem();
   curEl.textContent = idx+1;
   tagEl.textContent = it.tag || day.verb;
@@ -315,11 +333,12 @@ function nextItem(){ idx=(idx+1)%day.items.length; render(); }
 function prevItem(){ idx=(idx-1+day.items.length)%day.items.length; render(); }
 
 // ===== 이벤트 =====
-document.querySelectorAll("[data-home]").forEach(b=> b.onclick=()=>{ clearTimeout(timer); audioEl.pause(); show("home"); });
+document.querySelectorAll("[data-home]").forEach(b=> b.onclick=()=>{ clearTimeout(timer); audioEl.pause(); paused=false; show("home"); });
 $("#introListen").onclick=()=> playSrc(introSrc(day));
 $("#introStart").onclick=startDrill;
 $("#next").onclick=nextItem;
 $("#prev").onclick=prevItem;
+ppBtn.onclick=togglePlay;
 replayBtn.onclick=()=> playSrc(clip(curItem().id,"en"));
 $("#mListen").onclick=()=>{ mode="listen"; $("#mListen").classList.add("on"); $("#mOrder").classList.remove("on"); render(); };
 $("#mOrder").onclick=()=>{ mode="order"; $("#mOrder").classList.add("on"); $("#mListen").classList.remove("on"); render(); };
