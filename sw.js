@@ -1,6 +1,6 @@
 // 영어 엔진 서비스워커 — 첫 방문 때 앱 + 모든 음성을 캐시해서 오프라인(터널/비행기)에서도 작동.
 // 커리큘럼이 바뀌면 CACHE 버전을 올려서 새로 캐시한다.
-const CACHE = "eng-engine-v5";
+const CACHE = "eng-engine-v6";
 const CORE = ["./", "index.html", "curriculum.js", "manifest.json", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", (e) => {
@@ -16,7 +16,6 @@ self.addEventListener("install", (e) => {
         if (d.concept) urls.push("audio/d" + d.day + "_intro.mp3");
         for (const it of (d.items || [])) {
           urls.push("audio/" + it.id + "_ko.mp3", "audio/" + it.id + "_en.mp3");
-          if (it.note) urls.push("audio/" + it.id + "_note.mp3");
         }
       }
       // 50개씩 나눠 캐시, 일부 실패해도 계속

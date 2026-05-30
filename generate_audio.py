@@ -66,8 +66,6 @@ for d in C["days"]:
     for it in d.get("items", []):
         for lang in ("ko", "en"):
             jobs.append((it["id"]+"_"+lang, it[lang], lang, os.path.join(AUDIO, f"{it['id']}_{lang}.mp3")))
-        if it.get("note"):
-            jobs.append((it["id"]+"_note", it["note"], "ko_note", os.path.join(AUDIO, f"{it['id']}_note.mp3")))
 
 total = len(jobs)
 for i, (name, text, lang, out) in enumerate(jobs, 1):

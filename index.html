@@ -215,7 +215,6 @@ function playSrc(src, onend){
     .catch(()=>{ const h=document.getElementById("ahint"); if(h) h.style.display="block"; if(onend) setTimeout(onend, 1000); });
 }
 const clip = (id,lang)=> "audio/" + id + "_" + lang + ".mp3";
-const noteClip = id => "audio/" + id + "_note.mp3";
 const introSrc = day => "audio/d" + day.day + "_intro.mp3";
 
 function savePos(){ try{ localStorage.setItem("ee_pos", JSON.stringify({d:dayIdx,i:idx})); }catch(e){} }
@@ -336,13 +335,8 @@ function startCountdown(){
   timer = setTimeout(()=>{
     enEl.classList.add("show"); replayBtn.classList.add("show");
     const it = curItem();
-    playSrc(clip(it.id,"en"), ()=> afterAnswer(it));
+    playSrc(clip(it.id,"en"), advanceMaybe);
   }, 3000);
-}
-// 정답 영어 뒤, 혼란포인트 노트가 있으면 음성으로 1회(복습 문장은 제외) → 자동 넘김
-function afterAnswer(it){
-  if(it.note && !it._rev){ playSrc(noteClip(it.id), advanceMaybe); }
-  else advanceMaybe();
 }
 function advanceMaybe(){ if(autoChk.checked && !paused) timer=setTimeout(nextItem, 1100); }
 
@@ -372,7 +366,7 @@ function checkOrder(){
   if(chosen.length < T.length) return;
   if(chosen.map(norm).join(" ") === T.map(norm).join(" ")){
     slotsEl.className="slots ok"; verdictEl.textContent="맞아요 ✓"; verdictEl.className="verdict ok";
-    playSrc(clip(it.id,"en"), ()=> afterAnswer(it));
+    playSrc(clip(it.id,"en"), advanceMaybe);
   }else{
     slotsEl.className="slots no"; verdictEl.textContent="순서 다시 — 단어를 눌러 빼고 다시 놔봐"; verdictEl.className="verdict no";
   }
