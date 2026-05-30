@@ -106,7 +106,7 @@
 |---|---|---|
 | 23 | 공항·입국 | I'm here for diving. I have a reservation. Where is...? |
 | 24 | 다이빙샵·장비 | I need a tank. Can I get...? I'm certified. |
-| 25 | 물속 소통 | I'm okay. Go down. Come up. Slow down. Let's go. |
+| 25 | 다이빙 브리핑·수신호 | I'm okay. Go down. Come up. Slow down. (물속은 말 대신 수신호 — 표현은 브리핑·수면·신호 뜻 익히기용) |
 | 26 | 식당·비상·작별 | Can I get the check? I don't feel good. Thank you. |
 
 ---
