@@ -761,43 +761,6 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "너 시간 있어? 나 질문 있어.",
           "en": "Do you have time? I have a question."
-        },
-        {
-          "id": "d6_15",
-          "tag": "mix",
-          "ko": "나 배 안 고파, 점심 먹었어.",
-          "en": "I'm not hungry. I had lunch."
-        },
-        {
-          "id": "d6_16",
-          "tag": "mix",
-          "ko": "그 사람 차 있는데 운전 안 해.",
-          "en": "He has a car, but he doesn't drive.",
-          "note": "3인칭은 don't가 아니라 doesn't."
-        },
-        {
-          "id": "d6_17",
-          "tag": "mix",
-          "ko": "좋은 하루 보내.",
-          "en": "Have a good day."
-        },
-        {
-          "id": "d6_18",
-          "tag": "mix",
-          "ko": "나 그거 했어. 너도 했어?",
-          "en": "I did it. Did you do it?"
-        },
-        {
-          "id": "d6_19",
-          "tag": "mix",
-          "ko": "우리 문제 있어.",
-          "en": "We have a problem."
-        },
-        {
-          "id": "d6_20",
-          "tag": "mix",
-          "ko": "나 가야 해, 일 있어.",
-          "en": "I have to go. I have work."
         }
       ]
     },
@@ -1678,42 +1641,6 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "나 일하러 가는 중이야.",
           "en": "I'm going to work."
-        },
-        {
-          "id": "d13_15",
-          "tag": "mix",
-          "ko": "메뉴 좀 주세요.",
-          "en": "Can I get a menu?"
-        },
-        {
-          "id": "d13_16",
-          "tag": "mix",
-          "ko": "우리 거의 다 왔어.",
-          "en": "We're getting there."
-        },
-        {
-          "id": "d13_17",
-          "tag": "mix",
-          "ko": "돌아가, 길 잘못 들었어.",
-          "en": "Go back. It's the wrong way."
-        },
-        {
-          "id": "d13_18",
-          "tag": "mix",
-          "ko": "나 이해돼, 가자.",
-          "en": "I get it. Let's go."
-        },
-        {
-          "id": "d13_19",
-          "tag": "mix",
-          "ko": "버스 타, 시내 가.",
-          "en": "Get on the bus. It goes downtown."
-        },
-        {
-          "id": "d13_20",
-          "tag": "mix",
-          "ko": "너 준비됐어? 가자.",
-          "en": "Are you ready? Let's go."
         }
       ]
     },
@@ -1740,8 +1667,9 @@ window.CURRICULUM = {
         {
           "id": "d14_03",
           "tag": "want",
-          "ko": "나 커피 마시고 싶어.",
-          "en": "I want a coffee."
+          "ko": "나 커피 줘.",
+          "en": "I want a coffee.",
+          "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to."
         },
         {
           "id": "d14_04",
@@ -2331,42 +2259,6 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "나 공기 필요해.",
           "en": "I need air."
-        },
-        {
-          "id": "d18_15",
-          "tag": "mix",
-          "ko": "생각 좀 해볼게.",
-          "en": "Let me think."
-        },
-        {
-          "id": "d18_16",
-          "tag": "mix",
-          "ko": "나 안 가고 싶어, 피곤해.",
-          "en": "I don't want to go. I'm tired."
-        },
-        {
-          "id": "d18_17",
-          "tag": "mix",
-          "ko": "다시 해보자.",
-          "en": "Let's try again."
-        },
-        {
-          "id": "d18_18",
-          "tag": "mix",
-          "ko": "너 이거 고칠 수 있어?",
-          "en": "Can you fix this?"
-        },
-        {
-          "id": "d18_19",
-          "tag": "mix",
-          "ko": "나 의사 필요해.",
-          "en": "I need a doctor."
-        },
-        {
-          "id": "d18_20",
-          "tag": "mix",
-          "ko": "가자, 늦었어.",
-          "en": "Let's go. We're late."
         }
       ]
     },
@@ -2760,6 +2652,31 @@ window.CURRICULUM = {
           "tag": "wh",
           "ko": "어느 거예요?",
           "en": "Which one?"
+        },
+        {
+          "id": "d21_21",
+          "tag": "wh",
+          "ko": "두 명이요.",
+          "en": "Two people."
+        },
+        {
+          "id": "d21_22",
+          "tag": "wh",
+          "ko": "저 혼자예요.",
+          "en": "Just me."
+        },
+        {
+          "id": "d21_23",
+          "tag": "wh",
+          "ko": "7시에요.",
+          "en": "At seven.",
+          "note": "시간 대답은 at. at seven, at eight."
+        },
+        {
+          "id": "d21_24",
+          "tag": "wh",
+          "ko": "3시 30분이요.",
+          "en": "It's three thirty."
         }
       ]
     },
@@ -3150,6 +3067,24 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "가요.",
           "en": "Let's go."
+        },
+        {
+          "id": "d24_21",
+          "tag": "trip",
+          "ko": "한 시간 걸려요.",
+          "en": "It takes about an hour."
+        },
+        {
+          "id": "d24_22",
+          "tag": "trip",
+          "ko": "공기통 두 개요.",
+          "en": "Two tanks, please."
+        },
+        {
+          "id": "d24_23",
+          "tag": "trip",
+          "ko": "8시쯤에요.",
+          "en": "Around eight."
         }
       ]
     },
@@ -3411,6 +3346,25 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "잘 지내요.",
           "en": "Take care."
+        },
+        {
+          "id": "d26_21",
+          "tag": "trip",
+          "ko": "두 개 살게요.",
+          "en": "I'll take two.",
+          "note": "개수는 동사 뒤에. take two, take one."
+        },
+        {
+          "id": "d26_22",
+          "tag": "trip",
+          "ko": "맥주 두 잔 주세요.",
+          "en": "Two beers, please."
+        },
+        {
+          "id": "d26_23",
+          "tag": "trip",
+          "ko": "하나면 돼요.",
+          "en": "Just one."
         }
       ]
     }

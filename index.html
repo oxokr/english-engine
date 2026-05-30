@@ -14,9 +14,8 @@
   :root{
     --bg:#0A0A0C; --card:#15151B; --card2:#1C1C24; --line:#27272F;
     --txt:#F3F3F5; --dim:#8C8C95; --accent:#F5B14C; --accent-d:#1f1709;
-    --ok:#46D39A; --no:#FF6B6B;
+    --ok:#46D39A; --no:#FF6B6B; --rev:#7AA2F7;
     --pad: max(20px, env(safe-area-inset-left));
-    /* 다이내믹 아일랜드/상단정보 여백: env가 0이어도 최소 52px 확보 */
     --safetop: max(calc(env(safe-area-inset-top) + 14px), 52px);
     --safebot: calc(env(safe-area-inset-bottom) + 12px);
   }
@@ -25,22 +24,24 @@
   body{
     background:var(--bg); color:var(--txt);
     font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Apple SD Gothic Neo",sans-serif;
-    -webkit-font-smoothing:antialiased;
-    min-height:100dvh;
+    -webkit-font-smoothing:antialiased; min-height:100dvh;
   }
   .screen{display:none; flex-direction:column; min-height:100dvh;
     padding:var(--safetop) var(--pad) var(--safebot);}
   .screen.on{display:flex;}
 
-  /* ===== 홈 ===== */
   .brand{font-size:15px; font-weight:700; letter-spacing:.12em; color:var(--dim);
          text-transform:uppercase; margin:6px 2px 18px;}
   .dday{background:linear-gradient(150deg,#211a0d,#15151B); border:1px solid #3a2f15;
-        border-radius:24px; padding:24px 26px; margin-bottom:26px;}
+        border-radius:24px; padding:24px 26px; margin-bottom:14px;}
   .dday .label{color:var(--dim); font-size:15px; font-weight:600;}
   .dday .num{font-size:54px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:4px;}
   .dday .num b{color:var(--accent);}
   .dday .sub{color:var(--dim); font-size:14px; margin-top:8px;}
+  .resume{width:100%; background:var(--accent); color:var(--accent-d); border:none;
+    border-radius:18px; padding:20px; font-size:19px; font-weight:800; margin-bottom:12px; text-align:left;}
+  .resume b{font-weight:900;}
+  .tip{color:var(--dim); font-size:13px; line-height:1.5; margin:0 2px 18px;}
 
   .phase-h{font-size:13px; font-weight:700; letter-spacing:.1em; color:var(--accent);
            text-transform:uppercase; margin:22px 4px 12px;}
@@ -58,7 +59,6 @@
   .day-card .verb.muted{background:var(--line); color:var(--dim);}
   .pad-b{height:30px;}
 
-  /* ===== 개념 ===== */
   #intro{justify-content:center;}
   .topbar{display:flex; align-items:center; gap:14px; padding:2px 0 18px;}
   .back{background:var(--card); border:1px solid var(--line); color:var(--txt);
@@ -70,7 +70,6 @@
   .concept{font-size:23px; line-height:1.6; font-weight:500; color:var(--txt);}
   .intro-btns{display:flex; flex-direction:column; gap:12px; padding-bottom:26px;}
 
-  /* ===== 드릴 ===== */
   .dhead{display:flex; align-items:center; gap:12px; padding:2px 0 12px; border-bottom:1px solid var(--line);}
   .dhead .crumb{flex:1; font-size:15px; font-weight:700; color:var(--dim);}
   .count{color:var(--dim); font-size:14px; font-variant-numeric:tabular-nums; font-weight:600;}
@@ -86,6 +85,7 @@
   .tag{align-self:flex-start; color:var(--accent); font-size:13px; font-weight:800;
     letter-spacing:.04em; text-transform:lowercase; border:1px solid var(--accent);
     border-radius:9px; padding:4px 11px;}
+  .tag.rev{color:var(--rev); border-color:var(--rev); text-transform:none;}
   .ko{font-size:40px; font-weight:800; line-height:1.3; letter-spacing:-.01em;}
 
   .reveal-wrap{display:flex; flex-direction:column; gap:16px;}
@@ -122,10 +122,6 @@
     border-radius:17px; font-size:16px; font-weight:700;}
   .nav{flex:0 0 auto; padding:20px 16px;}
   .nav:active{background:var(--card2);}
-  .resume{width:100%; background:var(--accent); color:var(--accent-d); border:none;
-    border-radius:18px; padding:20px; font-size:19px; font-weight:800; margin-bottom:12px; text-align:left;}
-  .resume b{font-weight:900;}
-  .tip{color:var(--dim); font-size:13px; line-height:1.5; margin:0 2px 18px;}
   #ahint{position:fixed; left:12px; right:12px; bottom:calc(env(safe-area-inset-bottom) + 12px);
     background:var(--no); color:#1a0a0a; font-weight:700; text-align:center;
     padding:14px; border-radius:14px; display:none; z-index:50; font-size:15px;}
@@ -133,7 +129,6 @@
 </head>
 <body>
 
-<!-- ===== 홈 ===== -->
 <section id="home" class="screen on">
   <div class="brand">영어 엔진</div>
   <div class="dday">
@@ -142,12 +137,11 @@
     <div class="sub" id="ddaySub">핵심동사 몇 개로, 출퇴근 20분.</div>
   </div>
   <button id="resumeBtn" class="resume" style="display:none"></button>
-  <div class="tip">팁 · 아이폰 기본 알람을 평일 출근 시간에 반복으로 걸어두면 매일 잊지 않아요.</div>
+  <div class="tip">팁 · 아이폰 기본 알람을 평일 출근 시간에 반복으로 걸어두면 매일 잊지 않아요. 한국어가 나오면 3초 안에 소리 내서 말해보세요.</div>
   <div id="dayList"></div>
   <div class="pad-b"></div>
 </section>
 
-<!-- ===== 개념 ===== -->
 <section id="intro" class="screen">
   <div class="topbar">
     <button class="back" data-home>←</button>
@@ -163,7 +157,6 @@
   </div>
 </section>
 
-<!-- ===== 드릴 ===== -->
 <section id="drill" class="screen">
   <div class="dhead">
     <button class="back" data-home>←</button>
@@ -173,7 +166,7 @@
   <div class="subrow">
     <div class="modes">
       <button id="mListen" class="on">🔊 듣기</button>
-      <button id="mOrder">🧩 정렬</button>
+      <button id="mOrder">🧩 조용한 곳용</button>
     </div>
     <label class="auto"><input type="checkbox" id="autoChk" checked> 자동 넘김</label>
   </div>
@@ -215,13 +208,14 @@ const $ = s => document.querySelector(s);
 const audioEl = new Audio(); audioEl.preload = "auto";
 function playSrc(src, onend){
   audioEl.pause(); audioEl.onended = onend || null;
-  audioEl.onerror = ()=>{ if(onend) setTimeout(onend, 1200); };
+  audioEl.onerror = ()=>{ if(onend) setTimeout(onend, 1000); };
   audioEl.src = src;
   const p = audioEl.play();
   if(p && p.then) p.then(()=>{ const h=document.getElementById("ahint"); if(h) h.style.display="none"; })
-    .catch(()=>{ const h=document.getElementById("ahint"); if(h) h.style.display="block"; if(onend) setTimeout(onend, 1200); });
+    .catch(()=>{ const h=document.getElementById("ahint"); if(h) h.style.display="block"; if(onend) setTimeout(onend, 1000); });
 }
 const clip = (id,lang)=> "audio/" + id + "_" + lang + ".mp3";
+const noteClip = id => "audio/" + id + "_note.mp3";
 const introSrc = day => "audio/d" + day.day + "_intro.mp3";
 
 function savePos(){ try{ localStorage.setItem("ee_pos", JSON.stringify({d:dayIdx,i:idx})); }catch(e){} }
@@ -234,14 +228,6 @@ function setMedia(){
     navigator.mediaSession.setActionHandler("nexttrack", ()=> nextItem());
     navigator.mediaSession.setActionHandler("previoustrack", ()=> prevItem());
   }catch(e){}
-}
-function resumeLast(pos){
-  dayIdx=pos.d; day=C.days[dayIdx]; idx=Math.min(pos.i, day.items.length-1);
-  mode="listen"; paused=false; setPP();
-  document.getElementById("mListen").classList.add("on"); document.getElementById("mOrder").classList.remove("on");
-  document.getElementById("drillCrumb").textContent="DAY "+day.day+" · "+day.verb;
-  totalEl.textContent=day.items.length;
-  show("drill"); setMedia(); render();
 }
 
 // ===== 화면 전환 =====
@@ -277,14 +263,14 @@ function renderHome(){
     const rb=document.getElementById("resumeBtn");
     if(pos && C.days[pos.d] && C.days[pos.d].ready){
       rb.style.display="block";
-      rb.innerHTML = "이어듣기 ▶ &nbsp;<b>DAY "+C.days[pos.d].day+"</b> · "+(pos.i+1)+"번째";
+      rb.innerHTML = "이어듣기 ▶ &nbsp;<b>DAY "+C.days[pos.d].day+"</b> 이어서";
       rb.onclick=()=> resumeLast(pos);
     } else rb.style.display="none";
   }catch(e){}
 }
 
 // ===== 개념 =====
-let dayIdx = 0, day = null, idx = 0, mode = "listen", timer = null, paused = false;
+let dayIdx = 0, day = null, idx = 0, mode = "listen", timer = null, paused = false, sess = [];
 function openDay(i){
   dayIdx = i; day = C.days[i];
   $("#introCrumb").textContent = "DAY " + day.day;
@@ -311,14 +297,31 @@ function togglePlay(){
   }
 }
 
-function startDrill(){
-  idx = 0; mode = "listen"; paused = false; setPP();
-  $("#mListen").classList.add("on"); $("#mOrder").classList.remove("on");
-  $("#drillCrumb").textContent = "DAY " + day.day + " · " + day.verb;
-  totalEl.textContent = day.items.length;
-  show("drill"); render();
+// 세션 = 간격반복 복습 몇 문장(채점 없음) + 오늘 문장
+function buildSession(){
+  const rev=[];
+  const pick=(arr,ixs)=> ixs.map(i=>arr[i % arr.length]).filter(Boolean);
+  const prev=C.days[dayIdx-1], weekAgo=C.days[dayIdx-7];
+  if(prev && prev.ready) pick(prev.items,[0,7,14]).forEach(it=> rev.push(Object.assign({},it,{_rev:true,tag:"복습"})));
+  if(weekAgo && weekAgo.ready) pick(weekAgo.items,[3,11]).forEach(it=> rev.push(Object.assign({},it,{_rev:true,tag:"복습"})));
+  sess = rev.concat(day.items);
 }
-function curItem(){ return day.items[idx]; }
+function startDrill(){
+  mode="listen"; paused=false; setPP();
+  $("#mListen").classList.add("on"); $("#mOrder").classList.remove("on");
+  $("#drillCrumb").textContent="DAY "+day.day+" · "+day.verb;
+  buildSession(); idx=0; totalEl.textContent=sess.length;
+  show("drill"); setMedia(); render();
+}
+function resumeLast(pos){
+  dayIdx=pos.d; day=C.days[dayIdx];
+  mode="listen"; paused=false; setPP();
+  document.getElementById("mListen").classList.add("on"); document.getElementById("mOrder").classList.remove("on");
+  document.getElementById("drillCrumb").textContent="DAY "+day.day+" · "+day.verb;
+  buildSession(); idx=Math.min(pos.i, sess.length-1); totalEl.textContent=sess.length;
+  show("drill"); setMedia(); render();
+}
+function curItem(){ return sess[idx]; }
 
 function runListen(){
   const it = curItem();
@@ -332,9 +335,16 @@ function startCountdown(){
   requestAnimationFrame(()=>{ barFill.style.transition="width 3s linear"; barFill.style.width="100%"; });
   timer = setTimeout(()=>{
     enEl.classList.add("show"); replayBtn.classList.add("show");
-    playSrc(clip(curItem().id,"en"), ()=>{ if(autoChk.checked && !paused) timer=setTimeout(nextItem, 1400); });
+    const it = curItem();
+    playSrc(clip(it.id,"en"), ()=> afterAnswer(it));
   }, 3000);
 }
+// 정답 영어 뒤, 혼란포인트 노트가 있으면 음성으로 1회(복습 문장은 제외) → 자동 넘김
+function afterAnswer(it){
+  if(it.note && !it._rev){ playSrc(noteClip(it.id), advanceMaybe); }
+  else advanceMaybe();
+}
+function advanceMaybe(){ if(autoChk.checked && !paused) timer=setTimeout(nextItem, 1100); }
 
 function norm(w){ return w.toLowerCase().replace(/[^a-z0-9']/g,""); }
 function toks(en){ return en.split(/\s+/); }
@@ -362,7 +372,7 @@ function checkOrder(){
   if(chosen.length < T.length) return;
   if(chosen.map(norm).join(" ") === T.map(norm).join(" ")){
     slotsEl.className="slots ok"; verdictEl.textContent="맞아요 ✓"; verdictEl.className="verdict ok";
-    playSrc(clip(it.id,"en"), ()=>{ if(autoChk.checked && !paused) timer=setTimeout(nextItem, 1400); });
+    playSrc(clip(it.id,"en"), ()=> afterAnswer(it));
   }else{
     slotsEl.className="slots no"; verdictEl.textContent="순서 다시 — 단어를 눌러 빼고 다시 놔봐"; verdictEl.className="verdict no";
   }
@@ -372,6 +382,7 @@ function render(){
   const it = curItem();
   curEl.textContent = idx+1;
   tagEl.textContent = it.tag || day.verb;
+  tagEl.className = "tag" + (it._rev ? " rev" : "");
   koEl.textContent = it.ko; enEl.textContent = it.en;
   if(it.note){ noteEl.innerHTML = "💡 " + it.note; noteEl.classList.add("show"); }
   else { noteEl.classList.remove("show"); }
@@ -380,11 +391,11 @@ function render(){
   else { orderUI.style.display=""; listenUI.style.display="none"; runOrder(); }
   savePos(); setMedia();
 }
-function nextItem(){ idx=(idx+1)%day.items.length; render(); }
-function prevItem(){ idx=(idx-1+day.items.length)%day.items.length; render(); }
+function nextItem(){ idx=(idx+1)%sess.length; render(); }
+function prevItem(){ idx=(idx-1+sess.length)%sess.length; render(); }
 
 // ===== 이벤트 =====
-document.querySelectorAll("[data-home]").forEach(b=> b.onclick=()=>{ clearTimeout(timer); audioEl.pause(); paused=false; show("home"); });
+document.querySelectorAll("[data-home]").forEach(b=> b.onclick=()=>{ clearTimeout(timer); audioEl.pause(); paused=false; show("home"); renderHome(); });
 $("#introListen").onclick=()=> playSrc(introSrc(day));
 $("#introStart").onclick=startDrill;
 $("#next").onclick=nextItem;
@@ -396,7 +407,6 @@ $("#mOrder").onclick=()=>{ mode="order"; $("#mOrder").classList.add("on"); $("#m
 
 renderHome();
 
-// 오프라인 캐시(서비스워커) — https에서만 등록됨
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
 }

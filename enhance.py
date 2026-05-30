@@ -70,13 +70,48 @@ NOTES = {
 
 TITLES = { 25: "다이빙 브리핑·수신호" }
 
+# d14_03: want+명사 예시로 정리(to 규칙과 분리)
+D14_03 = {"ko": "나 커피 줘.", "en": "I want a coffee.", "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to."}
+
+# 복습일 분량 경량화(성공 체험): 20 → 14
+TRIM_REVIEW = {6: 14, 13: 14, 18: 14}
+
+# 숫자·시간·가격 '답하기' 보강(동사 안 늘리고 숫자만). 멱등(id 중복 방지)
+ADD_ITEMS = {
+ 21: [
+   {"id": "d21_21", "tag": "wh", "ko": "두 명이요.", "en": "Two people."},
+   {"id": "d21_22", "tag": "wh", "ko": "저 혼자예요.", "en": "Just me."},
+   {"id": "d21_23", "tag": "wh", "ko": "7시에요.", "en": "At seven.", "note": "시간 대답은 at. at seven, at eight."},
+   {"id": "d21_24", "tag": "wh", "ko": "3시 30분이요.", "en": "It's three thirty."},
+ ],
+ 24: [
+   {"id": "d24_21", "tag": "trip", "ko": "한 시간 걸려요.", "en": "It takes about an hour."},
+   {"id": "d24_22", "tag": "trip", "ko": "공기통 두 개요.", "en": "Two tanks, please."},
+   {"id": "d24_23", "tag": "trip", "ko": "8시쯤에요.", "en": "Around eight."},
+ ],
+ 26: [
+   {"id": "d26_21", "tag": "trip", "ko": "두 개 살게요.", "en": "I'll take two.", "note": "개수는 동사 뒤에. take two, take one."},
+   {"id": "d26_22", "tag": "trip", "ko": "맥주 두 잔 주세요.", "en": "Two beers, please."},
+   {"id": "d26_23", "tag": "trip", "ko": "하나면 돼요.", "en": "Just one."},
+ ],
+}
+
 n_concept = n_note = 0
 for d in C["days"]:
     if d["day"] in TITLES:
         d["title"] = TITLES[d["day"]]
     if d["day"] in CONCEPTS:
         d["concept"] = CONCEPTS[d["day"]]; n_concept += 1
+    if d["day"] in TRIM_REVIEW:
+        d["items"] = d["items"][:TRIM_REVIEW[d["day"]]]
+    if d["day"] in ADD_ITEMS:
+        have = {it["id"] for it in d["items"]}
+        for it in ADD_ITEMS[d["day"]]:
+            if it["id"] not in have:
+                d["items"].append(it)
     for it in d["items"]:
+        if it["id"] == "d14_03":
+            it["ko"] = D14_03["ko"]; it["en"] = D14_03["en"]; it["note"] = D14_03["note"]
         if it["id"] in NOTES:
             it["note"] = NOTES[it["id"]]; n_note += 1
 
