@@ -68,8 +68,12 @@ NOTES = {
 "d26_05": "정해진 그것엔 the. the check는 그 계산서.",
 }
 
+TITLES = { 25: "다이빙 브리핑·수신호" }
+
 n_concept = n_note = 0
 for d in C["days"]:
+    if d["day"] in TITLES:
+        d["title"] = TITLES[d["day"]]
     if d["day"] in CONCEPTS:
         d["concept"] = CONCEPTS[d["day"]]; n_concept += 1
     for it in d["items"]:
