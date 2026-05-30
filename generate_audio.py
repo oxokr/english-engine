@@ -21,6 +21,7 @@ INSTR = {
     "en": "Speak clearly and warmly at a slightly slow, easy pace, like a friendly tutor for a beginner.",
     "ko": "또렷하고 자연스럽게, 친절한 선생님처럼 말해줘.",
     "ko_q": "이 문장은 질문이야. 문장 끝의 억양을 분명하게 올려서, 누가 들어도 물어보는 의문문이라는 게 느껴지게 또렷이 읽어줘.",
+    "ko_intro": "친한 선생님이 운전 중인 학생에게 편하게 말을 거는 느낌으로, 따뜻하고 자연스럽게, 너무 또박또박 기계처럼 읽지 말고 사람이 이야기하듯 자연스러운 리듬과 억양으로 읽어줘.",
 }
 
 def instr_for(text, lang):
@@ -60,7 +61,7 @@ for d in C["days"]:
     if not d.get("ready"):
         continue
     if d.get("concept"):
-        jobs.append((f"d{d['day']}_intro", d["concept"], "ko", os.path.join(AUDIO, f"d{d['day']}_intro.mp3")))
+        jobs.append((f"d{d['day']}_intro", d["concept"], "ko_intro", os.path.join(AUDIO, f"d{d['day']}_intro.mp3")))
     for it in d.get("items", []):
         for lang in ("ko", "en"):
             jobs.append((it["id"]+"_"+lang, it[lang], lang, os.path.join(AUDIO, f"{it['id']}_{lang}.mp3")))
