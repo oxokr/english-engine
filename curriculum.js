@@ -68,13 +68,15 @@ window.CURRICULUM = {
           "id": "d1_09",
           "tag": "be",
           "ko": "이거 좋다.",
-          "en": "This is good."
+          "en": "This is good.",
+          "scene": "음식을 한 입 먹어보고."
         },
         {
           "id": "d1_10",
           "tag": "be",
           "ko": "그거 괜찮아.",
-          "en": "It's okay."
+          "en": "It's okay.",
+          "scene": "걱정하는 사람을 안심시키며."
         },
         {
           "id": "d1_11",
@@ -98,13 +100,15 @@ window.CURRICULUM = {
           "id": "d1_14",
           "tag": "be",
           "ko": "그거 쉬워.",
-          "en": "It's easy."
+          "en": "It's easy.",
+          "scene": "해보고 나서."
         },
         {
           "id": "d1_15",
           "tag": "be",
           "ko": "이거 어려워.",
-          "en": "This is hard."
+          "en": "This is hard.",
+          "scene": "하다가 막혀서."
         },
         {
           "id": "d1_16",
@@ -135,7 +139,8 @@ window.CURRICULUM = {
           "id": "d1_20",
           "tag": "be",
           "ko": "맞아.",
-          "en": "That's right."
+          "en": "That's right.",
+          "scene": "상대 말에 맞장구치며."
         }
       ]
     },
@@ -163,13 +168,15 @@ window.CURRICULUM = {
           "id": "d2_03",
           "tag": "be",
           "ko": "그거 여기 있어.",
-          "en": "It's here."
+          "en": "It's here.",
+          "scene": "찾던 걸 발견하고."
         },
         {
           "id": "d2_04",
           "tag": "be",
           "ko": "그거 저기 있어.",
-          "en": "It's there."
+          "en": "It's there.",
+          "scene": "멀리 가리키며."
         },
         {
           "id": "d2_05",
@@ -187,13 +194,15 @@ window.CURRICULUM = {
           "id": "d2_07",
           "tag": "be",
           "ko": "이건 내 거야.",
-          "en": "This is mine."
+          "en": "This is mine.",
+          "scene": "내 물건이라고 짚으며."
         },
         {
           "id": "d2_08",
           "tag": "be",
           "ko": "그건 네 거야.",
-          "en": "That's yours."
+          "en": "That's yours.",
+          "scene": "물건을 건네주며."
         },
         {
           "id": "d2_09",
@@ -205,7 +214,8 @@ window.CURRICULUM = {
           "id": "d2_10",
           "tag": "be",
           "ko": "그건 안 좋아.",
-          "en": "That's not good."
+          "en": "That's not good.",
+          "scene": "결과를 보고 실망해서."
         },
         {
           "id": "d2_11",
@@ -242,13 +252,15 @@ window.CURRICULUM = {
           "id": "d2_16",
           "tag": "be",
           "ko": "그거 멀어?",
-          "en": "Is it far?"
+          "en": "Is it far?",
+          "scene": "택시 타기 전에 기사에게."
         },
         {
           "id": "d2_17",
           "tag": "be",
           "ko": "그거 가까워.",
-          "en": "It's close."
+          "en": "It's close.",
+          "scene": "길 물어본 사람에게."
         },
         {
           "id": "d2_18",
@@ -260,7 +272,8 @@ window.CURRICULUM = {
           "id": "d2_19",
           "tag": "be",
           "ko": "너 거기 있어?",
-          "en": "Are you there?"
+          "en": "Are you there?",
+          "scene": "전화로 상대를 확인하며."
         },
         {
           "id": "d2_20",
@@ -563,7 +576,8 @@ window.CURRICULUM = {
           "id": "d5_03",
           "tag": "do",
           "ko": "나 안 좋아해.",
-          "en": "I don't like it."
+          "en": "I don't like it.",
+          "note": "I don't ~ 는 안 ~해. like 자리만 바꿔봐: I don't know, I don't care."
         },
         {
           "id": "d5_04",
@@ -724,7 +738,8 @@ window.CURRICULUM = {
           "id": "d6_08",
           "tag": "mix",
           "ko": "별로야. 다른 거 있어?",
-          "en": "It's not good. Do you have another one?"
+          "en": "It's not good. Do you have another one?",
+          "scene": "물건이 마음에 안 들 때."
         },
         {
           "id": "d6_09",
@@ -933,7 +948,8 @@ window.CURRICULUM = {
           "id": "d8_05",
           "tag": "go",
           "ko": "나 그 사람한테 물어볼 거야.",
-          "en": "I'm going to ask him."
+          "en": "I'm going to ask him.",
+          "note": "going to 뒤 동사만 바꾸면 다 미래. ask 자리에 eat, call, try."
         },
         {
           "id": "d8_06",
@@ -1190,7 +1206,8 @@ window.CURRICULUM = {
           "id": "d10_04",
           "tag": "get",
           "ko": "너 그거 어디서 샀어?",
-          "en": "Where did you get it?"
+          "en": "Where did you get it?",
+          "scene": "친구가 가진 걸 보고."
         },
         {
           "id": "d10_05",
@@ -1256,7 +1273,8 @@ window.CURRICULUM = {
           "id": "d10_15",
           "tag": "get",
           "ko": "너 그거 받았어?",
-          "en": "Did you get it?"
+          "en": "Did you get it?",
+          "scene": "문자 보낸 뒤 확인하며."
         },
         {
           "id": "d10_16",
@@ -1280,7 +1298,8 @@ window.CURRICULUM = {
           "id": "d10_19",
           "tag": "get",
           "ko": "뭐 갖다 드릴까요?",
-          "en": "What can I get you?"
+          "en": "What can I get you?",
+          "scene": "식당 직원이 손님에게."
         },
         {
           "id": "d10_20",
@@ -1327,7 +1346,8 @@ window.CURRICULUM = {
           "id": "d11_05",
           "tag": "get",
           "ko": "나 배고파지고 있어.",
-          "en": "I'm getting hungry."
+          "en": "I'm getting hungry.",
+          "note": "I'm getting ~ 는 슬슬/점점 ~. hungry 자리에 tired, cold, better."
         },
         {
           "id": "d11_06",
@@ -1475,7 +1495,8 @@ window.CURRICULUM = {
           "id": "d12_08",
           "tag": "get",
           "ko": "차에 타.",
-          "en": "Get in the car."
+          "en": "Get in the car.",
+          "note": "get + 방향. in 자리에 out(내려), on/off(타다/내리다)."
         },
         {
           "id": "d12_09",
@@ -1535,7 +1556,8 @@ window.CURRICULUM = {
           "id": "d12_18",
           "tag": "get",
           "ko": "나 이제 이해돼.",
-          "en": "Now I get it."
+          "en": "Now I get it.",
+          "scene": "설명을 다 듣고 나서."
         },
         {
           "id": "d12_19",
@@ -1701,13 +1723,16 @@ window.CURRICULUM = {
           "id": "d14_08",
           "tag": "want",
           "ko": "나 이거 원해.",
-          "en": "I want this."
+          "en": "I want this.",
+          "scene": "가게에서 물건을 가리키며.",
+          "note": "want + 물건. this 자리에 that, more, one."
         },
         {
           "id": "d14_09",
           "tag": "want",
           "ko": "나 그거 안 원해.",
-          "en": "I don't want that."
+          "en": "I don't want that.",
+          "scene": "권하는 걸 사양하며."
         },
         {
           "id": "d14_10",
@@ -1814,7 +1839,8 @@ window.CURRICULUM = {
           "id": "d15_05",
           "tag": "can",
           "ko": "도와줄래?",
-          "en": "Can you help me?"
+          "en": "Can you help me?",
+          "note": "Can you ~? 는 ~해줄래? help 자리에 see, fix, wait."
         },
         {
           "id": "d15_06",
@@ -1832,7 +1858,8 @@ window.CURRICULUM = {
           "id": "d15_08",
           "tag": "can",
           "ko": "이거 가져도 돼요?",
-          "en": "Can I have this?"
+          "en": "Can I have this?",
+          "note": "Can I ~? 는 ~해도 돼요/주세요. have 자리에 use, get."
         },
         {
           "id": "d15_09",
@@ -1945,7 +1972,8 @@ window.CURRICULUM = {
           "id": "d16_05",
           "tag": "need",
           "ko": "나 쉬어야 해.",
-          "en": "I need to rest."
+          "en": "I need to rest.",
+          "note": "I need to ~ 는 ~해야 해. rest 자리에 go, eat, stop."
         },
         {
           "id": "d16_06",
@@ -2011,7 +2039,8 @@ window.CURRICULUM = {
           "id": "d16_16",
           "tag": "need",
           "ko": "나 새 거 필요해.",
-          "en": "I need a new one."
+          "en": "I need a new one.",
+          "scene": "쓰던 게 고장 났을 때."
         },
         {
           "id": "d16_17",
@@ -2063,13 +2092,15 @@ window.CURRICULUM = {
           "id": "d17_03",
           "tag": "let",
           "ko": "내가 도와줄게.",
-          "en": "Let me help you."
+          "en": "Let me help you.",
+          "note": "Let me ~ 는 내가 ~할게. help 자리에 see, check, ask."
         },
         {
           "id": "d17_04",
           "tag": "let",
           "ko": "가자.",
-          "en": "Let's go."
+          "en": "Let's go.",
+          "note": "Let's ~ 는 같이 ~하자. go 자리에 eat, start, wait."
         },
         {
           "id": "d17_05",
@@ -2275,7 +2306,8 @@ window.CURRICULUM = {
           "id": "d19_01",
           "tag": "take",
           "ko": "이거 가져.",
-          "en": "Take it."
+          "en": "Take it.",
+          "scene": "상대에게 물건을 건네며."
         },
         {
           "id": "d19_02",
@@ -2366,7 +2398,8 @@ window.CURRICULUM = {
           "id": "d19_16",
           "tag": "take",
           "ko": "천천히 해.",
-          "en": "Take your time."
+          "en": "Take your time.",
+          "note": "Take your ~. time이면 천천히 해, seat이면 앉아."
         },
         {
           "id": "d19_17",
@@ -2425,7 +2458,8 @@ window.CURRICULUM = {
           "id": "d20_04",
           "tag": "make",
           "ko": "확실히 해.",
-          "en": "Make sure."
+          "en": "Make sure.",
+          "note": "Make sure ~ 는 ~인지 꼭 확인해. 뒤에 문장을 붙여봐."
         },
         {
           "id": "d20_05",
@@ -2568,7 +2602,8 @@ window.CURRICULUM = {
           "id": "d21_06",
           "tag": "wh",
           "ko": "이거 어떻게 해요?",
-          "en": "How do you do this?"
+          "en": "How do you do this?",
+          "note": "How do you ~? 는 어떻게 ~해요? do this 자리에 say it, use it."
         },
         {
           "id": "d21_07",
@@ -2747,7 +2782,8 @@ window.CURRICULUM = {
           "id": "d22_10",
           "tag": "mix",
           "ko": "아무거나 괜찮아.",
-          "en": "Anything is okay."
+          "en": "Anything is okay.",
+          "scene": "뭐 먹을지 물어오면."
         },
         {
           "id": "d22_11",
@@ -2871,7 +2907,8 @@ window.CURRICULUM = {
           "id": "d23_09",
           "tag": "trip",
           "ko": "택시 어디서 타요?",
-          "en": "Where can I get a taxi?"
+          "en": "Where can I get a taxi?",
+          "note": "Where can I get ~? 는 ~ 어디서 구해요/타요? taxi 자리에 cash, water."
         },
         {
           "id": "d23_10",

@@ -87,6 +87,52 @@ KO_FIX = {
   "d25_13": "나 너 보여.",
 }
 
+# 장면(scene) — 지시어(이거/그거/거기)·모호한 문장에만. 큐 음성 앞에 짧게 재생 + 화면 표시.
+SCENES = {
+  "d1_09": "음식을 한 입 먹어보고.",
+  "d1_10": "걱정하는 사람을 안심시키며.",
+  "d1_14": "해보고 나서.",
+  "d1_15": "하다가 막혀서.",
+  "d1_20": "상대 말에 맞장구치며.",
+  "d2_03": "찾던 걸 발견하고.",
+  "d2_04": "멀리 가리키며.",
+  "d2_07": "내 물건이라고 짚으며.",
+  "d2_08": "물건을 건네주며.",
+  "d2_10": "결과를 보고 실망해서.",
+  "d2_16": "택시 타기 전에 기사에게.",
+  "d2_17": "길 물어본 사람에게.",
+  "d2_19": "전화로 상대를 확인하며.",
+  "d6_08": "물건이 마음에 안 들 때.",
+  "d10_04": "친구가 가진 걸 보고.",
+  "d10_15": "문자 보낸 뒤 확인하며.",
+  "d10_19": "식당 직원이 손님에게.",
+  "d12_18": "설명을 다 듣고 나서.",
+  "d14_08": "가게에서 물건을 가리키며.",
+  "d14_09": "권하는 걸 사양하며.",
+  "d16_16": "쓰던 게 고장 났을 때.",
+  "d19_01": "상대에게 물건을 건네며.",
+  "d22_10": "뭐 먹을지 물어오면.",
+}
+
+# 응용(APPLY) — 슬롯만 바꾸면 폭발적으로 늘어나는 핵심 패턴. 화면 노트로(운전 중엔 음성 흐름 유지).
+APPLY_NOTES = {
+  "d5_03": "I don't ~ 는 안 ~해. like 자리만 바꿔봐: I don't know, I don't care.",
+  "d8_05": "going to 뒤 동사만 바꾸면 다 미래. ask 자리에 eat, call, try.",
+  "d11_05": "I'm getting ~ 는 슬슬/점점 ~. hungry 자리에 tired, cold, better.",
+  "d12_08": "get + 방향. in 자리에 out(내려), on/off(타다/내리다).",
+  "d14_08": "want + 물건. this 자리에 that, more, one.",
+  "d15_05": "Can you ~? 는 ~해줄래? help 자리에 see, fix, wait.",
+  "d15_08": "Can I ~? 는 ~해도 돼요/주세요. have 자리에 use, get.",
+  "d16_05": "I need to ~ 는 ~해야 해. rest 자리에 go, eat, stop.",
+  "d17_03": "Let me ~ 는 내가 ~할게. help 자리에 see, check, ask.",
+  "d17_04": "Let's ~ 는 같이 ~하자. go 자리에 eat, start, wait.",
+  "d19_16": "Take your ~. time이면 천천히 해, seat이면 앉아.",
+  "d20_04": "Make sure ~ 는 ~인지 꼭 확인해. 뒤에 문장을 붙여봐.",
+  "d21_06": "How do you ~? 는 어떻게 ~해요? do this 자리에 say it, use it.",
+  "d23_09": "Where can I get ~? 는 ~ 어디서 구해요/타요? taxi 자리에 cash, water.",
+  "d26_05": "Can I get the ~? 식당에서. check면 계산서, bill도 같은 뜻.",
+}
+
 # d14_03: want+명사 예시로 정리(to 규칙과 분리)
 D14_03 = {"ko": "나 커피 줘.", "en": "I want a coffee.", "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to."}
 
@@ -113,7 +159,7 @@ ADD_ITEMS = {
  ],
 }
 
-n_concept = n_note = 0
+n_concept = n_note = n_scene = 0
 for d in C["days"]:
     if d["day"] in TITLES:
         d["title"] = TITLES[d["day"]]
@@ -131,11 +177,15 @@ for d in C["days"]:
             it["ko"] = D14_03["ko"]; it["en"] = D14_03["en"]; it["note"] = D14_03["note"]
         if it["id"] in KO_FIX:
             it["ko"] = KO_FIX[it["id"]]
+        if it["id"] in SCENES:
+            it["scene"] = SCENES[it["id"]]; n_scene += 1
         if it["id"] in NOTES:
             it["note"] = NOTES[it["id"]]; n_note += 1
+        elif it["id"] in APPLY_NOTES:
+            it["note"] = APPLY_NOTES[it["id"]]; n_note += 1
 
 header = ("// 영어 엔진 커리큘럼 — 단일 소스(자동 생성됨). 앱과 generate_audio.py가 함께 읽는다.\n"
           "// 수정은 enhance.py 또는 직접. items[].id = 음성파일, items[].note = 혼란 포인트 설명.\n")
 out = header + "window.CURRICULUM = " + json.dumps(C, ensure_ascii=False, indent=2) + ";\n"
 open(os.path.join(BASE, "curriculum.js"), "w", encoding="utf-8").write(out)
-print(f"개념 갱신: {n_concept}일 / 노트 추가: {n_note}개")
+print(f"개념 갱신: {n_concept}일 / 노트: {n_note}개 / 장면: {n_scene}개")
