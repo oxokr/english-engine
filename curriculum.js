@@ -156,7 +156,7 @@ window.CURRICULUM = {
         {
           "id": "d2_02",
           "tag": "be",
-          "ko": "나 직장에 있어.",
+          "ko": "나 회사에 있어.",
           "en": "I'm at work."
         },
         {
@@ -386,7 +386,7 @@ window.CURRICULUM = {
         {
           "id": "d3_18",
           "tag": "have",
-          "ko": "너 와이파이 있어요?",
+          "ko": "와이파이 돼요?",
           "en": "Do you have wifi?"
         },
         {
@@ -854,7 +854,7 @@ window.CURRICULUM = {
         {
           "id": "d7_14",
           "tag": "go",
-          "ko": "우리 늦어, 가야 해.",
+          "ko": "우리 늦었어, 가야 해.",
           "en": "We're late. We have to go."
         },
         {
@@ -1152,8 +1152,9 @@ window.CURRICULUM = {
         {
           "id": "d9_20",
           "tag": "go",
-          "ko": "끝까지 가.",
-          "en": "Go all the way."
+          "ko": "끝까지 해.",
+          "en": "Go all the way.",
+          "note": "go all the way는 중간에 멈추지 말고 끝까지. 일·거리 둘 다 써요."
         }
       ]
     },
@@ -1373,7 +1374,7 @@ window.CURRICULUM = {
         {
           "id": "d11_13",
           "tag": "get",
-          "ko": "나 긴장돼.",
+          "ko": "나 슬슬 긴장돼.",
           "en": "I'm getting nervous."
         },
         {
@@ -1391,7 +1392,7 @@ window.CURRICULUM = {
         {
           "id": "d11_16",
           "tag": "get",
-          "ko": "나 졸려.",
+          "ko": "나 슬슬 졸려.",
           "en": "I'm getting sleepy."
         },
         {
@@ -1409,7 +1410,7 @@ window.CURRICULUM = {
         {
           "id": "d11_19",
           "tag": "get",
-          "ko": "나 짜증나.",
+          "ko": "나 슬슬 짜증나.",
           "en": "I'm getting annoyed."
         },
         {
@@ -2477,7 +2478,7 @@ window.CURRICULUM = {
         {
           "id": "d20_13",
           "tag": "make",
-          "ko": "빨리 하자.",
+          "ko": "빨리 끝내자.",
           "en": "Let's make it quick."
         },
         {
@@ -2495,7 +2496,7 @@ window.CURRICULUM = {
         {
           "id": "d20_16",
           "tag": "make",
-          "ko": "소음 내지 마.",
+          "ko": "시끄럽게 하지 마.",
           "en": "Don't make noise."
         },
         {
@@ -2839,7 +2840,7 @@ window.CURRICULUM = {
         {
           "id": "d23_04",
           "tag": "trip",
-          "ko": "저 휴가차 왔어요.",
+          "ko": "저 휴가로 왔어요.",
           "en": "I'm here on vacation."
         },
         {
@@ -3123,7 +3124,7 @@ window.CURRICULUM = {
         {
           "id": "d25_05",
           "tag": "trip",
-          "ko": "천천히.",
+          "ko": "속도 줄여.",
           "en": "Slow down."
         },
         {
@@ -3171,7 +3172,7 @@ window.CURRICULUM = {
         {
           "id": "d25_13",
           "tag": "trip",
-          "ko": "너 보여.",
+          "ko": "나 너 보여.",
           "en": "I can see you."
         },
         {

@@ -57,6 +57,8 @@
   .day-card.ready{border-color:#3a2f15;}
   .day-card.ready:active{background:var(--card2); transform:scale(.99);}
   .day-card .verb.muted{background:var(--line); color:var(--dim);}
+  .day-card .lap{font-size:12px; font-weight:800; color:var(--accent); background:#2a2010;
+    border:1px solid #3a2f15; border-radius:8px; padding:3px 8px; flex:none;}
   .pad-b{height:30px;}
 
   #intro{justify-content:center;}
@@ -218,6 +220,8 @@ const clip = (id,lang)=> "audio/" + id + "_" + lang + ".mp3";
 const introSrc = day => "audio/d" + day.day + "_intro.mp3";
 
 function savePos(){ try{ localStorage.setItem("ee_pos", JSON.stringify({d:dayIdx,i:idx})); }catch(e){} }
+function loadLaps(){ try{ return JSON.parse(localStorage.getItem("ee_laps")||"{}"); }catch(e){ return {}; } }
+function incLap(dnum){ const l=loadLaps(); l[dnum]=(l[dnum]||0)+1; try{ localStorage.setItem("ee_laps", JSON.stringify(l)); }catch(e){} }
 function setMedia(){
   if(!("mediaSession" in navigator)) return;
   try{
@@ -243,16 +247,19 @@ function renderHome(){
   $("#ddayLabel").textContent = C.trip.name + "까지";
   $("#ddayNum").innerHTML = n > 0 ? "D-<b>"+n+"</b>" : (n===0 ? "D-<b>DAY</b>" : "여행 후");
   const list = $("#dayList"); list.innerHTML = "";
+  const laps = loadLaps();
   let phase = "";
   C.days.forEach((d,i)=>{
     if(d.phase !== phase){ phase = d.phase;
       const h = document.createElement("div"); h.className="phase-h"; h.textContent=phase; list.appendChild(h); }
     const b = document.createElement("button");
     b.className = "day-card" + (d.ready ? " ready" : "");
+    const lap = laps[d.day] || 0;
     b.innerHTML =
       '<span class="no">DAY '+d.day+'</span>' +
       '<span class="verb'+(d.ready?'':' muted')+'">'+d.verb+'</span>' +
       '<span class="ti">'+d.title.replace(/^.*·\s*/,'')+'</span>' +
+      (lap>0 ? '<span class="lap">'+lap+'회</span>' : '') +
       (d.ready ? '<span class="lock">▶</span>' : '<span class="lock">준비 중</span>');
     if(d.ready) b.onclick = ()=> openDay(i);
     list.appendChild(b);
@@ -385,7 +392,7 @@ function render(){
   else { orderUI.style.display=""; listenUI.style.display="none"; runOrder(); }
   savePos(); setMedia();
 }
-function nextItem(){ idx=(idx+1)%sess.length; render(); }
+function nextItem(){ const wrap = idx+1 >= sess.length; idx=(idx+1)%sess.length; if(wrap && day) incLap(day.day); render(); }
 function prevItem(){ idx=(idx-1+sess.length)%sess.length; render(); }
 
 // ===== 이벤트 =====
