@@ -211,11 +211,15 @@ const C = window.CURRICULUM;
 const $ = s => document.querySelector(s);
 
 // ===== 음성 =====
+// 한국어(큐·장면·개념·노트)는 이미 아는 말이라 빠르게, 영어 정답은 1.0 그대로.
+const KO_RATE = 1.35, EN_RATE = 1.0;
 const audioEl = new Audio(); audioEl.preload = "auto";
+function rateFor(src){ return /_en\.mp3$/.test(src) ? EN_RATE : KO_RATE; }
 function playSrc(src, onend){
   audioEl.pause(); audioEl.onended = onend || null;
   audioEl.onerror = ()=>{ if(onend) setTimeout(onend, 1000); };
   audioEl.src = src;
+  audioEl.playbackRate = rateFor(src);
   const p = audioEl.play();
   if(p && p.then) p.then(()=>{ const h=document.getElementById("ahint"); if(h) h.style.display="none"; })
     .catch(()=>{ const h=document.getElementById("ahint"); if(h) h.style.display="block"; if(onend) setTimeout(onend, 1000); });
