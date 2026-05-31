@@ -240,7 +240,8 @@ window.CURRICULUM = {
           "id": "d2_14",
           "tag": "be",
           "ko": "화장실 어디예요?",
-          "en": "Where is the bathroom?"
+          "en": "Where is the bathroom?",
+          "note": "the bathroom — 거기 하나뿐인 곳이라 a 아니고 the."
         },
         {
           "id": "d2_15",
@@ -289,7 +290,7 @@ window.CURRICULUM = {
       "phase": "뼈대",
       "ready": true,
       "title": "have · 가지다",
-      "concept": "오늘은 have. 있다, 가지고 있다는 뜻이에요. I have a car, 나 차 있어. 여기서 하나 짚을게요. 영어는 하나를 셀 때 앞에 a를 붙여요. a car, a question. 우리말엔 없어서 자꾸 빼먹는데, 영어는 이 a가 자연스러워요. 그리고 그 사람 얘기할 땐 have가 has로 바뀌어요. He has a car. 3인칭은 모양이 변한다, 기억해 둬요.",
+      "concept": "오늘은 have. 있다, 가지고 있다는 뜻이에요. I have a car, 나 차 있어. 여기서 a 하나 짚을게요. 영어는 하나를 셀 때 앞에 a를 붙여요. a car, a question. 처음 말하는, 아무거나 하나는 a예요. 그런데 너도 알고 나도 아는 바로 그거를 말할 땐 a 대신 the를 써요. a taxi는 아무 택시나, the taxi는 아까 그 택시. 화장실처럼 거기 하나뿐인 것도 the, the bathroom. 쉽게, a는 아무거나 하나, the는 바로 그거. 그리고 그 사람 얘기할 땐 have가 has로 바뀌어요. He has a car. 3인칭은 모양이 변해요.",
       "items": [
         {
           "id": "d3_01",
@@ -556,7 +557,7 @@ window.CURRICULUM = {
       "phase": "뼈대",
       "ready": true,
       "title": "do · 질문·부정 엔진",
-      "concept": "오늘은 do예요. 이게 좀 신기한데, 뜻 없이 일만 해요. 부정할 때랑 물어볼 때 도와주는 단어예요. 몰라는 I don't know. don't를 동사 앞에 딱. 물어볼 땐 문장 맨 앞에 Do. Do you know? 우리말엔 이런 게 없어서 어색한데, 영어는 부정이랑 질문에 이 do가 꼭 나와요. 오늘 이거 하나 익혀두면 뭐든 묻고 부정할 수 있어요.",
+      "concept": "오늘은 do예요. 뜻 없이 일만 하는 단어인데, 부정할 때랑 물어볼 때 도와줘요. 몰라는 I don't know. don't를 동사 앞에 딱. 물어볼 땐 맨 앞에 Do. Do you know? 자, 여기서 제일 헷갈리는 거 하나 정리할게요. Do you랑 Are you. 가다, 알다, 좋아하다 같은 동작을 물으면 Do you. Do you know? Do you go? 반대로 괜찮다, 준비됐다 같은 상태를 물으면 Are you. Are you okay? Are you ready? 쉽게, 상태면 Are, 동작이면 Do. 이 하나만 잡으면 안 헷갈려요.",
       "items": [
         {
           "id": "d5_01",
@@ -583,7 +584,8 @@ window.CURRICULUM = {
           "id": "d5_04",
           "tag": "do",
           "ko": "너 이거 좋아해?",
-          "en": "Do you like this?"
+          "en": "Do you like this?",
+          "note": "동작(좋아하다)을 물으면 Do you. 상태(괜찮다)면 Are you."
         },
         {
           "id": "d5_05",
@@ -785,7 +787,7 @@ window.CURRICULUM = {
       "phase": "이동·만능",
       "ready": true,
       "title": "go · 가다",
-      "concept": "오늘은 go, 가다예요. 그런데 지금 가는 중이라고 할 땐 be랑 같이 써요. I am going. 줄여서 I'm going home, 나 집에 가. 지금 하고 있는 일은 다 이렇게 be 더하기 ing예요. 어디 가냐고 물을 땐 Where are you going? 오늘은 이걸로 어디 가는지 말해봐요.",
+      "concept": "오늘은 go, 가다예요. 지금 가는 중이라고 할 땐 be랑 같이 써요. I'm going home, 나 집에 가. 어디 가냐고 물으면 Where are you going? 그리고 오늘 does가 처음 나와요. 짚고 갈게요. 너나 나한테 물을 땐 Do you go. 그런데 그 사람, 또는 버스나 사물 하나한테 물을 땐 Do가 Does로 바뀌어요. Does this bus go downtown? 이 버스 시내 가요? 중요한 거 하나, does가 변신을 다 맡으니까 뒤에 오는 동사는 그냥 원형이에요. Does it goes 아니고 Does it go. s는 한 번만 붙어요.",
       "items": [
         {
           "id": "d7_01",
@@ -883,7 +885,7 @@ window.CURRICULUM = {
           "tag": "go",
           "ko": "이 버스 시내 가요?",
           "en": "Does this bus go downtown?",
-          "note": "3인칭 질문은 Does, 동사는 원형 go."
+          "note": "그 사람·사물 하나엔 Do가 Does. 뒤 동사는 원형 go (goes 아님)."
         },
         {
           "id": "d7_17",
@@ -1261,7 +1263,8 @@ window.CURRICULUM = {
           "id": "d10_13",
           "tag": "get",
           "ko": "영수증 좀 주세요.",
-          "en": "Can I get the receipt?"
+          "en": "Can I get the receipt?",
+          "note": "the receipt — 방금 그 영수증이라 the. 처음이면 a."
         },
         {
           "id": "d10_14",
