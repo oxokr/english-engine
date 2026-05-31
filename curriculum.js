@@ -251,14 +251,14 @@ window.CURRICULUM = {
         {
           "id": "d2_16",
           "tag": "be",
-          "ko": "그거 멀어?",
+          "ko": "거기 멀어?",
           "en": "Is it far?",
           "scene": "택시 타기 전에 기사에게."
         },
         {
           "id": "d2_17",
           "tag": "be",
-          "ko": "그거 가까워.",
+          "ko": "거기 가까워.",
           "en": "It's close.",
           "scene": "길 물어본 사람에게."
         },
