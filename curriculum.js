@@ -169,7 +169,8 @@ window.CURRICULUM = {
           "tag": "be",
           "ko": "그거 여기 있어.",
           "en": "It's here.",
-          "scene": "찾던 걸 발견하고."
+          "scene": "찾던 걸 발견하고.",
+          "eq": "It's here는 그게 여기 있어(물건), I'm here는 나 여기 있어(사람)."
         },
         {
           "id": "d2_04",
@@ -228,7 +229,8 @@ window.CURRICULUM = {
           "id": "d2_12",
           "tag": "be",
           "ko": "우리 거의 다 왔어.",
-          "en": "We're almost there."
+          "en": "We're almost there.",
+          "eq": "We're getting there 는 가는 중(더 멂), almost there는 거의 다 옴."
         },
         {
           "id": "d2_13",
@@ -315,7 +317,8 @@ window.CURRICULUM = {
           "id": "d3_04",
           "tag": "have",
           "ko": "너 시간 있어?",
-          "en": "Do you have time?"
+          "en": "Do you have time?",
+          "eq": "have time = 시간 여유, have the time = 몇 시야? the 하나로 뜻이 달라요."
         },
         {
           "id": "d3_05",
@@ -456,7 +459,8 @@ window.CURRICULUM = {
           "id": "d4_05",
           "tag": "have",
           "ko": "좋은 시간 보내.",
-          "en": "Have a good time."
+          "en": "Have a good time.",
+          "eq": "Have fun 이랑 같은 뜻. 헤어질 때 바꿔 써도 돼요."
         },
         {
           "id": "d4_06",
@@ -600,13 +604,15 @@ window.CURRICULUM = {
           "id": "d5_06",
           "tag": "do",
           "ko": "나 이해 안 돼.",
-          "en": "I don't understand."
+          "en": "I don't understand.",
+          "eq": "I don't get it 이라고도 해요. get it이 더 편한 말. 같은 뜻."
         },
         {
           "id": "d5_07",
           "tag": "do",
           "ko": "너 이해돼?",
-          "en": "Do you understand?"
+          "en": "Do you understand?",
+          "eq": "Do you get it? 이라고도 해요. get it이 더 캐주얼."
         },
         {
           "id": "d5_08",
@@ -947,14 +953,16 @@ window.CURRICULUM = {
           "id": "d8_04",
           "tag": "go",
           "ko": "우리 늦을 거야.",
-          "en": "We're going to be late."
+          "en": "We're going to be late.",
+          "eq": "We'll be late 랑 같은 뜻. going to be가 더 확실한 예상."
         },
         {
           "id": "d8_05",
           "tag": "go",
           "ko": "나 그 사람한테 물어볼 거야.",
           "en": "I'm going to ask him.",
-          "note": "going to 뒤 동사만 바꾸면 다 미래. ask 자리에 eat, call, try."
+          "note": "going to 뒤 동사만 바꾸면 다 미래. ask 자리에 eat, call, try.",
+          "eq": "I'll ~ 랑 비슷. going to는 미리 정한 일, I'll은 방금 정한 일."
         },
         {
           "id": "d8_06",
@@ -1032,7 +1040,8 @@ window.CURRICULUM = {
           "id": "d8_18",
           "tag": "go",
           "ko": "나 나중에 전화할 거야.",
-          "en": "I'm going to call you later."
+          "en": "I'm going to call you later.",
+          "eq": "I'll call you 랑 같은 뜻. 거의 같아서 바꿔 써도 돼요."
         },
         {
           "id": "d8_19",
@@ -1328,7 +1337,8 @@ window.CURRICULUM = {
           "id": "d11_01",
           "tag": "get",
           "ko": "나 피곤해졌어.",
-          "en": "I got tired."
+          "en": "I got tired.",
+          "eq": "I'm tired는 지금 피곤해, I got tired는 피곤해졌어(변화)."
         },
         {
           "id": "d11_02",
@@ -1687,7 +1697,8 @@ window.CURRICULUM = {
           "id": "d14_01",
           "tag": "want",
           "ko": "나 물 줘.",
-          "en": "I want water."
+          "en": "I want water.",
+          "eq": "I want some water 라고도 해요. some 붙으면 살짝 부드러워요. 같은 뜻."
         },
         {
           "id": "d14_02",
@@ -1700,7 +1711,8 @@ window.CURRICULUM = {
           "tag": "want",
           "ko": "나 커피 줘.",
           "en": "I want a coffee.",
-          "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to."
+          "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to.",
+          "eq": "Can I get a coffee? 랑 같은 뜻. want는 직설적, Can I get은 더 공손."
         },
         {
           "id": "d14_04",
@@ -1733,7 +1745,8 @@ window.CURRICULUM = {
           "ko": "나 이거 원해.",
           "en": "I want this.",
           "scene": "가게에서 물건을 가리키며.",
-          "note": "want + 물건. this 자리에 that, more, one."
+          "note": "want + 물건. this 자리에 that, more, one.",
+          "eq": "Can I have this? 랑 같은 뜻. want는 직설적, Can I have는 공손."
         },
         {
           "id": "d14_09",
@@ -1849,7 +1862,8 @@ window.CURRICULUM = {
           "tag": "can",
           "ko": "도와줄래?",
           "en": "Can you help me?",
-          "note": "Can you ~? 는 ~해줄래? help 자리에 see, fix, wait."
+          "note": "Can you ~? 는 ~해줄래? help 자리에 see, fix, wait.",
+          "eq": "Can you give me a hand? 라고도 해요. a hand가 더 가벼운 부탁."
         },
         {
           "id": "d15_06",
@@ -1868,7 +1882,8 @@ window.CURRICULUM = {
           "tag": "can",
           "ko": "이거 가져도 돼요?",
           "en": "Can I have this?",
-          "note": "Can I ~? 는 ~해도 돼요/주세요. have 자리에 use, get."
+          "note": "Can I ~? 는 ~해도 돼요/주세요. have 자리에 use, get.",
+          "eq": "Can I get this? 랑 같은 뜻. 가게·식당에서 바꿔 써도 돼요."
         },
         {
           "id": "d15_09",
@@ -2032,7 +2047,8 @@ window.CURRICULUM = {
           "id": "d16_13",
           "tag": "need",
           "ko": "나 화장실 가야 해.",
-          "en": "I need a bathroom."
+          "en": "I need a bathroom.",
+          "eq": "I need to use the bathroom 이라고도 해요. 같은 뜻."
         },
         {
           "id": "d16_14",
@@ -2436,7 +2452,8 @@ window.CURRICULUM = {
           "id": "d19_20",
           "tag": "take",
           "ko": "이걸로 할게요.",
-          "en": "I'll take this one."
+          "en": "I'll take this one.",
+          "eq": "I want this 랑 같은 뜻. take가 더 자연스러운 결정 표현."
         }
       ]
     },
@@ -2820,7 +2837,8 @@ window.CURRICULUM = {
           "id": "d22_14",
           "tag": "mix",
           "ko": "천천히 말해 줄래요?",
-          "en": "Can you speak slowly?"
+          "en": "Can you speak slowly?",
+          "eq": "Please speak slowly 라고도 해요. 같은 뜻, 바꿔 써도 돼요."
         },
         {
           "id": "d22_15",
@@ -2856,7 +2874,8 @@ window.CURRICULUM = {
           "id": "d22_20",
           "tag": "mix",
           "ko": "또 봐.",
-          "en": "See you."
+          "en": "See you.",
+          "eq": "Take care 라고도 해요. See you는 또 봐, Take care는 잘 지내."
         }
       ]
     },
@@ -3003,7 +3022,8 @@ window.CURRICULUM = {
           "id": "d24_01",
           "tag": "trip",
           "ko": "저 다이빙하러 왔어요.",
-          "en": "I'm here to dive."
+          "en": "I'm here to dive.",
+          "eq": "I'm here for diving 이라고도 해요. to dive=동사, for diving=명사. 같은 뜻."
         },
         {
           "id": "d24_02",
@@ -3324,7 +3344,8 @@ window.CURRICULUM = {
           "id": "d26_08",
           "tag": "trip",
           "ko": "저 몸이 안 좋아요.",
-          "en": "I don't feel good."
+          "en": "I don't feel good.",
+          "eq": "I'm not okay 랑 비슷. feel good은 몸, not okay는 더 넓은 상황."
         },
         {
           "id": "d26_09",

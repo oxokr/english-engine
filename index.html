@@ -347,17 +347,18 @@ function renderHome(){
       rb.onclick=()=> resumeLast(pos);
     } else rb.style.display="none";
   }catch(e){}
-  // 복습 버튼 (약한 문장 수)
-  const r=loadRates(); let hard=0, under=0;
-  Object.keys(r).forEach(id=>{ if(r[id]===4) hard++; else if(r[id]===3) under++; });
-  const rb2=$("#reviewBtn");
-  if(hard+under>0){
-    rb2.style.display="flex";
+  // 복습 버튼 — 항상 보임. 평가가 쌓이면 숫자, 없으면 안내.
+  const r=loadRates(); let hard=0, under=0, slow=0;
+  Object.keys(r).forEach(id=>{ if(r[id]===4) hard++; else if(r[id]===3) under++; else if(r[id]===2) slow++; });
+  const rb2=$("#reviewBtn"); rb2.style.display="flex";
+  if(hard+under+slow>0){
     rb2.innerHTML = "🔁 복습하기 <span class='rc'>"+
       (hard?"<span class='x'>🔴 "+hard+"</span>":"")+
       (under?"<span class='o'>🟠 "+under+"</span>":"")+"</span>";
-    rb2.onclick=()=> openReview();
-  } else rb2.style.display="none";
+  } else {
+    rb2.innerHTML = "🔁 복습 <span style='color:var(--dim);font-weight:600;font-size:14px;margin-left:6px'>— '조용한 곳용'에서 난이도를 체크하면 모여요</span>";
+  }
+  rb2.onclick=()=> openReview();
 }
 
 // ===== 개념 =====
@@ -432,7 +433,7 @@ function startCountdown(){
     enEl.classList.add("show"); replayBtn.classList.add("show");
     const it = curItem();
     playSrc(clip(it.id,"en"), ()=>{
-      // 자동 넘김(운전)일 땐 자가평가 생략하고 흐름 유지. 수동일 땐 평가 버튼 노출.
+      // 자동 넘김(운전)이면 흐름 유지(평가 생략). 수동이면 평가 버튼 노출(복습 문장 제외).
       if(autoChk.checked && !paused){ timer=setTimeout(nextItem, 1100); }
       else if(!it._rev){ rateEl.classList.add("show"); }
     });

@@ -86,6 +86,28 @@ EQ = {
   "d12_01": "I get it 은 지금 이해돼. I got it 은 알았어 (과거). 살짝 시제 차이.",
   "d15_04": "Let me help you 랑 비슷. I can help you 는 도와줄 수 있어, Let me help you 는 내가 도와줄게.",
   "d17_03": "I can help you 랑 비슷. Let me help you 는 내가 나서서 도와줄게 느낌.",
+  # --- 동의어 전수 조사 추가분 ---
+  "d3_04": "have time = 시간 여유, have the time = 몇 시야? the 하나로 뜻이 달라요.",
+  "d14_01": "I want some water 라고도 해요. some 붙으면 살짝 부드러워요. 같은 뜻.",
+  "d14_03": "Can I get a coffee? 랑 같은 뜻. want는 직설적, Can I get은 더 공손.",
+  "d14_08": "Can I have this? 랑 같은 뜻. want는 직설적, Can I have는 공손.",
+  "d15_08": "Can I get this? 랑 같은 뜻. 가게·식당에서 바꿔 써도 돼요.",
+  "d8_05": "I'll ~ 랑 비슷. going to는 미리 정한 일, I'll은 방금 정한 일.",
+  "d8_18": "I'll call you 랑 같은 뜻. 거의 같아서 바꿔 써도 돼요.",
+  "d8_04": "We'll be late 랑 같은 뜻. going to be가 더 확실한 예상.",
+  "d5_06": "I don't get it 이라고도 해요. get it이 더 편한 말. 같은 뜻.",
+  "d5_07": "Do you get it? 이라고도 해요. get it이 더 캐주얼.",
+  "d4_05": "Have fun 이랑 같은 뜻. 헤어질 때 바꿔 써도 돼요.",
+  "d11_01": "I'm tired는 지금 피곤해, I got tired는 피곤해졌어(변화).",
+  "d2_03": "It's here는 그게 여기 있어(물건), I'm here는 나 여기 있어(사람).",
+  "d2_12": "We're getting there 는 가는 중(더 멂), almost there는 거의 다 옴.",
+  "d15_05": "Can you give me a hand? 라고도 해요. a hand가 더 가벼운 부탁.",
+  "d22_14": "Please speak slowly 라고도 해요. 같은 뜻, 바꿔 써도 돼요.",
+  "d16_13": "I need to use the bathroom 이라고도 해요. 같은 뜻.",
+  "d26_08": "I'm not okay 랑 비슷. feel good은 몸, not okay는 더 넓은 상황.",
+  "d22_20": "Take care 라고도 해요. See you는 또 봐, Take care는 잘 지내.",
+  "d19_20": "I want this 랑 같은 뜻. take가 더 자연스러운 결정 표현.",
+  "d24_01": "I'm here for diving 이라고도 해요. to dive=동사, for diving=명사. 같은 뜻.",
 }
 
 # 번역체 재점검 — 원어민 감수 에이전트 전수 검수 결과(512개 중 1건만 유효, 나머지는 이미 자연스러움)
