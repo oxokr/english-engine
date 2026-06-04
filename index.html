@@ -195,7 +195,7 @@
 
 <section id="drill" class="screen">
   <div class="dhead">
-    <button class="back" data-home>←</button>
+    <button class="back" id="drillBack">←</button>
     <span class="crumb" id="drillCrumb">DAY 1 · be</span>
     <span class="count"><span id="cur">1</span> / <span id="total">0</span></span>
   </div>
@@ -473,11 +473,25 @@ function checkOrder(){
     slotsEl.className="slots no"; verdictEl.textContent="순서 다시 — 단어를 눌러 빼고 다시 놔봐"; verdictEl.className="verdict no";
   }
 }
-// 자가평가 클릭
+function segLevel(seg){ return seg==="hard"?4 : seg==="under"?3 : 2; }
+// 자가평가 클릭 — 즉시 저장.
+// 복습 드릴: 이 문장이 현재 세그먼트(예: 느림)에서 벗어나면(완벽/이해만 선택 등) 세션에서 바로 빼고,
+//           통계도 즉시 갱신. 남은 게 없으면 복습 화면으로 복귀.
 function rateAndNext(lv){
   const it = curItem();
   if(it){ setRate(it.id, lv); }
   rateEl.classList.remove("show");
+  if(reviewMode){
+    const stayInSeg = (lv === segLevel(reviewSeg));  // 같은 등급이면 세션에 남김(다시 볼 가치)
+    if(!stayInSeg){
+      sess.splice(idx, 1);            // 세그먼트에서 벗어났으니 이번 세션에서 제거
+      if(sess.length === 0){ openReview(); return; }  // 다 끝남 → 복습 화면(통계 갱신)
+      if(idx >= sess.length) idx = 0; // 마지막 거였으면 처음으로
+      totalEl.textContent = sess.length;
+      render();
+      return;
+    }
+  }
   nextItem();
 }
 
@@ -559,6 +573,9 @@ function startReviewDrill(ids){
 
 // ===== 이벤트 =====
 document.querySelectorAll("[data-home]").forEach(b=> b.onclick=()=>{ clearTimeout(timer); audioEl.pause(); paused=false; show("home"); renderHome(); });
+// 드릴 ← : 복습 중이면 복습 화면(갱신)으로, 아니면 홈으로
+$("#drillBack").onclick=()=>{ clearTimeout(timer); audioEl.pause(); paused=false;
+  if(reviewMode){ openReview(); } else { show("home"); renderHome(); } };
 $("#introListen").onclick=()=> playSrc(introSrc(day));
 $("#introStart").onclick=startDrill;
 $("#next").onclick=nextItem;
