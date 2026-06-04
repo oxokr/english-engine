@@ -1,4 +1,0 @@
-# OpenAI 크레딧 충전 후 다시 구울 음성 목록
-# 방법: tts_api.txt에 유효한 키 + 크레딧 → python3 generate_audio.py (없는 것만 자동 생성)
-# d3_10_ko: "우리 문제 생겼어" (현재 옛 음성 "우리 문제 있어"로 임시 유지)
-#   → 다시 구우려면: rm audio/d3_10_ko.mp3 후 generate_audio.py
