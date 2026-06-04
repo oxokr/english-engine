@@ -74,6 +74,25 @@ NOTES = {
 
 TITLES = { 25: "다이빙 브리핑·수신호" }
 
+# 같은 뜻인데 다른 동사 — "어? 같은 건가?" 혼란 방지. 조용한 곳용(정렬 모드)에서만 표시.
+EQ = {
+  "d4_07": "I need to go 랑 같은 뜻. have to = need to, 둘 다 '가야 해'. 바꿔 써도 돼요.",
+  "d4_10": "I need to go now 랑 같은 뜻. have to = need to.",
+  "d4_19": "I need to sleep 랑 같은 뜻. have to = need to.",
+  "d16_06": "I have to go (Day4) 랑 같은 뜻. need to = have to.",
+  "d16_07": "I have to sleep 랑 같은 뜻. need to = have to.",
+  "d16_20": "I have to go now 랑 같은 뜻. need to = have to.",
+  "d10_01": "I got it 은 방금 받았어/알았어 (과거). I get it 은 이해돼 (지금). 비슷하지만 시제가 달라요.",
+  "d12_01": "I get it 은 지금 이해돼. I got it 은 알았어 (과거). 살짝 시제 차이.",
+  "d15_04": "Let me help you 랑 비슷. I can help you 는 도와줄 수 있어, Let me help you 는 내가 도와줄게.",
+  "d17_03": "I can help you 랑 비슷. Let me help you 는 내가 나서서 도와줄게 느낌.",
+}
+
+# 번역체 재점검 — 원어민 감수 에이전트 전수 검수 결과(512개 중 1건만 유효, 나머지는 이미 자연스러움)
+KO_FIX_EXTRA = {
+  "d3_10": "우리 문제 생겼어.",
+}
+
 # 한국어 큐 교정 — 번역체/모호/영어 오인 유발 (영어는 그대로, 한국어 음성만 재생성)
 KO_FIX = {
   "d2_02": "나 회사에 있어.",
@@ -164,7 +183,9 @@ ADD_ITEMS = {
  ],
 }
 
-n_concept = n_note = n_scene = 0
+KO_FIX.update(KO_FIX_EXTRA)
+
+n_concept = n_note = n_scene = n_eq = 0
 for d in C["days"]:
     if d["day"] in TITLES:
         d["title"] = TITLES[d["day"]]
@@ -184,6 +205,8 @@ for d in C["days"]:
             it["ko"] = KO_FIX[it["id"]]
         if it["id"] in SCENES:
             it["scene"] = SCENES[it["id"]]; n_scene += 1
+        if it["id"] in EQ:
+            it["eq"] = EQ[it["id"]]; n_eq += 1
         if it["id"] in NOTES:
             it["note"] = NOTES[it["id"]]; n_note += 1
         elif it["id"] in APPLY_NOTES:
@@ -193,4 +216,4 @@ header = ("// 영어 엔진 커리큘럼 — 단일 소스(자동 생성됨). �
           "// 수정은 enhance.py 또는 직접. items[].id = 음성파일, items[].note = 혼란 포인트 설명.\n")
 out = header + "window.CURRICULUM = " + json.dumps(C, ensure_ascii=False, indent=2) + ";\n"
 open(os.path.join(BASE, "curriculum.js"), "w", encoding="utf-8").write(out)
-print(f"개념 갱신: {n_concept}일 / 노트: {n_note}개 / 장면: {n_scene}개")
+print(f"개념 갱신: {n_concept}일 / 노트: {n_note}개 / 장면: {n_scene}개 / 같은뜻: {n_eq}개")

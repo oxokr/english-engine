@@ -350,7 +350,7 @@ window.CURRICULUM = {
         {
           "id": "d3_10",
           "tag": "have",
-          "ko": "우리 문제 있어.",
+          "ko": "우리 문제 생겼어.",
           "en": "We have a problem."
         },
         {
@@ -469,7 +469,8 @@ window.CURRICULUM = {
           "tag": "have",
           "ko": "나 가야 해.",
           "en": "I have to go.",
-          "note": "have는 가지다, have to는 해야 한다. to가 뜻을 바꿔요."
+          "note": "have는 가지다, have to는 해야 한다. to가 뜻을 바꿔요.",
+          "eq": "I need to go 랑 같은 뜻. have to = need to, 둘 다 '가야 해'. 바꿔 써도 돼요."
         },
         {
           "id": "d4_08",
@@ -487,7 +488,8 @@ window.CURRICULUM = {
           "id": "d4_10",
           "tag": "have",
           "ko": "나 지금 가야 해.",
-          "en": "I have to go now."
+          "en": "I have to go now.",
+          "eq": "I need to go now 랑 같은 뜻. have to = need to."
         },
         {
           "id": "d4_11",
@@ -541,7 +543,8 @@ window.CURRICULUM = {
           "id": "d4_19",
           "tag": "have",
           "ko": "나 자야 해.",
-          "en": "I have to sleep."
+          "en": "I have to sleep.",
+          "eq": "I need to sleep 랑 같은 뜻. have to = need to."
         },
         {
           "id": "d4_20",
@@ -1189,7 +1192,8 @@ window.CURRICULUM = {
           "tag": "get",
           "ko": "알았어.",
           "en": "I got it.",
-          "note": "got은 get의 과거."
+          "note": "got은 get의 과거.",
+          "eq": "I got it 은 방금 받았어/알았어 (과거). I get it 은 이해돼 (지금). 비슷하지만 시제가 달라요."
         },
         {
           "id": "d10_02",
@@ -1456,7 +1460,8 @@ window.CURRICULUM = {
           "id": "d12_01",
           "tag": "get",
           "ko": "이해했어.",
-          "en": "I get it."
+          "en": "I get it.",
+          "eq": "I get it 은 지금 이해돼. I got it 은 알았어 (과거). 살짝 시제 차이."
         },
         {
           "id": "d12_02",
@@ -1836,7 +1841,8 @@ window.CURRICULUM = {
           "id": "d15_04",
           "tag": "can",
           "ko": "나 도와줄 수 있어.",
-          "en": "I can help you."
+          "en": "I can help you.",
+          "eq": "Let me help you 랑 비슷. I can help you 는 도와줄 수 있어, Let me help you 는 내가 도와줄게."
         },
         {
           "id": "d15_05",
@@ -1982,13 +1988,15 @@ window.CURRICULUM = {
           "id": "d16_06",
           "tag": "need",
           "ko": "나 가야 해.",
-          "en": "I need to go."
+          "en": "I need to go.",
+          "eq": "I have to go (Day4) 랑 같은 뜻. need to = have to."
         },
         {
           "id": "d16_07",
           "tag": "need",
           "ko": "나 자야 해.",
-          "en": "I need to sleep."
+          "en": "I need to sleep.",
+          "eq": "I have to sleep 랑 같은 뜻. need to = have to."
         },
         {
           "id": "d16_08",
@@ -2067,7 +2075,8 @@ window.CURRICULUM = {
           "id": "d16_20",
           "tag": "need",
           "ko": "나 지금 가야 해.",
-          "en": "I need to go now."
+          "en": "I need to go now.",
+          "eq": "I have to go now 랑 같은 뜻. need to = have to."
         }
       ]
     },
@@ -2096,7 +2105,8 @@ window.CURRICULUM = {
           "tag": "let",
           "ko": "내가 도와줄게.",
           "en": "Let me help you.",
-          "note": "Let me ~ 는 내가 ~할게. help 자리에 see, check, ask."
+          "note": "Let me ~ 는 내가 ~할게. help 자리에 see, check, ask.",
+          "eq": "I can help you 랑 비슷. Let me help you 는 내가 나서서 도와줄게 느낌."
         },
         {
           "id": "d17_04",
