@@ -95,11 +95,15 @@
     letter-spacing:.04em; text-transform:lowercase; border:1px solid var(--accent);
     border-radius:9px; padding:4px 11px;}
   .tag.rev{color:var(--rev); border-color:var(--rev); text-transform:none;}
+  /* 목적 라벨(색) — 4종. 자가평가 빨강과 충돌 피해 의무는 진홍 대신 톤다운. */
   .tag.tense{text-transform:none;}
-  .tag.t-now{color:#46D39A; border-color:#46D39A;}
-  .tag.t-past{color:#9aa6ff; border-color:#9aa6ff;}
-  .tag.t-fut{color:#F5B14C; border-color:#F5B14C;}
-  .tag.t-usual{color:#C792EA; border-color:#C792EA;}
+  .ptag{align-self:flex-start; display:inline-flex; align-items:center; gap:6px;
+    font-size:14px; font-weight:800; border-radius:9px; padding:5px 12px; text-transform:none;}
+  .ptag.p-need{color:#FF8A8A; background:#2a1416; border:1px solid #5a2a2e;}
+  .ptag.p-ask{color:#5fd0c8; background:#0e2120; border:1px solid #1f4a46;}
+  .ptag.p-want{color:#C792EA; background:#1c1428; border:1px solid #3a2a52;}
+  .ptag.p-tell{color:#cfd2da; background:#1a1c22; border:1px solid #353a45;}
+  .ptag .ten{font-weight:600; opacity:.7; font-size:13px;}
   .scene{align-self:flex-start; color:var(--rev); font-size:16px; font-weight:600;
     background:#11161f; border:1px solid #1f2a3d; border-radius:11px; padding:8px 13px; display:none;}
   .scene.show{display:block;}
@@ -504,18 +508,29 @@ function render(){
   paused = false; setPP();
   const it = curItem();
   curEl.textContent = idx+1;
-  // Day27·28은 tag 자체가 시제. 그 외 날은 tense 필드로 시제 배지 표시.
+  // 시제값: Day27·28은 tag가 곧 시제, 그 외는 tense 필드.
   const tval = it.tag && ["평소","과거","미래","지금"].includes(it.tag) ? it.tag : it.tense;
-  tagEl.textContent = tval ? (it.tag && it.tag===tval ? tval : (it.tag||day.verb)+" · "+tval) : (it.tag || (day?day.verb:""));
-  const tcls = {"평소":" tense t-usual","과거":" tense t-past","미래":" tense t-fut","지금":" tense t-now"}[tval] || "";
-  tagEl.className = "tag" + (it._rev ? " rev" : tcls);
+  if(it._rev){
+    tagEl.className = "tag rev"; tagEl.textContent = "복습";
+  } else if(it.purposeLabel){
+    // 목적 라벨(색). 시제 있으면 안에 흐린 텍스트로 곁들임.
+    const pcls = {"의무":"p-need","요청":"p-ask","욕구":"p-want","명령":"p-tell"}[it.purposeLabel];
+    tagEl.className = "ptag " + pcls;
+    tagEl.innerHTML = it.purposeLabel + (tval ? " <span class='ten'>· "+tval+"</span>" : "");
+  } else if(tval){
+    // 행동(시제만) — 색 없이 텍스트 배지.
+    tagEl.className = "tag tense"; tagEl.textContent = (day && !["평소","과거","미래","지금"].includes(it.tag||"") ? day.verb+" · " : "") + tval;
+  } else {
+    tagEl.className = "tag"; tagEl.textContent = it.tag || (day?day.verb:"");
+  }
   koEl.textContent = it.ko; enEl.textContent = it.en;
   if(it.scene && !it._rev){ sceneEl.textContent = "🎬 " + it.scene; sceneEl.classList.add("show"); }
   else { sceneEl.classList.remove("show"); }
   if(it.note){ noteEl.innerHTML = "💡 " + it.note; noteEl.classList.add("show"); }
   else { noteEl.classList.remove("show"); }
-  // 같은뜻(🔁)은 조용한 곳용에서만
-  if(it.eq && mode==="order"){ eqEl.innerHTML = "🔁 " + it.eq; eqEl.classList.add("show"); }
+  // 같은뜻(🔁)·관계쌍(↔)은 조용한 곳용에서만
+  const extra = it.eq ? ("🔁 " + it.eq) : (it.rel ? it.rel : "");
+  if(extra && mode==="order"){ eqEl.innerHTML = extra; eqEl.classList.add("show"); }
   else { eqEl.classList.remove("show"); }
   rateEl.classList.remove("show");
   clearTimeout(timer);

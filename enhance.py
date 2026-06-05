@@ -242,6 +242,19 @@ ADD_ITEMS = {
 
 KO_FIX.update(KO_FIX_EXTRA)
 
+# ===== 문장 목적 분류 + 관계쌍 (ultracode 워크플로 산출, 적대검증 통과) =====
+import json as _json
+_pd = _json.load(open(os.path.join(BASE, "purpose_data.json"), encoding="utf-8"))
+PURPOSE = _pd["classification"]      # id -> state/action/have/need/ask/want/tell/none
+RELATIONS = _pd["relations"]
+# 목적색을 칠하는 대상: 의무·요청·욕구·명령만(=마음/행위 목적이 분명). 평서(state/have)·행동(action,시제있음)·none은 라벨 없음.
+PURPOSE_TAGGED = {"need", "ask", "want", "tell"}
+PURPOSE_LABEL = {"need":"의무", "ask":"요청", "want":"욕구", "tell":"명령"}
+# 관계쌍 → 노트 한 줄(해당 where 문장에). note가 이미 있으면 덮어쓰지 않고 보존 우선.
+REL_NOTE = {}
+for _p in RELATIONS:
+    REL_NOTE.setdefault(_p["where"], "↔ " + _p["beginner_rule"])
+
 # ===== 시제 미니 단계 (Day 27~28) — "12시제 → 4칸" 생존 시제 =====
 def mk(day, n, tag, ko, en, note=None):
     it = {"id": "d%d_%02d" % (day, n), "tag": tag, "ko": ko, "en": en}
@@ -333,6 +346,18 @@ for d in C["days"]:
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
+        # 문장 목적: 분명한 4종(의무/요청/욕구/명령)에만 라벨. 나머지는 라벨 없음(무채색).
+        pkey = PURPOSE.get(it["id"])
+        if pkey in PURPOSE_TAGGED:
+            it["purpose"] = pkey
+            it["purposeLabel"] = PURPOSE_LABEL[pkey]
+        else:
+            it.pop("purpose", None); it.pop("purposeLabel", None)
+        # 관계쌍 노트(기존 note 없을 때만 — note 우선)
+        if it["id"] in REL_NOTE and not it.get("note"):
+            it["rel"] = REL_NOTE[it["id"]]
+        else:
+            it.pop("rel", None)
         if it["id"] in SCENES:
             it["scene"] = SCENES[it["id"]]; n_scene += 1
         if it["id"] in EQ:
@@ -348,6 +373,14 @@ for td in TENSE_DAYS:
     if td["day"] not in have_days:
         C["days"].append(td)
 C["days"].sort(key=lambda d: d["day"])
+
+# day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
+# 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
+PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
+SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28])
+for d in C["days"]:
+    if d["day"] in SKIP_REORDER: continue
+    d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))
 
 header = ("// 영어 엔진 커리큘럼 — 단일 소스(자동 생성됨). 앱과 generate_audio.py가 함께 읽는다.\n"
           "// 수정은 enhance.py 또는 직접. items[].id = 음성파일, items[].note = 혼란 포인트 설명.\n")
