@@ -143,6 +143,8 @@ EQ = {
   "d22_20": "Take care 라고도 해요. See you는 또 봐, Take care는 잘 지내.",
   "d19_20": "I want this 랑 같은 뜻. take가 더 자연스러운 결정 표현.",
   "d24_01": "I'm here for diving 이라고도 해요. to dive=동사, for diving=명사. 같은 뜻.",
+  "d12_02": "I don't understand 랑 같은 뜻. don't get it이 더 편한 말.",
+  "d12_03": "Do you understand? 랑 같은 뜻. get it이 더 캐주얼해요.",
 }
 
 # 번역체 재점검 — 원어민 감수 에이전트 전수 검수 결과(512개 중 1건만 유효, 나머지는 이미 자연스러움)

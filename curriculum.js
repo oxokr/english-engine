@@ -1669,14 +1669,16 @@ window.CURRICULUM = {
           "tag": "get",
           "ko": "이해 안 돼.",
           "en": "I don't get it.",
-          "tense": "평소"
+          "tense": "평소",
+          "eq": "I don't understand 랑 같은 뜻. don't get it이 더 편한 말."
         },
         {
           "id": "d12_03",
           "tag": "get",
           "ko": "너 이해돼?",
           "en": "Do you get it?",
-          "tense": "평소"
+          "tense": "평소",
+          "eq": "Do you understand? 랑 같은 뜻. get it이 더 캐주얼해요."
         },
         {
           "id": "d12_18",
