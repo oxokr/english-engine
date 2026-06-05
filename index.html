@@ -504,8 +504,10 @@ function render(){
   paused = false; setPP();
   const it = curItem();
   curEl.textContent = idx+1;
-  tagEl.textContent = it.tag || (day?day.verb:"");
-  const tcls = {"평소":" tense t-usual","과거":" tense t-past","미래":" tense t-fut","지금":" tense t-now"}[it.tag] || "";
+  // Day27·28은 tag 자체가 시제. 그 외 날은 tense 필드로 시제 배지 표시.
+  const tval = it.tag && ["평소","과거","미래","지금"].includes(it.tag) ? it.tag : it.tense;
+  tagEl.textContent = tval ? (it.tag && it.tag===tval ? tval : (it.tag||day.verb)+" · "+tval) : (it.tag || (day?day.verb:""));
+  const tcls = {"평소":" tense t-usual","과거":" tense t-past","미래":" tense t-fut","지금":" tense t-now"}[tval] || "";
   tagEl.className = "tag" + (it._rev ? " rev" : tcls);
   koEl.textContent = it.ko; enEl.textContent = it.en;
   if(it.scene && !it._rev){ sceneEl.textContent = "🎬 " + it.scene; sceneEl.classList.add("show"); }

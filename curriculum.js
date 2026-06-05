@@ -441,13 +441,15 @@ window.CURRICULUM = {
           "tag": "have",
           "ko": "나 아침 먹었어.",
           "en": "I had breakfast.",
-          "note": "have의 과거는 had. haved 아니에요."
+          "note": "have의 과거는 had. haved 아니에요.",
+          "tense": "과거"
         },
         {
           "id": "d4_03",
           "tag": "have",
           "ko": "나 매일 커피 마셔.",
-          "en": "I have coffee every day."
+          "en": "I have coffee every day.",
+          "tense": "평소"
         },
         {
           "id": "d4_04",
@@ -517,7 +519,8 @@ window.CURRICULUM = {
           "id": "d4_14",
           "tag": "have",
           "ko": "나 좋은 시간 보냈어.",
-          "en": "I had a good time."
+          "en": "I had a good time.",
+          "tense": "과거"
         },
         {
           "id": "d4_15",
@@ -571,115 +574,133 @@ window.CURRICULUM = {
           "tag": "do",
           "ko": "나 몰라.",
           "en": "I don't know.",
-          "note": "부정은 동사 앞에 don't. 안 ~."
+          "note": "부정은 동사 앞에 don't. 안 ~.",
+          "tense": "평소"
         },
         {
           "id": "d5_02",
           "tag": "do",
           "ko": "너 알아?",
           "en": "Do you know?",
-          "note": "물어볼 땐 맨 앞에 Do."
+          "note": "물어볼 땐 맨 앞에 Do.",
+          "tense": "평소"
         },
         {
           "id": "d5_03",
           "tag": "do",
           "ko": "나 안 좋아해.",
           "en": "I don't like it.",
-          "note": "I don't ~ 는 안 ~해. like 자리만 바꿔봐: I don't know, I don't care."
+          "note": "I don't ~ 는 안 ~해. like 자리만 바꿔봐: I don't know, I don't care.",
+          "tense": "평소"
         },
         {
           "id": "d5_04",
           "tag": "do",
           "ko": "너 이거 좋아해?",
           "en": "Do you like this?",
-          "note": "동작(좋아하다)을 물으면 Do you. 상태(괜찮다)면 Are you."
+          "note": "동작(좋아하다)을 물으면 Do you. 상태(괜찮다)면 Are you.",
+          "tense": "평소"
         },
         {
           "id": "d5_05",
           "tag": "do",
           "ko": "너 영어 할 줄 알아?",
-          "en": "Do you speak English?"
+          "en": "Do you speak English?",
+          "tense": "평소"
         },
         {
           "id": "d5_06",
           "tag": "do",
           "ko": "나 이해 안 돼.",
           "en": "I don't understand.",
-          "eq": "I don't get it 이라고도 해요. get it이 더 편한 말. 같은 뜻."
+          "eq": "I don't get it 이라고도 해요. get it이 더 편한 말. 같은 뜻.",
+          "tense": "평소"
         },
         {
           "id": "d5_07",
           "tag": "do",
           "ko": "너 이해돼?",
           "en": "Do you understand?",
-          "eq": "Do you get it? 이라고도 해요. get it이 더 캐주얼."
+          "eq": "Do you get it? 이라고도 해요. get it이 더 캐주얼.",
+          "tense": "평소"
         },
         {
           "id": "d5_08",
           "tag": "do",
           "ko": "나 신경 안 써.",
-          "en": "I don't care."
+          "en": "I don't care.",
+          "tense": "평소"
         },
         {
           "id": "d5_09",
           "tag": "do",
           "ko": "너 무슨 일 해?",
-          "en": "What do you do?"
+          "en": "What do you do?",
+          "tense": "평소"
         },
         {
           "id": "d5_10",
           "tag": "do",
           "ko": "이거 어떻게 해?",
-          "en": "How do you do it?"
+          "en": "How do you do it?",
+          "tense": "평소"
         },
         {
           "id": "d5_11",
           "tag": "do",
           "ko": "나 커피 안 마셔.",
-          "en": "I don't drink coffee."
+          "en": "I don't drink coffee.",
+          "tense": "평소"
         },
         {
           "id": "d5_12",
           "tag": "do",
           "ko": "너 커피 마셔?",
-          "en": "Do you drink coffee?"
+          "en": "Do you drink coffee?",
+          "tense": "평소"
         },
         {
           "id": "d5_13",
           "tag": "do",
           "ko": "나 담배 안 피워.",
-          "en": "I don't smoke."
+          "en": "I don't smoke.",
+          "tense": "평소"
         },
         {
           "id": "d5_14",
           "tag": "do",
           "ko": "너 운전해?",
-          "en": "Do you drive?"
+          "en": "Do you drive?",
+          "tense": "평소"
         },
         {
           "id": "d5_15",
           "tag": "do",
           "ko": "나 운동 잘 안 해.",
-          "en": "I don't exercise much."
+          "en": "I don't exercise much.",
+          "tense": "평소"
         },
         {
           "id": "d5_16",
           "tag": "do",
           "ko": "너 날 알아?",
-          "en": "Do you know me?"
+          "en": "Do you know me?",
+          "tense": "평소"
         },
         {
           "id": "d5_17",
           "tag": "do",
           "ko": "나 그거 안 했어.",
           "en": "I didn't do it.",
-          "note": "do의 과거는 did. didn't는 안 했어."
+          "note": "do의 과거는 did. didn't는 안 했어.",
+          "tense": "과거"
         },
         {
           "id": "d5_18",
           "tag": "do",
           "ko": "너 그거 했어?",
-          "en": "Did you do it?"
+          "en": "Did you do it?",
+          "tense": "과거"
         },
         {
           "id": "d5_19",
@@ -719,7 +740,8 @@ window.CURRICULUM = {
           "id": "d6_03",
           "tag": "mix",
           "ko": "나 몰라. 너 알아?",
-          "en": "I don't know. Do you know?"
+          "en": "I don't know. Do you know?",
+          "tense": "평소"
         },
         {
           "id": "d6_04",
@@ -762,13 +784,15 @@ window.CURRICULUM = {
           "id": "d6_10",
           "tag": "mix",
           "ko": "너 영어 해? 나 한국어 해.",
-          "en": "Do you speak English? I speak Korean."
+          "en": "Do you speak English? I speak Korean.",
+          "tense": "평소"
         },
         {
           "id": "d6_11",
           "tag": "mix",
           "ko": "나 이해 안 돼. 너 이해돼?",
-          "en": "I don't understand. Do you understand?"
+          "en": "I don't understand. Do you understand?",
+          "tense": "평소"
         },
         {
           "id": "d6_12",
@@ -803,79 +827,92 @@ window.CURRICULUM = {
           "tag": "go",
           "ko": "나 집에 가.",
           "en": "I'm going home.",
-          "note": "지금 하는 중은 be 더하기 동사ing. I am going."
+          "note": "지금 하는 중은 be 더하기 동사ing. I am going.",
+          "tense": "지금"
         },
         {
           "id": "d7_02",
           "tag": "go",
           "ko": "나 일하러 가.",
-          "en": "I'm going to work."
+          "en": "I'm going to work.",
+          "tense": "지금"
         },
         {
           "id": "d7_03",
           "tag": "go",
           "ko": "너 어디 가?",
-          "en": "Where are you going?"
+          "en": "Where are you going?",
+          "tense": "지금"
         },
         {
           "id": "d7_04",
           "tag": "go",
           "ko": "우리 지금 가.",
-          "en": "We're going now."
+          "en": "We're going now.",
+          "tense": "지금"
         },
         {
           "id": "d7_05",
           "tag": "go",
           "ko": "나 안 가.",
-          "en": "I'm not going."
+          "en": "I'm not going.",
+          "tense": "지금"
         },
         {
           "id": "d7_06",
           "tag": "go",
           "ko": "너 가?",
-          "en": "Are you going?"
+          "en": "Are you going?",
+          "tense": "지금"
         },
         {
           "id": "d7_07",
           "tag": "go",
           "ko": "나 학교 가.",
-          "en": "I'm going to school."
+          "en": "I'm going to school.",
+          "tense": "지금"
         },
         {
           "id": "d7_08",
           "tag": "go",
           "ko": "그 사람 집에 가.",
-          "en": "He's going home."
+          "en": "He's going home.",
+          "tense": "지금"
         },
         {
           "id": "d7_09",
           "tag": "go",
           "ko": "우리 같이 가.",
-          "en": "We're going together."
+          "en": "We're going together.",
+          "tense": "지금"
         },
         {
           "id": "d7_10",
           "tag": "go",
           "ko": "나 거기 가.",
-          "en": "I'm going there."
+          "en": "I'm going there.",
+          "tense": "지금"
         },
         {
           "id": "d7_11",
           "tag": "go",
           "ko": "나 이제 가.",
-          "en": "I'm going now."
+          "en": "I'm going now.",
+          "tense": "지금"
         },
         {
           "id": "d7_12",
           "tag": "go",
           "ko": "나 화장실 가.",
-          "en": "I'm going to the bathroom."
+          "en": "I'm going to the bathroom.",
+          "tense": "지금"
         },
         {
           "id": "d7_13",
           "tag": "go",
           "ko": "너 시내 가?",
-          "en": "Are you going downtown?"
+          "en": "Are you going downtown?",
+          "tense": "지금"
         },
         {
           "id": "d7_14",
@@ -887,38 +924,44 @@ window.CURRICULUM = {
           "id": "d7_15",
           "tag": "go",
           "ko": "나 안 가, 피곤해.",
-          "en": "I'm not going. I'm tired."
+          "en": "I'm not going. I'm tired.",
+          "tense": "지금"
         },
         {
           "id": "d7_16",
           "tag": "go",
           "ko": "이 버스 시내 가요?",
           "en": "Does this bus go downtown?",
-          "note": "그 사람·사물 하나엔 Do가 Does. 뒤 동사는 원형 go (goes 아님)."
+          "note": "그 사람·사물 하나엔 Do가 Does. 뒤 동사는 원형 go (goes 아님).",
+          "tense": "평소"
         },
         {
           "id": "d7_17",
           "tag": "go",
           "ko": "이 길 해변으로 가요?",
-          "en": "Does this road go to the beach?"
+          "en": "Does this road go to the beach?",
+          "tense": "평소"
         },
         {
           "id": "d7_18",
           "tag": "go",
           "ko": "너 지금 가?",
-          "en": "Are you going now?"
+          "en": "Are you going now?",
+          "tense": "지금"
         },
         {
           "id": "d7_19",
           "tag": "go",
           "ko": "나 곧 가.",
-          "en": "I'm going soon."
+          "en": "I'm going soon.",
+          "tense": "지금"
         },
         {
           "id": "d7_20",
           "tag": "go",
           "ko": "그 사람들 해변 가.",
-          "en": "They're going to the beach."
+          "en": "They're going to the beach.",
+          "tense": "지금"
         }
       ]
     },
@@ -935,26 +978,30 @@ window.CURRICULUM = {
           "tag": "go",
           "ko": "나 먹을 거야.",
           "en": "I'm going to eat.",
-          "note": "going to는 ~할 거야. 미래는 이걸로 끝."
+          "note": "going to는 ~할 거야. 미래는 이걸로 끝.",
+          "tense": "미래"
         },
         {
           "id": "d8_02",
           "tag": "go",
           "ko": "너 뭐 할 거야?",
-          "en": "What are you going to do?"
+          "en": "What are you going to do?",
+          "tense": "미래"
         },
         {
           "id": "d8_03",
           "tag": "go",
           "ko": "나 잘 거야.",
-          "en": "I'm going to sleep."
+          "en": "I'm going to sleep.",
+          "tense": "미래"
         },
         {
           "id": "d8_04",
           "tag": "go",
           "ko": "우리 늦을 거야.",
           "en": "We're going to be late.",
-          "eq": "We'll be late 랑 같은 뜻. going to be가 더 확실한 예상."
+          "eq": "We'll be late 랑 같은 뜻. going to be가 더 확실한 예상.",
+          "tense": "미래"
         },
         {
           "id": "d8_05",
@@ -962,98 +1009,114 @@ window.CURRICULUM = {
           "ko": "나 그 사람한테 물어볼 거야.",
           "en": "I'm going to ask him.",
           "note": "going to 뒤 동사만 바꾸면 다 미래. ask 자리에 eat, call, try.",
-          "eq": "I'll ~ 랑 비슷. going to는 미리 정한 일, I'll은 방금 정한 일."
+          "eq": "I'll ~ 랑 비슷. going to는 미리 정한 일, I'll은 방금 정한 일.",
+          "tense": "미래"
         },
         {
           "id": "d8_06",
           "tag": "go",
           "ko": "너 그거 살 거야?",
-          "en": "Are you going to buy it?"
+          "en": "Are you going to buy it?",
+          "tense": "미래"
         },
         {
           "id": "d8_07",
           "tag": "go",
           "ko": "나 안 갈 거야.",
-          "en": "I'm not going to go."
+          "en": "I'm not going to go.",
+          "tense": "미래"
         },
         {
           "id": "d8_08",
           "tag": "go",
           "ko": "비 올 거야.",
-          "en": "It's going to rain."
+          "en": "It's going to rain.",
+          "tense": "미래"
         },
         {
           "id": "d8_09",
           "tag": "go",
           "ko": "나 기다릴 거야.",
-          "en": "I'm going to wait."
+          "en": "I'm going to wait.",
+          "tense": "미래"
         },
         {
           "id": "d8_10",
           "tag": "go",
           "ko": "우리 다이빙할 거야.",
-          "en": "We're going to dive."
+          "en": "We're going to dive.",
+          "tense": "미래"
         },
         {
           "id": "d8_11",
           "tag": "go",
           "ko": "너 어디 갈 거야?",
-          "en": "Where are you going to go?"
+          "en": "Where are you going to go?",
+          "tense": "미래"
         },
         {
           "id": "d8_12",
           "tag": "go",
           "ko": "나 그거 해볼 거야.",
-          "en": "I'm going to try it."
+          "en": "I'm going to try it.",
+          "tense": "미래"
         },
         {
           "id": "d8_13",
           "tag": "go",
           "ko": "그 사람 올 거야.",
-          "en": "He's going to come."
+          "en": "He's going to come.",
+          "tense": "미래"
         },
         {
           "id": "d8_14",
           "tag": "go",
           "ko": "나 쉴 거야.",
-          "en": "I'm going to rest."
+          "en": "I'm going to rest.",
+          "tense": "미래"
         },
         {
           "id": "d8_15",
           "tag": "go",
           "ko": "너 도와줄 거야?",
-          "en": "Are you going to help?"
+          "en": "Are you going to help?",
+          "tense": "미래"
         },
         {
           "id": "d8_16",
           "tag": "go",
           "ko": "나 집에 있을 거야.",
-          "en": "I'm going to stay home."
+          "en": "I'm going to stay home.",
+          "tense": "미래"
         },
         {
           "id": "d8_17",
           "tag": "go",
           "ko": "우리 괜찮을 거야.",
-          "en": "We're going to be okay."
+          "en": "We're going to be okay.",
+          "tense": "미래"
         },
         {
           "id": "d8_18",
           "tag": "go",
           "ko": "나 나중에 전화할 거야.",
           "en": "I'm going to call you later.",
-          "eq": "I'll call you 랑 같은 뜻. 거의 같아서 바꿔 써도 돼요."
+          "eq": "I'll call you 랑 같은 뜻. 거의 같아서 바꿔 써도 돼요.",
+          "tense": "미래"
         },
         {
           "id": "d8_19",
           "tag": "go",
           "ko": "너 언제 갈 거야?",
-          "en": "When are you going to go?"
+          "en": "When are you going to go?",
+          "tense": "미래"
         },
         {
           "id": "d8_20",
           "tag": "go",
           "ko": "나 곧 끝낼 거야.",
-          "en": "I'm going to finish soon."
+          "en": "I'm going to finish soon.",
+          "tense": "미래"
         }
       ]
     },
@@ -1129,13 +1192,15 @@ window.CURRICULUM = {
           "id": "d9_11",
           "tag": "go",
           "ko": "우리 올라가.",
-          "en": "We're going up."
+          "en": "We're going up.",
+          "tense": "지금"
         },
         {
           "id": "d9_12",
           "tag": "go",
           "ko": "나 밖에 나가.",
-          "en": "I'm going out."
+          "en": "I'm going out.",
+          "tense": "지금"
         },
         {
           "id": "d9_13",
@@ -1202,13 +1267,15 @@ window.CURRICULUM = {
           "ko": "알았어.",
           "en": "I got it.",
           "note": "got은 get의 과거.",
-          "eq": "I got it 은 방금 받았어/알았어 (과거). I get it 은 이해돼 (지금). 비슷하지만 시제가 달라요."
+          "eq": "I got it 은 방금 받았어/알았어 (과거). I get it 은 이해돼 (지금). 비슷하지만 시제가 달라요.",
+          "tense": "과거"
         },
         {
           "id": "d10_02",
           "tag": "get",
           "ko": "나 커피 사 올 거야.",
-          "en": "I'm going to get a coffee."
+          "en": "I'm going to get a coffee.",
+          "tense": "미래"
         },
         {
           "id": "d10_03",
@@ -1222,19 +1289,22 @@ window.CURRICULUM = {
           "tag": "get",
           "ko": "너 그거 어디서 샀어?",
           "en": "Where did you get it?",
-          "scene": "친구가 가진 걸 보고."
+          "scene": "친구가 가진 걸 보고.",
+          "tense": "과거"
         },
         {
           "id": "d10_05",
           "tag": "get",
           "ko": "나 택시 잡을 거야.",
-          "en": "I'm going to get a taxi."
+          "en": "I'm going to get a taxi.",
+          "tense": "미래"
         },
         {
           "id": "d10_06",
           "tag": "get",
           "ko": "나 표 구했어.",
-          "en": "I got a ticket."
+          "en": "I got a ticket.",
+          "tense": "과거"
         },
         {
           "id": "d10_07",
@@ -1246,19 +1316,22 @@ window.CURRICULUM = {
           "id": "d10_08",
           "tag": "get",
           "ko": "나 새 폰 샀어.",
-          "en": "I got a new phone."
+          "en": "I got a new phone.",
+          "tense": "과거"
         },
         {
           "id": "d10_09",
           "tag": "get",
           "ko": "너 선물 받았어?",
-          "en": "Did you get a gift?"
+          "en": "Did you get a gift?",
+          "tense": "과거"
         },
         {
           "id": "d10_10",
           "tag": "get",
           "ko": "나 네 문자 받았어.",
-          "en": "I got your text."
+          "en": "I got your text.",
+          "tense": "과거"
         },
         {
           "id": "d10_11",
@@ -1270,7 +1343,8 @@ window.CURRICULUM = {
           "id": "d10_12",
           "tag": "get",
           "ko": "나 그거 못 샀어.",
-          "en": "I didn't get it."
+          "en": "I didn't get it.",
+          "tense": "과거"
         },
         {
           "id": "d10_13",
@@ -1283,14 +1357,16 @@ window.CURRICULUM = {
           "id": "d10_14",
           "tag": "get",
           "ko": "나 일자리 구했어.",
-          "en": "I got a job."
+          "en": "I got a job.",
+          "tense": "과거"
         },
         {
           "id": "d10_15",
           "tag": "get",
           "ko": "너 그거 받았어?",
           "en": "Did you get it?",
-          "scene": "문자 보낸 뒤 확인하며."
+          "scene": "문자 보낸 뒤 확인하며.",
+          "tense": "과거"
         },
         {
           "id": "d10_16",
@@ -1302,13 +1378,15 @@ window.CURRICULUM = {
           "id": "d10_17",
           "tag": "get",
           "ko": "나 좋은 자리 잡았어.",
-          "en": "I got a good seat."
+          "en": "I got a good seat.",
+          "tense": "과거"
         },
         {
           "id": "d10_18",
           "tag": "get",
           "ko": "나 차 한 대 빌릴 거야.",
-          "en": "I'm going to get a car."
+          "en": "I'm going to get a car.",
+          "tense": "미래"
         },
         {
           "id": "d10_19",
@@ -1321,7 +1399,8 @@ window.CURRICULUM = {
           "id": "d10_20",
           "tag": "get",
           "ko": "나 방금 알았어.",
-          "en": "I just got it."
+          "en": "I just got it.",
+          "tense": "과거"
         }
       ]
     },
@@ -1338,123 +1417,143 @@ window.CURRICULUM = {
           "tag": "get",
           "ko": "나 피곤해졌어.",
           "en": "I got tired.",
-          "eq": "I'm tired는 지금 피곤해, I got tired는 피곤해졌어(변화)."
+          "eq": "I'm tired는 지금 피곤해, I got tired는 피곤해졌어(변화).",
+          "tense": "과거"
         },
         {
           "id": "d11_02",
           "tag": "get",
           "ko": "나 집에 도착했어.",
-          "en": "I got home."
+          "en": "I got home.",
+          "tense": "과거"
         },
         {
           "id": "d11_03",
           "tag": "get",
           "ko": "너 언제 도착해?",
-          "en": "When do you get there?"
+          "en": "When do you get there?",
+          "tense": "평소"
         },
         {
           "id": "d11_04",
           "tag": "get",
           "ko": "추워지고 있어.",
           "en": "It's getting cold.",
-          "note": "getting은 점점 ~해지다. It's getting cold는 추워지고 있어."
+          "note": "getting은 점점 ~해지다. It's getting cold는 추워지고 있어.",
+          "tense": "지금"
         },
         {
           "id": "d11_05",
           "tag": "get",
           "ko": "나 배고파지고 있어.",
           "en": "I'm getting hungry.",
-          "note": "I'm getting ~ 는 슬슬/점점 ~. hungry 자리에 tired, cold, better."
+          "note": "I'm getting ~ 는 슬슬/점점 ~. hungry 자리에 tired, cold, better.",
+          "tense": "지금"
         },
         {
           "id": "d11_06",
           "tag": "get",
           "ko": "우리 거의 다 왔어.",
-          "en": "We're getting there."
+          "en": "We're getting there.",
+          "tense": "지금"
         },
         {
           "id": "d11_07",
           "tag": "get",
           "ko": "늦어지고 있어.",
-          "en": "It's getting late."
+          "en": "It's getting late.",
+          "tense": "지금"
         },
         {
           "id": "d11_08",
           "tag": "get",
           "ko": "어두워지고 있어.",
-          "en": "It's getting dark."
+          "en": "It's getting dark.",
+          "tense": "지금"
         },
         {
           "id": "d11_09",
           "tag": "get",
           "ko": "나 좋아지고 있어.",
-          "en": "I'm getting better."
+          "en": "I'm getting better.",
+          "tense": "지금"
         },
         {
           "id": "d11_10",
           "tag": "get",
           "ko": "너 거기 어떻게 가?",
-          "en": "How do you get there?"
+          "en": "How do you get there?",
+          "tense": "평소"
         },
         {
           "id": "d11_11",
           "tag": "get",
           "ko": "나 직장에 도착했어.",
-          "en": "I got to work."
+          "en": "I got to work.",
+          "tense": "과거"
         },
         {
           "id": "d11_12",
           "tag": "get",
           "ko": "더워지고 있어.",
-          "en": "It's getting hot."
+          "en": "It's getting hot.",
+          "tense": "지금"
         },
         {
           "id": "d11_13",
           "tag": "get",
           "ko": "나 슬슬 긴장돼.",
-          "en": "I'm getting nervous."
+          "en": "I'm getting nervous.",
+          "tense": "지금"
         },
         {
           "id": "d11_14",
           "tag": "get",
           "ko": "나 익숙해지고 있어.",
-          "en": "I'm getting used to it."
+          "en": "I'm getting used to it.",
+          "tense": "지금"
         },
         {
           "id": "d11_15",
           "tag": "get",
           "ko": "나 거기 못 갔어.",
-          "en": "I didn't get there."
+          "en": "I didn't get there.",
+          "tense": "과거"
         },
         {
           "id": "d11_16",
           "tag": "get",
           "ko": "나 슬슬 졸려.",
-          "en": "I'm getting sleepy."
+          "en": "I'm getting sleepy.",
+          "tense": "지금"
         },
         {
           "id": "d11_17",
           "tag": "get",
           "ko": "너 잘 도착했어?",
-          "en": "Did you get there okay?"
+          "en": "Did you get there okay?",
+          "tense": "과거"
         },
         {
           "id": "d11_18",
           "tag": "get",
           "ko": "점점 쉬워지고 있어.",
-          "en": "It's getting easier."
+          "en": "It's getting easier.",
+          "tense": "지금"
         },
         {
           "id": "d11_19",
           "tag": "get",
           "ko": "나 슬슬 짜증나.",
-          "en": "I'm getting annoyed."
+          "en": "I'm getting annoyed.",
+          "tense": "지금"
         },
         {
           "id": "d11_20",
           "tag": "get",
           "ko": "곧 어두워질 거야.",
-          "en": "It's going to get dark soon."
+          "en": "It's going to get dark soon.",
+          "tense": "미래"
         }
       ]
     },
@@ -1477,13 +1576,15 @@ window.CURRICULUM = {
           "id": "d12_02",
           "tag": "get",
           "ko": "이해 안 돼.",
-          "en": "I don't get it."
+          "en": "I don't get it.",
+          "tense": "평소"
         },
         {
           "id": "d12_03",
           "tag": "get",
           "ko": "너 이해돼?",
-          "en": "Do you get it?"
+          "en": "Do you get it?",
+          "tense": "평소"
         },
         {
           "id": "d12_04",
@@ -1581,7 +1682,8 @@ window.CURRICULUM = {
           "id": "d12_19",
           "tag": "get",
           "ko": "내 말 이해돼?",
-          "en": "Do you get what I mean?"
+          "en": "Do you get what I mean?",
+          "tense": "평소"
         },
         {
           "id": "d12_20",
@@ -1603,13 +1705,15 @@ window.CURRICULUM = {
           "id": "d13_01",
           "tag": "mix",
           "ko": "나 집에 가, 피곤해.",
-          "en": "I'm going home. I'm tired."
+          "en": "I'm going home. I'm tired.",
+          "tense": "지금"
         },
         {
           "id": "d13_02",
           "tag": "mix",
           "ko": "나 커피 사러 가.",
-          "en": "I'm going to get a coffee."
+          "en": "I'm going to get a coffee.",
+          "tense": "미래"
         },
         {
           "id": "d13_03",
@@ -1627,7 +1731,8 @@ window.CURRICULUM = {
           "id": "d13_05",
           "tag": "mix",
           "ko": "너 거기 어떻게 가?",
-          "en": "How do you get there?"
+          "en": "How do you get there?",
+          "tense": "평소"
         },
         {
           "id": "d13_06",
@@ -1645,19 +1750,22 @@ window.CURRICULUM = {
           "id": "d13_08",
           "tag": "mix",
           "ko": "어두워지고 있어, 나가자.",
-          "en": "It's getting dark. Let's go out."
+          "en": "It's getting dark. Let's go out.",
+          "tense": "지금"
         },
         {
           "id": "d13_09",
           "tag": "mix",
           "ko": "너 그거 샀어?",
-          "en": "Did you get it?"
+          "en": "Did you get it?",
+          "tense": "과거"
         },
         {
           "id": "d13_10",
           "tag": "mix",
           "ko": "나 안 가, 피곤해지고 있어.",
-          "en": "I'm not going. I'm getting tired."
+          "en": "I'm not going. I'm getting tired.",
+          "tense": "지금"
         },
         {
           "id": "d13_11",
@@ -1675,13 +1783,15 @@ window.CURRICULUM = {
           "id": "d13_13",
           "tag": "mix",
           "ko": "너 일어났어?",
-          "en": "Did you get up?"
+          "en": "Did you get up?",
+          "tense": "과거"
         },
         {
           "id": "d13_14",
           "tag": "mix",
           "ko": "나 일하러 가는 중이야.",
-          "en": "I'm going to work."
+          "en": "I'm going to work.",
+          "tense": "지금"
         }
       ]
     },
@@ -2361,7 +2471,8 @@ window.CURRICULUM = {
           "id": "d19_05",
           "tag": "take",
           "ko": "나 사진 찍을게.",
-          "en": "I'm going to take a photo."
+          "en": "I'm going to take a photo.",
+          "tense": "미래"
         },
         {
           "id": "d19_06",
@@ -2373,7 +2484,8 @@ window.CURRICULUM = {
           "id": "d19_07",
           "tag": "take",
           "ko": "나 택시 탈 거야.",
-          "en": "I'm going to take a taxi."
+          "en": "I'm going to take a taxi.",
+          "tense": "미래"
         },
         {
           "id": "d19_08",
@@ -2385,7 +2497,8 @@ window.CURRICULUM = {
           "id": "d19_09",
           "tag": "take",
           "ko": "얼마나 걸려요?",
-          "en": "How long does it take?"
+          "en": "How long does it take?",
+          "tense": "평소"
         },
         {
           "id": "d19_10",
@@ -2446,14 +2559,16 @@ window.CURRICULUM = {
           "id": "d19_19",
           "tag": "take",
           "ko": "나 샤워할 거야.",
-          "en": "I'm going to take a shower."
+          "en": "I'm going to take a shower.",
+          "tense": "미래"
         },
         {
           "id": "d19_20",
           "tag": "take",
           "ko": "이걸로 할게요.",
           "en": "I'll take this one.",
-          "eq": "I want this 랑 같은 뜻. take가 더 자연스러운 결정 표현."
+          "eq": "I want this 랑 같은 뜻. take가 더 자연스러운 결정 표현.",
+          "tense": "미래"
         }
       ]
     },
@@ -2470,7 +2585,8 @@ window.CURRICULUM = {
           "tag": "make",
           "ko": "나 해냈어.",
           "en": "I made it.",
-          "note": "made는 make의 과거."
+          "note": "made는 make의 과거.",
+          "tense": "과거"
         },
         {
           "id": "d20_02",
@@ -2501,19 +2617,22 @@ window.CURRICULUM = {
           "id": "d20_06",
           "tag": "make",
           "ko": "나 마음 정했어.",
-          "en": "I made a decision."
+          "en": "I made a decision.",
+          "tense": "과거"
         },
         {
           "id": "d20_07",
           "tag": "make",
           "ko": "나 실수했어.",
-          "en": "I made a mistake."
+          "en": "I made a mistake.",
+          "tense": "과거"
         },
         {
           "id": "d20_08",
           "tag": "make",
           "ko": "나 저녁 만들 거야.",
-          "en": "I'm going to make dinner."
+          "en": "I'm going to make dinner.",
+          "tense": "미래"
         },
         {
           "id": "d20_09",
@@ -2537,7 +2656,8 @@ window.CURRICULUM = {
           "id": "d20_12",
           "tag": "make",
           "ko": "나 친구 사귀었어.",
-          "en": "I made a friend."
+          "en": "I made a friend.",
+          "tense": "과거"
         },
         {
           "id": "d20_13",
@@ -2549,7 +2669,8 @@ window.CURRICULUM = {
           "id": "d20_14",
           "tag": "make",
           "ko": "나 예약했어.",
-          "en": "I made a reservation."
+          "en": "I made a reservation.",
+          "tense": "과거"
         },
         {
           "id": "d20_15",
@@ -2585,7 +2706,8 @@ window.CURRICULUM = {
           "id": "d20_20",
           "tag": "make",
           "ko": "너 해낼 거야.",
-          "en": "You're going to make it."
+          "en": "You're going to make it.",
+          "tense": "미래"
         }
       ]
     },
@@ -2633,13 +2755,15 @@ window.CURRICULUM = {
           "tag": "wh",
           "ko": "이거 어떻게 해요?",
           "en": "How do you do this?",
-          "note": "How do you ~? 는 어떻게 ~해요? do this 자리에 say it, use it."
+          "note": "How do you ~? 는 어떻게 ~해요? do this 자리에 say it, use it.",
+          "tense": "평소"
         },
         {
           "id": "d21_07",
           "tag": "wh",
           "ko": "너 뭐 해?",
-          "en": "What are you doing?"
+          "en": "What are you doing?",
+          "tense": "지금"
         },
         {
           "id": "d21_08",
@@ -2657,7 +2781,8 @@ window.CURRICULUM = {
           "id": "d21_10",
           "tag": "wh",
           "ko": "너 어디 가?",
-          "en": "Where are you going?"
+          "en": "Where are you going?",
+          "tense": "지금"
         },
         {
           "id": "d21_11",
@@ -2699,7 +2824,8 @@ window.CURRICULUM = {
           "id": "d21_17",
           "tag": "wh",
           "ko": "얼마나 걸려요?",
-          "en": "How long does it take?"
+          "en": "How long does it take?",
+          "tense": "평소"
         },
         {
           "id": "d21_18",
@@ -2770,13 +2896,15 @@ window.CURRICULUM = {
           "id": "d22_03",
           "tag": "mix",
           "ko": "어디 가?",
-          "en": "Where are you going?"
+          "en": "Where are you going?",
+          "tense": "지금"
         },
         {
           "id": "d22_04",
           "tag": "mix",
           "ko": "나 일하러 가.",
-          "en": "I'm going to work."
+          "en": "I'm going to work.",
+          "tense": "지금"
         },
         {
           "id": "d22_05",
@@ -2915,7 +3043,8 @@ window.CURRICULUM = {
           "id": "d23_05",
           "tag": "trip",
           "ko": "2주 있을 거예요.",
-          "en": "I'm going to stay for two weeks."
+          "en": "I'm going to stay for two weeks.",
+          "tense": "미래"
         },
         {
           "id": "d23_06",
@@ -2976,7 +3105,8 @@ window.CURRICULUM = {
           "id": "d23_15",
           "tag": "trip",
           "ko": "영어 하세요?",
-          "en": "Do you speak English?"
+          "en": "Do you speak English?",
+          "tense": "평소"
         },
         {
           "id": "d23_16",
@@ -3065,7 +3195,8 @@ window.CURRICULUM = {
           "id": "d24_08",
           "tag": "trip",
           "ko": "이거 어떻게 써요?",
-          "en": "How do you use this?"
+          "en": "How do you use this?",
+          "tense": "평소"
         },
         {
           "id": "d24_09",
@@ -3089,7 +3220,8 @@ window.CURRICULUM = {
           "id": "d24_12",
           "tag": "trip",
           "ko": "저 동굴 다이빙해요.",
-          "en": "I'm doing cave diving."
+          "en": "I'm doing cave diving.",
+          "tense": "지금"
         },
         {
           "id": "d24_13",
@@ -3101,7 +3233,8 @@ window.CURRICULUM = {
           "id": "d24_14",
           "tag": "trip",
           "ko": "얼마나 걸려요?",
-          "en": "How long does it take?"
+          "en": "How long does it take?",
+          "tense": "평소"
         },
         {
           "id": "d24_15",
@@ -3363,7 +3496,8 @@ window.CURRICULUM = {
           "id": "d26_11",
           "tag": "trip",
           "ko": "이거 안 시켰어요.",
-          "en": "I didn't order this."
+          "en": "I didn't order this.",
+          "tense": "과거"
         },
         {
           "id": "d26_12",
@@ -3375,7 +3509,8 @@ window.CURRICULUM = {
           "id": "d26_13",
           "tag": "trip",
           "ko": "정말 맛있었어요.",
-          "en": "It was really good."
+          "en": "It was really good.",
+          "tense": "과거"
         },
         {
           "id": "d26_14",
@@ -3405,13 +3540,15 @@ window.CURRICULUM = {
           "id": "d26_18",
           "tag": "trip",
           "ko": "정말 좋았어요.",
-          "en": "It was great."
+          "en": "It was great.",
+          "tense": "과거"
         },
         {
           "id": "d26_19",
           "tag": "trip",
           "ko": "또 올게요.",
-          "en": "I'll come back."
+          "en": "I'll come back.",
+          "tense": "미래"
         },
         {
           "id": "d26_20",
@@ -3424,7 +3561,8 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "두 개 살게요.",
           "en": "I'll take two.",
-          "note": "개수는 동사 뒤에. take two, take one."
+          "note": "개수는 동사 뒤에. take two, take one.",
+          "tense": "미래"
         },
         {
           "id": "d26_22",

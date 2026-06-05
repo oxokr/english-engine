@@ -1,5 +1,40 @@
 #!/usr/bin/env python3
-# curriculum.js에 (1) 자연스러운 말투의 개념 설명, (2) 왕초보 혼란 포인트 노트를 주입한다.
+# curriculum.js에 (1) 자연스러운 말투의 개념 설명, (2) 왕초보 혼란 포인트 노트,
+# (3) 전 문장 시제 자동분류(평소/과거/미래/지금) 주입.
+import json, os, re
+
+# ===== 시제 자동분류 — 명확한 4시제만. 상태·명령·요청·소유·욕구는 None. =====
+# 원어민 감수 에이전트 전수 검수로 잡은 오분류(명령문·소유질문·욕구/필요·상태) → 강제 None.
+TENSE_NONE = {
+  "d3_03","d3_04","d3_06","d3_07","d3_12","d3_15","d3_16","d3_18","d3_20",
+  "d4_09","d4_12","d5_19","d5_20","d6_02","d6_05","d6_08","d6_13","d6_14",
+  "d9_14","d14_02","d14_06","d14_09","d14_11","d14_15","d14_17","d14_19",
+  "d16_04","d16_09","d16_12","d16_19","d18_05","d20_16","d21_18","d22_05",
+  "d22_07","d22_09","d22_10","d23_03","d23_12","d24_11","d26_08",
+}
+_PLACE = {"home","work","school","downtown","there","bed","the","a","an","to"}
+def classify_tense(en, cid=None):
+    if cid in TENSE_NONE: return None
+    s = en.strip().lower()
+    # 명령문(don't로 시작) → 시제 없음
+    if s.startswith("don't") or s.startswith("do not"): return None
+    # 미래: will / 'll / won't / going to + 동사
+    if re.search(r"\bwon't\b", s): return "미래"
+    if re.search(r"\b\w+'ll\b", s) or re.search(r"\bwill\b", s): return "미래"
+    m = re.search(r"\bgoing to\s+(\w+)", s)
+    if m:
+        return "지금" if m.group(1) in _PLACE else "미래"   # going to 장소=지금(이동), going to 동사=미래
+    # 지금(진행중): be + ~ing
+    if (re.search(r"\b(am|is|are)\b", s) or re.search(r"('m|'re|'s)\b", s)) and re.search(r"\b\w+ing\b", s):
+        return "지금"
+    # 과거: 명확한 과거형만
+    if re.search(r"\b(was|were|had|did|didn't|got|made|ate|went|drank|came|took|worked)\b", s):
+        return "과거"
+    # 평소(단순현재): every day / don't / do you / does
+    if re.search(r"every day", s) or re.search(r"\bdon't\b", s) or re.search(r"\bdo you\b", s) or re.search(r"\bdoes\b", s):
+        return "평소"
+    return None  # 상태(I'm okay)·명령(Go up)·요청(Can you)·욕구(I want) → 시제 태그 없음
+
 import json, os
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -293,6 +328,11 @@ for d in C["days"]:
             it["ko"] = D14_03["ko"]; it["en"] = D14_03["en"]; it["note"] = D14_03["note"]
         if it["id"] in KO_FIX:
             it["ko"] = KO_FIX[it["id"]]
+        # 전 문장 시제 자동분류(Day 27·28 시제전용일 제외 — 거긴 tag가 곧 시제)
+        if d["day"] not in (27, 28):
+            tv = classify_tense(it["en"], it["id"])
+            if tv: it["tense"] = tv
+            elif "tense" in it: del it["tense"]
         if it["id"] in SCENES:
             it["scene"] = SCENES[it["id"]]; n_scene += 1
         if it["id"] in EQ:
@@ -313,4 +353,7 @@ header = ("// 영어 엔진 커리큘럼 — 단일 소스(자동 생성됨). �
           "// 수정은 enhance.py 또는 직접. items[].id = 음성파일, items[].note = 혼란 포인트 설명.\n")
 out = header + "window.CURRICULUM = " + json.dumps(C, ensure_ascii=False, indent=2) + ";\n"
 open(os.path.join(BASE, "curriculum.js"), "w", encoding="utf-8").write(out)
+from collections import Counter
+tc = Counter(it.get("tense") for d in C["days"] if d["day"] not in (27,28) for it in d["items"])
 print(f"개념 갱신: {n_concept}일 / 노트: {n_note}개 / 장면: {n_scene}개 / 같은뜻: {n_eq}개")
+print(f"시제 태그(인라인): 평소{tc.get('평소',0)} 과거{tc.get('과거',0)} 미래{tc.get('미래',0)} 지금{tc.get('지금',0)} / 태그없음{tc.get(None,0)}")
