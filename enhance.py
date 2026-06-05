@@ -207,6 +207,74 @@ ADD_ITEMS = {
 
 KO_FIX.update(KO_FIX_EXTRA)
 
+# ===== 시제 미니 단계 (Day 27~28) — "12시제 → 4칸" 생존 시제 =====
+def mk(day, n, tag, ko, en, note=None):
+    it = {"id": "d%d_%02d" % (day, n), "tag": tag, "ko": ko, "en": en}
+    if note: it["note"] = note
+    return it
+
+D27_CONCEPT = ("영어 시제가 열두 개라고 들었죠? 겁먹지 마세요. 생존 영어는 딱 네 칸이면 돼요. "
+  "평소, 과거, 미래, 지금. 같은 문장을 네 칸에 넣어볼게요. 평소엔 I eat, 어제는 I ate, "
+  "내일은 I'll eat, 지금은 I'm eating. 보세요, 문장은 그대론데 시간만 바뀌죠. "
+  "한국어는 시간을 대충 말하지만 영어는 이 네 칸을 꼭 골라요. 그래서 한국어 힌트에 "
+  "매일, 어제, 내일, 지금을 넣어뒀어요. 그 단어 보고 네 칸 중 하나를 고르면 돼요. "
+  "딱 하나만, 과거는 동사가 변해요. ate, went처럼요. 그건 그냥 외우세요.")
+
+D28_CONCEPT = ("오늘은 아니라고 말하기예요. 여기가 진짜 중요해요. 시간마다 아니라는 말이 달라요. "
+  "평소에 안 해는 don't. 어제 안 했어는 didn't. 내일 안 할 거야는 won't. 지금 안 하고 있어는 not. "
+  "정리할게요. don't, didn't, won't, 이 셋은 뒤에 동사 원형이 와요. I didn't eat, ate 아니고 eat. "
+  "그리고 지금 안 하고 있어만 be 더하기 not 더하기 ing예요. I'm not eating. "
+  "딱 이 네 개만 잡으면 부정은 끝이에요.")
+
+TENSE_DAYS = [
+  {"day":27, "verb":"시제", "phase":"시제 · 4개의 시간", "ready":True,
+   "dlabel":"시제 ①", "title":"시제 · 긍정", "concept":D27_CONCEPT, "items":[
+    mk(27,1,"평소","나 매일 먹어.","I eat every day.","평소·반복은 동사 원형 그대로. I eat."),
+    mk(27,2,"평소","나 매일 거기 가.","I go there every day."),
+    mk(27,3,"평소","나 매일 커피 마셔.","I drink coffee every day."),
+    mk(27,4,"평소","나 매일 일해.","I work every day."),
+    mk(27,5,"평소","나 매일 그거 해.","I do it every day."),
+    mk(27,6,"과거","나 어제 먹었어.","I ate yesterday.","eat의 과거는 ate. ed 아니고 통째로 바뀜. 외우기."),
+    mk(27,7,"과거","나 어제 거기 갔어.","I went there yesterday.","go의 과거는 went."),
+    mk(27,8,"과거","나 어제 커피 마셨어.","I drank coffee yesterday.","drink의 과거는 drank."),
+    mk(27,9,"과거","나 어제 일했어.","I worked yesterday.","work는 규칙. 뒤에 ed 붙여 worked."),
+    mk(27,10,"과거","나 어제 그거 했어.","I did it yesterday.","do의 과거는 did."),
+    mk(27,11,"미래","나 내일 먹을 거야.","I'll eat tomorrow.","미래는 I'll(=I will) + 원형. I'll eat."),
+    mk(27,12,"미래","나 내일 거기 갈 거야.","I'll go there tomorrow."),
+    mk(27,13,"미래","나 내일 커피 마실 거야.","I'll drink coffee tomorrow."),
+    mk(27,14,"미래","나 내일 일할 거야.","I'll work tomorrow."),
+    mk(27,15,"미래","나 내일 그거 할 거야.","I'll do it tomorrow."),
+    mk(27,16,"지금","나 지금 먹고 있어.","I'm eating now.","지금은 be + 동사ing. I'm eating."),
+    mk(27,17,"지금","나 지금 거기 가고 있어.","I'm going there now."),
+    mk(27,18,"지금","나 지금 커피 마시고 있어.","I'm drinking coffee now."),
+    mk(27,19,"지금","나 지금 일하고 있어.","I'm working now."),
+    mk(27,20,"지금","나 지금 그거 하고 있어.","I'm doing it now."),
+   ]},
+  {"day":28, "verb":"시제", "phase":"시제 · 4개의 시간", "ready":True,
+   "dlabel":"시제 ②", "title":"시제 · 부정", "concept":D28_CONCEPT, "items":[
+    mk(28,1,"평소","나 평소엔 안 먹어.","I don't eat.","평소 안 해 = don't + 원형. eat 그대로."),
+    mk(28,2,"평소","나 평소엔 거기 안 가.","I don't go there."),
+    mk(28,3,"평소","나 커피 안 마셔.","I don't drink coffee."),
+    mk(28,4,"평소","나 평소엔 일 안 해.","I don't work."),
+    mk(28,5,"평소","나 평소엔 그거 안 해.","I don't do it."),
+    mk(28,6,"과거","나 어제 안 먹었어.","I didn't eat.","과거 안 했어 = didn't + 원형. ate 아니고 eat!"),
+    mk(28,7,"과거","나 어제 거기 안 갔어.","I didn't go there."),
+    mk(28,8,"과거","나 어제 커피 안 마셨어.","I didn't drink coffee."),
+    mk(28,9,"과거","나 어제 일 안 했어.","I didn't work."),
+    mk(28,10,"과거","나 어제 그거 안 했어.","I didn't do it."),
+    mk(28,11,"미래","나 안 먹을 거야.","I won't eat.","미래 안 할 거야 = won't(=will not) + 원형."),
+    mk(28,12,"미래","나 거기 안 갈 거야.","I won't go there."),
+    mk(28,13,"미래","나 커피 안 마실 거야.","I won't drink coffee."),
+    mk(28,14,"미래","나 일 안 할 거야.","I won't work."),
+    mk(28,15,"미래","나 그거 안 할 거야.","I won't do it."),
+    mk(28,16,"지금","나 지금 안 먹고 있어.","I'm not eating.","지금 안 함 = be + not + ing. 여기만 don't/didn't/won't 안 씀."),
+    mk(28,17,"지금","나 지금 거기 안 가고 있어.","I'm not going there."),
+    mk(28,18,"지금","나 지금 커피 안 마시고 있어.","I'm not drinking coffee."),
+    mk(28,19,"지금","나 지금 일 안 하고 있어.","I'm not working."),
+    mk(28,20,"지금","나 지금 그거 안 하고 있어.","I'm not doing it."),
+   ]},
+]
+
 n_concept = n_note = n_scene = n_eq = 0
 for d in C["days"]:
     if d["day"] in TITLES:
@@ -233,6 +301,13 @@ for d in C["days"]:
             it["note"] = NOTES[it["id"]]; n_note += 1
         elif it["id"] in APPLY_NOTES:
             it["note"] = APPLY_NOTES[it["id"]]; n_note += 1
+
+# 시제 미니 단계(Day 27~28) 멱등 추가
+have_days = {d["day"] for d in C["days"]}
+for td in TENSE_DAYS:
+    if td["day"] not in have_days:
+        C["days"].append(td)
+C["days"].sort(key=lambda d: d["day"])
 
 header = ("// 영어 엔진 커리큘럼 — 단일 소스(자동 생성됨). 앱과 generate_audio.py가 함께 읽는다.\n"
           "// 수정은 enhance.py 또는 직접. items[].id = 음성파일, items[].note = 혼란 포인트 설명.\n")

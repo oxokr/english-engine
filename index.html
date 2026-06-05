@@ -95,6 +95,11 @@
     letter-spacing:.04em; text-transform:lowercase; border:1px solid var(--accent);
     border-radius:9px; padding:4px 11px;}
   .tag.rev{color:var(--rev); border-color:var(--rev); text-transform:none;}
+  .tag.tense{text-transform:none;}
+  .tag.t-now{color:#46D39A; border-color:#46D39A;}
+  .tag.t-past{color:#9aa6ff; border-color:#9aa6ff;}
+  .tag.t-fut{color:#F5B14C; border-color:#F5B14C;}
+  .tag.t-usual{color:#C792EA; border-color:#C792EA;}
   .scene{align-self:flex-start; color:var(--rev); font-size:16px; font-weight:600;
     background:#11161f; border:1px solid #1f2a3d; border-radius:11px; padding:8px 13px; display:none;}
   .scene.show{display:block;}
@@ -500,7 +505,8 @@ function render(){
   const it = curItem();
   curEl.textContent = idx+1;
   tagEl.textContent = it.tag || (day?day.verb:"");
-  tagEl.className = "tag" + (it._rev ? " rev" : "");
+  const tcls = {"평소":" tense t-usual","과거":" tense t-past","미래":" tense t-fut","지금":" tense t-now"}[it.tag] || "";
+  tagEl.className = "tag" + (it._rev ? " rev" : tcls);
   koEl.textContent = it.ko; enEl.textContent = it.en;
   if(it.scene && !it._rev){ sceneEl.textContent = "🎬 " + it.scene; sceneEl.classList.add("show"); }
   else { sceneEl.classList.remove("show"); }

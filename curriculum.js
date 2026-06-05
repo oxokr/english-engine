@@ -3439,6 +3439,280 @@ window.CURRICULUM = {
           "en": "Just one."
         }
       ]
+    },
+    {
+      "day": 27,
+      "verb": "시제",
+      "phase": "시제 · 4개의 시간",
+      "ready": true,
+      "dlabel": "시제 ①",
+      "title": "시제 · 긍정",
+      "concept": "영어 시제가 열두 개라고 들었죠? 겁먹지 마세요. 생존 영어는 딱 네 칸이면 돼요. 평소, 과거, 미래, 지금. 같은 문장을 네 칸에 넣어볼게요. 평소엔 I eat, 어제는 I ate, 내일은 I'll eat, 지금은 I'm eating. 보세요, 문장은 그대론데 시간만 바뀌죠. 한국어는 시간을 대충 말하지만 영어는 이 네 칸을 꼭 골라요. 그래서 한국어 힌트에 매일, 어제, 내일, 지금을 넣어뒀어요. 그 단어 보고 네 칸 중 하나를 고르면 돼요. 딱 하나만, 과거는 동사가 변해요. ate, went처럼요. 그건 그냥 외우세요.",
+      "items": [
+        {
+          "id": "d27_01",
+          "tag": "평소",
+          "ko": "나 매일 먹어.",
+          "en": "I eat every day.",
+          "note": "평소·반복은 동사 원형 그대로. I eat."
+        },
+        {
+          "id": "d27_02",
+          "tag": "평소",
+          "ko": "나 매일 거기 가.",
+          "en": "I go there every day."
+        },
+        {
+          "id": "d27_03",
+          "tag": "평소",
+          "ko": "나 매일 커피 마셔.",
+          "en": "I drink coffee every day."
+        },
+        {
+          "id": "d27_04",
+          "tag": "평소",
+          "ko": "나 매일 일해.",
+          "en": "I work every day."
+        },
+        {
+          "id": "d27_05",
+          "tag": "평소",
+          "ko": "나 매일 그거 해.",
+          "en": "I do it every day."
+        },
+        {
+          "id": "d27_06",
+          "tag": "과거",
+          "ko": "나 어제 먹었어.",
+          "en": "I ate yesterday.",
+          "note": "eat의 과거는 ate. ed 아니고 통째로 바뀜. 외우기."
+        },
+        {
+          "id": "d27_07",
+          "tag": "과거",
+          "ko": "나 어제 거기 갔어.",
+          "en": "I went there yesterday.",
+          "note": "go의 과거는 went."
+        },
+        {
+          "id": "d27_08",
+          "tag": "과거",
+          "ko": "나 어제 커피 마셨어.",
+          "en": "I drank coffee yesterday.",
+          "note": "drink의 과거는 drank."
+        },
+        {
+          "id": "d27_09",
+          "tag": "과거",
+          "ko": "나 어제 일했어.",
+          "en": "I worked yesterday.",
+          "note": "work는 규칙. 뒤에 ed 붙여 worked."
+        },
+        {
+          "id": "d27_10",
+          "tag": "과거",
+          "ko": "나 어제 그거 했어.",
+          "en": "I did it yesterday.",
+          "note": "do의 과거는 did."
+        },
+        {
+          "id": "d27_11",
+          "tag": "미래",
+          "ko": "나 내일 먹을 거야.",
+          "en": "I'll eat tomorrow.",
+          "note": "미래는 I'll(=I will) + 원형. I'll eat."
+        },
+        {
+          "id": "d27_12",
+          "tag": "미래",
+          "ko": "나 내일 거기 갈 거야.",
+          "en": "I'll go there tomorrow."
+        },
+        {
+          "id": "d27_13",
+          "tag": "미래",
+          "ko": "나 내일 커피 마실 거야.",
+          "en": "I'll drink coffee tomorrow."
+        },
+        {
+          "id": "d27_14",
+          "tag": "미래",
+          "ko": "나 내일 일할 거야.",
+          "en": "I'll work tomorrow."
+        },
+        {
+          "id": "d27_15",
+          "tag": "미래",
+          "ko": "나 내일 그거 할 거야.",
+          "en": "I'll do it tomorrow."
+        },
+        {
+          "id": "d27_16",
+          "tag": "지금",
+          "ko": "나 지금 먹고 있어.",
+          "en": "I'm eating now.",
+          "note": "지금은 be + 동사ing. I'm eating."
+        },
+        {
+          "id": "d27_17",
+          "tag": "지금",
+          "ko": "나 지금 거기 가고 있어.",
+          "en": "I'm going there now."
+        },
+        {
+          "id": "d27_18",
+          "tag": "지금",
+          "ko": "나 지금 커피 마시고 있어.",
+          "en": "I'm drinking coffee now."
+        },
+        {
+          "id": "d27_19",
+          "tag": "지금",
+          "ko": "나 지금 일하고 있어.",
+          "en": "I'm working now."
+        },
+        {
+          "id": "d27_20",
+          "tag": "지금",
+          "ko": "나 지금 그거 하고 있어.",
+          "en": "I'm doing it now."
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "verb": "시제",
+      "phase": "시제 · 4개의 시간",
+      "ready": true,
+      "dlabel": "시제 ②",
+      "title": "시제 · 부정",
+      "concept": "오늘은 아니라고 말하기예요. 여기가 진짜 중요해요. 시간마다 아니라는 말이 달라요. 평소에 안 해는 don't. 어제 안 했어는 didn't. 내일 안 할 거야는 won't. 지금 안 하고 있어는 not. 정리할게요. don't, didn't, won't, 이 셋은 뒤에 동사 원형이 와요. I didn't eat, ate 아니고 eat. 그리고 지금 안 하고 있어만 be 더하기 not 더하기 ing예요. I'm not eating. 딱 이 네 개만 잡으면 부정은 끝이에요.",
+      "items": [
+        {
+          "id": "d28_01",
+          "tag": "평소",
+          "ko": "나 평소엔 안 먹어.",
+          "en": "I don't eat.",
+          "note": "평소 안 해 = don't + 원형. eat 그대로."
+        },
+        {
+          "id": "d28_02",
+          "tag": "평소",
+          "ko": "나 평소엔 거기 안 가.",
+          "en": "I don't go there."
+        },
+        {
+          "id": "d28_03",
+          "tag": "평소",
+          "ko": "나 커피 안 마셔.",
+          "en": "I don't drink coffee."
+        },
+        {
+          "id": "d28_04",
+          "tag": "평소",
+          "ko": "나 평소엔 일 안 해.",
+          "en": "I don't work."
+        },
+        {
+          "id": "d28_05",
+          "tag": "평소",
+          "ko": "나 평소엔 그거 안 해.",
+          "en": "I don't do it."
+        },
+        {
+          "id": "d28_06",
+          "tag": "과거",
+          "ko": "나 어제 안 먹었어.",
+          "en": "I didn't eat.",
+          "note": "과거 안 했어 = didn't + 원형. ate 아니고 eat!"
+        },
+        {
+          "id": "d28_07",
+          "tag": "과거",
+          "ko": "나 어제 거기 안 갔어.",
+          "en": "I didn't go there."
+        },
+        {
+          "id": "d28_08",
+          "tag": "과거",
+          "ko": "나 어제 커피 안 마셨어.",
+          "en": "I didn't drink coffee."
+        },
+        {
+          "id": "d28_09",
+          "tag": "과거",
+          "ko": "나 어제 일 안 했어.",
+          "en": "I didn't work."
+        },
+        {
+          "id": "d28_10",
+          "tag": "과거",
+          "ko": "나 어제 그거 안 했어.",
+          "en": "I didn't do it."
+        },
+        {
+          "id": "d28_11",
+          "tag": "미래",
+          "ko": "나 안 먹을 거야.",
+          "en": "I won't eat.",
+          "note": "미래 안 할 거야 = won't(=will not) + 원형."
+        },
+        {
+          "id": "d28_12",
+          "tag": "미래",
+          "ko": "나 거기 안 갈 거야.",
+          "en": "I won't go there."
+        },
+        {
+          "id": "d28_13",
+          "tag": "미래",
+          "ko": "나 커피 안 마실 거야.",
+          "en": "I won't drink coffee."
+        },
+        {
+          "id": "d28_14",
+          "tag": "미래",
+          "ko": "나 일 안 할 거야.",
+          "en": "I won't work."
+        },
+        {
+          "id": "d28_15",
+          "tag": "미래",
+          "ko": "나 그거 안 할 거야.",
+          "en": "I won't do it."
+        },
+        {
+          "id": "d28_16",
+          "tag": "지금",
+          "ko": "나 지금 안 먹고 있어.",
+          "en": "I'm not eating.",
+          "note": "지금 안 함 = be + not + ing. 여기만 don't/didn't/won't 안 씀."
+        },
+        {
+          "id": "d28_17",
+          "tag": "지금",
+          "ko": "나 지금 거기 안 가고 있어.",
+          "en": "I'm not going there."
+        },
+        {
+          "id": "d28_18",
+          "tag": "지금",
+          "ko": "나 지금 커피 안 마시고 있어.",
+          "en": "I'm not drinking coffee."
+        },
+        {
+          "id": "d28_19",
+          "tag": "지금",
+          "ko": "나 지금 일 안 하고 있어.",
+          "en": "I'm not working."
+        },
+        {
+          "id": "d28_20",
+          "tag": "지금",
+          "ko": "나 지금 그거 안 하고 있어.",
+          "en": "I'm not doing it."
+        }
+      ]
     }
   ]
 };
