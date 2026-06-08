@@ -1,6 +1,6 @@
 // 영어 엔진 서비스워커 — 첫 방문 때 앱 + 모든 음성을 캐시해서 오프라인(터널/비행기)에서도 작동.
 // 커리큘럼이 바뀌면 CACHE 버전을 올려서 새로 캐시한다.
-const CACHE = "eng-engine-v27";
+const CACHE = "eng-engine-v28";
 const CORE = ["./", "index.html", "curriculum.js", "manifest.json", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", (e) => {
@@ -37,18 +37,38 @@ self.addEventListener("activate", (e) => {
 });
 
 // 캐시 우선(오프라인), 없으면 네트워크 → 받아오면 캐시에 저장
+// 음성(mp3)은 캐시 우선(오프라인·안 바뀜). 코드(html/js/json)는 네트워크 우선(업데이트 즉시 반영).
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
-  e.respondWith((async () => {
-    const cached = await caches.match(e.request);
-    if (cached) return cached;
-    try {
-      const res = await fetch(e.request);
-      const cache = await caches.open(CACHE);
-      cache.put(e.request, res.clone()).catch(() => {});
-      return res;
-    } catch (err) {
-      return cached || new Response("", { status: 504 });
-    }
-  })());
+  const url = e.request.url;
+  const isAudio = /\.mp3($|\?)/.test(url);
+
+  if (isAudio) {
+    // 캐시 우선
+    e.respondWith((async () => {
+      const cached = await caches.match(e.request);
+      if (cached) return cached;
+      try {
+        const res = await fetch(e.request);
+        const cache = await caches.open(CACHE);
+        cache.put(e.request, res.clone()).catch(() => {});
+        return res;
+      } catch (err) {
+        return new Response("", { status: 504 });
+      }
+    })());
+  } else {
+    // 네트워크 우선(코드·데이터) — 받아오면 캐시 갱신, 오프라인이면 캐시로 폴백
+    e.respondWith((async () => {
+      try {
+        const res = await fetch(e.request, { cache: "no-cache" });
+        const cache = await caches.open(CACHE);
+        cache.put(e.request, res.clone()).catch(() => {});
+        return res;
+      } catch (err) {
+        const cached = await caches.match(e.request);
+        return cached || new Response("", { status: 504 });
+      }
+    })());
+  }
 });
