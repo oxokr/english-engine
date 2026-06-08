@@ -1,6 +1,6 @@
 // 영어 엔진 서비스워커 — 첫 방문 때 앱 + 모든 음성을 캐시해서 오프라인(터널/비행기)에서도 작동.
 // 커리큘럼이 바뀌면 CACHE 버전을 올려서 새로 캐시한다.
-const CACHE = "eng-engine-v19";
+const CACHE = "eng-engine-v20";
 const CORE = ["./", "index.html", "curriculum.js", "manifest.json", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", (e) => {

@@ -249,9 +249,17 @@ import json as _json
 _pd = _json.load(open(os.path.join(BASE, "purpose_data.json"), encoding="utf-8"))
 PURPOSE = _pd["classification"]      # id -> state/action/have/need/ask/want/tell/none
 RELATIONS = _pd["relations"]
-# 목적색을 칠하는 대상: 의무·요청·욕구·명령만(=마음/행위 목적이 분명). 평서(state/have)·행동(action,시제있음)·none은 라벨 없음.
-PURPOSE_TAGGED = {"need", "ask", "want", "tell"}
-PURPOSE_LABEL = {"need":"의무", "ask":"요청", "want":"욕구", "tell":"명령"}
+# 모든 문장에 종류 라벨. "종류 · 의미 한 줄"로 직관적이게.
+PURPOSE_TAGGED = {"need", "ask", "want", "tell", "state", "action", "have"}
+PURPOSE_LABEL = {"need":"의무", "ask":"요청", "want":"욕구", "tell":"명령",
+                 "state":"상태", "action":"행동", "have":"소유"}
+# 종류별 의미 한 줄(라벨에 곁들임). 부탁/허락/질문은 refine_ask에서 따로.
+PURPOSE_MEAN = {
+  "의무":"어쩔 수 없이 해야 함", "필요":"꼭 있어야 함", "욕구":"하고 싶음·원함",
+  "명령":"상대에게 시킴·하자", "상태":"그냥 그러함·~이다", "행동":"무언가를 함",
+  "소유":"가지고 있다·없다", "요청":"부탁·할 수 있다",
+  "부탁":"네가 해줘", "허락":"내가 해도 돼?", "질문":"평소 그래?(사실)",
+}
 
 # 'ask'(요청)를 문장 모양으로 더 잘게: Can you=부탁(상대가), Can I=허락(내가). Day29 색과 동일 체계로 통일.
 def refine_ask(en):
@@ -403,16 +411,18 @@ for d in C["days"]:
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
-        # 문장 목적: 분명한 종류에만 라벨. 나머지는 라벨 없음(무채색).
-        pkey = PURPOSE.get(it["id"])
-        if pkey in PURPOSE_TAGGED:
-            it["purpose"] = pkey
-            if pkey == "ask":
-                it["purposeLabel"] = refine_ask(it["en"])   # 부탁/허락/요청
-            else:
-                it["purposeLabel"] = PURPOSE_LABEL[pkey]
+        # 모든 문장에 종류 라벨 + 의미 한 줄. (Day27~29 전용일은 자기 tag가 라벨이라 제외)
+        if d["day"] in (27, 28, 29):
+            it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None)
         else:
-            it.pop("purpose", None); it.pop("purposeLabel", None)
+            pkey = PURPOSE.get(it["id"])
+            if pkey in PURPOSE_TAGGED:
+                it["purpose"] = pkey
+                lab = refine_ask(it["en"]) if pkey == "ask" else PURPOSE_LABEL[pkey]
+                it["purposeLabel"] = lab
+                it["purposeMean"] = PURPOSE_MEAN.get(lab, "")
+            else:
+                it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None)
         # 보조 안내(↔, 별도 줄이라 note와 공존 가능). 종류혼동(kind)은 핵심이라 note 있어도 표시.
         if it["id"] in KIND_NOTE:
             it["rel"] = KIND_NOTE[it["id"]]

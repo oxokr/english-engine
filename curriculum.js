@@ -19,128 +19,188 @@ window.CURRICULUM = {
           "tag": "be",
           "ko": "나 괜찮아.",
           "en": "I'm okay.",
-          "note": "I'm은 I am의 줄임. 우리말 나 ~야의 ~야가 영어선 꼭 들어가요."
+          "note": "I'm은 I am의 줄임. 우리말 나 ~야의 ~야가 영어선 꼭 들어가요.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_02",
           "tag": "be",
           "ko": "너 괜찮아?",
           "en": "Are you okay?",
-          "note": "물어볼 땐 You are를 Are you로 뒤집어요."
+          "note": "물어볼 땐 You are를 Are you로 뒤집어요.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_03",
           "tag": "be",
           "ko": "나 준비됐어.",
-          "en": "I'm ready."
+          "en": "I'm ready.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_04",
           "tag": "be",
           "ko": "너 준비됐어?",
-          "en": "Are you ready?"
+          "en": "Are you ready?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_05",
           "tag": "be",
           "ko": "나 배고파.",
-          "en": "I'm hungry."
+          "en": "I'm hungry.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_06",
           "tag": "be",
           "ko": "나 피곤해.",
-          "en": "I'm tired."
+          "en": "I'm tired.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_07",
           "tag": "be",
           "ko": "나 여기 있어.",
-          "en": "I'm here."
+          "en": "I'm here.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_08",
           "tag": "be",
           "ko": "너 어디야?",
-          "en": "Where are you?"
+          "en": "Where are you?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_09",
           "tag": "be",
           "ko": "이거 좋다.",
           "en": "This is good.",
-          "scene": "음식을 한 입 먹어보고."
+          "scene": "음식을 한 입 먹어보고.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_10",
           "tag": "be",
           "ko": "그거 괜찮아.",
           "en": "It's okay.",
-          "scene": "걱정하는 사람을 안심시키며."
+          "scene": "걱정하는 사람을 안심시키며.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_11",
           "tag": "be",
           "ko": "너무 추워.",
-          "en": "It's too cold."
+          "en": "It's too cold.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_12",
           "tag": "be",
           "ko": "나 안 괜찮아.",
-          "en": "I'm not okay."
+          "en": "I'm not okay.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_13",
           "tag": "be",
           "ko": "나 행복해.",
-          "en": "I'm happy."
+          "en": "I'm happy.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_14",
           "tag": "be",
           "ko": "그거 쉬워.",
           "en": "It's easy.",
-          "scene": "해보고 나서."
+          "scene": "해보고 나서.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_15",
           "tag": "be",
           "ko": "이거 어려워.",
           "en": "This is hard.",
-          "scene": "하다가 막혀서."
+          "scene": "하다가 막혀서.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_16",
           "tag": "be",
           "ko": "너 늦었어.",
-          "en": "You're late."
+          "en": "You're late.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_17",
           "tag": "be",
           "ko": "나 안 바빠.",
-          "en": "I'm not busy."
+          "en": "I'm not busy.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_18",
           "tag": "be",
           "ko": "그 사람 친절해.",
           "en": "He's nice.",
-          "note": "He's는 He is. 그 사람은 ~야."
+          "note": "He's는 He is. 그 사람은 ~야.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_19",
           "tag": "be",
           "ko": "우리 친구야.",
-          "en": "We're friends."
+          "en": "We're friends.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d1_20",
           "tag": "be",
           "ko": "맞아.",
           "en": "That's right.",
-          "scene": "상대 말에 맞장구치며."
+          "scene": "상대 말에 맞장구치며.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         }
       ]
     },
@@ -156,13 +216,19 @@ window.CURRICULUM = {
           "id": "d2_01",
           "tag": "be",
           "ko": "나 집에 있어.",
-          "en": "I'm at home."
+          "en": "I'm at home.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_02",
           "tag": "be",
           "ko": "나 회사에 있어.",
-          "en": "I'm at work."
+          "en": "I'm at work.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_03",
@@ -170,119 +236,173 @@ window.CURRICULUM = {
           "ko": "그거 여기 있어.",
           "en": "It's here.",
           "scene": "찾던 걸 발견하고.",
-          "eq": "It's here는 그게 여기 있어(물건), I'm here는 나 여기 있어(사람)."
+          "eq": "It's here는 그게 여기 있어(물건), I'm here는 나 여기 있어(사람).",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_04",
           "tag": "be",
           "ko": "그거 저기 있어.",
           "en": "It's there.",
-          "scene": "멀리 가리키며."
+          "scene": "멀리 가리키며.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_05",
           "tag": "be",
           "ko": "나 안에 있어.",
-          "en": "I'm inside."
+          "en": "I'm inside.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_06",
           "tag": "be",
           "ko": "나 밖에 있어.",
-          "en": "I'm outside."
+          "en": "I'm outside.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_07",
           "tag": "be",
           "ko": "이건 내 거야.",
           "en": "This is mine.",
-          "scene": "내 물건이라고 짚으며."
+          "scene": "내 물건이라고 짚으며.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_08",
           "tag": "be",
           "ko": "그건 네 거야.",
           "en": "That's yours.",
-          "scene": "물건을 건네주며."
+          "scene": "물건을 건네주며.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_09",
           "tag": "be",
           "ko": "이게 뭐야?",
-          "en": "What is this?"
+          "en": "What is this?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_10",
           "tag": "be",
           "ko": "그건 안 좋아.",
           "en": "That's not good.",
-          "scene": "결과를 보고 실망해서."
+          "scene": "결과를 보고 실망해서.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_11",
           "tag": "be",
           "ko": "나 늦지 않았어.",
           "en": "I'm not late.",
-          "note": "아니라고 할 땐 be 뒤에 not. I'm not."
+          "note": "아니라고 할 땐 be 뒤에 not. I'm not.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_12",
           "tag": "be",
           "ko": "우리 거의 다 왔어.",
           "en": "We're almost there.",
-          "eq": "We're getting there 는 가는 중(더 멂), almost there는 거의 다 옴."
+          "eq": "We're getting there 는 가는 중(더 멂), almost there는 거의 다 옴.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_13",
           "tag": "be",
           "ko": "그 사람 여기 없어.",
-          "en": "He's not here."
+          "en": "He's not here.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_14",
           "tag": "be",
           "ko": "화장실 어디예요?",
           "en": "Where is the bathroom?",
-          "note": "the bathroom — 거기 하나뿐인 곳이라 a 아니고 the."
+          "note": "the bathroom — 거기 하나뿐인 곳이라 a 아니고 the.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_15",
           "tag": "be",
           "ko": "내 가방 어디 있어?",
-          "en": "Where is my bag?"
+          "en": "Where is my bag?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_16",
           "tag": "be",
           "ko": "거기 멀어?",
           "en": "Is it far?",
-          "scene": "택시 타기 전에 기사에게."
+          "scene": "택시 타기 전에 기사에게.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_17",
           "tag": "be",
           "ko": "거기 가까워.",
           "en": "It's close.",
-          "scene": "길 물어본 사람에게."
+          "scene": "길 물어본 사람에게.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_18",
           "tag": "be",
           "ko": "우리 준비됐어.",
-          "en": "We're ready."
+          "en": "We're ready.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_19",
           "tag": "be",
           "ko": "너 거기 있어?",
           "en": "Are you there?",
-          "scene": "전화로 상대를 확인하며."
+          "scene": "전화로 상대를 확인하며.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d2_20",
           "tag": "be",
           "ko": "그 사람 누구야?",
-          "en": "Who is he?"
+          "en": "Who is he?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         }
       ]
     },
@@ -299,125 +419,185 @@ window.CURRICULUM = {
           "tag": "have",
           "ko": "나 차 있어.",
           "en": "I have a car.",
-          "note": "셀 수 있는 하나엔 앞에 a. 우리말엔 없는 거예요."
+          "note": "셀 수 있는 하나엔 앞에 a. 우리말엔 없는 거예요.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_02",
           "tag": "have",
           "ko": "나 시간 있어.",
-          "en": "I have time."
+          "en": "I have time.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_03",
           "tag": "have",
           "ko": "나 시간 없어.",
-          "en": "I don't have time."
+          "en": "I don't have time.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_04",
           "tag": "have",
           "ko": "너 시간 있어?",
           "en": "Do you have time?",
-          "eq": "have time = 시간 여유, have the time = 몇 시야? the 하나로 뜻이 달라요."
+          "eq": "have time = 시간 여유, have the time = 몇 시야? the 하나로 뜻이 달라요.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_05",
           "tag": "have",
           "ko": "나 질문 있어.",
-          "en": "I have a question."
+          "en": "I have a question.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_06",
           "tag": "have",
           "ko": "나 돈 없어.",
-          "en": "I don't have money."
+          "en": "I don't have money.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_07",
           "tag": "have",
           "ko": "너 펜 있어?",
-          "en": "Do you have a pen?"
+          "en": "Do you have a pen?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_08",
           "tag": "have",
           "ko": "나 형제 있어.",
-          "en": "I have a brother."
+          "en": "I have a brother.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_09",
           "tag": "have",
           "ko": "나 강아지 있어.",
-          "en": "I have a dog."
+          "en": "I have a dog.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_10",
           "tag": "have",
           "ko": "우리 문제 생겼어.",
-          "en": "We have a problem."
+          "en": "We have a problem.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_11",
           "tag": "have",
           "ko": "나 좋은 생각 있어.",
           "en": "I have an idea.",
-          "note": "idea처럼 모음 소리로 시작하면 a 대신 an."
+          "note": "idea처럼 모음 소리로 시작하면 a 대신 an.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_12",
           "tag": "have",
           "ko": "너 여권 있어?",
-          "en": "Do you have your passport?"
+          "en": "Do you have your passport?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_13",
           "tag": "have",
           "ko": "나 예약 있어.",
-          "en": "I have a reservation."
+          "en": "I have a reservation.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_14",
           "tag": "have",
           "ko": "나 표 있어.",
-          "en": "I have a ticket."
+          "en": "I have a ticket.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_15",
           "tag": "have",
           "ko": "너 현금 있어?",
-          "en": "Do you have cash?"
+          "en": "Do you have cash?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_16",
           "tag": "have",
           "ko": "나 아무것도 없어.",
-          "en": "I don't have anything."
+          "en": "I don't have anything.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_17",
           "tag": "have",
           "ko": "그 사람 차 있어.",
           "en": "He has a car.",
-          "note": "I have지만 3인칭(그 사람)은 has로 바뀌어요."
+          "note": "I have지만 3인칭(그 사람)은 has로 바뀌어요.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_18",
           "tag": "have",
           "ko": "와이파이 돼요?",
-          "en": "Do you have wifi?"
+          "en": "Do you have wifi?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_19",
           "tag": "have",
           "ko": "나 5분 있어.",
           "en": "I have five minutes.",
-          "note": "둘 이상이면 끝에 s. minute에서 minutes."
+          "note": "둘 이상이면 끝에 s. minute에서 minutes.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d3_20",
           "tag": "have",
           "ko": "방 있어요?",
-          "en": "Do you have a room?"
+          "en": "Do you have a room?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         }
       ]
     },
@@ -433,26 +613,38 @@ window.CURRICULUM = {
           "id": "d4_13",
           "tag": "have",
           "ko": "나 회의 있어.",
-          "en": "I have a meeting."
+          "en": "I have a meeting.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d4_16",
           "tag": "have",
           "ko": "나 감기 걸렸어.",
-          "en": "I have a cold."
+          "en": "I have a cold.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d4_17",
           "tag": "have",
           "ko": "나 두통 있어.",
-          "en": "I have a headache."
+          "en": "I have a headache.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d4_01",
           "tag": "have",
           "ko": "나 점심 먹어.",
           "en": "I have lunch.",
-          "note": "여기서 have는 먹다. I have lunch는 점심 먹어."
+          "note": "여기서 have는 먹다. I have lunch는 점심 먹어.",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d4_02",
@@ -460,27 +652,39 @@ window.CURRICULUM = {
           "ko": "나 아침 먹었어.",
           "en": "I had breakfast.",
           "note": "have의 과거는 had. haved 아니에요.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d4_03",
           "tag": "have",
           "ko": "나 매일 커피 마셔.",
           "en": "I have coffee every day.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d4_04",
           "tag": "have",
           "ko": "우리 7시에 저녁 먹어.",
-          "en": "We have dinner at seven."
+          "en": "We have dinner at seven.",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d4_14",
           "tag": "have",
           "ko": "나 좋은 시간 보냈어.",
           "en": "I had a good time.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d4_07",
@@ -491,7 +695,8 @@ window.CURRICULUM = {
           "eq": "I need to go 랑 같은 뜻. have to = need to, 둘 다 '가야 해'. 바꿔 써도 돼요.",
           "purpose": "need",
           "purposeLabel": "의무",
-          "rel": "↔ '가야 해'(의무)는 have to, '가고 싶어'(욕구)는 want to. 끝소리로 갈려요."
+          "rel": "↔ '가야 해'(의무)는 have to, '가고 싶어'(욕구)는 want to. 끝소리로 갈려요.",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_08",
@@ -499,7 +704,8 @@ window.CURRICULUM = {
           "ko": "나 일해야 해.",
           "en": "I have to work.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_09",
@@ -507,7 +713,8 @@ window.CURRICULUM = {
           "ko": "너 가야 해?",
           "en": "Do you have to go?",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_10",
@@ -516,7 +723,8 @@ window.CURRICULUM = {
           "en": "I have to go now.",
           "eq": "I need to go now 랑 같은 뜻. have to = need to.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_11",
@@ -524,7 +732,8 @@ window.CURRICULUM = {
           "ko": "우리 기다려야 해.",
           "en": "We have to wait.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_12",
@@ -532,7 +741,8 @@ window.CURRICULUM = {
           "ko": "나 안 가도 돼.",
           "en": "I don't have to go.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_18",
@@ -540,7 +750,8 @@ window.CURRICULUM = {
           "ko": "너 이거 봐야 해.",
           "en": "You have to see this.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_19",
@@ -550,7 +761,8 @@ window.CURRICULUM = {
           "eq": "I need to sleep 랑 같은 뜻. have to = need to.",
           "purpose": "need",
           "purposeLabel": "의무",
-          "rel": "↔ '자야 해'(의무) have to ↔ '자고 싶어'(욕구) want to."
+          "rel": "↔ '자야 해'(의무) have to ↔ '자고 싶어'(욕구) want to.",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_20",
@@ -558,7 +770,8 @@ window.CURRICULUM = {
           "ko": "우리 서둘러야 해.",
           "en": "We have to hurry.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d4_05",
@@ -567,7 +780,8 @@ window.CURRICULUM = {
           "en": "Have a good time.",
           "eq": "Have fun 이랑 같은 뜻. 헤어질 때 바꿔 써도 돼요.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d4_06",
@@ -575,7 +789,8 @@ window.CURRICULUM = {
           "ko": "좋은 하루 보내.",
           "en": "Have a good day.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d4_15",
@@ -583,7 +798,8 @@ window.CURRICULUM = {
           "ko": "재밌게 놀아.",
           "en": "Have fun.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -601,7 +817,10 @@ window.CURRICULUM = {
           "ko": "나 몰라.",
           "en": "I don't know.",
           "note": "부정은 동사 앞에 don't. 안 ~.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_02",
@@ -609,7 +828,10 @@ window.CURRICULUM = {
           "ko": "너 알아?",
           "en": "Do you know?",
           "note": "물어볼 땐 맨 앞에 Do.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_03",
@@ -617,7 +839,10 @@ window.CURRICULUM = {
           "ko": "나 안 좋아해.",
           "en": "I don't like it.",
           "note": "I don't ~ 는 안 ~해. like 자리만 바꿔봐: I don't know, I don't care.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_04",
@@ -625,14 +850,20 @@ window.CURRICULUM = {
           "ko": "너 이거 좋아해?",
           "en": "Do you like this?",
           "note": "동작(좋아하다)을 물으면 Do you. 상태(괜찮다)면 Are you.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_05",
           "tag": "do",
           "ko": "너 영어 할 줄 알아?",
           "en": "Do you speak English?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_06",
@@ -640,7 +871,10 @@ window.CURRICULUM = {
           "ko": "나 이해 안 돼.",
           "en": "I don't understand.",
           "eq": "I don't get it 이라고도 해요. get it이 더 편한 말. 같은 뜻.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_07",
@@ -648,70 +882,100 @@ window.CURRICULUM = {
           "ko": "너 이해돼?",
           "en": "Do you understand?",
           "eq": "Do you get it? 이라고도 해요. get it이 더 캐주얼.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_08",
           "tag": "do",
           "ko": "나 신경 안 써.",
           "en": "I don't care.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_09",
           "tag": "do",
           "ko": "너 무슨 일 해?",
           "en": "What do you do?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_10",
           "tag": "do",
           "ko": "이거 어떻게 해?",
           "en": "How do you do it?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_11",
           "tag": "do",
           "ko": "나 커피 안 마셔.",
           "en": "I don't drink coffee.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_12",
           "tag": "do",
           "ko": "너 커피 마셔?",
           "en": "Do you drink coffee?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_13",
           "tag": "do",
           "ko": "나 담배 안 피워.",
           "en": "I don't smoke.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_14",
           "tag": "do",
           "ko": "너 운전해?",
           "en": "Do you drive?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_15",
           "tag": "do",
           "ko": "나 운동 잘 안 해.",
           "en": "I don't exercise much.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_16",
           "tag": "do",
           "ko": "너 날 알아?",
           "en": "Do you know me?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_17",
@@ -719,14 +983,20 @@ window.CURRICULUM = {
           "ko": "나 그거 안 했어.",
           "en": "I didn't do it.",
           "note": "do의 과거는 did. didn't는 안 했어.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_18",
           "tag": "do",
           "ko": "너 그거 했어?",
           "en": "Did you do it?",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d5_19",
@@ -734,7 +1004,8 @@ window.CURRICULUM = {
           "ko": "걱정 마.",
           "en": "Don't worry.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d5_20",
@@ -742,7 +1013,8 @@ window.CURRICULUM = {
           "ko": "서두르지 마.",
           "en": "Don't rush.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -760,7 +1032,8 @@ window.CURRICULUM = {
           "ko": "나 배고파, 뭐 좀 먹어야 해.",
           "en": "I'm hungry, so I have to eat.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d6_02",
@@ -768,14 +1041,18 @@ window.CURRICULUM = {
           "ko": "시간 없어, 가야 해.",
           "en": "I don't have time, so I have to go.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d6_03",
           "tag": "mix",
           "ko": "나 몰라. 너 알아?",
           "en": "I don't know. Do you know?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d6_04",
@@ -783,13 +1060,17 @@ window.CURRICULUM = {
           "ko": "나 피곤해, 자야 해.",
           "en": "I'm tired, so I have to sleep.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d6_05",
           "tag": "mix",
           "ko": "나 차 있는데 시간이 없어.",
-          "en": "I have a car, but I don't have time."
+          "en": "I have a car, but I don't have time.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d6_06",
@@ -797,40 +1078,56 @@ window.CURRICULUM = {
           "ko": "너 준비됐어? 가야 해.",
           "en": "Are you ready? We have to go.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d6_07",
           "tag": "mix",
           "ko": "나 질문 있어.",
-          "en": "I have a question."
+          "en": "I have a question.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d6_08",
           "tag": "mix",
           "ko": "별로야. 다른 거 있어?",
           "en": "It's not good. Do you have another one?",
-          "scene": "물건이 마음에 안 들 때."
+          "scene": "물건이 마음에 안 들 때.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d6_09",
           "tag": "mix",
           "ko": "나 안 바빠, 시간 있어.",
-          "en": "I'm not busy. I have time."
+          "en": "I'm not busy. I have time.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d6_10",
           "tag": "mix",
           "ko": "너 영어 해? 나 한국어 해.",
           "en": "Do you speak English? I speak Korean.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d6_11",
           "tag": "mix",
           "ko": "나 이해 안 돼. 너 이해돼?",
           "en": "I don't understand. Do you understand?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d6_12",
@@ -838,7 +1135,8 @@ window.CURRICULUM = {
           "ko": "우리 늦었어, 서둘러야 해.",
           "en": "We're late, so we have to hurry.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d6_13",
@@ -846,13 +1144,17 @@ window.CURRICULUM = {
           "ko": "나 괜찮아, 걱정 마.",
           "en": "I'm okay. Don't worry.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d6_14",
           "tag": "mix",
           "ko": "너 시간 있어? 나 질문 있어.",
-          "en": "Do you have time? I have a question."
+          "en": "Do you have time? I have a question.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         }
       ]
     },
@@ -870,98 +1172,140 @@ window.CURRICULUM = {
           "ko": "나 집에 가.",
           "en": "I'm going home.",
           "note": "지금 하는 중은 be 더하기 동사ing. I am going.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_02",
           "tag": "go",
           "ko": "나 일하러 가.",
           "en": "I'm going to work.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_03",
           "tag": "go",
           "ko": "너 어디 가?",
           "en": "Where are you going?",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_04",
           "tag": "go",
           "ko": "우리 지금 가.",
           "en": "We're going now.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_05",
           "tag": "go",
           "ko": "나 안 가.",
           "en": "I'm not going.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_06",
           "tag": "go",
           "ko": "너 가?",
           "en": "Are you going?",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_07",
           "tag": "go",
           "ko": "나 학교 가.",
           "en": "I'm going to school.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_08",
           "tag": "go",
           "ko": "그 사람 집에 가.",
           "en": "He's going home.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_09",
           "tag": "go",
           "ko": "우리 같이 가.",
           "en": "We're going together.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_10",
           "tag": "go",
           "ko": "나 거기 가.",
           "en": "I'm going there.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_11",
           "tag": "go",
           "ko": "나 이제 가.",
           "en": "I'm going now.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_12",
           "tag": "go",
           "ko": "나 화장실 가.",
           "en": "I'm going to the bathroom.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_13",
           "tag": "go",
           "ko": "너 시내 가?",
           "en": "Are you going downtown?",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_15",
           "tag": "go",
           "ko": "나 안 가, 피곤해.",
           "en": "I'm not going. I'm tired.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_16",
@@ -969,35 +1313,50 @@ window.CURRICULUM = {
           "ko": "이 버스 시내 가요?",
           "en": "Does this bus go downtown?",
           "note": "그 사람·사물 하나엔 Do가 Does. 뒤 동사는 원형 go (goes 아님).",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_17",
           "tag": "go",
           "ko": "이 길 해변으로 가요?",
           "en": "Does this road go to the beach?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_18",
           "tag": "go",
           "ko": "너 지금 가?",
           "en": "Are you going now?",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_19",
           "tag": "go",
           "ko": "나 곧 가.",
           "en": "I'm going soon.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_20",
           "tag": "go",
           "ko": "그 사람들 해변 가.",
           "en": "They're going to the beach.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d7_14",
@@ -1005,7 +1364,8 @@ window.CURRICULUM = {
           "ko": "우리 늦었어, 가야 해.",
           "en": "We're late. We have to go.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         }
       ]
     },
@@ -1022,7 +1382,10 @@ window.CURRICULUM = {
           "tag": "go",
           "ko": "우리 괜찮을 거야.",
           "en": "We're going to be okay.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d8_01",
@@ -1030,21 +1393,30 @@ window.CURRICULUM = {
           "ko": "나 먹을 거야.",
           "en": "I'm going to eat.",
           "note": "going to는 ~할 거야. 미래는 이걸로 끝.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_02",
           "tag": "go",
           "ko": "너 뭐 할 거야?",
           "en": "What are you going to do?",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_03",
           "tag": "go",
           "ko": "나 잘 거야.",
           "en": "I'm going to sleep.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_04",
@@ -1052,7 +1424,10 @@ window.CURRICULUM = {
           "ko": "우리 늦을 거야.",
           "en": "We're going to be late.",
           "eq": "We'll be late 랑 같은 뜻. going to be가 더 확실한 예상.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_05",
@@ -1061,84 +1436,120 @@ window.CURRICULUM = {
           "en": "I'm going to ask him.",
           "note": "going to 뒤 동사만 바꾸면 다 미래. ask 자리에 eat, call, try.",
           "eq": "I'll ~ 랑 비슷. going to는 미리 정한 일, I'll은 방금 정한 일.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_06",
           "tag": "go",
           "ko": "너 그거 살 거야?",
           "en": "Are you going to buy it?",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_07",
           "tag": "go",
           "ko": "나 안 갈 거야.",
           "en": "I'm not going to go.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_08",
           "tag": "go",
           "ko": "비 올 거야.",
           "en": "It's going to rain.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_09",
           "tag": "go",
           "ko": "나 기다릴 거야.",
           "en": "I'm going to wait.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_10",
           "tag": "go",
           "ko": "우리 다이빙할 거야.",
           "en": "We're going to dive.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_11",
           "tag": "go",
           "ko": "너 어디 갈 거야?",
           "en": "Where are you going to go?",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_12",
           "tag": "go",
           "ko": "나 그거 해볼 거야.",
           "en": "I'm going to try it.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_13",
           "tag": "go",
           "ko": "그 사람 올 거야.",
           "en": "He's going to come.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_14",
           "tag": "go",
           "ko": "나 쉴 거야.",
           "en": "I'm going to rest.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_15",
           "tag": "go",
           "ko": "너 도와줄 거야?",
           "en": "Are you going to help?",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_16",
           "tag": "go",
           "ko": "나 집에 있을 거야.",
           "en": "I'm going to stay home.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_18",
@@ -1147,21 +1558,30 @@ window.CURRICULUM = {
           "en": "I'm going to call you later.",
           "eq": "I'll call you 랑 같은 뜻. 거의 같아서 바꿔 써도 돼요.",
           "tense": "미래",
-          "rel": "↔ 둘 다 '~할 거야'. 거의 바꿔 써도 됨. 굳이 나누면 going to=이미 마음먹은 일(나 커피 사 올 거야), will=방금 그 자리에서 정한 일/약속(또 올게요). 왕초보는 going to 하나로 통일해도 100% 통함."
+          "rel": "↔ 둘 다 '~할 거야'. 거의 바꿔 써도 됨. 굳이 나누면 going to=이미 마음먹은 일(나 커피 사 올 거야), will=방금 그 자리에서 정한 일/약속(또 올게요). 왕초보는 going to 하나로 통일해도 100% 통함.",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_19",
           "tag": "go",
           "ko": "너 언제 갈 거야?",
           "en": "When are you going to go?",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d8_20",
           "tag": "go",
           "ko": "나 곧 끝낼 거야.",
           "en": "I'm going to finish soon.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         }
       ]
     },
@@ -1178,14 +1598,20 @@ window.CURRICULUM = {
           "tag": "go",
           "ko": "우리 올라가.",
           "en": "We're going up.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d9_12",
           "tag": "go",
           "ko": "나 밖에 나가.",
           "en": "I'm going out.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d9_01",
@@ -1193,7 +1619,8 @@ window.CURRICULUM = {
           "ko": "올라가.",
           "en": "Go up.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_02",
@@ -1201,7 +1628,8 @@ window.CURRICULUM = {
           "ko": "내려가.",
           "en": "Go down.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_03",
@@ -1209,7 +1637,8 @@ window.CURRICULUM = {
           "ko": "나가.",
           "en": "Go out.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_04",
@@ -1217,7 +1646,8 @@ window.CURRICULUM = {
           "ko": "들어가.",
           "en": "Go in.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_05",
@@ -1225,7 +1655,8 @@ window.CURRICULUM = {
           "ko": "돌아가.",
           "en": "Go back.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_06",
@@ -1233,7 +1664,8 @@ window.CURRICULUM = {
           "ko": "계속 가.",
           "en": "Keep going.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_07",
@@ -1241,7 +1673,8 @@ window.CURRICULUM = {
           "ko": "저리 가.",
           "en": "Go away.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_08",
@@ -1249,7 +1682,8 @@ window.CURRICULUM = {
           "ko": "천천히 가.",
           "en": "Go slow.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_09",
@@ -1257,7 +1691,8 @@ window.CURRICULUM = {
           "ko": "먼저 가.",
           "en": "Go ahead.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_10",
@@ -1265,7 +1700,8 @@ window.CURRICULUM = {
           "ko": "직진해.",
           "en": "Go straight.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_13",
@@ -1273,7 +1709,8 @@ window.CURRICULUM = {
           "ko": "다시 들어가.",
           "en": "Go back in.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_14",
@@ -1281,7 +1718,8 @@ window.CURRICULUM = {
           "ko": "더 깊이 가지 마.",
           "en": "Don't go deeper.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_15",
@@ -1289,7 +1727,8 @@ window.CURRICULUM = {
           "ko": "가자.",
           "en": "Let's go.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_16",
@@ -1297,7 +1736,8 @@ window.CURRICULUM = {
           "ko": "너 먼저 가.",
           "en": "You go first.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_17",
@@ -1305,7 +1745,8 @@ window.CURRICULUM = {
           "ko": "위로 천천히 올라가.",
           "en": "Go up slowly.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_18",
@@ -1313,7 +1754,8 @@ window.CURRICULUM = {
           "ko": "왼쪽으로 가.",
           "en": "Go left.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_19",
@@ -1321,7 +1763,8 @@ window.CURRICULUM = {
           "ko": "오른쪽으로 가.",
           "en": "Go right.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d9_20",
@@ -1330,7 +1773,8 @@ window.CURRICULUM = {
           "en": "Go all the way.",
           "note": "go all the way는 중간에 멈추지 말고 끝까지. 일·거리 둘 다 써요.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -1349,14 +1793,20 @@ window.CURRICULUM = {
           "en": "I got it.",
           "note": "got은 get의 과거.",
           "eq": "I got it 은 방금 받았어/알았어 (과거). I get it 은 이해돼 (지금). 비슷하지만 시제가 달라요.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_02",
           "tag": "get",
           "ko": "나 커피 사 올 거야.",
           "en": "I'm going to get a coffee.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_04",
@@ -1364,56 +1814,80 @@ window.CURRICULUM = {
           "ko": "너 그거 어디서 샀어?",
           "en": "Where did you get it?",
           "scene": "친구가 가진 걸 보고.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_05",
           "tag": "get",
           "ko": "나 택시 잡을 거야.",
           "en": "I'm going to get a taxi.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_06",
           "tag": "get",
           "ko": "나 표 구했어.",
           "en": "I got a ticket.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_08",
           "tag": "get",
           "ko": "나 새 폰 샀어.",
           "en": "I got a new phone.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_09",
           "tag": "get",
           "ko": "너 선물 받았어?",
           "en": "Did you get a gift?",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_10",
           "tag": "get",
           "ko": "나 네 문자 받았어.",
           "en": "I got your text.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_12",
           "tag": "get",
           "ko": "나 그거 못 샀어.",
           "en": "I didn't get it.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_14",
           "tag": "get",
           "ko": "나 일자리 구했어.",
           "en": "I got a job.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_15",
@@ -1421,28 +1895,40 @@ window.CURRICULUM = {
           "ko": "너 그거 받았어?",
           "en": "Did you get it?",
           "scene": "문자 보낸 뒤 확인하며.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_17",
           "tag": "get",
           "ko": "나 좋은 자리 잡았어.",
           "en": "I got a good seat.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_18",
           "tag": "get",
           "ko": "나 차 한 대 빌릴 거야.",
           "en": "I'm going to get a car.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_20",
           "tag": "get",
           "ko": "나 방금 알았어.",
           "en": "I just got it.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d10_03",
@@ -1451,7 +1937,8 @@ window.CURRICULUM = {
           "en": "Can I get a coffee?",
           "note": "Can I get...?은 ~ 주세요. 가게에서 쓰는 말.",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d10_07",
@@ -1459,7 +1946,8 @@ window.CURRICULUM = {
           "ko": "물 좀 주세요.",
           "en": "Can I get some water?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d10_13",
@@ -1468,7 +1956,8 @@ window.CURRICULUM = {
           "en": "Can I get the receipt?",
           "note": "the receipt — 방금 그 영수증이라 the. 처음이면 a.",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d10_16",
@@ -1476,7 +1965,8 @@ window.CURRICULUM = {
           "ko": "메뉴판 좀 주세요.",
           "en": "Can I get a menu?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d10_19",
@@ -1485,7 +1975,8 @@ window.CURRICULUM = {
           "en": "What can I get you?",
           "scene": "식당 직원이 손님에게.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d10_11",
@@ -1493,7 +1984,8 @@ window.CURRICULUM = {
           "ko": "도움 좀 받아.",
           "en": "Get some help.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -1510,35 +2002,50 @@ window.CURRICULUM = {
           "tag": "get",
           "ko": "나 익숙해지고 있어.",
           "en": "I'm getting used to it.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d11_16",
           "tag": "get",
           "ko": "나 슬슬 졸려.",
           "en": "I'm getting sleepy.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d11_18",
           "tag": "get",
           "ko": "점점 쉬워지고 있어.",
           "en": "It's getting easier.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d11_19",
           "tag": "get",
           "ko": "나 슬슬 짜증나.",
           "en": "I'm getting annoyed.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d11_20",
           "tag": "get",
           "ko": "곧 어두워질 거야.",
           "en": "It's going to get dark soon.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d11_01",
@@ -1546,21 +2053,30 @@ window.CURRICULUM = {
           "ko": "나 피곤해졌어.",
           "en": "I got tired.",
           "eq": "I'm tired는 지금 피곤해, I got tired는 피곤해졌어(변화).",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_02",
           "tag": "get",
           "ko": "나 집에 도착했어.",
           "en": "I got home.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_03",
           "tag": "get",
           "ko": "너 언제 도착해?",
           "en": "When do you get there?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_04",
@@ -1568,7 +2084,10 @@ window.CURRICULUM = {
           "ko": "추워지고 있어.",
           "en": "It's getting cold.",
           "note": "getting은 점점 ~해지다. It's getting cold는 추워지고 있어.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_05",
@@ -1577,77 +2096,110 @@ window.CURRICULUM = {
           "en": "I'm getting hungry.",
           "note": "I'm getting ~ 는 슬슬/점점 ~. hungry 자리에 tired, cold, better.",
           "tense": "지금",
-          "rel": "↔ '배고파'(상태) I'm hungry ↔ '슬슬 배고파져'(변화중) I'm getting hungry."
+          "rel": "↔ '배고파'(상태) I'm hungry ↔ '슬슬 배고파져'(변화중) I'm getting hungry.",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_06",
           "tag": "get",
           "ko": "우리 거의 다 왔어.",
           "en": "We're getting there.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_07",
           "tag": "get",
           "ko": "늦어지고 있어.",
           "en": "It's getting late.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_08",
           "tag": "get",
           "ko": "어두워지고 있어.",
           "en": "It's getting dark.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_09",
           "tag": "get",
           "ko": "나 좋아지고 있어.",
           "en": "I'm getting better.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_10",
           "tag": "get",
           "ko": "너 거기 어떻게 가?",
           "en": "How do you get there?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_11",
           "tag": "get",
           "ko": "나 직장에 도착했어.",
           "en": "I got to work.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_12",
           "tag": "get",
           "ko": "더워지고 있어.",
           "en": "It's getting hot.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_13",
           "tag": "get",
           "ko": "나 슬슬 긴장돼.",
           "en": "I'm getting nervous.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_15",
           "tag": "get",
           "ko": "나 거기 못 갔어.",
           "en": "I didn't get there.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d11_17",
           "tag": "get",
           "ko": "너 잘 도착했어?",
           "en": "Did you get there okay?",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         }
       ]
     },
@@ -1665,7 +2217,10 @@ window.CURRICULUM = {
           "ko": "이해했어.",
           "en": "I get it.",
           "eq": "I get it 은 지금 이해돼. I got it 은 알았어 (과거). 살짝 시제 차이.",
-          "rel": "↔ 거의 같은데 시제만 다름. I get it=지금 이해가 돼(상태). I got it=방금 알아들었어/받았어(과거 동작). '알았어!'라고 반응할 땐 보통 I got it. 둘 다 자주 쓰니 시제 감만 잡아."
+          "rel": "↔ 거의 같은데 시제만 다름. I get it=지금 이해가 돼(상태). I got it=방금 알아들었어/받았어(과거 동작). '알았어!'라고 반응할 땐 보통 I got it. 둘 다 자주 쓰니 시제 감만 잡아.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d12_02",
@@ -1673,7 +2228,10 @@ window.CURRICULUM = {
           "ko": "이해 안 돼.",
           "en": "I don't get it.",
           "tense": "평소",
-          "eq": "I don't understand 랑 같은 뜻. don't get it이 더 편한 말."
+          "eq": "I don't understand 랑 같은 뜻. don't get it이 더 편한 말.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d12_03",
@@ -1681,27 +2239,39 @@ window.CURRICULUM = {
           "ko": "너 이해돼?",
           "en": "Do you get it?",
           "tense": "평소",
-          "eq": "Do you understand? 랑 같은 뜻. get it이 더 캐주얼해요."
+          "eq": "Do you understand? 랑 같은 뜻. get it이 더 캐주얼해요.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d12_18",
           "tag": "get",
           "ko": "나 이제 이해돼.",
           "en": "Now I get it.",
-          "scene": "설명을 다 듣고 나서."
+          "scene": "설명을 다 듣고 나서.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d12_19",
           "tag": "get",
           "ko": "내 말 이해돼?",
           "en": "Do you get what I mean?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d12_05",
           "tag": "get",
           "ko": "나 일찍 일어나.",
-          "en": "I get up early."
+          "en": "I get up early.",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d12_04",
@@ -1709,7 +2279,8 @@ window.CURRICULUM = {
           "ko": "일어나.",
           "en": "Get up.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_06",
@@ -1717,7 +2288,8 @@ window.CURRICULUM = {
           "ko": "타.",
           "en": "Get in.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_07",
@@ -1725,7 +2297,8 @@ window.CURRICULUM = {
           "ko": "나와.",
           "en": "Get out.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_08",
@@ -1734,7 +2307,8 @@ window.CURRICULUM = {
           "en": "Get in the car.",
           "note": "get + 방향. in 자리에 out(내려), on/off(타다/내리다).",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_09",
@@ -1742,7 +2316,8 @@ window.CURRICULUM = {
           "ko": "차에서 내려.",
           "en": "Get out of the car.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_10",
@@ -1750,7 +2325,8 @@ window.CURRICULUM = {
           "ko": "버스에 타.",
           "en": "Get on the bus.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_11",
@@ -1758,7 +2334,8 @@ window.CURRICULUM = {
           "ko": "버스에서 내려.",
           "en": "Get off the bus.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_12",
@@ -1766,7 +2343,8 @@ window.CURRICULUM = {
           "ko": "물에서 나와.",
           "en": "Get out of the water.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_13",
@@ -1774,7 +2352,8 @@ window.CURRICULUM = {
           "ko": "비켜.",
           "en": "Get out of the way.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_14",
@@ -1782,7 +2361,8 @@ window.CURRICULUM = {
           "ko": "좀 쉬어.",
           "en": "Get some rest.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_15",
@@ -1790,7 +2370,8 @@ window.CURRICULUM = {
           "ko": "빨리 나아.",
           "en": "Get well soon.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_16",
@@ -1798,7 +2379,8 @@ window.CURRICULUM = {
           "ko": "준비해.",
           "en": "Get ready.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_17",
@@ -1806,7 +2388,8 @@ window.CURRICULUM = {
           "ko": "가까이 붙어.",
           "en": "Get close.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d12_20",
@@ -1814,7 +2397,8 @@ window.CURRICULUM = {
           "ko": "어서 타.",
           "en": "Get in, quick.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -1831,14 +2415,20 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "나 집에 가, 피곤해.",
           "en": "I'm going home. I'm tired.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d13_02",
           "tag": "mix",
           "ko": "나 커피 사러 가.",
           "en": "I'm going to get a coffee.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d13_03",
@@ -1846,7 +2436,8 @@ window.CURRICULUM = {
           "ko": "우리 늦었어, 택시 잡자.",
           "en": "We're late. Let's get a taxi.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d13_04",
@@ -1854,14 +2445,18 @@ window.CURRICULUM = {
           "ko": "내려가, 천천히.",
           "en": "Go down, slowly.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d13_05",
           "tag": "mix",
           "ko": "너 거기 어떻게 가?",
           "en": "How do you get there?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d13_06",
@@ -1869,13 +2464,17 @@ window.CURRICULUM = {
           "ko": "차에 타, 가자.",
           "en": "Get in. Let's go.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d13_07",
           "tag": "mix",
           "ko": "나 거의 다 왔어.",
-          "en": "I'm almost there."
+          "en": "I'm almost there.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d13_08",
@@ -1884,21 +2483,28 @@ window.CURRICULUM = {
           "en": "It's getting dark. Let's go out.",
           "tense": "지금",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d13_09",
           "tag": "mix",
           "ko": "너 그거 샀어?",
           "en": "Did you get it?",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d13_10",
           "tag": "mix",
           "ko": "나 안 가, 피곤해지고 있어.",
           "en": "I'm not going. I'm getting tired.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d13_11",
@@ -1906,7 +2512,8 @@ window.CURRICULUM = {
           "ko": "위로 천천히 올라가.",
           "en": "Go up slowly.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d13_12",
@@ -1914,21 +2521,28 @@ window.CURRICULUM = {
           "ko": "물에서 나와, 추워.",
           "en": "Get out of the water. It's cold.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d13_13",
           "tag": "mix",
           "ko": "너 일어났어?",
           "en": "Did you get up?",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d13_14",
           "tag": "mix",
           "ko": "나 일하러 가는 중이야.",
           "en": "I'm going to work.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         }
       ]
     },
@@ -1948,7 +2562,8 @@ window.CURRICULUM = {
           "eq": "I want some water 라고도 해요. some 붙으면 살짝 부드러워요. 같은 뜻.",
           "purpose": "want",
           "purposeLabel": "욕구",
-          "rel": "↔ 둘 다 '물 줘'. some 붙이면 살짝 부드럽고 양이 '좀'인 느낌일 뿐 뜻 같음. 바꿔 써도 됨. 물·돈·시간처럼 못 세는 건 a 안 붙이고 그냥 쓰거나 some을 붙여."
+          "rel": "↔ 둘 다 '물 줘'. some 붙이면 살짝 부드럽고 양이 '좀'인 느낌일 뿐 뜻 같음. 바꿔 써도 됨. 물·돈·시간처럼 못 세는 건 a 안 붙이고 그냥 쓰거나 some을 붙여.",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_02",
@@ -1956,7 +2571,8 @@ window.CURRICULUM = {
           "ko": "너 뭐 원해?",
           "en": "What do you want?",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_03",
@@ -1966,7 +2582,8 @@ window.CURRICULUM = {
           "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to.",
           "eq": "Can I get a coffee? 랑 같은 뜻. want는 직설적, Can I get은 더 공손.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_04",
@@ -1976,7 +2593,8 @@ window.CURRICULUM = {
           "note": "하고 싶다는 want 더하기 to 더하기 동사. to 빼먹지 마요.",
           "purpose": "want",
           "purposeLabel": "욕구",
-          "rel": "↔ '가고 싶어'(욕구)는 want to, '가야 해'(의무)는 have to."
+          "rel": "↔ '가고 싶어'(욕구)는 want to, '가야 해'(의무)는 have to.",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_05",
@@ -1984,7 +2602,8 @@ window.CURRICULUM = {
           "ko": "나 집에 가고 싶어.",
           "en": "I want to go home.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_06",
@@ -1993,7 +2612,8 @@ window.CURRICULUM = {
           "en": "Do you want to go?",
           "purpose": "want",
           "purposeLabel": "욕구",
-          "rel": "↔ '갈래?'(의향 질문) Do you want to go? ↔ '가자'(제안) Let's go."
+          "rel": "↔ '갈래?'(의향 질문) Do you want to go? ↔ '가자'(제안) Let's go.",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_07",
@@ -2002,7 +2622,8 @@ window.CURRICULUM = {
           "en": "I want to sleep.",
           "purpose": "want",
           "purposeLabel": "욕구",
-          "rel": "↔ '자고 싶어'(욕구) want to ↔ '자야 해'(의무) have to."
+          "rel": "↔ '자고 싶어'(욕구) want to ↔ '자야 해'(의무) have to.",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_08",
@@ -2013,7 +2634,8 @@ window.CURRICULUM = {
           "note": "want + 물건. this 자리에 that, more, one.",
           "eq": "Can I have this? 랑 같은 뜻. want는 직설적, Can I have는 공손.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_09",
@@ -2022,7 +2644,8 @@ window.CURRICULUM = {
           "en": "I don't want that.",
           "scene": "권하는 걸 사양하며.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_10",
@@ -2030,7 +2653,8 @@ window.CURRICULUM = {
           "ko": "나 쉬고 싶어.",
           "en": "I want to rest.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_11",
@@ -2038,7 +2662,8 @@ window.CURRICULUM = {
           "ko": "너 뭐 먹고 싶어?",
           "en": "What do you want to eat?",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_12",
@@ -2046,7 +2671,8 @@ window.CURRICULUM = {
           "ko": "나 너랑 가고 싶어.",
           "en": "I want to go with you.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_13",
@@ -2054,7 +2680,8 @@ window.CURRICULUM = {
           "ko": "나 더 원해.",
           "en": "I want more.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_14",
@@ -2062,7 +2689,8 @@ window.CURRICULUM = {
           "ko": "나 지금 가고 싶어.",
           "en": "I want to go now.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_15",
@@ -2071,7 +2699,8 @@ window.CURRICULUM = {
           "en": "Do you want a drink?",
           "purpose": "want",
           "purposeLabel": "욕구",
-          "rel": "↔ 뜻 같음: 원하다. I want는 직설(친구·급할 때), I'd like(=would like)는 공손(점원·격식). 여행 주문에선 I'd like가 더 예의 바르지만, 커리큘럼은 want+Can I get으로 충분히 커버됨. would like는 여유 되면 추가."
+          "rel": "↔ 뜻 같음: 원하다. I want는 직설(친구·급할 때), I'd like(=would like)는 공손(점원·격식). 여행 주문에선 I'd like가 더 예의 바르지만, 커리큘럼은 want+Can I get으로 충분히 커버됨. would like는 여유 되면 추가.",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_16",
@@ -2079,7 +2708,8 @@ window.CURRICULUM = {
           "ko": "나 다이빙하고 싶어.",
           "en": "I want to dive.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_17",
@@ -2087,7 +2717,8 @@ window.CURRICULUM = {
           "ko": "나 안 가고 싶어.",
           "en": "I don't want to go.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_18",
@@ -2095,7 +2726,8 @@ window.CURRICULUM = {
           "ko": "나 집에 있고 싶어.",
           "en": "I want to stay home.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_19",
@@ -2103,7 +2735,8 @@ window.CURRICULUM = {
           "ko": "너 뭐 하고 싶어?",
           "en": "What do you want to do?",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d14_20",
@@ -2111,7 +2744,8 @@ window.CURRICULUM = {
           "ko": "나 그냥 쉬고 싶어.",
           "en": "I just want to rest.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         }
       ]
     },
@@ -2130,7 +2764,8 @@ window.CURRICULUM = {
           "en": "I can do it.",
           "note": "can 뒤엔 동사 원형 그대로. cans 같은 건 없어요.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_02",
@@ -2138,7 +2773,8 @@ window.CURRICULUM = {
           "ko": "나 못 해.",
           "en": "I can't do it.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_03",
@@ -2146,7 +2782,8 @@ window.CURRICULUM = {
           "ko": "너 할 수 있어?",
           "en": "Can you do it?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d15_04",
@@ -2155,7 +2792,8 @@ window.CURRICULUM = {
           "en": "I can help you.",
           "eq": "Let me help you 랑 비슷. I can help you 는 도와줄 수 있어, Let me help you 는 내가 도와줄게.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_05",
@@ -2165,7 +2803,8 @@ window.CURRICULUM = {
           "note": "Can you ~? 는 ~해줄래? help 자리에 see, fix, wait.",
           "eq": "Can you give me a hand? 라고도 해요. a hand가 더 가벼운 부탁.",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d15_06",
@@ -2173,7 +2812,8 @@ window.CURRICULUM = {
           "ko": "나 영어 할 줄 알아.",
           "en": "I can speak English.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_07",
@@ -2181,7 +2821,8 @@ window.CURRICULUM = {
           "ko": "나 영어 잘 못해.",
           "en": "I can't speak English well.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_08",
@@ -2191,7 +2832,8 @@ window.CURRICULUM = {
           "note": "Can I ~? 는 ~해도 돼요/주세요. have 자리에 use, get.",
           "eq": "Can I get this? 랑 같은 뜻. 가게·식당에서 바꿔 써도 돼요.",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d15_09",
@@ -2199,7 +2841,8 @@ window.CURRICULUM = {
           "ko": "화장실 써도 돼요?",
           "en": "Can I use the bathroom?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d15_10",
@@ -2207,7 +2850,8 @@ window.CURRICULUM = {
           "ko": "천천히 말해 줄래요?",
           "en": "Can you speak slowly?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d15_11",
@@ -2215,7 +2859,8 @@ window.CURRICULUM = {
           "ko": "나 수영할 수 있어.",
           "en": "I can swim.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_12",
@@ -2223,7 +2868,8 @@ window.CURRICULUM = {
           "ko": "나 안 보여.",
           "en": "I can't see.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_13",
@@ -2231,7 +2877,8 @@ window.CURRICULUM = {
           "ko": "나 보여?",
           "en": "Can you see me?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d15_14",
@@ -2239,7 +2886,8 @@ window.CURRICULUM = {
           "ko": "나 숨 못 쉬겠어.",
           "en": "I can't breathe.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_15",
@@ -2247,7 +2895,8 @@ window.CURRICULUM = {
           "ko": "다시 말해 줄래요?",
           "en": "Can you say that again?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d15_16",
@@ -2255,7 +2904,8 @@ window.CURRICULUM = {
           "ko": "나 기다릴 수 있어.",
           "en": "I can wait.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_17",
@@ -2263,7 +2913,8 @@ window.CURRICULUM = {
           "ko": "우리 지금 갈 수 있어?",
           "en": "Can we go now?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_18",
@@ -2271,7 +2922,8 @@ window.CURRICULUM = {
           "ko": "나 안 들려.",
           "en": "I can't hear you.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_19",
@@ -2279,7 +2931,8 @@ window.CURRICULUM = {
           "ko": "나 운전할 수 있어.",
           "en": "I can drive.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d15_20",
@@ -2287,7 +2940,8 @@ window.CURRICULUM = {
           "ko": "너 이거 고칠 수 있어?",
           "en": "Can you fix this?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         }
       ]
     },
@@ -2305,7 +2959,8 @@ window.CURRICULUM = {
           "ko": "나 도움 필요해.",
           "en": "I need help.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_02",
@@ -2314,7 +2969,8 @@ window.CURRICULUM = {
           "en": "I need water.",
           "purpose": "need",
           "purposeLabel": "의무",
-          "rel": "↔ '필요해'(need)는 없으면 안 돼, '원해/줘'(want)는 그냥 하고 싶어. need가 더 급해요."
+          "rel": "↔ '필요해'(need)는 없으면 안 돼, '원해/줘'(want)는 그냥 하고 싶어. need가 더 급해요.",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_03",
@@ -2323,7 +2979,8 @@ window.CURRICULUM = {
           "en": "I need air.",
           "note": "need는 꼭 필요하다. want(하고 싶다)보다 강해요.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_04",
@@ -2331,7 +2988,8 @@ window.CURRICULUM = {
           "ko": "너 뭐 필요해?",
           "en": "What do you need?",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_05",
@@ -2341,7 +2999,8 @@ window.CURRICULUM = {
           "note": "I need to ~ 는 ~해야 해. rest 자리에 go, eat, stop.",
           "purpose": "need",
           "purposeLabel": "의무",
-          "rel": "↔ '쉬어야 해'(필요) need to ↔ '쉬고 싶어'(욕구) want to."
+          "rel": "↔ '쉬어야 해'(필요) need to ↔ '쉬고 싶어'(욕구) want to.",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_06",
@@ -2351,7 +3010,8 @@ window.CURRICULUM = {
           "eq": "I have to go (Day4) 랑 같은 뜻. need to = have to.",
           "purpose": "need",
           "purposeLabel": "의무",
-          "rel": "↔ 둘 다 '~해야 해'. 완전히 바꿔 써도 됨. have to가 살짝 더 '규칙·의무', need to가 살짝 더 '내가 필요해서'지만 왕초보는 신경 안 써도 통함. 입에 붙는 거 하나만 골라 써라."
+          "rel": "↔ 둘 다 '~해야 해'. 완전히 바꿔 써도 됨. have to가 살짝 더 '규칙·의무', need to가 살짝 더 '내가 필요해서'지만 왕초보는 신경 안 써도 통함. 입에 붙는 거 하나만 골라 써라.",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_07",
@@ -2360,7 +3020,8 @@ window.CURRICULUM = {
           "en": "I need to sleep.",
           "eq": "I have to sleep 랑 같은 뜻. need to = have to.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_08",
@@ -2368,7 +3029,8 @@ window.CURRICULUM = {
           "ko": "나 이거 필요해.",
           "en": "I need this.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_09",
@@ -2376,7 +3038,8 @@ window.CURRICULUM = {
           "ko": "나 그거 필요 없어.",
           "en": "I don't need that.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_10",
@@ -2384,7 +3047,8 @@ window.CURRICULUM = {
           "ko": "나 의사 필요해.",
           "en": "I need a doctor.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_11",
@@ -2392,7 +3056,8 @@ window.CURRICULUM = {
           "ko": "나 시간이 좀 필요해.",
           "en": "I need some time.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_12",
@@ -2400,7 +3065,8 @@ window.CURRICULUM = {
           "ko": "너 도움 필요해?",
           "en": "Do you need help?",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_13",
@@ -2409,7 +3075,8 @@ window.CURRICULUM = {
           "en": "I need a bathroom.",
           "eq": "I need to use the bathroom 이라고도 해요. 같은 뜻.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_14",
@@ -2417,7 +3084,8 @@ window.CURRICULUM = {
           "ko": "나 좀 멈춰야 해.",
           "en": "I need to stop.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_15",
@@ -2425,7 +3093,8 @@ window.CURRICULUM = {
           "ko": "나 네 도움이 필요해.",
           "en": "I need your help.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_16",
@@ -2434,7 +3103,8 @@ window.CURRICULUM = {
           "en": "I need a new one.",
           "scene": "쓰던 게 고장 났을 때.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_17",
@@ -2442,7 +3112,8 @@ window.CURRICULUM = {
           "ko": "우리 더 천천히 가야 해.",
           "en": "We need to slow down.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_18",
@@ -2450,7 +3121,8 @@ window.CURRICULUM = {
           "ko": "나 먹어야 해.",
           "en": "I need to eat.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_19",
@@ -2458,7 +3130,8 @@ window.CURRICULUM = {
           "ko": "너 그거 필요해?",
           "en": "Do you need it?",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d16_20",
@@ -2467,7 +3140,8 @@ window.CURRICULUM = {
           "en": "I need to go now.",
           "eq": "I have to go now 랑 같은 뜻. need to = have to.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         }
       ]
     },
@@ -2485,7 +3159,8 @@ window.CURRICULUM = {
           "ko": "어디 보자.",
           "en": "Let me see.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_02",
@@ -2493,7 +3168,8 @@ window.CURRICULUM = {
           "ko": "생각 좀 해볼게.",
           "en": "Let me think.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_03",
@@ -2503,7 +3179,8 @@ window.CURRICULUM = {
           "note": "Let me ~ 는 내가 ~할게. help 자리에 see, check, ask.",
           "eq": "I can help you 랑 비슷. Let me help you 는 내가 나서서 도와줄게 느낌.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_04",
@@ -2513,7 +3190,8 @@ window.CURRICULUM = {
           "note": "Let's ~ 는 같이 ~하자. go 자리에 eat, start, wait.",
           "purpose": "tell",
           "purposeLabel": "명령",
-          "rel": "↔ '가자'(같이, 제안)는 Let's go, '갈래?'(너 의향)는 Do you want to go?"
+          "rel": "↔ '가자'(같이, 제안)는 Let's go, '갈래?'(너 의향)는 Do you want to go?",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_05",
@@ -2521,7 +3199,8 @@ window.CURRICULUM = {
           "ko": "먹자.",
           "en": "Let's eat.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_06",
@@ -2529,7 +3208,8 @@ window.CURRICULUM = {
           "ko": "시작하자.",
           "en": "Let's start.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_07",
@@ -2537,7 +3217,8 @@ window.CURRICULUM = {
           "ko": "알려줘.",
           "en": "Let me know.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_08",
@@ -2545,7 +3226,8 @@ window.CURRICULUM = {
           "ko": "내가 할게.",
           "en": "Let me do it.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_09",
@@ -2553,7 +3235,8 @@ window.CURRICULUM = {
           "ko": "들어가자.",
           "en": "Let's go in.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_10",
@@ -2561,7 +3244,8 @@ window.CURRICULUM = {
           "ko": "잠깐 쉬자.",
           "en": "Let's rest.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_11",
@@ -2569,7 +3253,8 @@ window.CURRICULUM = {
           "ko": "내가 확인해볼게.",
           "en": "Let me check.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_12",
@@ -2577,7 +3262,8 @@ window.CURRICULUM = {
           "ko": "천천히 하자.",
           "en": "Let's slow down.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_13",
@@ -2585,7 +3271,8 @@ window.CURRICULUM = {
           "ko": "기다리자.",
           "en": "Let's wait.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_14",
@@ -2593,7 +3280,8 @@ window.CURRICULUM = {
           "ko": "내가 물어볼게.",
           "en": "Let me ask.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_15",
@@ -2601,7 +3289,8 @@ window.CURRICULUM = {
           "ko": "그거 내가 가져갈게.",
           "en": "Let me get it.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_16",
@@ -2609,7 +3298,8 @@ window.CURRICULUM = {
           "ko": "다시 해보자.",
           "en": "Let's try again.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_17",
@@ -2617,7 +3307,8 @@ window.CURRICULUM = {
           "ko": "그만하자.",
           "en": "Let's stop.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_18",
@@ -2625,7 +3316,8 @@ window.CURRICULUM = {
           "ko": "같이 가자.",
           "en": "Let's go together.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_19",
@@ -2633,7 +3325,8 @@ window.CURRICULUM = {
           "ko": "내가 보여줄게.",
           "en": "Let me show you.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d17_20",
@@ -2641,7 +3334,8 @@ window.CURRICULUM = {
           "ko": "올라가자.",
           "en": "Let's go up.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -2659,7 +3353,8 @@ window.CURRICULUM = {
           "ko": "나 쉬고 싶어, 좀 쉬자.",
           "en": "I want to rest. Let's take a break.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d18_02",
@@ -2667,7 +3362,8 @@ window.CURRICULUM = {
           "ko": "나 도움 필요해, 도와줄래?",
           "en": "I need help. Can you help me?",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d18_03",
@@ -2675,7 +3371,8 @@ window.CURRICULUM = {
           "ko": "나 가고 싶은데 못 가.",
           "en": "I want to go, but I can't.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d18_04",
@@ -2683,7 +3380,8 @@ window.CURRICULUM = {
           "ko": "천천히 하자, 나 못 따라가.",
           "en": "Let's slow down. I can't keep up.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d18_05",
@@ -2691,7 +3389,8 @@ window.CURRICULUM = {
           "ko": "너 뭐 필요해?",
           "en": "What do you need?",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d18_06",
@@ -2699,7 +3398,8 @@ window.CURRICULUM = {
           "ko": "나 물 마시고 싶어.",
           "en": "I want some water.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d18_07",
@@ -2707,7 +3407,8 @@ window.CURRICULUM = {
           "ko": "나 안 보여, 너 보여?",
           "en": "I can't see. Can you see?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d18_08",
@@ -2715,7 +3416,8 @@ window.CURRICULUM = {
           "ko": "가자, 준비됐어.",
           "en": "Let's go. I'm ready.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d18_09",
@@ -2723,7 +3425,8 @@ window.CURRICULUM = {
           "ko": "나 숨 못 쉬겠어, 올라가자.",
           "en": "I can't breathe. Let's go up.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d18_10",
@@ -2731,7 +3434,8 @@ window.CURRICULUM = {
           "ko": "나 좀 멈춰야 해.",
           "en": "I need to stop.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d18_11",
@@ -2739,7 +3443,8 @@ window.CURRICULUM = {
           "ko": "내가 도와줄게, 기다려.",
           "en": "Let me help. Wait.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d18_12",
@@ -2747,7 +3452,8 @@ window.CURRICULUM = {
           "ko": "나 다이빙하고 싶어.",
           "en": "I want to dive.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d18_13",
@@ -2755,7 +3461,8 @@ window.CURRICULUM = {
           "ko": "너 갈 수 있어?",
           "en": "Can you go?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d18_14",
@@ -2763,7 +3470,8 @@ window.CURRICULUM = {
           "ko": "나 공기 필요해.",
           "en": "I need air.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         }
       ]
     },
@@ -2779,35 +3487,50 @@ window.CURRICULUM = {
           "id": "d19_08",
           "tag": "take",
           "ko": "시간 좀 걸려.",
-          "en": "It takes time."
+          "en": "It takes time.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d19_09",
           "tag": "take",
           "ko": "얼마나 걸려요?",
           "en": "How long does it take?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d19_05",
           "tag": "take",
           "ko": "나 사진 찍을게.",
           "en": "I'm going to take a photo.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d19_07",
           "tag": "take",
           "ko": "나 택시 탈 거야.",
           "en": "I'm going to take a taxi.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d19_19",
           "tag": "take",
           "ko": "나 샤워할 거야.",
           "en": "I'm going to take a shower.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d19_20",
@@ -2817,7 +3540,8 @@ window.CURRICULUM = {
           "eq": "I want this 랑 같은 뜻. take가 더 자연스러운 결정 표현.",
           "tense": "미래",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d19_04",
@@ -2825,7 +3549,8 @@ window.CURRICULUM = {
           "ko": "사진 찍어 줄래요?",
           "en": "Can you take a photo?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d19_01",
@@ -2834,7 +3559,8 @@ window.CURRICULUM = {
           "en": "Take it.",
           "scene": "상대에게 물건을 건네며.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_02",
@@ -2842,7 +3568,8 @@ window.CURRICULUM = {
           "ko": "이거 가져가.",
           "en": "Take this.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_03",
@@ -2851,7 +3578,8 @@ window.CURRICULUM = {
           "en": "Take a look.",
           "note": "take a look은 한번 보다. take가 보다로도 쓰여요.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_06",
@@ -2859,7 +3587,8 @@ window.CURRICULUM = {
           "ko": "버스 타.",
           "en": "Take the bus.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_10",
@@ -2867,7 +3596,8 @@ window.CURRICULUM = {
           "ko": "약 먹어.",
           "en": "Take your medicine.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_11",
@@ -2875,7 +3605,8 @@ window.CURRICULUM = {
           "ko": "좀 쉬어.",
           "en": "Take a break.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_12",
@@ -2883,7 +3614,8 @@ window.CURRICULUM = {
           "ko": "숨 깊게 쉬어.",
           "en": "Take a deep breath.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_13",
@@ -2891,7 +3623,8 @@ window.CURRICULUM = {
           "ko": "나 좀 데려가 줘.",
           "en": "Take me with you.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_14",
@@ -2899,7 +3632,8 @@ window.CURRICULUM = {
           "ko": "공항으로 데려다주세요.",
           "en": "Take me to the airport.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_15",
@@ -2907,7 +3641,8 @@ window.CURRICULUM = {
           "ko": "자리에 앉아.",
           "en": "Take a seat.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_16",
@@ -2916,7 +3651,8 @@ window.CURRICULUM = {
           "en": "Take your time.",
           "note": "Take your ~. time이면 천천히 해, seat이면 앉아.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_17",
@@ -2924,7 +3660,8 @@ window.CURRICULUM = {
           "ko": "이 길로 가.",
           "en": "Take this road.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d19_18",
@@ -2932,7 +3669,8 @@ window.CURRICULUM = {
           "ko": "우산 가져가.",
           "en": "Take an umbrella.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -2948,19 +3686,28 @@ window.CURRICULUM = {
           "id": "d20_10",
           "tag": "make",
           "ko": "그거 말 되네.",
-          "en": "That makes sense."
+          "en": "That makes sense.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d20_11",
           "tag": "make",
           "ko": "그거 말 안 돼.",
-          "en": "That doesn't make sense."
+          "en": "That doesn't make sense.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d20_15",
           "tag": "make",
           "ko": "그게 날 행복하게 해.",
-          "en": "It makes me happy."
+          "en": "It makes me happy.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d20_01",
@@ -2968,55 +3715,79 @@ window.CURRICULUM = {
           "ko": "나 해냈어.",
           "en": "I made it.",
           "note": "made는 make의 과거.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_06",
           "tag": "make",
           "ko": "나 마음 정했어.",
           "en": "I made a decision.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_07",
           "tag": "make",
           "ko": "나 실수했어.",
           "en": "I made a mistake.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_08",
           "tag": "make",
           "ko": "나 저녁 만들 거야.",
           "en": "I'm going to make dinner.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_12",
           "tag": "make",
           "ko": "나 친구 사귀었어.",
           "en": "I made a friend.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_14",
           "tag": "make",
           "ko": "나 예약했어.",
           "en": "I made a reservation.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_18",
           "tag": "make",
           "ko": "나 돈 좀 벌어.",
-          "en": "I make some money."
+          "en": "I make some money.",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_20",
           "tag": "make",
           "ko": "너 해낼 거야.",
           "en": "You're going to make it.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d20_02",
@@ -3024,7 +3795,8 @@ window.CURRICULUM = {
           "ko": "너 해낼 수 있어.",
           "en": "You can make it.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d20_03",
@@ -3032,7 +3804,8 @@ window.CURRICULUM = {
           "ko": "우리 시간 맞춰 갈 수 있어.",
           "en": "We can make it.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d20_09",
@@ -3040,7 +3813,8 @@ window.CURRICULUM = {
           "ko": "커피 좀 타 줄래?",
           "en": "Can you make some coffee?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d20_04",
@@ -3049,7 +3823,8 @@ window.CURRICULUM = {
           "en": "Make sure.",
           "note": "Make sure ~ 는 ~인지 꼭 확인해. 뒤에 문장을 붙여봐.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d20_05",
@@ -3057,7 +3832,8 @@ window.CURRICULUM = {
           "ko": "문 잠겼는지 확인해.",
           "en": "Make sure the door is locked.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d20_13",
@@ -3065,7 +3841,8 @@ window.CURRICULUM = {
           "ko": "빨리 끝내자.",
           "en": "Let's make it quick.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d20_16",
@@ -3073,7 +3850,8 @@ window.CURRICULUM = {
           "ko": "시끄럽게 하지 마.",
           "en": "Don't make noise.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d20_17",
@@ -3081,7 +3859,8 @@ window.CURRICULUM = {
           "ko": "계획 세우자.",
           "en": "Let's make a plan.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d20_19",
@@ -3089,7 +3868,8 @@ window.CURRICULUM = {
           "ko": "안전한지 확실히 해.",
           "en": "Make sure it's safe.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -3105,68 +3885,101 @@ window.CURRICULUM = {
           "id": "d21_01",
           "tag": "wh",
           "ko": "이게 뭐야?",
-          "en": "What is this?"
+          "en": "What is this?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_02",
           "tag": "wh",
           "ko": "너 누구야?",
-          "en": "Who are you?"
+          "en": "Who are you?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_03",
           "tag": "wh",
           "ko": "그거 언제야?",
-          "en": "When is it?"
+          "en": "When is it?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_04",
           "tag": "wh",
           "ko": "화장실 어디예요?",
           "en": "Where is the bathroom?",
-          "note": "where(어디)를 맨 앞에. 의문사 더하기 is 더하기 주어."
+          "note": "where(어디)를 맨 앞에. 의문사 더하기 is 더하기 주어.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_08",
           "tag": "wh",
           "ko": "그 사람 누구야?",
-          "en": "Who is he?"
+          "en": "Who is he?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_12",
           "tag": "wh",
           "ko": "얼마예요?",
-          "en": "How much is it?"
+          "en": "How much is it?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_13",
           "tag": "wh",
           "ko": "몇 시예요?",
-          "en": "What time is it?"
+          "en": "What time is it?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_14",
           "tag": "wh",
           "ko": "누가 알아?",
-          "en": "Who knows?"
+          "en": "Who knows?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_15",
           "tag": "wh",
           "ko": "이거 누구 거예요?",
-          "en": "Whose is this?"
+          "en": "Whose is this?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_19",
           "tag": "wh",
           "ko": "왜 늦었어?",
-          "en": "Why are you late?"
+          "en": "Why are you late?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_24",
           "tag": "wh",
           "ko": "3시 30분이요.",
-          "en": "It's three thirty."
+          "en": "It's three thirty.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d21_06",
@@ -3174,40 +3987,58 @@ window.CURRICULUM = {
           "ko": "이거 어떻게 해요?",
           "en": "How do you do this?",
           "note": "How do you ~? 는 어떻게 ~해요? do this 자리에 say it, use it.",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d21_07",
           "tag": "wh",
           "ko": "너 뭐 해?",
           "en": "What are you doing?",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d21_09",
           "tag": "wh",
           "ko": "우리 언제 가?",
-          "en": "When do we go?"
+          "en": "When do we go?",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d21_10",
           "tag": "wh",
           "ko": "너 어디 가?",
           "en": "Where are you going?",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d21_16",
           "tag": "wh",
           "ko": "거기 어떻게 가요?",
-          "en": "How do I get there?"
+          "en": "How do I get there?",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d21_17",
           "tag": "wh",
           "ko": "얼마나 걸려요?",
           "en": "How long does it take?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d21_18",
@@ -3215,7 +4046,8 @@ window.CURRICULUM = {
           "ko": "너 뭐 원해?",
           "en": "What do you want?",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d21_05",
@@ -3268,33 +4100,48 @@ window.CURRICULUM = {
           "id": "d22_01",
           "tag": "mix",
           "ko": "안녕, 잘 지내?",
-          "en": "Hi, how are you?"
+          "en": "Hi, how are you?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d22_02",
           "tag": "mix",
           "ko": "나 잘 지내, 너는?",
-          "en": "I'm good. How about you?"
+          "en": "I'm good. How about you?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d22_03",
           "tag": "mix",
           "ko": "어디 가?",
           "en": "Where are you going?",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d22_04",
           "tag": "mix",
           "ko": "나 일하러 가.",
           "en": "I'm going to work.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d22_05",
           "tag": "mix",
           "ko": "너 시간 있어?",
-          "en": "Do you have time?"
+          "en": "Do you have time?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d22_06",
@@ -3302,7 +4149,8 @@ window.CURRICULUM = {
           "ko": "미안, 나 가야 해.",
           "en": "Sorry, I have to go.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d22_07",
@@ -3310,13 +4158,17 @@ window.CURRICULUM = {
           "ko": "뭐 좀 먹을래?",
           "en": "Do you want to get something to eat?",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d22_08",
           "tag": "mix",
           "ko": "그래, 배고파.",
-          "en": "Yes, I'm hungry."
+          "en": "Yes, I'm hungry.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d22_09",
@@ -3324,20 +4176,27 @@ window.CURRICULUM = {
           "ko": "뭐 먹고 싶어?",
           "en": "What do you want to eat?",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d22_10",
           "tag": "mix",
           "ko": "아무거나 괜찮아.",
           "en": "Anything is okay.",
-          "scene": "뭐 먹을지 물어오면."
+          "scene": "뭐 먹을지 물어오면.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d22_11",
           "tag": "mix",
           "ko": "이거 얼마예요?",
-          "en": "How much is this?"
+          "en": "How much is this?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d22_12",
@@ -3345,13 +4204,17 @@ window.CURRICULUM = {
           "ko": "카드 돼요?",
           "en": "Can I use a card?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d22_13",
           "tag": "mix",
           "ko": "화장실 어디예요?",
-          "en": "Where is the bathroom?"
+          "en": "Where is the bathroom?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d22_14",
@@ -3360,7 +4223,8 @@ window.CURRICULUM = {
           "en": "Can you speak slowly?",
           "eq": "Please speak slowly 라고도 해요. 같은 뜻, 바꿔 써도 돼요.",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d22_15",
@@ -3368,7 +4232,8 @@ window.CURRICULUM = {
           "ko": "다시 말해 줄래요?",
           "en": "Can you say that again?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d22_16",
@@ -3376,7 +4241,8 @@ window.CURRICULUM = {
           "ko": "나 영어 잘 못해.",
           "en": "I can't speak English well.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d22_17",
@@ -3384,7 +4250,8 @@ window.CURRICULUM = {
           "ko": "도와주실 수 있어요?",
           "en": "Can you help me?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d22_18",
@@ -3405,7 +4272,8 @@ window.CURRICULUM = {
           "en": "See you.",
           "eq": "Take care 라고도 해요. See you는 또 봐, Take care는 잘 지내.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -3427,38 +4295,56 @@ window.CURRICULUM = {
           "id": "d23_02",
           "tag": "trip",
           "ko": "여기 여권 있어요.",
-          "en": "Here is my passport."
+          "en": "Here is my passport.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_03",
           "tag": "trip",
           "ko": "저 다이빙하러 왔어요.",
-          "en": "I'm here for diving."
+          "en": "I'm here for diving.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_04",
           "tag": "trip",
           "ko": "저 휴가로 왔어요.",
-          "en": "I'm here on vacation."
+          "en": "I'm here on vacation.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_05",
           "tag": "trip",
           "ko": "2주 있을 거예요.",
           "en": "I'm going to stay for two weeks.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d23_06",
           "tag": "trip",
           "ko": "호텔 예약했어요.",
-          "en": "I have a hotel reservation."
+          "en": "I have a hotel reservation.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d23_07",
           "tag": "trip",
           "ko": "짐 찾는 곳 어디예요?",
-          "en": "Where is baggage claim?"
+          "en": "Where is baggage claim?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_08",
@@ -3466,7 +4352,8 @@ window.CURRICULUM = {
           "ko": "제 가방을 못 찾겠어요.",
           "en": "I can't find my bag.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d23_09",
@@ -3475,25 +4362,35 @@ window.CURRICULUM = {
           "en": "Where can I get a taxi?",
           "note": "Where can I get ~? 는 ~ 어디서 구해요/타요? taxi 자리에 cash, water.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d23_10",
           "tag": "trip",
           "ko": "시내까지 얼마예요?",
-          "en": "How much is it to downtown?"
+          "en": "How much is it to downtown?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_11",
           "tag": "trip",
           "ko": "이거 호텔 주소예요.",
-          "en": "Here is the hotel address."
+          "en": "Here is the hotel address.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_12",
           "tag": "trip",
           "ko": "와이파이 있어요?",
-          "en": "Do you have wifi?"
+          "en": "Do you have wifi?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d23_13",
@@ -3501,7 +4398,8 @@ window.CURRICULUM = {
           "ko": "환전 어디서 해요?",
           "en": "Where can I get cash?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d23_14",
@@ -3509,14 +4407,18 @@ window.CURRICULUM = {
           "ko": "도와주실 수 있어요?",
           "en": "Can you help me?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d23_15",
           "tag": "trip",
           "ko": "영어 하세요?",
           "en": "Do you speak English?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d23_16",
@@ -3525,25 +4427,35 @@ window.CURRICULUM = {
           "en": "Please speak slowly.",
           "purpose": "tell",
           "purposeLabel": "명령",
-          "rel": "↔ 둘 다 '천천히 말해 주세요'. 바꿔 써도 됨. Can you ~?는 '~해줄래요?'(질문형 부탁), Please ~는 '~해 주세요'(명령형+please). 둘 다 공손하니 편한 거 써라."
+          "rel": "↔ 둘 다 '천천히 말해 주세요'. 바꿔 써도 됨. Can you ~?는 '~해줄래요?'(질문형 부탁), Please ~는 '~해 주세요'(명령형+please). 둘 다 공손하니 편한 거 써라.",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d23_17",
           "tag": "trip",
           "ko": "화장실 어디예요?",
-          "en": "Where is the bathroom?"
+          "en": "Where is the bathroom?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_18",
           "tag": "trip",
           "ko": "제 비행기 늦었어요.",
-          "en": "My flight is late."
+          "en": "My flight is late.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_19",
           "tag": "trip",
           "ko": "출구 어디예요?",
-          "en": "Where is the exit?"
+          "en": "Where is the exit?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d23_20",
@@ -3566,19 +4478,28 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "저 다이빙하러 왔어요.",
           "en": "I'm here to dive.",
-          "eq": "I'm here for diving 이라고도 해요. to dive=동사, for diving=명사. 같은 뜻."
+          "eq": "I'm here for diving 이라고도 해요. to dive=동사, for diving=명사. 같은 뜻.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_02",
           "tag": "trip",
           "ko": "저 자격증 있어요.",
-          "en": "I'm a certified diver."
+          "en": "I'm a certified diver.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_03",
           "tag": "trip",
           "ko": "예약했어요.",
-          "en": "I have a reservation."
+          "en": "I have a reservation.",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d24_04",
@@ -3586,7 +4507,8 @@ window.CURRICULUM = {
           "ko": "공기통 필요해요.",
           "en": "I need a tank.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d24_05",
@@ -3594,13 +4516,17 @@ window.CURRICULUM = {
           "ko": "장비 빌릴 수 있어요?",
           "en": "Can I rent some gear?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d24_06",
           "tag": "trip",
           "ko": "이거 제 사이즈예요?",
-          "en": "Is this my size?"
+          "en": "Is this my size?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_07",
@@ -3608,58 +4534,83 @@ window.CURRICULUM = {
           "ko": "웻수트 필요해요.",
           "en": "I need a wetsuit.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d24_08",
           "tag": "trip",
           "ko": "이거 어떻게 써요?",
           "en": "How do you use this?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d24_09",
           "tag": "trip",
           "ko": "물 차가워요?",
-          "en": "Is the water cold?"
+          "en": "Is the water cold?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_10",
           "tag": "trip",
           "ko": "얼마나 깊어요?",
-          "en": "How deep is it?"
+          "en": "How deep is it?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_11",
           "tag": "trip",
           "ko": "가이드 있어요?",
-          "en": "Do you have a guide?"
+          "en": "Do you have a guide?",
+          "purpose": "have",
+          "purposeLabel": "소유",
+          "purposeMean": "가지고 있다·없다"
         },
         {
           "id": "d24_12",
           "tag": "trip",
           "ko": "저 동굴 다이빙해요.",
           "en": "I'm doing cave diving.",
-          "tense": "지금"
+          "tense": "지금",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d24_13",
           "tag": "trip",
           "ko": "몇 시에 가요?",
-          "en": "What time do we go?"
+          "en": "What time do we go?",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d24_14",
           "tag": "trip",
           "ko": "얼마나 걸려요?",
           "en": "How long does it take?",
-          "tense": "평소"
+          "tense": "평소",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d24_15",
           "tag": "trip",
           "ko": "이거 안전해요?",
-          "en": "Is it safe?"
+          "en": "Is it safe?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_16",
@@ -3667,7 +4618,8 @@ window.CURRICULUM = {
           "ko": "제 공기통 확인해 주세요.",
           "en": "Can you check my tank?",
           "purpose": "ask",
-          "purposeLabel": "부탁"
+          "purposeLabel": "부탁",
+          "purposeMean": "네가 해줘"
         },
         {
           "id": "d24_17",
@@ -3675,19 +4627,26 @@ window.CURRICULUM = {
           "ko": "저 좀 천천히 가야 해요.",
           "en": "I need to go slow.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d24_18",
           "tag": "trip",
           "ko": "제 짝이 누구예요?",
-          "en": "Who is my buddy?"
+          "en": "Who is my buddy?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_19",
           "tag": "trip",
           "ko": "준비됐어요.",
-          "en": "I'm ready."
+          "en": "I'm ready.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_20",
@@ -3695,13 +4654,17 @@ window.CURRICULUM = {
           "ko": "가요.",
           "en": "Let's go.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d24_21",
           "tag": "trip",
           "ko": "한 시간 걸려요.",
-          "en": "It takes about an hour."
+          "en": "It takes about an hour.",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d24_22",
@@ -3709,7 +4672,8 @@ window.CURRICULUM = {
           "ko": "공기통 두 개요.",
           "en": "Two tanks, please.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         },
         {
           "id": "d24_23",
@@ -3731,13 +4695,19 @@ window.CURRICULUM = {
           "id": "d25_01",
           "tag": "trip",
           "ko": "나 괜찮아.",
-          "en": "I'm okay."
+          "en": "I'm okay.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d25_02",
           "tag": "trip",
           "ko": "너 괜찮아?",
-          "en": "Are you okay?"
+          "en": "Are you okay?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d25_03",
@@ -3745,7 +4715,8 @@ window.CURRICULUM = {
           "ko": "내려가.",
           "en": "Go down.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_04",
@@ -3753,7 +4724,8 @@ window.CURRICULUM = {
           "ko": "올라가.",
           "en": "Go up.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_05",
@@ -3761,7 +4733,8 @@ window.CURRICULUM = {
           "ko": "속도 줄여.",
           "en": "Slow down.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_06",
@@ -3769,7 +4742,8 @@ window.CURRICULUM = {
           "ko": "멈춰.",
           "en": "Stop.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_07",
@@ -3777,7 +4751,8 @@ window.CURRICULUM = {
           "ko": "가자.",
           "en": "Let's go.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_08",
@@ -3785,7 +4760,8 @@ window.CURRICULUM = {
           "ko": "따라와.",
           "en": "Follow me.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_09",
@@ -3793,7 +4769,8 @@ window.CURRICULUM = {
           "ko": "가까이 붙어.",
           "en": "Stay close.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_10",
@@ -3801,13 +4778,17 @@ window.CURRICULUM = {
           "ko": "내 손 잡아.",
           "en": "Take my hand.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_11",
           "tag": "trip",
           "ko": "나 공기 부족해.",
-          "en": "I'm low on air."
+          "en": "I'm low on air.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d25_12",
@@ -3815,7 +4796,8 @@ window.CURRICULUM = {
           "ko": "나 숨 못 쉬겠어.",
           "en": "I can't breathe.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d25_13",
@@ -3823,7 +4805,8 @@ window.CURRICULUM = {
           "ko": "나 너 보여.",
           "en": "I can see you.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d25_14",
@@ -3831,7 +4814,8 @@ window.CURRICULUM = {
           "ko": "나 안 보여.",
           "en": "I can't see.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d25_15",
@@ -3839,7 +4823,8 @@ window.CURRICULUM = {
           "ko": "위로 올라가자.",
           "en": "Let's go up.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_16",
@@ -3847,13 +4832,17 @@ window.CURRICULUM = {
           "ko": "여기서 기다려.",
           "en": "Wait here.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_17",
           "tag": "trip",
           "ko": "안 괜찮아.",
-          "en": "I'm not okay."
+          "en": "I'm not okay.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d25_18",
@@ -3862,7 +4851,8 @@ window.CURRICULUM = {
           "en": "Help me.",
           "purpose": "tell",
           "purposeLabel": "명령",
-          "rel": "↔ 'Help me'는 급한 명령, 'Can you help me?'는 부탁. Can you 빠지면 명령처럼 들려요."
+          "rel": "↔ 'Help me'는 급한 명령, 'Can you help me?'는 부탁. Can you 빠지면 명령처럼 들려요.",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_19",
@@ -3870,7 +4860,8 @@ window.CURRICULUM = {
           "ko": "이쪽으로.",
           "en": "This way.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d25_20",
@@ -3878,7 +4869,8 @@ window.CURRICULUM = {
           "ko": "다 됐어, 돌아가자.",
           "en": "We're done. Let's go back.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         }
       ]
     },
@@ -3896,7 +4888,8 @@ window.CURRICULUM = {
           "ko": "메뉴 좀 주세요.",
           "en": "Can I get a menu?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_02",
@@ -3904,7 +4897,8 @@ window.CURRICULUM = {
           "ko": "이거 주세요.",
           "en": "Can I get this?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_03",
@@ -3912,13 +4906,17 @@ window.CURRICULUM = {
           "ko": "물 좀 주세요.",
           "en": "Can I get some water?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_04",
           "tag": "trip",
           "ko": "이거 맛있어요.",
-          "en": "This is good."
+          "en": "This is good.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d26_05",
@@ -3927,7 +4925,8 @@ window.CURRICULUM = {
           "en": "Can I get the check?",
           "note": "정해진 그것엔 the. the check는 그 계산서.",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_06",
@@ -3935,13 +4934,17 @@ window.CURRICULUM = {
           "ko": "카드 돼요?",
           "en": "Can I use a card?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_07",
           "tag": "trip",
           "ko": "화장실 어디예요?",
-          "en": "Where is the bathroom?"
+          "en": "Where is the bathroom?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d26_08",
@@ -3949,7 +4952,10 @@ window.CURRICULUM = {
           "ko": "저 몸이 안 좋아요.",
           "en": "I don't feel good.",
           "eq": "I'm not okay 랑 비슷. feel good은 몸, not okay는 더 넓은 상황.",
-          "rel": "↔ I don't feel good=몸 컨디션이 안 좋아(아플 때). I'm not okay=더 넓게 '나 안 괜찮아'(상황·기분·몸 다). 아파서 도움 청할 땐 I don't feel good 또는 I need a doctor가 정확."
+          "rel": "↔ I don't feel good=몸 컨디션이 안 좋아(아플 때). I'm not okay=더 넓게 '나 안 괜찮아'(상황·기분·몸 다). 아파서 도움 청할 땐 I don't feel good 또는 I need a doctor가 정확.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d26_09",
@@ -3957,7 +4963,8 @@ window.CURRICULUM = {
           "ko": "의사 필요해요.",
           "en": "I need a doctor.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "purposeMean": "어쩔 수 없이 해야 함"
         },
         {
           "id": "d26_10",
@@ -3965,33 +4972,46 @@ window.CURRICULUM = {
           "ko": "도와주세요.",
           "en": "Help me, please.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d26_11",
           "tag": "trip",
           "ko": "이거 안 시켰어요.",
           "en": "I didn't order this.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d26_12",
           "tag": "trip",
           "ko": "얼마예요?",
-          "en": "How much is it?"
+          "en": "How much is it?",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d26_13",
           "tag": "trip",
           "ko": "정말 맛있었어요.",
           "en": "It was really good.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d26_14",
           "tag": "trip",
           "ko": "너무 매워요.",
-          "en": "It's too spicy."
+          "en": "It's too spicy.",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d26_15",
@@ -3999,7 +5019,8 @@ window.CURRICULUM = {
           "ko": "하나 더 주세요.",
           "en": "Can I get one more?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_16",
@@ -4007,7 +5028,8 @@ window.CURRICULUM = {
           "ko": "포장돼요?",
           "en": "Can I get this to go?",
           "purpose": "ask",
-          "purposeLabel": "허락"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_17",
@@ -4020,7 +5042,10 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "정말 좋았어요.",
           "en": "It was great.",
-          "tense": "과거"
+          "tense": "과거",
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d26_19",
@@ -4028,7 +5053,10 @@ window.CURRICULUM = {
           "ko": "또 올게요.",
           "en": "I'll come back.",
           "tense": "미래",
-          "rel": "↔ 'I'll ~'은 방금 정한 약속(할게), 'I'm going to ~'는 미리 정한 계획(할 거야)."
+          "rel": "↔ 'I'll ~'은 방금 정한 약속(할게), 'I'm going to ~'는 미리 정한 계획(할 거야).",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d26_20",
@@ -4036,7 +5064,8 @@ window.CURRICULUM = {
           "ko": "잘 지내요.",
           "en": "Take care.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "purposeMean": "상대에게 시킴·하자"
         },
         {
           "id": "d26_21",
@@ -4044,7 +5073,10 @@ window.CURRICULUM = {
           "ko": "두 개 살게요.",
           "en": "I'll take two.",
           "note": "개수는 동사 뒤에. take two, take one.",
-          "tense": "미래"
+          "tense": "미래",
+          "purpose": "action",
+          "purposeLabel": "행동",
+          "purposeMean": "무언가를 함"
         },
         {
           "id": "d26_22",
@@ -4052,7 +5084,8 @@ window.CURRICULUM = {
           "ko": "맥주 두 잔 주세요.",
           "en": "Two beers, please.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁·할 수 있다"
         },
         {
           "id": "d26_23",
@@ -4060,7 +5093,8 @@ window.CURRICULUM = {
           "ko": "하나면 돼요.",
           "en": "Just one.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "purposeMean": "하고 싶음·원함"
         }
       ]
     },

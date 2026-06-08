@@ -97,12 +97,17 @@
   .tag.rev{color:var(--rev); border-color:var(--rev); text-transform:none;}
   /* 목적 라벨(색) — 4종. 자가평가 빨강과 충돌 피해 의무는 진홍 대신 톤다운. */
   .tag.tense{text-transform:none;}
-  .ptag{align-self:flex-start; display:inline-flex; align-items:center; gap:6px;
-    font-size:14px; font-weight:800; border-radius:9px; padding:5px 12px; text-transform:none;}
+  .ptag{align-self:flex-start; display:inline-block; line-height:1.4;
+    font-size:14px; font-weight:800; border-radius:9px; padding:6px 12px; text-transform:none;
+    max-width:100%;}
   .ptag.p-need{color:#FF8A8A; background:#2a1416; border:1px solid #5a2a2e;}
   .ptag.p-ask{color:#5fd0c8; background:#0e2120; border:1px solid #1f4a46;}
   .ptag.p-want{color:#C792EA; background:#1c1428; border:1px solid #3a2a52;}
   .ptag.p-tell{color:#cfd2da; background:#1a1c22; border:1px solid #353a45;}
+  .ptag.p-state{color:#8fd4ff; background:#0e1a24; border:1px solid #1f3a4e;}
+  .ptag.p-action{color:#7ee0a0; background:#0e2018; border:1px solid #1f4a32;}
+  .ptag.p-have{color:#F5B14C; background:#231a0c; border:1px solid #4a3a18;}
+  .ptag .mean{font-weight:600; opacity:.65; font-size:13px;}
   .ptag .ten{font-weight:600; opacity:.7; font-size:13px;}
   /* 묻기 3종(Day29) */
   .ptag.q-fact{color:#9aa6ff; background:#121626; border:1px solid #2a3450;}
@@ -521,13 +526,15 @@ function render(){
     const qcls = {"사실":"q-fact","부탁":"q-askyou","허락":"q-aski"}[it.tag];
     tagEl.className = "ptag " + qcls; tagEl.textContent = it.tag;
   } else if(it.purposeLabel){
-    // 목적 라벨(색). 부탁/허락은 Day29 묻기 색과 통일. 시제 있으면 흐린 텍스트로 곁들임.
+    // 종류 라벨(색) + 의미 한 줄. 시제 있으면 흐린 텍스트로 곁들임.
     const pcls = {"의무":"p-need","요청":"p-ask","욕구":"p-want","명령":"p-tell",
-                  "부탁":"q-askyou","허락":"q-aski","질문":"q-fact"}[it.purposeLabel] || "p-ask";
+                  "부탁":"q-askyou","허락":"q-aski","질문":"q-fact",
+                  "상태":"p-state","행동":"p-action","소유":"p-have"}[it.purposeLabel] || "p-ask";
     tagEl.className = "ptag " + pcls;
-    tagEl.innerHTML = it.purposeLabel + (tval ? " <span class='ten'>· "+tval+"</span>" : "");
+    tagEl.innerHTML = it.purposeLabel
+      + (it.purposeMean ? " <span class='mean'>· "+it.purposeMean+"</span>" : "")
+      + (tval ? " <span class='ten'>· "+tval+"</span>" : "");
   } else if(tval){
-    // 행동(시제만) — 색 없이 텍스트 배지.
     tagEl.className = "tag tense"; tagEl.textContent = (day && !["평소","과거","미래","지금"].includes(it.tag||"") ? day.verb+" · " : "") + tval;
   } else {
     tagEl.className = "tag"; tagEl.textContent = it.tag || (day?day.verb:"");
