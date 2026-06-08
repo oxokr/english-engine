@@ -84,9 +84,9 @@ window.CURRICULUM = {
           "tag": "be",
           "ko": "너 어디야?",
           "en": "Where are you?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d1_09",
@@ -294,9 +294,9 @@ window.CURRICULUM = {
           "tag": "be",
           "ko": "이게 뭐야?",
           "en": "What is this?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d2_10",
@@ -343,18 +343,18 @@ window.CURRICULUM = {
           "ko": "화장실 어디예요?",
           "en": "Where is the bathroom?",
           "note": "the bathroom — 거기 하나뿐인 곳이라 a 아니고 the.",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d2_15",
           "tag": "be",
           "ko": "내 가방 어디 있어?",
           "en": "Where is my bag?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d2_16",
@@ -400,9 +400,9 @@ window.CURRICULUM = {
           "tag": "be",
           "ko": "그 사람 누구야?",
           "en": "Who is he?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         }
       ]
     },
@@ -903,9 +903,9 @@ window.CURRICULUM = {
           "ko": "너 무슨 일 해?",
           "en": "What do you do?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_10",
@@ -913,9 +913,9 @@ window.CURRICULUM = {
           "ko": "이거 어떻게 해?",
           "en": "How do you do it?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_11",
@@ -1177,9 +1177,9 @@ window.CURRICULUM = {
           "ko": "너 어디 가?",
           "en": "Where are you going?",
           "tense": "지금",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d7_04",
@@ -1384,9 +1384,9 @@ window.CURRICULUM = {
           "ko": "너 뭐 할 거야?",
           "en": "What are you going to do?",
           "tense": "미래",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d8_03",
@@ -1477,9 +1477,9 @@ window.CURRICULUM = {
           "ko": "너 어디 갈 거야?",
           "en": "Where are you going to go?",
           "tense": "미래",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d8_12",
@@ -1549,9 +1549,9 @@ window.CURRICULUM = {
           "ko": "너 언제 갈 거야?",
           "en": "When are you going to go?",
           "tense": "미래",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d8_20",
@@ -1795,9 +1795,9 @@ window.CURRICULUM = {
           "en": "Where did you get it?",
           "scene": "친구가 가진 걸 보고.",
           "tense": "과거",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d10_05",
@@ -1955,8 +1955,8 @@ window.CURRICULUM = {
           "en": "What can I get you?",
           "scene": "식당 직원이 손님에게.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d10_11",
@@ -2054,9 +2054,9 @@ window.CURRICULUM = {
           "ko": "너 언제 도착해?",
           "en": "When do you get there?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d11_04",
@@ -2127,9 +2127,9 @@ window.CURRICULUM = {
           "ko": "너 거기 어떻게 가?",
           "en": "How do you get there?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d11_11",
@@ -2430,9 +2430,9 @@ window.CURRICULUM = {
           "ko": "너 거기 어떻게 가?",
           "en": "How do you get there?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d13_06",
@@ -2538,9 +2538,9 @@ window.CURRICULUM = {
           "tag": "want",
           "ko": "너 뭐 원해?",
           "en": "What do you want?",
-          "purpose": "want",
-          "purposeLabel": "욕구",
-          "purposeMean": "하고 싶음·원함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d14_03",
@@ -2629,9 +2629,9 @@ window.CURRICULUM = {
           "tag": "want",
           "ko": "너 뭐 먹고 싶어?",
           "en": "What do you want to eat?",
-          "purpose": "want",
-          "purposeLabel": "욕구",
-          "purposeMean": "하고 싶음·원함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d14_12",
@@ -2702,9 +2702,9 @@ window.CURRICULUM = {
           "tag": "want",
           "ko": "너 뭐 하고 싶어?",
           "en": "What do you want to do?",
-          "purpose": "want",
-          "purposeLabel": "욕구",
-          "purposeMean": "하고 싶음·원함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d14_20",
@@ -2732,8 +2732,8 @@ window.CURRICULUM = {
           "en": "I can do it.",
           "note": "can 뒤엔 동사 원형 그대로. cans 같은 건 없어요.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_02",
@@ -2741,8 +2741,8 @@ window.CURRICULUM = {
           "ko": "나 못 해.",
           "en": "I can't do it.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_03",
@@ -2750,8 +2750,8 @@ window.CURRICULUM = {
           "ko": "너 할 수 있어?",
           "en": "Can you do it?",
           "purpose": "ask",
-          "purposeLabel": "부탁",
-          "purposeMean": "네가 해줘"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d15_04",
@@ -2760,8 +2760,8 @@ window.CURRICULUM = {
           "en": "I can help you.",
           "eq": "Let me help you 랑 비슷. I can help you 는 도와줄 수 있어, Let me help you 는 내가 도와줄게.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_05",
@@ -2780,8 +2780,8 @@ window.CURRICULUM = {
           "ko": "나 영어 할 줄 알아.",
           "en": "I can speak English.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_07",
@@ -2789,8 +2789,8 @@ window.CURRICULUM = {
           "ko": "나 영어 잘 못해.",
           "en": "I can't speak English well.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_08",
@@ -2827,8 +2827,8 @@ window.CURRICULUM = {
           "ko": "나 수영할 수 있어.",
           "en": "I can swim.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_12",
@@ -2836,8 +2836,8 @@ window.CURRICULUM = {
           "ko": "나 안 보여.",
           "en": "I can't see.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_13",
@@ -2845,8 +2845,8 @@ window.CURRICULUM = {
           "ko": "나 보여?",
           "en": "Can you see me?",
           "purpose": "ask",
-          "purposeLabel": "부탁",
-          "purposeMean": "네가 해줘"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d15_14",
@@ -2854,8 +2854,8 @@ window.CURRICULUM = {
           "ko": "나 숨 못 쉬겠어.",
           "en": "I can't breathe.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_15",
@@ -2872,8 +2872,8 @@ window.CURRICULUM = {
           "ko": "나 기다릴 수 있어.",
           "en": "I can wait.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_17",
@@ -2881,8 +2881,8 @@ window.CURRICULUM = {
           "ko": "우리 지금 갈 수 있어?",
           "en": "Can we go now?",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d15_18",
@@ -2890,8 +2890,8 @@ window.CURRICULUM = {
           "ko": "나 안 들려.",
           "en": "I can't hear you.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_19",
@@ -2899,8 +2899,8 @@ window.CURRICULUM = {
           "ko": "나 운전할 수 있어.",
           "en": "I can drive.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d15_20",
@@ -2908,8 +2908,8 @@ window.CURRICULUM = {
           "ko": "너 이거 고칠 수 있어?",
           "en": "Can you fix this?",
           "purpose": "ask",
-          "purposeLabel": "부탁",
-          "purposeMean": "네가 해줘"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         }
       ]
     },
@@ -2955,9 +2955,9 @@ window.CURRICULUM = {
           "tag": "need",
           "ko": "너 뭐 필요해?",
           "en": "What do you need?",
-          "purpose": "need",
-          "purposeLabel": "의무",
-          "purposeMean": "어쩔 수 없이 해야 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d16_05",
@@ -3350,9 +3350,9 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "너 뭐 필요해?",
           "en": "What do you need?",
-          "purpose": "need",
-          "purposeLabel": "의무",
-          "purposeMean": "어쩔 수 없이 해야 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d18_06",
@@ -3415,8 +3415,8 @@ window.CURRICULUM = {
           "ko": "너 갈 수 있어?",
           "en": "Can you go?",
           "purpose": "ask",
-          "purposeLabel": "부탁",
-          "purposeMean": "네가 해줘"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d18_14",
@@ -3452,9 +3452,9 @@ window.CURRICULUM = {
           "ko": "얼마나 걸려요?",
           "en": "How long does it take?",
           "tense": "평소",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d19_05",
@@ -3749,8 +3749,8 @@ window.CURRICULUM = {
           "ko": "너 해낼 수 있어.",
           "en": "You can make it.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d20_03",
@@ -3758,8 +3758,8 @@ window.CURRICULUM = {
           "ko": "우리 시간 맞춰 갈 수 있어.",
           "en": "We can make it.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d20_09",
@@ -3840,27 +3840,27 @@ window.CURRICULUM = {
           "tag": "wh",
           "ko": "이게 뭐야?",
           "en": "What is this?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_02",
           "tag": "wh",
           "ko": "너 누구야?",
           "en": "Who are you?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_03",
           "tag": "wh",
           "ko": "그거 언제야?",
           "en": "When is it?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_04",
@@ -3868,45 +3868,45 @@ window.CURRICULUM = {
           "ko": "화장실 어디예요?",
           "en": "Where is the bathroom?",
           "note": "where(어디)를 맨 앞에. 의문사 더하기 is 더하기 주어.",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_08",
           "tag": "wh",
           "ko": "그 사람 누구야?",
           "en": "Who is he?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_12",
           "tag": "wh",
           "ko": "얼마예요?",
           "en": "How much is it?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_13",
           "tag": "wh",
           "ko": "몇 시예요?",
           "en": "What time is it?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_14",
           "tag": "wh",
           "ko": "누가 알아?",
           "en": "Who knows?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_15",
@@ -3922,9 +3922,9 @@ window.CURRICULUM = {
           "tag": "wh",
           "ko": "왜 늦었어?",
           "en": "Why are you late?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_24",
@@ -3942,9 +3942,9 @@ window.CURRICULUM = {
           "en": "How do you do this?",
           "note": "How do you ~? 는 어떻게 ~해요? do this 자리에 say it, use it.",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_07",
@@ -3952,18 +3952,18 @@ window.CURRICULUM = {
           "ko": "너 뭐 해?",
           "en": "What are you doing?",
           "tense": "지금",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_09",
           "tag": "wh",
           "ko": "우리 언제 가?",
           "en": "When do we go?",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_10",
@@ -3971,18 +3971,18 @@ window.CURRICULUM = {
           "ko": "너 어디 가?",
           "en": "Where are you going?",
           "tense": "지금",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_16",
           "tag": "wh",
           "ko": "거기 어떻게 가요?",
           "en": "How do I get there?",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_17",
@@ -3990,36 +3990,45 @@ window.CURRICULUM = {
           "ko": "얼마나 걸려요?",
           "en": "How long does it take?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_18",
           "tag": "wh",
           "ko": "너 뭐 원해?",
           "en": "What do you want?",
-          "purpose": "want",
-          "purposeLabel": "욕구",
-          "purposeMean": "하고 싶음·원함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_05",
           "tag": "wh",
           "ko": "왜?",
-          "en": "Why?"
+          "en": "Why?",
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_11",
           "tag": "wh",
           "ko": "왜 안 돼?",
-          "en": "Why not?"
+          "en": "Why not?",
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_20",
           "tag": "wh",
           "ko": "어느 거예요?",
-          "en": "Which one?"
+          "en": "Which one?",
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_21",
@@ -4072,9 +4081,9 @@ window.CURRICULUM = {
           "ko": "어디 가?",
           "en": "Where are you going?",
           "tense": "지금",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d22_04",
@@ -4127,9 +4136,9 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "뭐 먹고 싶어?",
           "en": "What do you want to eat?",
-          "purpose": "want",
-          "purposeLabel": "욕구",
-          "purposeMean": "하고 싶음·원함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d22_10",
@@ -4146,9 +4155,9 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "이거 얼마예요?",
           "en": "How much is this?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d22_12",
@@ -4164,9 +4173,9 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "화장실 어디예요?",
           "en": "Where is the bathroom?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d22_14",
@@ -4193,8 +4202,8 @@ window.CURRICULUM = {
           "ko": "나 영어 잘 못해.",
           "en": "I can't speak English well.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d22_17",
@@ -4294,9 +4303,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "짐 찾는 곳 어디예요?",
           "en": "Where is baggage claim?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d23_08",
@@ -4304,8 +4313,8 @@ window.CURRICULUM = {
           "ko": "제 가방을 못 찾겠어요.",
           "en": "I can't find my bag.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d23_09",
@@ -4314,17 +4323,17 @@ window.CURRICULUM = {
           "en": "Where can I get a taxi?",
           "note": "Where can I get ~? 는 ~ 어디서 구해요/타요? taxi 자리에 cash, water.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d23_10",
           "tag": "trip",
           "ko": "시내까지 얼마예요?",
           "en": "How much is it to downtown?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d23_11",
@@ -4350,8 +4359,8 @@ window.CURRICULUM = {
           "ko": "환전 어디서 해요?",
           "en": "Where can I get cash?",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d23_14",
@@ -4387,9 +4396,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "화장실 어디예요?",
           "en": "Where is the bathroom?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d23_18",
@@ -4405,9 +4414,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "출구 어디예요?",
           "en": "Where is the exit?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d23_20",
@@ -4495,9 +4504,9 @@ window.CURRICULUM = {
           "ko": "이거 어떻게 써요?",
           "en": "How do you use this?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d24_09",
@@ -4513,9 +4522,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "얼마나 깊어요?",
           "en": "How deep is it?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d24_11",
@@ -4541,9 +4550,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "몇 시에 가요?",
           "en": "What time do we go?",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d24_14",
@@ -4551,9 +4560,9 @@ window.CURRICULUM = {
           "ko": "얼마나 걸려요?",
           "en": "How long does it take?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d24_15",
@@ -4587,9 +4596,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "제 짝이 누구예요?",
           "en": "Who is my buddy?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d24_19",
@@ -4748,8 +4757,8 @@ window.CURRICULUM = {
           "ko": "나 숨 못 쉬겠어.",
           "en": "I can't breathe.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d25_13",
@@ -4757,8 +4766,8 @@ window.CURRICULUM = {
           "ko": "나 너 보여.",
           "en": "I can see you.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d25_14",
@@ -4766,8 +4775,8 @@ window.CURRICULUM = {
           "ko": "나 안 보여.",
           "en": "I can't see.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeLabel": "능력",
+          "purposeMean": "할 수 있다·없다"
         },
         {
           "id": "d25_15",
@@ -4892,9 +4901,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "화장실 어디예요?",
           "en": "Where is the bathroom?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d26_08",
@@ -4940,9 +4949,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "얼마예요?",
           "en": "How much is it?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d26_13",
@@ -5035,7 +5044,7 @@ window.CURRICULUM = {
           "en": "Two beers, please.",
           "purpose": "ask",
           "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "purposeMean": "부탁"
         },
         {
           "id": "d26_23",

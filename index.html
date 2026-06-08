@@ -113,6 +113,7 @@
   .ptag.q-fact{color:#9aa6ff; background:#121626; border:1px solid #2a3450;}
   .ptag.q-askyou{color:#5fd0c8; background:#0e2120; border:1px solid #1f4a46;}
   .ptag.q-aski{color:#F5B14C; background:#231a0c; border:1px solid #4a3a18;}
+  .ptag.q-can{color:#86e0c0; background:#0e2018; border:1px solid #1f4a3a;}
   .scene{align-self:flex-start; color:var(--rev); font-size:16px; font-weight:600;
     background:#11161f; border:1px solid #1f2a3d; border-radius:11px; padding:8px 13px; display:none;}
   .scene.show{display:block;}
@@ -530,7 +531,7 @@ function render(){
   } else if(it.purposeLabel){
     // 종류 라벨(색) + 의미 한 줄. 시제 있으면 흐린 텍스트로 곁들임.
     const pcls = {"의무":"p-need","요청":"p-ask","욕구":"p-want","명령":"p-tell",
-                  "부탁":"q-askyou","허락":"q-aski","질문":"q-fact",
+                  "부탁":"q-askyou","허락":"q-aski","질문":"q-fact","능력":"q-can",
                   "상태":"p-state","행동":"p-action","소유":"p-have"}[it.purposeLabel] || "p-ask";
     tagEl.className = "ptag " + pcls;
     tagEl.innerHTML = it.purposeLabel
