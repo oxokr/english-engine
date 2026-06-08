@@ -524,14 +524,14 @@ function render(){
     tagEl.className = "tag rev"; tagEl.textContent = "복습";
   } else if(it.compound){
     tagEl.className = "ptag p-state"; tagEl.innerHTML = "🔗 두 문장 <span class='mean'>· 짧은 문장 둘을 이어 말하기</span>";
-  } else if(["사실","부탁","허락"].includes(it.tag)){
-    // Day29 묻기 3종 — 색 배지
-    const qcls = {"사실":"q-fact","부탁":"q-askyou","허락":"q-aski"}[it.tag];
+  } else if(["사실","상태","부탁","허락","주문"].includes(it.tag)){
+    // Day29 묻기 종류 — 색 배지
+    const qcls = {"사실":"q-fact","상태":"p-state","부탁":"q-askyou","허락":"q-aski","주문":"p-have"}[it.tag];
     tagEl.className = "ptag " + qcls; tagEl.textContent = it.tag;
   } else if(it.purposeLabel){
     // 종류 라벨(색) + 의미 한 줄. 시제 있으면 흐린 텍스트로 곁들임.
     const pcls = {"의무":"p-need","요청":"p-ask","욕구":"p-want","명령":"p-tell",
-                  "부탁":"q-askyou","허락":"q-aski","질문":"q-fact","능력":"q-can",
+                  "부탁":"q-askyou","허락":"q-aski","질문":"q-fact","능력":"q-can","주문":"p-have",
                   "상태":"p-state","행동":"p-action","소유":"p-have"}[it.purposeLabel] || "p-ask";
     tagEl.className = "ptag " + pcls;
     tagEl.innerHTML = it.purposeLabel

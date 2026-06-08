@@ -259,7 +259,7 @@ PURPOSE_MEAN = {
   "명령":"상대에게 시킴·하자", "상태":"그냥 그러함·~이다", "행동":"무언가를 함",
   "소유":"가지고 있다·없다", "요청":"부탁",
   "부탁":"네가 해줘", "허락":"내가 해도 돼?", "질문":"궁금해서 물음",
-  "능력":"할 수 있다·없다",
+  "능력":"할 수 있다·없다", "주문":"~ 주세요(가게서)",
 }
 
 # 뜻 기반 라벨 보정 — 모양만으론 안 갈리는 것(능력 I can / 사실질문 Can you·wh-) 강제 지정.
@@ -304,6 +304,9 @@ def refine_ask(en):
     el = e.lower()
     if el.startswith("can you") or el.startswith("could you") or el.startswith("will you"):
         return "부탁"
+    # Can I get/have + 물건 = 주문(~ 주세요), Can I + 동사 = 허락(~ 해도 돼?)
+    if _re2.match(r"^can i (get|have)\b", el):
+        return "주문"
     if el.startswith("can i") or el.startswith("could i") or el.startswith("may i"):
         return "허락"
     return "요청"  # 그 외(I can do it=능력 등)는 요청 그대로
@@ -346,12 +349,14 @@ D28_CONCEPT = ("오늘은 아니라고 말하기예요. 여기가 진짜 중요�
   "그리고 지금 안 하고 있어만 be 더하기 not 더하기 ing예요. I'm not eating. "
   "딱 이 네 개만 잡으면 부정은 끝이에요.")
 
-D29_CONCEPT = ("오늘은 묻는 말 세 가지를 딱 갈라볼게요. Do you, Can you, Can I. 진짜 자주 헷갈리죠. "
-  "첫째 Do you는 사실을 물어요. 너 평소에 그래? 너 커피 마셔? Do you drink coffee? 정보가 궁금한 거예요. "
-  "둘째 Can you는 부탁이에요. 그거 해줄래? 도와줄래? Can you help me? 상대가 움직여 주길 바라는 거죠. "
-  "셋째 Can I는 허락이에요. 내가 해도 돼? 커피 하나 주세요. Can I get a coffee? 내가 하는 행동을 물어요. "
-  "정리할게요. 정보가 궁금하면 Do you, 상대한테 해달라고 하면 Can you, 내가 해도 되냐고 하면 Can I. "
-  "쉽게, Do you는 그래? Can you는 해줄래? Can I는 해도 돼? 이 세 마디만 기억해요.")
+D29_CONCEPT = ("오늘은 묻는 말을 딱 갈라볼게요. 진짜 자주 헷갈리죠. 네 개만 잡으면 돼요. "
+  "첫째 Do you는 동작을 물어요. 너 커피 마셔? Do you drink coffee? 평소에 그러는지 정보가 궁금한 거예요. "
+  "둘째 Are you는 상태를 물어요. 너 괜찮아? Are you okay? ~한 상태인지를 물어요. "
+  "여기가 핵심이에요. 마시다, 가다 같은 동작이면 Do you. 괜찮다, 준비됐다 같은 상태면 Are you. "
+  "셋째 Can you는 부탁이에요. 도와줄래? Can you help me? 상대가 해주길 바라는 거죠. "
+  "넷째 Can I는 내 차례예요. 화장실 써도 돼? Can I use the bathroom? 허락이고, "
+  "커피 하나 주세요 Can I get a coffee? 처럼 물건을 달라는 주문도 Can I get으로 해요. "
+  "정리할게요. 동작이면 Do you, 상태면 Are you, 부탁이면 Can you, 내 차례면 Can I. 이 넷이에요.")
 
 TENSE_DAYS = [
   {"day":27, "verb":"시제", "phase":"시제 · 4개의 시간", "ready":True,
@@ -400,28 +405,28 @@ TENSE_DAYS = [
     mk(28,19,"지금","나 지금 일 안 하고 있어.","I'm not working."),
     mk(28,20,"지금","나 지금 그거 안 하고 있어.","I'm not doing it."),
    ]},
-  {"day":29, "verb":"묻기", "phase":"묻는 말 · 3가지", "ready":True,
-   "dlabel":"묻기", "title":"Do you / Can you / Can I", "concept":D29_CONCEPT, "items":[
-    mk(29,1,"사실","너 커피 마셔?","Do you drink coffee?","Do you ~? = 평소에 그래? (사실·습관을 물음)"),
+  {"day":29, "verb":"묻기", "phase":"묻는 말 · 5가지", "ready":True,
+   "dlabel":"묻기", "title":"Do / Are / Can you / Can I", "concept":D29_CONCEPT, "items":[
+    mk(29,1,"사실","너 커피 마셔?","Do you drink coffee?","Do you ~? = 동작을 물음(평소 그래?)."),
     mk(29,2,"사실","너 운전해?","Do you drive?"),
     mk(29,3,"사실","너 영어 해?","Do you speak English?"),
     mk(29,4,"사실","너 그거 알아?","Do you know it?"),
-    mk(29,5,"사실","너 시간 있어?","Do you have time?","'있어?'(사실)는 Do you. 부탁이 아니에요."),
-    mk(29,6,"부탁","도와줄래?","Can you help me?","Can you ~? = 해줄래? (상대가 해주길 부탁)"),
-    mk(29,7,"부탁","천천히 말해 줄래?","Can you speak slowly?"),
-    mk(29,8,"부탁","이거 고쳐 줄래?","Can you fix this?"),
-    mk(29,9,"부탁","다시 말해 줄래?","Can you say that again?"),
-    mk(29,10,"부탁","문 열어 줄래?","Can you open the door?"),
-    mk(29,11,"허락","나 들어가도 돼?","Can I come in?","Can I ~? = 내가 해도 돼? (내 행동의 허락·요청)"),
-    mk(29,12,"허락","커피 하나 주세요.","Can I get a coffee?","'주세요'도 내가 받는 거라 Can I get."),
-    mk(29,13,"허락","화장실 써도 돼?","Can I use the bathroom?"),
-    mk(29,14,"허락","이거 봐도 돼?","Can I see this?"),
+    mk(29,5,"상태","너 괜찮아?","Are you okay?","Are you ~? = 상태를 물음. 동작이면 Do, 상태면 Are!"),
+    mk(29,6,"상태","너 준비됐어?","Are you ready?"),
+    mk(29,7,"상태","너 배고파?","Are you hungry?"),
+    mk(29,8,"상태","너 거기 있어?","Are you there?","'있어?'(상태)는 Are you. 마시다·가다면 Do you."),
+    mk(29,9,"부탁","도와줄래?","Can you help me?","Can you ~? = 해줄래?(상대가 해줌)."),
+    mk(29,10,"부탁","천천히 말해 줄래?","Can you speak slowly?"),
+    mk(29,11,"부탁","이거 고쳐 줄래?","Can you fix this?"),
+    mk(29,12,"부탁","사진 찍어 줄래?","Can you take a photo?"),
+    mk(29,13,"허락","화장실 써도 돼?","Can I use the bathroom?","Can I + 동사 = 내가 해도 돼?(허락)."),
+    mk(29,14,"허락","나 들어가도 돼?","Can I come in?"),
     mk(29,15,"허락","나 여기 앉아도 돼?","Can I sit here?"),
-    mk(29,16,"사실","너 매일 일해?","Do you work every day?","평소를 묻는 사실 질문 = Do you."),
-    mk(29,17,"부탁","나 좀 도와줄래?","Can you give me a hand?","give me a hand = 도와주다. 역시 상대가 해줌 = Can you."),
-    mk(29,18,"허락","나 네 펜 써도 돼?","Can I use your pen?"),
-    mk(29,19,"부탁","사진 찍어 줄래?","Can you take a photo?","사진을 찍는 건 상대 = Can you."),
-    mk(29,20,"허락","나 하나 더 먹어도 돼?","Can I have one more?","내가 먹는 거 = Can I."),
+    mk(29,16,"허락","나 네 펜 써도 돼?","Can I use your pen?"),
+    mk(29,17,"주문","커피 하나 주세요.","Can I get a coffee?","Can I get + 물건 = ~ 주세요(가게 주문)."),
+    mk(29,18,"주문","물 좀 주세요.","Can I get some water?"),
+    mk(29,19,"주문","메뉴판 주세요.","Can I get a menu?"),
+    mk(29,20,"주문","하나 더 주세요.","Can I get one more?","'주세요'는 Can I get. '~해도 돼?'(허락)랑 달라요."),
    ]},
 ]
 
@@ -462,6 +467,9 @@ for d in C["days"]:
             # 뜻 기반 보정(질문/능력/부탁/허락 등) — 모양 분류보다 우선.
             it.pop("compound", None)
             lab = LABEL_OVERRIDE[it["id"]]
+            # '허락'으로 박힌 것 중 Can I get/have(물건)은 '주문'으로 재정제
+            if lab == "허락":
+                lab = refine_ask(it["en"])
             it["purpose"] = "ask"  # 색 계열 키(상세는 라벨로)
             it["purposeLabel"] = lab
             it["purposeMean"] = PURPOSE_MEAN.get(lab, "")
@@ -494,11 +502,10 @@ for d in C["days"]:
         elif it["id"] in APPLY_NOTES:
             it["note"] = APPLY_NOTES[it["id"]]; n_note += 1
 
-# 시제 미니 단계(Day 27~28) 멱등 추가
-have_days = {d["day"] for d in C["days"]}
-for td in TENSE_DAYS:
-    if td["day"] not in have_days:
-        C["days"].append(td)
+# 전용 미니 단계(Day 27~29) — 있으면 최신 정의로 교체, 없으면 추가(멱등)
+_td_by_day = {td["day"]: td for td in TENSE_DAYS}
+C["days"] = [td for td in TENSE_DAYS if td["day"] not in {d["day"] for d in C["days"]}] + \
+            [(_td_by_day[d["day"]] if d["day"] in _td_by_day else d) for d in C["days"]]
 C["days"].sort(key=lambda d: d["day"])
 
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.

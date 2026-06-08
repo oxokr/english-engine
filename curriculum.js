@@ -1917,8 +1917,8 @@ window.CURRICULUM = {
           "en": "Can I get a coffee?",
           "note": "Can I get...?은 ~ 주세요. 가게에서 쓰는 말.",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d10_07",
@@ -1926,8 +1926,8 @@ window.CURRICULUM = {
           "ko": "물 좀 주세요.",
           "en": "Can I get some water?",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d10_13",
@@ -1936,8 +1936,8 @@ window.CURRICULUM = {
           "en": "Can I get the receipt?",
           "note": "the receipt — 방금 그 영수증이라 the. 처음이면 a.",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d10_16",
@@ -1945,8 +1945,8 @@ window.CURRICULUM = {
           "ko": "메뉴판 좀 주세요.",
           "en": "Can I get a menu?",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d10_19",
@@ -2800,8 +2800,8 @@ window.CURRICULUM = {
           "note": "Can I ~? 는 ~해도 돼요/주세요. have 자리에 use, get.",
           "eq": "Can I get this? 랑 같은 뜻. 가게·식당에서 바꿔 써도 돼요.",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d15_09",
@@ -4633,8 +4633,8 @@ window.CURRICULUM = {
           "ko": "공기통 두 개요.",
           "en": "Two tanks, please.",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁"
         },
         {
           "id": "d24_23",
@@ -4847,8 +4847,8 @@ window.CURRICULUM = {
           "ko": "메뉴 좀 주세요.",
           "en": "Can I get a menu?",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d26_02",
@@ -4856,8 +4856,8 @@ window.CURRICULUM = {
           "ko": "이거 주세요.",
           "en": "Can I get this?",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d26_03",
@@ -4865,8 +4865,8 @@ window.CURRICULUM = {
           "ko": "물 좀 주세요.",
           "en": "Can I get some water?",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d26_04",
@@ -4884,8 +4884,8 @@ window.CURRICULUM = {
           "en": "Can I get the check?",
           "note": "정해진 그것엔 the. the check는 그 계산서.",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d26_06",
@@ -4978,8 +4978,8 @@ window.CURRICULUM = {
           "ko": "하나 더 주세요.",
           "en": "Can I get one more?",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d26_16",
@@ -4987,8 +4987,8 @@ window.CURRICULUM = {
           "ko": "포장돼요?",
           "en": "Can I get this to go?",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "주문",
+          "purposeMean": "~ 주세요(가게서)"
         },
         {
           "id": "d26_17",
@@ -5043,8 +5043,8 @@ window.CURRICULUM = {
           "ko": "맥주 두 잔 주세요.",
           "en": "Two beers, please.",
           "purpose": "ask",
-          "purposeLabel": "허락",
-          "purposeMean": "내가 해도 돼?"
+          "purposeLabel": "요청",
+          "purposeMean": "부탁"
         },
         {
           "id": "d26_23",
@@ -5334,18 +5334,18 @@ window.CURRICULUM = {
     {
       "day": 29,
       "verb": "묻기",
-      "phase": "묻는 말 · 3가지",
+      "phase": "묻는 말 · 5가지",
       "ready": true,
       "dlabel": "묻기",
-      "title": "Do you / Can you / Can I",
-      "concept": "오늘은 묻는 말 세 가지를 딱 갈라볼게요. Do you, Can you, Can I. 진짜 자주 헷갈리죠. 첫째 Do you는 사실을 물어요. 너 평소에 그래? 너 커피 마셔? Do you drink coffee? 정보가 궁금한 거예요. 둘째 Can you는 부탁이에요. 그거 해줄래? 도와줄래? Can you help me? 상대가 움직여 주길 바라는 거죠. 셋째 Can I는 허락이에요. 내가 해도 돼? 커피 하나 주세요. Can I get a coffee? 내가 하는 행동을 물어요. 정리할게요. 정보가 궁금하면 Do you, 상대한테 해달라고 하면 Can you, 내가 해도 되냐고 하면 Can I. 쉽게, Do you는 그래? Can you는 해줄래? Can I는 해도 돼? 이 세 마디만 기억해요.",
+      "title": "Do / Are / Can you / Can I",
+      "concept": "오늘은 묻는 말을 딱 갈라볼게요. 진짜 자주 헷갈리죠. 네 개만 잡으면 돼요. 첫째 Do you는 동작을 물어요. 너 커피 마셔? Do you drink coffee? 평소에 그러는지 정보가 궁금한 거예요. 둘째 Are you는 상태를 물어요. 너 괜찮아? Are you okay? ~한 상태인지를 물어요. 여기가 핵심이에요. 마시다, 가다 같은 동작이면 Do you. 괜찮다, 준비됐다 같은 상태면 Are you. 셋째 Can you는 부탁이에요. 도와줄래? Can you help me? 상대가 해주길 바라는 거죠. 넷째 Can I는 내 차례예요. 화장실 써도 돼? Can I use the bathroom? 허락이고, 커피 하나 주세요 Can I get a coffee? 처럼 물건을 달라는 주문도 Can I get으로 해요. 정리할게요. 동작이면 Do you, 상태면 Are you, 부탁이면 Can you, 내 차례면 Can I. 이 넷이에요.",
       "items": [
         {
           "id": "d29_01",
           "tag": "사실",
           "ko": "너 커피 마셔?",
           "en": "Do you drink coffee?",
-          "note": "Do you ~? = 평소에 그래? (사실·습관을 물음)"
+          "note": "Do you ~? = 동작을 물음(평소 그래?)."
         },
         {
           "id": "d29_02",
@@ -5367,67 +5367,67 @@ window.CURRICULUM = {
         },
         {
           "id": "d29_05",
-          "tag": "사실",
-          "ko": "너 시간 있어?",
-          "en": "Do you have time?",
-          "note": "'있어?'(사실)는 Do you. 부탁이 아니에요."
+          "tag": "상태",
+          "ko": "너 괜찮아?",
+          "en": "Are you okay?",
+          "note": "Are you ~? = 상태를 물음. 동작이면 Do, 상태면 Are!"
         },
         {
           "id": "d29_06",
-          "tag": "부탁",
-          "ko": "도와줄래?",
-          "en": "Can you help me?",
-          "note": "Can you ~? = 해줄래? (상대가 해주길 부탁)"
+          "tag": "상태",
+          "ko": "너 준비됐어?",
+          "en": "Are you ready?"
         },
         {
           "id": "d29_07",
+          "tag": "상태",
+          "ko": "너 배고파?",
+          "en": "Are you hungry?"
+        },
+        {
+          "id": "d29_08",
+          "tag": "상태",
+          "ko": "너 거기 있어?",
+          "en": "Are you there?",
+          "note": "'있어?'(상태)는 Are you. 마시다·가다면 Do you."
+        },
+        {
+          "id": "d29_09",
+          "tag": "부탁",
+          "ko": "도와줄래?",
+          "en": "Can you help me?",
+          "note": "Can you ~? = 해줄래?(상대가 해줌)."
+        },
+        {
+          "id": "d29_10",
           "tag": "부탁",
           "ko": "천천히 말해 줄래?",
           "en": "Can you speak slowly?"
         },
         {
-          "id": "d29_08",
+          "id": "d29_11",
           "tag": "부탁",
           "ko": "이거 고쳐 줄래?",
           "en": "Can you fix this?"
         },
         {
-          "id": "d29_09",
-          "tag": "부탁",
-          "ko": "다시 말해 줄래?",
-          "en": "Can you say that again?"
-        },
-        {
-          "id": "d29_10",
-          "tag": "부탁",
-          "ko": "문 열어 줄래?",
-          "en": "Can you open the door?"
-        },
-        {
-          "id": "d29_11",
-          "tag": "허락",
-          "ko": "나 들어가도 돼?",
-          "en": "Can I come in?",
-          "note": "Can I ~? = 내가 해도 돼? (내 행동의 허락·요청)"
-        },
-        {
           "id": "d29_12",
-          "tag": "허락",
-          "ko": "커피 하나 주세요.",
-          "en": "Can I get a coffee?",
-          "note": "'주세요'도 내가 받는 거라 Can I get."
+          "tag": "부탁",
+          "ko": "사진 찍어 줄래?",
+          "en": "Can you take a photo?"
         },
         {
           "id": "d29_13",
           "tag": "허락",
           "ko": "화장실 써도 돼?",
-          "en": "Can I use the bathroom?"
+          "en": "Can I use the bathroom?",
+          "note": "Can I + 동사 = 내가 해도 돼?(허락)."
         },
         {
           "id": "d29_14",
           "tag": "허락",
-          "ko": "이거 봐도 돼?",
-          "en": "Can I see this?"
+          "ko": "나 들어가도 돼?",
+          "en": "Can I come in?"
         },
         {
           "id": "d29_15",
@@ -5437,37 +5437,35 @@ window.CURRICULUM = {
         },
         {
           "id": "d29_16",
-          "tag": "사실",
-          "ko": "너 매일 일해?",
-          "en": "Do you work every day?",
-          "note": "평소를 묻는 사실 질문 = Do you."
-        },
-        {
-          "id": "d29_17",
-          "tag": "부탁",
-          "ko": "나 좀 도와줄래?",
-          "en": "Can you give me a hand?",
-          "note": "give me a hand = 도와주다. 역시 상대가 해줌 = Can you."
-        },
-        {
-          "id": "d29_18",
           "tag": "허락",
           "ko": "나 네 펜 써도 돼?",
           "en": "Can I use your pen?"
         },
         {
+          "id": "d29_17",
+          "tag": "주문",
+          "ko": "커피 하나 주세요.",
+          "en": "Can I get a coffee?",
+          "note": "Can I get + 물건 = ~ 주세요(가게 주문)."
+        },
+        {
+          "id": "d29_18",
+          "tag": "주문",
+          "ko": "물 좀 주세요.",
+          "en": "Can I get some water?"
+        },
+        {
           "id": "d29_19",
-          "tag": "부탁",
-          "ko": "사진 찍어 줄래?",
-          "en": "Can you take a photo?",
-          "note": "사진을 찍는 건 상대 = Can you."
+          "tag": "주문",
+          "ko": "메뉴판 주세요.",
+          "en": "Can I get a menu?"
         },
         {
           "id": "d29_20",
-          "tag": "허락",
-          "ko": "나 하나 더 먹어도 돼?",
-          "en": "Can I have one more?",
-          "note": "내가 먹는 거 = Can I."
+          "tag": "주문",
+          "ko": "하나 더 주세요.",
+          "en": "Can I get one more?",
+          "note": "'주세요'는 Can I get. '~해도 돼?'(허락)랑 달라요."
         }
       ]
     }
