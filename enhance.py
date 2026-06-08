@@ -276,6 +276,13 @@ D28_CONCEPT = ("오늘은 아니라고 말하기예요. 여기가 진짜 중요�
   "그리고 지금 안 하고 있어만 be 더하기 not 더하기 ing예요. I'm not eating. "
   "딱 이 네 개만 잡으면 부정은 끝이에요.")
 
+D29_CONCEPT = ("오늘은 묻는 말 세 가지를 딱 갈라볼게요. Do you, Can you, Can I. 진짜 자주 헷갈리죠. "
+  "첫째 Do you는 사실을 물어요. 너 평소에 그래? 너 커피 마셔? Do you drink coffee? 정보가 궁금한 거예요. "
+  "둘째 Can you는 부탁이에요. 그거 해줄래? 도와줄래? Can you help me? 상대가 움직여 주길 바라는 거죠. "
+  "셋째 Can I는 허락이에요. 내가 해도 돼? 커피 하나 주세요. Can I get a coffee? 내가 하는 행동을 물어요. "
+  "정리할게요. 정보가 궁금하면 Do you, 상대한테 해달라고 하면 Can you, 내가 해도 되냐고 하면 Can I. "
+  "쉽게, Do you는 그래? Can you는 해줄래? Can I는 해도 돼? 이 세 마디만 기억해요.")
+
 TENSE_DAYS = [
   {"day":27, "verb":"시제", "phase":"시제 · 4개의 시간", "ready":True,
    "dlabel":"시제 ①", "title":"시제 · 긍정", "concept":D27_CONCEPT, "items":[
@@ -323,6 +330,29 @@ TENSE_DAYS = [
     mk(28,19,"지금","나 지금 일 안 하고 있어.","I'm not working."),
     mk(28,20,"지금","나 지금 그거 안 하고 있어.","I'm not doing it."),
    ]},
+  {"day":29, "verb":"묻기", "phase":"묻는 말 · 3가지", "ready":True,
+   "dlabel":"묻기", "title":"Do you / Can you / Can I", "concept":D29_CONCEPT, "items":[
+    mk(29,1,"사실","너 커피 마셔?","Do you drink coffee?","Do you ~? = 평소에 그래? (사실·습관을 물음)"),
+    mk(29,2,"사실","너 운전해?","Do you drive?"),
+    mk(29,3,"사실","너 영어 해?","Do you speak English?"),
+    mk(29,4,"사실","너 그거 알아?","Do you know it?"),
+    mk(29,5,"사실","너 시간 있어?","Do you have time?","'있어?'(사실)는 Do you. 부탁이 아니에요."),
+    mk(29,6,"부탁","도와줄래?","Can you help me?","Can you ~? = 해줄래? (상대가 해주길 부탁)"),
+    mk(29,7,"부탁","천천히 말해 줄래?","Can you speak slowly?"),
+    mk(29,8,"부탁","이거 고쳐 줄래?","Can you fix this?"),
+    mk(29,9,"부탁","다시 말해 줄래?","Can you say that again?"),
+    mk(29,10,"부탁","문 열어 줄래?","Can you open the door?"),
+    mk(29,11,"허락","나 들어가도 돼?","Can I come in?","Can I ~? = 내가 해도 돼? (내 행동의 허락·요청)"),
+    mk(29,12,"허락","커피 하나 주세요.","Can I get a coffee?","'주세요'도 내가 받는 거라 Can I get."),
+    mk(29,13,"허락","화장실 써도 돼?","Can I use the bathroom?"),
+    mk(29,14,"허락","이거 봐도 돼?","Can I see this?"),
+    mk(29,15,"허락","나 여기 앉아도 돼?","Can I sit here?"),
+    mk(29,16,"사실","너 매일 일해?","Do you work every day?","평소를 묻는 사실 질문 = Do you."),
+    mk(29,17,"부탁","나 좀 도와줄래?","Can you give me a hand?","give me a hand = 도와주다. 역시 상대가 해줌 = Can you."),
+    mk(29,18,"허락","나 네 펜 써도 돼?","Can I use your pen?"),
+    mk(29,19,"부탁","사진 찍어 줄래?","Can you take a photo?","사진을 찍는 건 상대 = Can you."),
+    mk(29,20,"허락","나 하나 더 먹어도 돼?","Can I have one more?","내가 먹는 거 = Can I."),
+   ]},
 ]
 
 n_concept = n_note = n_scene = n_eq = 0
@@ -343,8 +373,8 @@ for d in C["days"]:
             it["ko"] = D14_03["ko"]; it["en"] = D14_03["en"]; it["note"] = D14_03["note"]
         if it["id"] in KO_FIX:
             it["ko"] = KO_FIX[it["id"]]
-        # 전 문장 시제 자동분류(Day 27·28 시제전용일 제외 — 거긴 tag가 곧 시제)
-        if d["day"] not in (27, 28):
+        # 전 문장 시제 자동분류(Day 27·28·29 전용일 제외 — 거긴 tag가 곧 라벨)
+        if d["day"] not in (27, 28, 29):
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
@@ -379,7 +409,7 @@ C["days"].sort(key=lambda d: d["day"])
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
 # 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
 PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
-SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28])
+SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29])
 for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))

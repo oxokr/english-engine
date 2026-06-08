@@ -4326,6 +4326,146 @@ window.CURRICULUM = {
           "en": "I'm not doing it."
         }
       ]
+    },
+    {
+      "day": 29,
+      "verb": "묻기",
+      "phase": "묻는 말 · 3가지",
+      "ready": true,
+      "dlabel": "묻기",
+      "title": "Do you / Can you / Can I",
+      "concept": "오늘은 묻는 말 세 가지를 딱 갈라볼게요. Do you, Can you, Can I. 진짜 자주 헷갈리죠. 첫째 Do you는 사실을 물어요. 너 평소에 그래? 너 커피 마셔? Do you drink coffee? 정보가 궁금한 거예요. 둘째 Can you는 부탁이에요. 그거 해줄래? 도와줄래? Can you help me? 상대가 움직여 주길 바라는 거죠. 셋째 Can I는 허락이에요. 내가 해도 돼? 커피 하나 주세요. Can I get a coffee? 내가 하는 행동을 물어요. 정리할게요. 정보가 궁금하면 Do you, 상대한테 해달라고 하면 Can you, 내가 해도 되냐고 하면 Can I. 쉽게, Do you는 그래? Can you는 해줄래? Can I는 해도 돼? 이 세 마디만 기억해요.",
+      "items": [
+        {
+          "id": "d29_01",
+          "tag": "사실",
+          "ko": "너 커피 마셔?",
+          "en": "Do you drink coffee?",
+          "note": "Do you ~? = 평소에 그래? (사실·습관을 물음)"
+        },
+        {
+          "id": "d29_02",
+          "tag": "사실",
+          "ko": "너 운전해?",
+          "en": "Do you drive?"
+        },
+        {
+          "id": "d29_03",
+          "tag": "사실",
+          "ko": "너 영어 해?",
+          "en": "Do you speak English?"
+        },
+        {
+          "id": "d29_04",
+          "tag": "사실",
+          "ko": "너 그거 알아?",
+          "en": "Do you know it?"
+        },
+        {
+          "id": "d29_05",
+          "tag": "사실",
+          "ko": "너 시간 있어?",
+          "en": "Do you have time?",
+          "note": "'있어?'(사실)는 Do you. 부탁이 아니에요."
+        },
+        {
+          "id": "d29_06",
+          "tag": "부탁",
+          "ko": "도와줄래?",
+          "en": "Can you help me?",
+          "note": "Can you ~? = 해줄래? (상대가 해주길 부탁)"
+        },
+        {
+          "id": "d29_07",
+          "tag": "부탁",
+          "ko": "천천히 말해 줄래?",
+          "en": "Can you speak slowly?"
+        },
+        {
+          "id": "d29_08",
+          "tag": "부탁",
+          "ko": "이거 고쳐 줄래?",
+          "en": "Can you fix this?"
+        },
+        {
+          "id": "d29_09",
+          "tag": "부탁",
+          "ko": "다시 말해 줄래?",
+          "en": "Can you say that again?"
+        },
+        {
+          "id": "d29_10",
+          "tag": "부탁",
+          "ko": "문 열어 줄래?",
+          "en": "Can you open the door?"
+        },
+        {
+          "id": "d29_11",
+          "tag": "허락",
+          "ko": "나 들어가도 돼?",
+          "en": "Can I come in?",
+          "note": "Can I ~? = 내가 해도 돼? (내 행동의 허락·요청)"
+        },
+        {
+          "id": "d29_12",
+          "tag": "허락",
+          "ko": "커피 하나 주세요.",
+          "en": "Can I get a coffee?",
+          "note": "'주세요'도 내가 받는 거라 Can I get."
+        },
+        {
+          "id": "d29_13",
+          "tag": "허락",
+          "ko": "화장실 써도 돼?",
+          "en": "Can I use the bathroom?"
+        },
+        {
+          "id": "d29_14",
+          "tag": "허락",
+          "ko": "이거 봐도 돼?",
+          "en": "Can I see this?"
+        },
+        {
+          "id": "d29_15",
+          "tag": "허락",
+          "ko": "나 여기 앉아도 돼?",
+          "en": "Can I sit here?"
+        },
+        {
+          "id": "d29_16",
+          "tag": "사실",
+          "ko": "너 매일 일해?",
+          "en": "Do you work every day?",
+          "note": "평소를 묻는 사실 질문 = Do you."
+        },
+        {
+          "id": "d29_17",
+          "tag": "부탁",
+          "ko": "나 좀 도와줄래?",
+          "en": "Can you give me a hand?",
+          "note": "give me a hand = 도와주다. 역시 상대가 해줌 = Can you."
+        },
+        {
+          "id": "d29_18",
+          "tag": "허락",
+          "ko": "나 네 펜 써도 돼?",
+          "en": "Can I use your pen?"
+        },
+        {
+          "id": "d29_19",
+          "tag": "부탁",
+          "ko": "사진 찍어 줄래?",
+          "en": "Can you take a photo?",
+          "note": "사진을 찍는 건 상대 = Can you."
+        },
+        {
+          "id": "d29_20",
+          "tag": "허락",
+          "ko": "나 하나 더 먹어도 돼?",
+          "en": "Can I have one more?",
+          "note": "내가 먹는 거 = Can I."
+        }
+      ]
     }
   ]
 };
