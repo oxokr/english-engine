@@ -4632,9 +4632,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "공기통 두 개요.",
           "en": "Two tanks, please.",
-          "purpose": "want",
-          "purposeLabel": "욕구",
-          "purposeMean": "하고 싶음·원함"
+          "purpose": "ask",
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d24_23",
@@ -5043,8 +5043,8 @@ window.CURRICULUM = {
           "ko": "맥주 두 잔 주세요.",
           "en": "Two beers, please.",
           "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁"
+          "purposeLabel": "허락",
+          "purposeMean": "내가 해도 돼?"
         },
         {
           "id": "d26_23",
