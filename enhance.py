@@ -252,10 +252,35 @@ RELATIONS = _pd["relations"]
 # 목적색을 칠하는 대상: 의무·요청·욕구·명령만(=마음/행위 목적이 분명). 평서(state/have)·행동(action,시제있음)·none은 라벨 없음.
 PURPOSE_TAGGED = {"need", "ask", "want", "tell"}
 PURPOSE_LABEL = {"need":"의무", "ask":"요청", "want":"욕구", "tell":"명령"}
+
+# 'ask'(요청)를 문장 모양으로 더 잘게: Can you=부탁(상대가), Can I=허락(내가). Day29 색과 동일 체계로 통일.
+def refine_ask(en):
+    e = en.strip()
+    el = e.lower()
+    if el.startswith("can you") or el.startswith("could you") or el.startswith("will you"):
+        return "부탁"
+    if el.startswith("can i") or el.startswith("could i") or el.startswith("may i"):
+        return "허락"
+    return "요청"  # 그 외(I can do it=능력 등)는 요청 그대로
 # 관계쌍 → 노트 한 줄(해당 where 문장에). note가 이미 있으면 덮어쓰지 않고 보존 우선.
 REL_NOTE = {}
 for _p in RELATIONS:
     REL_NOTE.setdefault(_p["where"], "↔ " + _p["beginner_rule"])
+
+# 문장 종류 혼동 안내(왕초보 종류 발굴) — 같은 동사가 의무/욕구/필요/명령 등으로 갈리는 지점.
+KIND_NOTE = {
+  "d4_07": "↔ '가야 해'(의무)는 have to, '가고 싶어'(욕구)는 want to. 끝소리로 갈려요.",
+  "d14_04": "↔ '가고 싶어'(욕구)는 want to, '가야 해'(의무)는 have to.",
+  "d4_19": "↔ '자야 해'(의무) have to ↔ '자고 싶어'(욕구) want to.",
+  "d14_07": "↔ '자고 싶어'(욕구) want to ↔ '자야 해'(의무) have to.",
+  "d16_02": "↔ '필요해'(need)는 없으면 안 돼, '원해/줘'(want)는 그냥 하고 싶어. need가 더 급해요.",
+  "d16_05": "↔ '쉬어야 해'(필요) need to ↔ '쉬고 싶어'(욕구) want to.",
+  "d25_18": "↔ 'Help me'는 급한 명령, 'Can you help me?'는 부탁. Can you 빠지면 명령처럼 들려요.",
+  "d17_04": "↔ '가자'(같이, 제안)는 Let's go, '갈래?'(너 의향)는 Do you want to go?",
+  "d14_06": "↔ '갈래?'(의향 질문) Do you want to go? ↔ '가자'(제안) Let's go.",
+  "d26_19": "↔ 'I'll ~'은 방금 정한 약속(할게), 'I'm going to ~'는 미리 정한 계획(할 거야).",
+  "d11_05": "↔ '배고파'(상태) I'm hungry ↔ '슬슬 배고파져'(변화중) I'm getting hungry.",
+}
 
 # ===== 시제 미니 단계 (Day 27~28) — "12시제 → 4칸" 생존 시제 =====
 def mk(day, n, tag, ko, en, note=None):
@@ -378,15 +403,20 @@ for d in C["days"]:
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
-        # 문장 목적: 분명한 4종(의무/요청/욕구/명령)에만 라벨. 나머지는 라벨 없음(무채색).
+        # 문장 목적: 분명한 종류에만 라벨. 나머지는 라벨 없음(무채색).
         pkey = PURPOSE.get(it["id"])
         if pkey in PURPOSE_TAGGED:
             it["purpose"] = pkey
-            it["purposeLabel"] = PURPOSE_LABEL[pkey]
+            if pkey == "ask":
+                it["purposeLabel"] = refine_ask(it["en"])   # 부탁/허락/요청
+            else:
+                it["purposeLabel"] = PURPOSE_LABEL[pkey]
         else:
             it.pop("purpose", None); it.pop("purposeLabel", None)
-        # 관계쌍 노트(기존 note 없을 때만 — note 우선)
-        if it["id"] in REL_NOTE and not it.get("note"):
+        # 보조 안내(↔, 별도 줄이라 note와 공존 가능). 종류혼동(kind)은 핵심이라 note 있어도 표시.
+        if it["id"] in KIND_NOTE:
+            it["rel"] = KIND_NOTE[it["id"]]
+        elif not it.get("note") and it["id"] in REL_NOTE:
             it["rel"] = REL_NOTE[it["id"]]
         else:
             it.pop("rel", None)

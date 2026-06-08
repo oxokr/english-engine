@@ -490,7 +490,8 @@ window.CURRICULUM = {
           "note": "have는 가지다, have to는 해야 한다. to가 뜻을 바꿔요.",
           "eq": "I need to go 랑 같은 뜻. have to = need to, 둘 다 '가야 해'. 바꿔 써도 돼요.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "rel": "↔ '가야 해'(의무)는 have to, '가고 싶어'(욕구)는 want to. 끝소리로 갈려요."
         },
         {
           "id": "d4_08",
@@ -548,7 +549,8 @@ window.CURRICULUM = {
           "en": "I have to sleep.",
           "eq": "I need to sleep 랑 같은 뜻. have to = need to.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "rel": "↔ '자야 해'(의무) have to ↔ '자고 싶어'(욕구) want to."
         },
         {
           "id": "d4_20",
@@ -1449,7 +1451,7 @@ window.CURRICULUM = {
           "en": "Can I get a coffee?",
           "note": "Can I get...?은 ~ 주세요. 가게에서 쓰는 말.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d10_07",
@@ -1457,7 +1459,7 @@ window.CURRICULUM = {
           "ko": "물 좀 주세요.",
           "en": "Can I get some water?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d10_13",
@@ -1466,7 +1468,7 @@ window.CURRICULUM = {
           "en": "Can I get the receipt?",
           "note": "the receipt — 방금 그 영수증이라 the. 처음이면 a.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d10_16",
@@ -1474,7 +1476,7 @@ window.CURRICULUM = {
           "ko": "메뉴판 좀 주세요.",
           "en": "Can I get a menu?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d10_19",
@@ -1574,7 +1576,8 @@ window.CURRICULUM = {
           "ko": "나 배고파지고 있어.",
           "en": "I'm getting hungry.",
           "note": "I'm getting ~ 는 슬슬/점점 ~. hungry 자리에 tired, cold, better.",
-          "tense": "지금"
+          "tense": "지금",
+          "rel": "↔ '배고파'(상태) I'm hungry ↔ '슬슬 배고파져'(변화중) I'm getting hungry."
         },
         {
           "id": "d11_06",
@@ -1972,7 +1975,8 @@ window.CURRICULUM = {
           "en": "I want to go.",
           "note": "하고 싶다는 want 더하기 to 더하기 동사. to 빼먹지 마요.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "rel": "↔ '가고 싶어'(욕구)는 want to, '가야 해'(의무)는 have to."
         },
         {
           "id": "d14_05",
@@ -1988,7 +1992,8 @@ window.CURRICULUM = {
           "ko": "너 가고 싶어?",
           "en": "Do you want to go?",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "rel": "↔ '갈래?'(의향 질문) Do you want to go? ↔ '가자'(제안) Let's go."
         },
         {
           "id": "d14_07",
@@ -1996,7 +2001,8 @@ window.CURRICULUM = {
           "ko": "나 자고 싶어.",
           "en": "I want to sleep.",
           "purpose": "want",
-          "purposeLabel": "욕구"
+          "purposeLabel": "욕구",
+          "rel": "↔ '자고 싶어'(욕구) want to ↔ '자야 해'(의무) have to."
         },
         {
           "id": "d14_08",
@@ -2140,7 +2146,7 @@ window.CURRICULUM = {
           "ko": "너 할 수 있어?",
           "en": "Can you do it?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d15_04",
@@ -2159,7 +2165,7 @@ window.CURRICULUM = {
           "note": "Can you ~? 는 ~해줄래? help 자리에 see, fix, wait.",
           "eq": "Can you give me a hand? 라고도 해요. a hand가 더 가벼운 부탁.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d15_06",
@@ -2185,7 +2191,7 @@ window.CURRICULUM = {
           "note": "Can I ~? 는 ~해도 돼요/주세요. have 자리에 use, get.",
           "eq": "Can I get this? 랑 같은 뜻. 가게·식당에서 바꿔 써도 돼요.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d15_09",
@@ -2193,7 +2199,7 @@ window.CURRICULUM = {
           "ko": "화장실 써도 돼요?",
           "en": "Can I use the bathroom?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d15_10",
@@ -2201,7 +2207,7 @@ window.CURRICULUM = {
           "ko": "천천히 말해 줄래요?",
           "en": "Can you speak slowly?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d15_11",
@@ -2225,7 +2231,7 @@ window.CURRICULUM = {
           "ko": "나 보여?",
           "en": "Can you see me?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d15_14",
@@ -2241,7 +2247,7 @@ window.CURRICULUM = {
           "ko": "다시 말해 줄래요?",
           "en": "Can you say that again?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d15_16",
@@ -2281,7 +2287,7 @@ window.CURRICULUM = {
           "ko": "너 이거 고칠 수 있어?",
           "en": "Can you fix this?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         }
       ]
     },
@@ -2307,7 +2313,8 @@ window.CURRICULUM = {
           "ko": "나 물 필요해.",
           "en": "I need water.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "rel": "↔ '필요해'(need)는 없으면 안 돼, '원해/줘'(want)는 그냥 하고 싶어. need가 더 급해요."
         },
         {
           "id": "d16_03",
@@ -2333,7 +2340,8 @@ window.CURRICULUM = {
           "en": "I need to rest.",
           "note": "I need to ~ 는 ~해야 해. rest 자리에 go, eat, stop.",
           "purpose": "need",
-          "purposeLabel": "의무"
+          "purposeLabel": "의무",
+          "rel": "↔ '쉬어야 해'(필요) need to ↔ '쉬고 싶어'(욕구) want to."
         },
         {
           "id": "d16_06",
@@ -2504,7 +2512,8 @@ window.CURRICULUM = {
           "en": "Let's go.",
           "note": "Let's ~ 는 같이 ~하자. go 자리에 eat, start, wait.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "rel": "↔ '가자'(같이, 제안)는 Let's go, '갈래?'(너 의향)는 Do you want to go?"
         },
         {
           "id": "d17_05",
@@ -2746,7 +2755,7 @@ window.CURRICULUM = {
           "ko": "너 갈 수 있어?",
           "en": "Can you go?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d18_14",
@@ -2816,7 +2825,7 @@ window.CURRICULUM = {
           "ko": "사진 찍어 줄래요?",
           "en": "Can you take a photo?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d19_01",
@@ -3031,7 +3040,7 @@ window.CURRICULUM = {
           "ko": "커피 좀 타 줄래?",
           "en": "Can you make some coffee?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d20_04",
@@ -3336,7 +3345,7 @@ window.CURRICULUM = {
           "ko": "카드 돼요?",
           "en": "Can I use a card?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d22_13",
@@ -3351,7 +3360,7 @@ window.CURRICULUM = {
           "en": "Can you speak slowly?",
           "eq": "Please speak slowly 라고도 해요. 같은 뜻, 바꿔 써도 돼요.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d22_15",
@@ -3359,7 +3368,7 @@ window.CURRICULUM = {
           "ko": "다시 말해 줄래요?",
           "en": "Can you say that again?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d22_16",
@@ -3375,7 +3384,7 @@ window.CURRICULUM = {
           "ko": "도와주실 수 있어요?",
           "en": "Can you help me?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d22_18",
@@ -3500,7 +3509,7 @@ window.CURRICULUM = {
           "ko": "도와주실 수 있어요?",
           "en": "Can you help me?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d23_15",
@@ -3585,7 +3594,7 @@ window.CURRICULUM = {
           "ko": "장비 빌릴 수 있어요?",
           "en": "Can I rent some gear?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d24_06",
@@ -3658,7 +3667,7 @@ window.CURRICULUM = {
           "ko": "제 공기통 확인해 주세요.",
           "en": "Can you check my tank?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "부탁"
         },
         {
           "id": "d24_17",
@@ -3852,7 +3861,8 @@ window.CURRICULUM = {
           "ko": "도와줘.",
           "en": "Help me.",
           "purpose": "tell",
-          "purposeLabel": "명령"
+          "purposeLabel": "명령",
+          "rel": "↔ 'Help me'는 급한 명령, 'Can you help me?'는 부탁. Can you 빠지면 명령처럼 들려요."
         },
         {
           "id": "d25_19",
@@ -3886,7 +3896,7 @@ window.CURRICULUM = {
           "ko": "메뉴 좀 주세요.",
           "en": "Can I get a menu?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d26_02",
@@ -3894,7 +3904,7 @@ window.CURRICULUM = {
           "ko": "이거 주세요.",
           "en": "Can I get this?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d26_03",
@@ -3902,7 +3912,7 @@ window.CURRICULUM = {
           "ko": "물 좀 주세요.",
           "en": "Can I get some water?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d26_04",
@@ -3917,7 +3927,7 @@ window.CURRICULUM = {
           "en": "Can I get the check?",
           "note": "정해진 그것엔 the. the check는 그 계산서.",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d26_06",
@@ -3925,7 +3935,7 @@ window.CURRICULUM = {
           "ko": "카드 돼요?",
           "en": "Can I use a card?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d26_07",
@@ -3989,7 +3999,7 @@ window.CURRICULUM = {
           "ko": "하나 더 주세요.",
           "en": "Can I get one more?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d26_16",
@@ -3997,7 +4007,7 @@ window.CURRICULUM = {
           "ko": "포장돼요?",
           "en": "Can I get this to go?",
           "purpose": "ask",
-          "purposeLabel": "요청"
+          "purposeLabel": "허락"
         },
         {
           "id": "d26_17",
@@ -4017,7 +4027,8 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "또 올게요.",
           "en": "I'll come back.",
-          "tense": "미래"
+          "tense": "미래",
+          "rel": "↔ 'I'll ~'은 방금 정한 약속(할게), 'I'm going to ~'는 미리 정한 계획(할 거야)."
         },
         {
           "id": "d26_20",
