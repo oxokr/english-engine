@@ -1050,9 +1050,7 @@ window.CURRICULUM = {
           "ko": "나 몰라. 너 알아?",
           "en": "I don't know. Do you know?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "compound": true
         },
         {
           "id": "d6_04",
@@ -1077,9 +1075,7 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "너 준비됐어? 가야 해.",
           "en": "Are you ready? We have to go.",
-          "purpose": "need",
-          "purposeLabel": "의무",
-          "purposeMean": "어쩔 수 없이 해야 함"
+          "compound": true
         },
         {
           "id": "d6_07",
@@ -1096,18 +1092,14 @@ window.CURRICULUM = {
           "ko": "별로야. 다른 거 있어?",
           "en": "It's not good. Do you have another one?",
           "scene": "물건이 마음에 안 들 때.",
-          "purpose": "have",
-          "purposeLabel": "소유",
-          "purposeMean": "가지고 있다·없다"
+          "compound": true
         },
         {
           "id": "d6_09",
           "tag": "mix",
           "ko": "나 안 바빠, 시간 있어.",
           "en": "I'm not busy. I have time.",
-          "purpose": "have",
-          "purposeLabel": "소유",
-          "purposeMean": "가지고 있다·없다"
+          "compound": true
         },
         {
           "id": "d6_10",
@@ -1115,9 +1107,7 @@ window.CURRICULUM = {
           "ko": "너 영어 해? 나 한국어 해.",
           "en": "Do you speak English? I speak Korean.",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "compound": true
         },
         {
           "id": "d6_11",
@@ -1125,9 +1115,7 @@ window.CURRICULUM = {
           "ko": "나 이해 안 돼. 너 이해돼?",
           "en": "I don't understand. Do you understand?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "compound": true
         },
         {
           "id": "d6_12",
@@ -1143,18 +1131,14 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "나 괜찮아, 걱정 마.",
           "en": "I'm okay. Don't worry.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d6_14",
           "tag": "mix",
           "ko": "너 시간 있어? 나 질문 있어.",
           "en": "Do you have time? I have a question.",
-          "purpose": "have",
-          "purposeLabel": "소유",
-          "purposeMean": "가지고 있다·없다"
+          "compound": true
         }
       ]
     },
@@ -1303,9 +1287,7 @@ window.CURRICULUM = {
           "ko": "나 안 가, 피곤해.",
           "en": "I'm not going. I'm tired.",
           "tense": "지금",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "compound": true
         },
         {
           "id": "d7_16",
@@ -1363,9 +1345,7 @@ window.CURRICULUM = {
           "tag": "go",
           "ko": "우리 늦었어, 가야 해.",
           "en": "We're late. We have to go.",
-          "purpose": "need",
-          "purposeLabel": "의무",
-          "purposeMean": "어쩔 수 없이 해야 함"
+          "compound": true
         }
       ]
     },
@@ -2416,9 +2396,7 @@ window.CURRICULUM = {
           "ko": "나 집에 가, 피곤해.",
           "en": "I'm going home. I'm tired.",
           "tense": "지금",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "compound": true
         },
         {
           "id": "d13_02",
@@ -2435,9 +2413,7 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "우리 늦었어, 택시 잡자.",
           "en": "We're late. Let's get a taxi.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d13_04",
@@ -2463,9 +2439,7 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "차에 타, 가자.",
           "en": "Get in. Let's go.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d13_07",
@@ -2482,9 +2456,7 @@ window.CURRICULUM = {
           "ko": "어두워지고 있어, 나가자.",
           "en": "It's getting dark. Let's go out.",
           "tense": "지금",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d13_09",
@@ -2502,9 +2474,7 @@ window.CURRICULUM = {
           "ko": "나 안 가, 피곤해지고 있어.",
           "en": "I'm not going. I'm getting tired.",
           "tense": "지금",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "compound": true
         },
         {
           "id": "d13_11",
@@ -2520,9 +2490,7 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "물에서 나와, 추워.",
           "en": "Get out of the water. It's cold.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d13_13",
@@ -3352,18 +3320,14 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "나 쉬고 싶어, 좀 쉬자.",
           "en": "I want to rest. Let's take a break.",
-          "purpose": "want",
-          "purposeLabel": "욕구",
-          "purposeMean": "하고 싶음·원함"
+          "compound": true
         },
         {
           "id": "d18_02",
           "tag": "mix",
           "ko": "나 도움 필요해, 도와줄래?",
           "en": "I need help. Can you help me?",
-          "purpose": "need",
-          "purposeLabel": "의무",
-          "purposeMean": "어쩔 수 없이 해야 함"
+          "compound": true
         },
         {
           "id": "d18_03",
@@ -3379,9 +3343,7 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "천천히 하자, 나 못 따라가.",
           "en": "Let's slow down. I can't keep up.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d18_05",
@@ -3406,27 +3368,21 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "나 안 보여, 너 보여?",
           "en": "I can't see. Can you see?",
-          "purpose": "ask",
-          "purposeLabel": "요청",
-          "purposeMean": "부탁·할 수 있다"
+          "compound": true
         },
         {
           "id": "d18_08",
           "tag": "mix",
           "ko": "가자, 준비됐어.",
           "en": "Let's go. I'm ready.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d18_09",
           "tag": "mix",
           "ko": "나 숨 못 쉬겠어, 올라가자.",
           "en": "I can't breathe. Let's go up.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d18_10",
@@ -3442,9 +3398,7 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "내가 도와줄게, 기다려.",
           "en": "Let me help. Wait.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         },
         {
           "id": "d18_12",
@@ -4110,9 +4064,7 @@ window.CURRICULUM = {
           "tag": "mix",
           "ko": "나 잘 지내, 너는?",
           "en": "I'm good. How about you?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "compound": true
         },
         {
           "id": "d22_03",
@@ -4868,9 +4820,7 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "다 됐어, 돌아가자.",
           "en": "We're done. Let's go back.",
-          "purpose": "tell",
-          "purposeLabel": "명령",
-          "purposeMean": "상대에게 시킴·하자"
+          "compound": true
         }
       ]
     },

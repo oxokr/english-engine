@@ -411,10 +411,18 @@ for d in C["days"]:
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
-        # 모든 문장에 종류 라벨 + 의미 한 줄. (Day27~29 전용일은 자기 tag가 라벨이라 제외)
+        # 복합문 감지: 문장이 2개 이상 합쳐진 것(., ?, ! 로 끝나는 절이 둘+)
+        _parts = [p for p in re.split(r'[.?!]', it["en"]) if p.strip()]
+        is_compound = len(_parts) >= 2
+        # 라벨 부여. (Day27~29 전용일·복합문은 단일 라벨 제외)
         if d["day"] in (27, 28, 29):
+            it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None); it.pop("compound", None)
+        elif is_compound:
+            # 복합문 = 두 목적이 이어진 것. 단일 라벨 대신 '두 문장' 표시.
             it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None)
+            it["compound"] = True
         else:
+            it.pop("compound", None)
             pkey = PURPOSE.get(it["id"])
             if pkey in PURPOSE_TAGGED:
                 it["purpose"] = pkey

@@ -521,6 +521,8 @@ function render(){
   const tval = it.tag && ["평소","과거","미래","지금"].includes(it.tag) ? it.tag : it.tense;
   if(it._rev){
     tagEl.className = "tag rev"; tagEl.textContent = "복습";
+  } else if(it.compound){
+    tagEl.className = "ptag p-state"; tagEl.innerHTML = "🔗 두 문장 <span class='mean'>· 짧은 문장 둘을 이어 말하기</span>";
   } else if(["사실","부탁","허락"].includes(it.tag)){
     // Day29 묻기 3종 — 색 배지
     const qcls = {"사실":"q-fact","부탁":"q-askyou","허락":"q-aski"}[it.tag];
