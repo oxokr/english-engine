@@ -5338,14 +5338,14 @@ window.CURRICULUM = {
       "ready": true,
       "dlabel": "묻기",
       "title": "Do / Are / Can you / Can I",
-      "concept": "오늘은 묻는 말을 딱 갈라볼게요. 진짜 자주 헷갈리죠. 네 개만 잡으면 돼요. 첫째 Do you는 동작을 물어요. 너 커피 마셔? Do you drink coffee? 평소에 그러는지 정보가 궁금한 거예요. 둘째 Are you는 상태를 물어요. 너 괜찮아? Are you okay? ~한 상태인지를 물어요. 여기가 핵심이에요. 마시다, 가다 같은 동작이면 Do you. 괜찮다, 준비됐다 같은 상태면 Are you. 셋째 Can you는 부탁이에요. 도와줄래? Can you help me? 상대가 해주길 바라는 거죠. 넷째 Can I는 내 차례예요. 화장실 써도 돼? Can I use the bathroom? 허락이고, 커피 하나 주세요 Can I get a coffee? 처럼 물건을 달라는 주문도 Can I get으로 해요. 정리할게요. 동작이면 Do you, 상태면 Are you, 부탁이면 Can you, 내 차례면 Can I. 이 넷이에요.",
+      "concept": "오늘은 묻는 말이에요. 자주 헷갈리는 Do you랑 Are you부터 쉽게 갈라볼게요. 문법 따지지 말고 우리말 끝소리로 잡으면 돼요. 너 커피 마셔? 운전해? 처럼 끝이 해? 로 끝나면 Do you. Do you drink coffee? 너 괜찮아? 배고파? 준비됐어? 처럼 끝이 아? 어? 로 끝나면 Are you. Are you okay? 쉽게, 해? 로 끝나면 Do you, 아 어? 로 끝나면 Are you. 그리고 더 쉬운 방법. 자주 쓰는 건 그냥 통째로 외워요. 어유오케이 Are you okay, 어유레디 Are you ready. 이렇게 덩어리로 입에 붙이면 고를 필요도 없어요. 나머지도 간단해요. 도와줄래? 는 Can you. 내가 해도 돼? 는 Can I. 커피 주세요 는 Can I get. 오늘은 이 다섯을 입에 붙여봐요.",
       "items": [
         {
           "id": "d29_01",
           "tag": "사실",
           "ko": "너 커피 마셔?",
           "en": "Do you drink coffee?",
-          "note": "Do you ~? = 동작을 물음(평소 그래?)."
+          "note": "끝이 해? 로 끝나면 Do you. 마셔? 해?"
         },
         {
           "id": "d29_02",
@@ -5363,20 +5363,22 @@ window.CURRICULUM = {
           "id": "d29_04",
           "tag": "사실",
           "ko": "너 그거 알아?",
-          "en": "Do you know it?"
+          "en": "Do you know it?",
+          "note": "알아? 처럼 움직임을 물으면 Do you."
         },
         {
           "id": "d29_05",
           "tag": "상태",
           "ko": "너 괜찮아?",
           "en": "Are you okay?",
-          "note": "Are you ~? = 상태를 물음. 동작이면 Do, 상태면 Are!"
+          "note": "끝이 아? 어? 면 Are you. 그냥 어유오케이 통째로 외워요."
         },
         {
           "id": "d29_06",
           "tag": "상태",
           "ko": "너 준비됐어?",
-          "en": "Are you ready?"
+          "en": "Are you ready?",
+          "note": "어유레디. 통째로."
         },
         {
           "id": "d29_07",
@@ -5389,7 +5391,7 @@ window.CURRICULUM = {
           "tag": "상태",
           "ko": "너 거기 있어?",
           "en": "Are you there?",
-          "note": "'있어?'(상태)는 Are you. 마시다·가다면 Do you."
+          "note": "괜찮아·배고파·있어? 처럼 아 어? 로 끝나면 Are you."
         },
         {
           "id": "d29_09",
