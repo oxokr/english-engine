@@ -527,9 +527,17 @@ function render(){
   } else if(it.compound){
     tagEl.className = "ptag p-state"; tagEl.innerHTML = "🔗 두 문장 <span class='mean'>· 짧은 문장 둘을 이어 말하기</span>";
   } else if(["사실","상태","부탁","허락","주문"].includes(it.tag)){
-    // Day29 묻기 종류 — 색 배지
+    // Day29 묻기 종류 — 색 배지 + 의미 한 줄 (다른 day와 통일)
     const qcls = {"사실":"q-fact","상태":"p-state","부탁":"q-askyou","허락":"q-aski","주문":"p-have"}[it.tag];
-    tagEl.className = "ptag " + qcls; tagEl.textContent = it.tag;
+    const qmean = {"사실":"평소 그래?(Do you)","상태":"~한 상태야?(Are you)","부탁":"네가 해줘(Can you)","허락":"내가 해도 돼?(Can I)","주문":"~ 주세요(Can I get)"}[it.tag];
+    tagEl.className = "ptag " + qcls;
+    tagEl.innerHTML = it.tag + " <span class='mean'>· " + qmean + "</span>";
+  } else if(["평소","과거","미래","지금"].includes(it.tag)){
+    // Day27·28 시제 — 색 배지 + 의미 한 줄
+    const tcls = {"평소":"t-usual","과거":"t-past","미래":"t-fut","지금":"t-now"}[it.tag];
+    const tmean = {"평소":"늘·반복","과거":"어제·했어","미래":"내일·할 거야","지금":"지금·하는 중"}[it.tag];
+    tagEl.className = "ptag tense " + ({"평소":"p-want","과거":"p-state","미래":"p-have","지금":"p-action"}[it.tag]);
+    tagEl.innerHTML = it.tag + " <span class='mean'>· " + tmean + "</span>";
   } else if(it.purposeLabel){
     // 종류 라벨(색) + 의미 한 줄. 시제 있으면 흐린 텍스트로 곁들임.
     const pcls = {"의무":"p-need","요청":"p-ask","욕구":"p-want","명령":"p-tell",
