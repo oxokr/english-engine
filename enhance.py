@@ -283,9 +283,20 @@ LABEL_OVERRIDE = {
   "d23_10":"질문","d23_13":"질문","d23_17":"질문","d23_19":"질문","d24_05":"허락","d24_10":"질문",
   "d24_18":"질문","d26_01":"허락","d26_02":"허락","d26_03":"허락","d26_05":"허락","d26_06":"허락",
   "d26_07":"질문","d26_12":"질문","d26_15":"허락","d26_16":"허락","d26_22":"허락","d24_22":"허락",
+  "d21_15":"질문","d7_16":"질문","d7_17":"질문",
 }
 LABEL_MEAN2 = {"질문":"궁금해서 물음", "능력":"할 수 있다·없다", "부탁":"네가 해줘",
                "허락":"내가 해도 돼?", "행동":"무언가를 함"}
+
+# 의문문 자동감지 — Do/Does/Did/Are/Is/Was/Were + you/we/this/it/the로 시작하는 '?'문장은 질문.
+# 단 Do you have(소유확인)·Do you want(욕구)·Are you okay(상태)는 각자 라벨 유지하므로 여기선
+# '행동'으로 잘못 분류된 것만 질문으로 끌어올린다.
+import re as _re2
+def is_question_form(en):
+    s = en.strip()
+    if not s.endswith("?"):
+        return False
+    return bool(_re2.match(r"^(Do|Does|Did|Are|Is|Was|Were)\s+(you|we|this|it|the|that|he|she|they)\b", s, _re2.I))
 
 # 'ask'(요청)를 문장 모양으로 더 잘게: Can you=부탁(상대가), Can I=허락(내가). Day29 색과 동일 체계로 통일.
 def refine_ask(en):
@@ -460,6 +471,9 @@ for d in C["days"]:
             if pkey in PURPOSE_TAGGED:
                 it["purpose"] = pkey
                 lab = refine_ask(it["en"]) if pkey == "ask" else PURPOSE_LABEL[pkey]
+                # '행동'으로 분류됐지만 의문문 형태(Do/Did/Are you ~?)면 '질문'으로 교정
+                if lab == "행동" and is_question_form(it["en"]):
+                    lab = "질문"
                 it["purposeLabel"] = lab
                 it["purposeMean"] = PURPOSE_MEAN.get(lab, "")
             else:

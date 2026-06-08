@@ -830,8 +830,8 @@ window.CURRICULUM = {
           "note": "물어볼 땐 맨 앞에 Do.",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_03",
@@ -852,8 +852,8 @@ window.CURRICULUM = {
           "note": "동작(좋아하다)을 물으면 Do you. 상태(괜찮다)면 Are you.",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_05",
@@ -862,8 +862,8 @@ window.CURRICULUM = {
           "en": "Do you speak English?",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_06",
@@ -884,8 +884,8 @@ window.CURRICULUM = {
           "eq": "Do you get it? 이라고도 해요. get it이 더 캐주얼.",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_08",
@@ -934,8 +934,8 @@ window.CURRICULUM = {
           "en": "Do you drink coffee?",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_13",
@@ -954,8 +954,8 @@ window.CURRICULUM = {
           "en": "Do you drive?",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_15",
@@ -974,8 +974,8 @@ window.CURRICULUM = {
           "en": "Do you know me?",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_17",
@@ -995,8 +995,8 @@ window.CURRICULUM = {
           "en": "Did you do it?",
           "tense": "과거",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d5_19",
@@ -1208,8 +1208,8 @@ window.CURRICULUM = {
           "en": "Are you going?",
           "tense": "지금",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d7_07",
@@ -1278,8 +1278,8 @@ window.CURRICULUM = {
           "en": "Are you going downtown?",
           "tense": "지금",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d7_15",
@@ -1296,9 +1296,9 @@ window.CURRICULUM = {
           "en": "Does this bus go downtown?",
           "note": "그 사람·사물 하나엔 Do가 Does. 뒤 동사는 원형 go (goes 아님).",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d7_17",
@@ -1306,9 +1306,9 @@ window.CURRICULUM = {
           "ko": "이 길 해변으로 가요?",
           "en": "Does this road go to the beach?",
           "tense": "평소",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d7_18",
@@ -1317,8 +1317,8 @@ window.CURRICULUM = {
           "en": "Are you going now?",
           "tense": "지금",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d7_19",
@@ -1428,8 +1428,8 @@ window.CURRICULUM = {
           "en": "Are you going to buy it?",
           "tense": "미래",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d8_07",
@@ -1518,8 +1518,8 @@ window.CURRICULUM = {
           "en": "Are you going to help?",
           "tense": "미래",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d8_16",
@@ -1836,8 +1836,8 @@ window.CURRICULUM = {
           "en": "Did you get a gift?",
           "tense": "과거",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d10_10",
@@ -1877,8 +1877,8 @@ window.CURRICULUM = {
           "scene": "문자 보낸 뒤 확인하며.",
           "tense": "과거",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d10_17",
@@ -2178,8 +2178,8 @@ window.CURRICULUM = {
           "en": "Did you get there okay?",
           "tense": "과거",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         }
       ]
     },
@@ -2465,8 +2465,8 @@ window.CURRICULUM = {
           "en": "Did you get it?",
           "tense": "과거",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d13_10",
@@ -2499,8 +2499,8 @@ window.CURRICULUM = {
           "en": "Did you get up?",
           "tense": "과거",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d13_14",
@@ -3913,9 +3913,9 @@ window.CURRICULUM = {
           "tag": "wh",
           "ko": "이거 누구 거예요?",
           "en": "Whose is this?",
-          "purpose": "state",
-          "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purpose": "ask",
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d21_19",
@@ -4378,8 +4378,8 @@ window.CURRICULUM = {
           "en": "Do you speak English?",
           "tense": "평소",
           "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purposeLabel": "질문",
+          "purposeMean": "궁금해서 물음"
         },
         {
           "id": "d23_16",
