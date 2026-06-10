@@ -1,0 +1,28 @@
+{
+  "_comment": "세션 핸드오프 hook 등록. 이 파일을 프로젝트의 .claude/settings.json 에 병합하라(이미 settings.json이 있으면 'hooks' 키만 합친다). 경로는 $CLAUDE_PROJECT_DIR(하네스 제공)이라 프로젝트 무관.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/session_start.sh\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "auto|manual",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s' '{\"hookSpecificOutput\":{\"hookEventName\":\"PreCompact\",\"additionalContext\":\"⚠️ 컴팩션 임박. 컨텍스트가 압축되기 전에 /handoff 를 실행해 .claude/SESSION_STATE.md 에 (1)지금 무엇을 하던 중 (2)왜 (3)다음 한 걸음 (4)다른 세션이 건드리면 안 되는 것 (5)함정 을 갱신하라. git 사실은 SessionStart가 자동 주입하니 *서사적 맥락*만 남기면 된다.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}
