@@ -90,7 +90,6 @@ NOTES = {
 "d5_02": "물어볼 땐 맨 앞에 Do.",
 "d5_04": "동작(좋아하다)을 물으면 Do you. 상태(괜찮다)면 Are you.",
 "d5_17": "do의 과거는 did. didn't는 안 했어.",
-"d6_16": "3인칭은 don't가 아니라 doesn't.",
 "d7_01": "지금 하는 중은 be 더하기 동사ing. I am going.",
 "d7_16": "그 사람·사물 하나엔 Do가 Does. 뒤 동사는 원형 go (goes 아님).",
 "d8_01": "going to는 ~할 거야. 미래는 이걸로 끝.",
@@ -105,6 +104,7 @@ NOTES = {
 "d20_01": "made는 make의 과거.",
 "d21_04": "where(어디)를 맨 앞에. 의문사 더하기 is 더하기 주어.",
 "d26_05": "정해진 그것엔 the. the check는 그 계산서.",
+"d20_15": "make는 '~되게 해'. 한국말론 '그거 하면 기분 좋아'가 자연스럽지만 영어는 make로 말해요.",
 }
 
 TITLES = { 25: "다이빙 브리핑·수신호" }
@@ -168,6 +168,17 @@ KO_FIX = {
   "d23_04": "저 휴가로 왔어요.",
   "d25_05": "속도 줄여.",
   "d25_13": "나 너 보여.",
+  # 같은 KO에 모순된 EN(getting there) — Day11(점점 ~해지는 중) 어감으로
+  "d11_06": "우리 거의 다 와 가.",
+  # 'Get some help' 권유 — 명령보다 권유형이 자연스러움
+  "d10_11": "도움 좀 받아 봐.",
+  # want 직역체("원해") 제거 — 영어(want)는 유지, 한국어만 자연화(Day14의 '줘' 패턴에 맞춤)
+  "d14_02": "뭐 줄까?",
+  "d14_08": "나 이거 줘.",
+  "d14_09": "나 그거 됐어.",
+  "d14_13": "더 줘.",
+  "d14_15": "마실 거 줄까?",
+  "d21_18": "뭐 줄까?",
 }
 
 # 장면(scene) — 지시어(이거/그거/거기)·모호한 문장에만. 큐 음성 앞에 짧게 재생 + 화면 표시.
@@ -336,6 +347,14 @@ def mk(day, n, tag, ko, en, note=None):
     if note: it["note"] = note
     return it
 
+# ===== 시작어 스프린트 (Day 30~) — 문장 '첫 단어'만 떼서 0.1초 반사로 =====
+# ko=통문장 큐(koRef로 기존 음성 재활용), en=시작어만(짧은 정답 클립), round=R1굳히기/R2번갈아/R3섞기.
+def sp(day, n, onset, ref, ko, en, rnd, note=None):
+    it = {"id": "s%d_%02d" % (day, n), "sprint": True, "onset": onset,
+          "round": rnd, "koRef": ref, "ko": ko, "en": en}
+    if note: it["note"] = note
+    return it
+
 D27_CONCEPT = ("영어 시제가 열두 개라고 들었죠? 겁먹지 마세요. 생존 영어는 딱 네 칸이면 돼요. "
   "평소, 과거, 미래, 지금. 같은 문장을 네 칸에 넣어볼게요. 평소엔 I eat, 어제는 I ate, "
   "내일은 I'll eat, 지금은 I'm eating. 보세요, 문장은 그대론데 시간만 바뀌죠. "
@@ -349,12 +368,12 @@ D28_CONCEPT = ("오늘은 아니라고 말하기예요. 여기가 진짜 중요�
   "그리고 지금 안 하고 있어만 be 더하기 not 더하기 ing예요. I'm not eating. "
   "딱 이 네 개만 잡으면 부정은 끝이에요.")
 
-D29_CONCEPT = ("오늘은 묻는 말이에요. 자주 헷갈리는 Do you랑 Are you부터 쉽게 갈라볼게요. "
-  "문법 따지지 말고 우리말 끝소리로 잡으면 돼요. "
-  "너 커피 마셔? 운전해? 처럼 끝이 해? 로 끝나면 Do you. Do you drink coffee? "
-  "너 괜찮아? 배고파? 준비됐어? 처럼 끝이 아? 어? 로 끝나면 Are you. Are you okay? "
-  "쉽게, 해? 로 끝나면 Do you, 아 어? 로 끝나면 Are you. "
-  "그리고 더 쉬운 방법. 자주 쓰는 건 그냥 통째로 외워요. 어유오케이 Are you okay, 어유레디 Are you ready. "
+D29_CONCEPT = ("오늘은 묻는 말이에요. 자주 헷갈리는 Do you랑 Are you부터 갈라볼게요. "
+  "끝소리로만 외우면 가끔 틀려요. 알아? 있어? 도 아 어 로 끝나지만 Do you 거든요. "
+  "그러니 뜻으로 잡아요. 괜찮아? 배고파? 준비됐어? 처럼 지금 어떤 상태인지 물으면 Are you. Are you okay? "
+  "마셔? 운전해? 알아? 처럼 무슨 행동을 하는지 물으면 Do you. Do you drink coffee? "
+  "쉽게, 상태면 Are, 동작이면 Do. "
+  "그리고 더 쉬운 방법. 자주 쓰는 건 그냥 통째로 외워요. 어유오케이 Are you okay, 어유레디 Are you ready, 두유노 Do you know. "
   "이렇게 덩어리로 입에 붙이면 고를 필요도 없어요. "
   "나머지도 간단해요. 도와줄래? 는 Can you. 내가 해도 돼? 는 Can I. 커피 주세요 는 Can I get. "
   "오늘은 이 다섯을 입에 붙여봐요.")
@@ -385,10 +404,10 @@ TENSE_DAYS = [
    ]},
   {"day":28, "verb":"시제", "phase":"시제 · 4개의 시간", "ready":True,
    "dlabel":"시제 ②", "title":"시제 · 부정", "concept":D28_CONCEPT, "items":[
-    mk(28,1,"평소","나 평소엔 안 먹어.","I don't eat.","평소 안 해 = don't + 원형. eat 그대로."),
+    mk(28,1,"평소","나 평소엔 아침 안 먹어.","I don't eat breakfast.","평소 안 해 = don't + 원형. eat breakfast 그대로."),
     mk(28,2,"평소","나 평소엔 거기 안 가.","I don't go there."),
-    mk(28,3,"평소","나 커피 안 마셔.","I don't drink coffee."),
-    mk(28,4,"평소","나 평소엔 일 안 해.","I don't work."),
+    mk(28,3,"평소","나 평소엔 커피 안 마셔.","I don't drink coffee."),
+    mk(28,4,"평소","나 평소엔 일 많이 안 해.","I don't work much."),
     mk(28,5,"평소","나 평소엔 그거 안 해.","I don't do it."),
     mk(28,6,"과거","나 어제 안 먹었어.","I didn't eat.","과거 안 했어 = didn't + 원형. ate 아니고 eat!"),
     mk(28,7,"과거","나 어제 거기 안 갔어.","I didn't go there."),
@@ -400,7 +419,7 @@ TENSE_DAYS = [
     mk(28,13,"미래","나 커피 안 마실 거야.","I won't drink coffee."),
     mk(28,14,"미래","나 일 안 할 거야.","I won't work."),
     mk(28,15,"미래","나 그거 안 할 거야.","I won't do it."),
-    mk(28,16,"지금","나 지금 안 먹고 있어.","I'm not eating.","지금 안 함 = be + not + ing. 여기만 don't/didn't/won't 안 씀."),
+    mk(28,16,"지금","나 지금 안 먹고 있어.","I'm not eating.","지금 ~하는 중이 아니다 = be + not + ing. 이 칸만 don't/didn't/won't 안 쓰고 not으로 해요."),
     mk(28,17,"지금","나 지금 거기 안 가고 있어.","I'm not going there."),
     mk(28,18,"지금","나 지금 커피 안 마시고 있어.","I'm not drinking coffee."),
     mk(28,19,"지금","나 지금 일 안 하고 있어.","I'm not working."),
@@ -408,14 +427,14 @@ TENSE_DAYS = [
    ]},
   {"day":29, "verb":"묻기", "phase":"묻는 말 · 5가지", "ready":True,
    "dlabel":"묻기", "title":"Do / Are / Can you / Can I", "concept":D29_CONCEPT, "items":[
-    mk(29,1,"사실","너 커피 마셔?","Do you drink coffee?","끝이 해? 로 끝나면 Do you. 마셔? 해?"),
+    mk(29,1,"사실","너 커피 마셔?","Do you drink coffee?","마셔? 운전해? 처럼 무슨 행동을 하는지 물으면 Do you."),
     mk(29,2,"사실","너 운전해?","Do you drive?"),
     mk(29,3,"사실","너 영어 해?","Do you speak English?"),
-    mk(29,4,"사실","너 그거 알아?","Do you know it?","알아? 처럼 움직임을 물으면 Do you."),
-    mk(29,5,"상태","너 괜찮아?","Are you okay?","끝이 아? 어? 면 Are you. 그냥 어유오케이 통째로 외워요."),
+    mk(29,4,"사실","너 그거 알아?","Do you know it?","알아? 는 아? 로 끝나도 Do you 예요. 두유노잇 통째로 외워요."),
+    mk(29,5,"상태","너 괜찮아?","Are you okay?","괜찮아? 배고파? 준비됐어? 처럼 상태를 물으면 Are you. 어유오케이는 통째로."),
     mk(29,6,"상태","너 준비됐어?","Are you ready?","어유레디. 통째로."),
     mk(29,7,"상태","너 배고파?","Are you hungry?"),
-    mk(29,8,"상태","너 거기 있어?","Are you there?","괜찮아·배고파·있어? 처럼 아 어? 로 끝나면 Are you."),
+    mk(29,8,"상태","너 거기 있어?","Are you there?","거기 있어? 는 어디 있나(상태)라 Are you. ('시간 있어?'는 가짐이라 Do you.)"),
     mk(29,9,"부탁","도와줄래?","Can you help me?","Can you ~? = 해줄래?(상대가 해줌)."),
     mk(29,10,"부탁","천천히 말해 줄래?","Can you speak slowly?"),
     mk(29,11,"부탁","이거 고쳐 줄래?","Can you fix this?"),
@@ -428,6 +447,71 @@ TENSE_DAYS = [
     mk(29,18,"주문","물 좀 주세요.","Can I get some water?"),
     mk(29,19,"주문","메뉴판 주세요.","Can I get a menu?"),
     mk(29,20,"주문","하나 더 주세요.","Can I get one more?","'주세요'는 Can I get. '~해도 돼?'(허락)랑 달라요."),
+   ]},
+]
+
+SP30_CONCEPT = ("오늘은 좀 달라요. 문장의 첫 단어 하나만 떼서 반사로 만들 거예요. "
+  "한국어가 들리면 뒷말 말고 시작어 딱 한 마디만 빨리 뱉어요. "
+  "괜찮아? 배고파? 준비됐어? 처럼 지금 상태를 물으면 어유, Are you. "
+  "마셔? 운전해? 알아? 처럼 무슨 행동을 하는지 물으면 두유, Do you. 딱 두 개예요. "
+  "조심할 거 하나. 거기 있어? 는 어디 있나라서 어유, 시간 있어? 는 가졌나라서 두유. 같은 있어인데 갈려요. "
+  "먼저 한 통씩 굳히고, 그다음 번갈아, 마지막에 섞어요. "
+  "정답 음성이 나오기 전에 입에서 먼저 튀어나오면 통과예요. 신호 기다릴 때 한 판씩 해봐요.")
+
+SP31_CONCEPT = ("오늘은 캔으로 시작하는 세 가지를 갈라요. "
+  "도와줄래? 처럼 남이 해주는 부탁이면 캔유, Can you. "
+  "들어가도 돼? 처럼 내가 해도 되냐 물으면 캔아이, Can I. "
+  "커피 주세요 처럼 물건을 달라면 캔아이겟, Can I get. "
+  "줄래는 캔유, 돼는 캔아이, 주세요는 캔아이겟. "
+  "어제처럼 한 통씩 굳히고 번갈아 섞어요. 시작어만 빨리 뱉는 연습이에요.")
+
+# 시작어별 트리거 한 줄 노트(반복 사용)
+N_DO  = "행동·가짐·앎을 물으면 → 두유 (Do you)"
+N_ARE = "상태(기분)를 물으면 → 어유 (Are you)"
+N_CANU  = "네가 해줘(부탁) → 캔유 (Can you)"
+N_CANI  = "내가 해도 돼(허락) → 캔아이 (Can I)"
+N_CANIG = "물건 주세요(주문) → 캔아이겟 (Can I get)"
+N_THERE = "거기 있어? = 어디 있나(상태) → 어유. '시간 있어?'랑 헷갈리지 마."
+N_HAVET = "시간 있어? = 가졌나(가짐) → 두유. '거기 있어?'(어유)랑 달라."
+
+SPRINT_DAYS = [
+  {"day":30, "verb":"시작어", "phase":"시작어 스프린트 · 첫 단어 0.1초", "ready":True, "sprint":True,
+   "title":"시작어 스프린트 · 두유 vs 어유", "concept":SP30_CONCEPT, "items":[
+    sp(30,1,"Do you","d29_01","너 커피 마셔?","Do you",1,N_DO),
+    sp(30,2,"Do you","d29_02","너 운전해?","Do you",1,N_DO),
+    sp(30,3,"Do you","d29_03","너 영어 해?","Do you",1,N_DO),
+    sp(30,4,"Are you","d29_05","너 괜찮아?","Are you",1,N_ARE),
+    sp(30,5,"Are you","d29_06","너 준비됐어?","Are you",1,N_ARE),
+    sp(30,6,"Are you","d29_07","너 배고파?","Are you",1,N_ARE),
+    sp(30,7,"Are you","d29_08","너 거기 있어?","Are you",2,N_THERE),
+    sp(30,8,"Do you","d3_04","너 시간 있어?","Do you",2,N_HAVET),
+    sp(30,9,"Do you","d5_04","너 이거 좋아해?","Do you",2,N_DO),
+    sp(30,10,"Are you","d7_13","너 시내 가?","Are you",2,N_ARE),
+    sp(30,11,"Do you","d29_04","너 그거 알아?","Do you",2,"알아? 도 행동 물음이라 → 두유 (Do you). 아? 로 끝나도 두유."),
+    sp(30,12,"Are you","d29_05","너 괜찮아?","Are you",2,N_ARE),
+    sp(30,13,"Do you","d5_16","너 날 알아?","Do you",3,N_DO),
+    sp(30,14,"Are you","d7_18","너 지금 가?","Are you",3,N_ARE),
+    sp(30,15,"Do you","d29_02","너 운전해?","Do you",3,N_DO),
+    sp(30,16,"Are you","d29_07","너 배고파?","Are you",3,N_ARE),
+   ]},
+  {"day":31, "verb":"시작어", "phase":"시작어 스프린트 · 첫 단어 0.1초", "ready":True, "sprint":True,
+   "title":"시작어 스프린트 · 캔유 vs 캔아이 vs 캔아이겟", "concept":SP31_CONCEPT, "items":[
+    sp(31,1,"Can you","d29_09","도와줄래?","Can you",1,N_CANU),
+    sp(31,2,"Can you","d29_10","천천히 말해 줄래?","Can you",1,N_CANU),
+    sp(31,3,"Can I","d29_13","화장실 써도 돼?","Can I",1,N_CANI),
+    sp(31,4,"Can I","d29_14","나 들어가도 돼?","Can I",1,N_CANI),
+    sp(31,5,"Can I get","d29_17","커피 하나 주세요.","Can I get",1,N_CANIG),
+    sp(31,6,"Can I get","d29_18","물 좀 주세요.","Can I get",1,N_CANIG),
+    sp(31,7,"Can you","d29_11","이거 고쳐 줄래?","Can you",2,N_CANU),
+    sp(31,8,"Can I","d29_15","나 여기 앉아도 돼?","Can I",2,N_CANI),
+    sp(31,9,"Can I get","d29_19","메뉴판 주세요.","Can I get",2,N_CANIG),
+    sp(31,10,"Can you","d29_12","사진 찍어 줄래?","Can you",2,N_CANU),
+    sp(31,11,"Can I","d29_16","나 네 펜 써도 돼?","Can I",2,N_CANI),
+    sp(31,12,"Can I get","d29_20","하나 더 주세요.","Can I get",2,N_CANIG),
+    sp(31,13,"Can you","d15_15","다시 말해 줄래요?","Can you",3,N_CANU),
+    sp(31,14,"Can I get","d26_05","계산서 주세요.","Can I get",3,N_CANIG),
+    sp(31,15,"Can I","d29_13","화장실 써도 돼?","Can I",3,N_CANI),
+    sp(31,16,"Can I get","d29_18","물 좀 주세요.","Can I get",3,N_CANIG),
    ]},
 ]
 
@@ -503,16 +587,17 @@ for d in C["days"]:
         elif it["id"] in APPLY_NOTES:
             it["note"] = APPLY_NOTES[it["id"]]; n_note += 1
 
-# 전용 미니 단계(Day 27~29) — 있으면 최신 정의로 교체, 없으면 추가(멱등)
-_td_by_day = {td["day"]: td for td in TENSE_DAYS}
-C["days"] = [td for td in TENSE_DAYS if td["day"] not in {d["day"] for d in C["days"]}] + \
+# 전용 미니 단계(Day 27~29 시제·묻기 + Day 30~ 스프린트) — 있으면 최신 정의로 교체, 없으면 추가(멱등)
+_SPECIAL = TENSE_DAYS + SPRINT_DAYS
+_td_by_day = {td["day"]: td for td in _SPECIAL}
+C["days"] = [td for td in _SPECIAL if td["day"] not in {d["day"] for d in C["days"]}] + \
             [(_td_by_day[d["day"]] if d["day"] in _td_by_day else d) for d in C["days"]]
 C["days"].sort(key=lambda d: d["day"])
 
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
 # 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
 PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
-SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29])
+SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31])
 for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))

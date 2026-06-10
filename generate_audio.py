@@ -68,6 +68,8 @@ for d in C["days"]:
         if it.get("scene"):
             jobs.append((it["id"]+"_scene", it["scene"], "ko_scene", os.path.join(AUDIO, f"{it['id']}_scene.mp3")))
         for lang in ("ko", "en"):
+            if lang == "ko" and it.get("koRef"):
+                continue  # 스프린트: 한국어 큐는 기존 문장 음성(koRef) 재활용 — 새로 안 굽는다
             jobs.append((it["id"]+"_"+lang, it[lang], lang, os.path.join(AUDIO, f"{it['id']}_{lang}.mp3")))
 
 total = len(jobs)

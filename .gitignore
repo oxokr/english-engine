@@ -10,3 +10,6 @@ make_icon.py
 
 # 핸드오프: RULES·hook·커맨드는 커밋, 롤링 상태는 자주 바뀌어 로컬만
 .claude/SESSION_STATE.md
+
+# 로컬 미리보기 dev 헬퍼
+.claude/launch.json

@@ -1893,8 +1893,8 @@ window.CURRICULUM = {
         {
           "id": "d10_18",
           "tag": "get",
-          "ko": "나 차 한 대 빌릴 거야.",
-          "en": "I'm going to get a car.",
+          "ko": "나 차 빌릴 거야.",
+          "en": "I'm going to rent a car.",
           "tense": "미래",
           "purpose": "action",
           "purposeLabel": "행동",
@@ -1961,7 +1961,7 @@ window.CURRICULUM = {
         {
           "id": "d10_11",
           "tag": "get",
-          "ko": "도움 좀 받아.",
+          "ko": "도움 좀 받아 봐.",
           "en": "Get some help.",
           "purpose": "tell",
           "purposeLabel": "명령",
@@ -2084,7 +2084,7 @@ window.CURRICULUM = {
         {
           "id": "d11_06",
           "tag": "get",
-          "ko": "우리 거의 다 왔어.",
+          "ko": "우리 거의 다 와 가.",
           "en": "We're getting there.",
           "tense": "지금",
           "purpose": "action",
@@ -2536,7 +2536,7 @@ window.CURRICULUM = {
         {
           "id": "d14_02",
           "tag": "want",
-          "ko": "너 뭐 원해?",
+          "ko": "뭐 줄까?",
           "en": "What do you want?",
           "purpose": "ask",
           "purposeLabel": "질문",
@@ -2596,7 +2596,7 @@ window.CURRICULUM = {
         {
           "id": "d14_08",
           "tag": "want",
-          "ko": "나 이거 원해.",
+          "ko": "나 이거 줘.",
           "en": "I want this.",
           "scene": "가게에서 물건을 가리키며.",
           "note": "want + 물건. this 자리에 that, more, one.",
@@ -2608,7 +2608,7 @@ window.CURRICULUM = {
         {
           "id": "d14_09",
           "tag": "want",
-          "ko": "나 그거 안 원해.",
+          "ko": "나 그거 됐어.",
           "en": "I don't want that.",
           "scene": "권하는 걸 사양하며.",
           "purpose": "want",
@@ -2645,7 +2645,7 @@ window.CURRICULUM = {
         {
           "id": "d14_13",
           "tag": "want",
-          "ko": "나 더 원해.",
+          "ko": "더 줘.",
           "en": "I want more.",
           "purpose": "want",
           "purposeLabel": "욕구",
@@ -2663,7 +2663,7 @@ window.CURRICULUM = {
         {
           "id": "d14_15",
           "tag": "want",
-          "ko": "너 마실 거 원해?",
+          "ko": "마실 거 줄까?",
           "en": "Do you want a drink?",
           "purpose": "want",
           "purposeLabel": "욕구",
@@ -3661,7 +3661,8 @@ window.CURRICULUM = {
           "en": "It makes me happy.",
           "purpose": "state",
           "purposeLabel": "상태",
-          "purposeMean": "그냥 그러함·~이다"
+          "purposeMean": "그냥 그러함·~이다",
+          "note": "make는 '~되게 해'. 한국말론 '그거 하면 기분 좋아'가 자연스럽지만 영어는 make로 말해요."
         },
         {
           "id": "d20_01",
@@ -3997,7 +3998,7 @@ window.CURRICULUM = {
         {
           "id": "d21_18",
           "tag": "wh",
-          "ko": "너 뭐 원해?",
+          "ko": "뭐 줄까?",
           "en": "What do you want?",
           "purpose": "ask",
           "purposeLabel": "질문",
@@ -4623,9 +4624,9 @@ window.CURRICULUM = {
           "tag": "trip",
           "ko": "한 시간 걸려요.",
           "en": "It takes about an hour.",
-          "purpose": "action",
-          "purposeLabel": "행동",
-          "purposeMean": "무언가를 함"
+          "purpose": "state",
+          "purposeLabel": "상태",
+          "purposeMean": "그냥 그러함·~이다"
         },
         {
           "id": "d24_22",
@@ -5208,9 +5209,9 @@ window.CURRICULUM = {
         {
           "id": "d28_01",
           "tag": "평소",
-          "ko": "나 평소엔 안 먹어.",
-          "en": "I don't eat.",
-          "note": "평소 안 해 = don't + 원형. eat 그대로."
+          "ko": "나 평소엔 아침 안 먹어.",
+          "en": "I don't eat breakfast.",
+          "note": "평소 안 해 = don't + 원형. eat breakfast 그대로."
         },
         {
           "id": "d28_02",
@@ -5221,14 +5222,14 @@ window.CURRICULUM = {
         {
           "id": "d28_03",
           "tag": "평소",
-          "ko": "나 커피 안 마셔.",
+          "ko": "나 평소엔 커피 안 마셔.",
           "en": "I don't drink coffee."
         },
         {
           "id": "d28_04",
           "tag": "평소",
-          "ko": "나 평소엔 일 안 해.",
-          "en": "I don't work."
+          "ko": "나 평소엔 일 많이 안 해.",
+          "en": "I don't work much."
         },
         {
           "id": "d28_05",
@@ -5303,7 +5304,7 @@ window.CURRICULUM = {
           "tag": "지금",
           "ko": "나 지금 안 먹고 있어.",
           "en": "I'm not eating.",
-          "note": "지금 안 함 = be + not + ing. 여기만 don't/didn't/won't 안 씀."
+          "note": "지금 ~하는 중이 아니다 = be + not + ing. 이 칸만 don't/didn't/won't 안 쓰고 not으로 해요."
         },
         {
           "id": "d28_17",
@@ -5338,14 +5339,14 @@ window.CURRICULUM = {
       "ready": true,
       "dlabel": "묻기",
       "title": "Do / Are / Can you / Can I",
-      "concept": "오늘은 묻는 말이에요. 자주 헷갈리는 Do you랑 Are you부터 쉽게 갈라볼게요. 문법 따지지 말고 우리말 끝소리로 잡으면 돼요. 너 커피 마셔? 운전해? 처럼 끝이 해? 로 끝나면 Do you. Do you drink coffee? 너 괜찮아? 배고파? 준비됐어? 처럼 끝이 아? 어? 로 끝나면 Are you. Are you okay? 쉽게, 해? 로 끝나면 Do you, 아 어? 로 끝나면 Are you. 그리고 더 쉬운 방법. 자주 쓰는 건 그냥 통째로 외워요. 어유오케이 Are you okay, 어유레디 Are you ready. 이렇게 덩어리로 입에 붙이면 고를 필요도 없어요. 나머지도 간단해요. 도와줄래? 는 Can you. 내가 해도 돼? 는 Can I. 커피 주세요 는 Can I get. 오늘은 이 다섯을 입에 붙여봐요.",
+      "concept": "오늘은 묻는 말이에요. 자주 헷갈리는 Do you랑 Are you부터 갈라볼게요. 끝소리로만 외우면 가끔 틀려요. 알아? 있어? 도 아 어 로 끝나지만 Do you 거든요. 그러니 뜻으로 잡아요. 괜찮아? 배고파? 준비됐어? 처럼 지금 어떤 상태인지 물으면 Are you. Are you okay? 마셔? 운전해? 알아? 처럼 무슨 행동을 하는지 물으면 Do you. Do you drink coffee? 쉽게, 상태면 Are, 동작이면 Do. 그리고 더 쉬운 방법. 자주 쓰는 건 그냥 통째로 외워요. 어유오케이 Are you okay, 어유레디 Are you ready, 두유노 Do you know. 이렇게 덩어리로 입에 붙이면 고를 필요도 없어요. 나머지도 간단해요. 도와줄래? 는 Can you. 내가 해도 돼? 는 Can I. 커피 주세요 는 Can I get. 오늘은 이 다섯을 입에 붙여봐요.",
       "items": [
         {
           "id": "d29_01",
           "tag": "사실",
           "ko": "너 커피 마셔?",
           "en": "Do you drink coffee?",
-          "note": "끝이 해? 로 끝나면 Do you. 마셔? 해?"
+          "note": "마셔? 운전해? 처럼 무슨 행동을 하는지 물으면 Do you."
         },
         {
           "id": "d29_02",
@@ -5364,14 +5365,14 @@ window.CURRICULUM = {
           "tag": "사실",
           "ko": "너 그거 알아?",
           "en": "Do you know it?",
-          "note": "알아? 처럼 움직임을 물으면 Do you."
+          "note": "알아? 는 아? 로 끝나도 Do you 예요. 두유노잇 통째로 외워요."
         },
         {
           "id": "d29_05",
           "tag": "상태",
           "ko": "너 괜찮아?",
           "en": "Are you okay?",
-          "note": "끝이 아? 어? 면 Are you. 그냥 어유오케이 통째로 외워요."
+          "note": "괜찮아? 배고파? 준비됐어? 처럼 상태를 물으면 Are you. 어유오케이는 통째로."
         },
         {
           "id": "d29_06",
@@ -5391,7 +5392,7 @@ window.CURRICULUM = {
           "tag": "상태",
           "ko": "너 거기 있어?",
           "en": "Are you there?",
-          "note": "괜찮아·배고파·있어? 처럼 아 어? 로 끝나면 Are you."
+          "note": "거기 있어? 는 어디 있나(상태)라 Are you. ('시간 있어?'는 가짐이라 Do you.)"
         },
         {
           "id": "d29_09",
@@ -5468,6 +5469,348 @@ window.CURRICULUM = {
           "ko": "하나 더 주세요.",
           "en": "Can I get one more?",
           "note": "'주세요'는 Can I get. '~해도 돼?'(허락)랑 달라요."
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "verb": "시작어",
+      "phase": "시작어 스프린트 · 첫 단어 0.1초",
+      "ready": true,
+      "sprint": true,
+      "title": "시작어 스프린트 · 두유 vs 어유",
+      "concept": "오늘은 좀 달라요. 문장의 첫 단어 하나만 떼서 반사로 만들 거예요. 한국어가 들리면 뒷말 말고 시작어 딱 한 마디만 빨리 뱉어요. 괜찮아? 배고파? 준비됐어? 처럼 지금 상태를 물으면 어유, Are you. 마셔? 운전해? 알아? 처럼 무슨 행동을 하는지 물으면 두유, Do you. 딱 두 개예요. 조심할 거 하나. 거기 있어? 는 어디 있나라서 어유, 시간 있어? 는 가졌나라서 두유. 같은 있어인데 갈려요. 먼저 한 통씩 굳히고, 그다음 번갈아, 마지막에 섞어요. 정답 음성이 나오기 전에 입에서 먼저 튀어나오면 통과예요. 신호 기다릴 때 한 판씩 해봐요.",
+      "items": [
+        {
+          "id": "s30_01",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 1,
+          "koRef": "d29_01",
+          "ko": "너 커피 마셔?",
+          "en": "Do you",
+          "note": "행동·가짐·앎을 물으면 → 두유 (Do you)"
+        },
+        {
+          "id": "s30_02",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 1,
+          "koRef": "d29_02",
+          "ko": "너 운전해?",
+          "en": "Do you",
+          "note": "행동·가짐·앎을 물으면 → 두유 (Do you)"
+        },
+        {
+          "id": "s30_03",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 1,
+          "koRef": "d29_03",
+          "ko": "너 영어 해?",
+          "en": "Do you",
+          "note": "행동·가짐·앎을 물으면 → 두유 (Do you)"
+        },
+        {
+          "id": "s30_04",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 1,
+          "koRef": "d29_05",
+          "ko": "너 괜찮아?",
+          "en": "Are you",
+          "note": "상태(기분)를 물으면 → 어유 (Are you)"
+        },
+        {
+          "id": "s30_05",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 1,
+          "koRef": "d29_06",
+          "ko": "너 준비됐어?",
+          "en": "Are you",
+          "note": "상태(기분)를 물으면 → 어유 (Are you)"
+        },
+        {
+          "id": "s30_06",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 1,
+          "koRef": "d29_07",
+          "ko": "너 배고파?",
+          "en": "Are you",
+          "note": "상태(기분)를 물으면 → 어유 (Are you)"
+        },
+        {
+          "id": "s30_07",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 2,
+          "koRef": "d29_08",
+          "ko": "너 거기 있어?",
+          "en": "Are you",
+          "note": "거기 있어? = 어디 있나(상태) → 어유. '시간 있어?'랑 헷갈리지 마."
+        },
+        {
+          "id": "s30_08",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 2,
+          "koRef": "d3_04",
+          "ko": "너 시간 있어?",
+          "en": "Do you",
+          "note": "시간 있어? = 가졌나(가짐) → 두유. '거기 있어?'(어유)랑 달라."
+        },
+        {
+          "id": "s30_09",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 2,
+          "koRef": "d5_04",
+          "ko": "너 이거 좋아해?",
+          "en": "Do you",
+          "note": "행동·가짐·앎을 물으면 → 두유 (Do you)"
+        },
+        {
+          "id": "s30_10",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 2,
+          "koRef": "d7_13",
+          "ko": "너 시내 가?",
+          "en": "Are you",
+          "note": "상태(기분)를 물으면 → 어유 (Are you)"
+        },
+        {
+          "id": "s30_11",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 2,
+          "koRef": "d29_04",
+          "ko": "너 그거 알아?",
+          "en": "Do you",
+          "note": "알아? 도 행동 물음이라 → 두유 (Do you). 아? 로 끝나도 두유."
+        },
+        {
+          "id": "s30_12",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 2,
+          "koRef": "d29_05",
+          "ko": "너 괜찮아?",
+          "en": "Are you",
+          "note": "상태(기분)를 물으면 → 어유 (Are you)"
+        },
+        {
+          "id": "s30_13",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 3,
+          "koRef": "d5_16",
+          "ko": "너 날 알아?",
+          "en": "Do you",
+          "note": "행동·가짐·앎을 물으면 → 두유 (Do you)"
+        },
+        {
+          "id": "s30_14",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 3,
+          "koRef": "d7_18",
+          "ko": "너 지금 가?",
+          "en": "Are you",
+          "note": "상태(기분)를 물으면 → 어유 (Are you)"
+        },
+        {
+          "id": "s30_15",
+          "sprint": true,
+          "onset": "Do you",
+          "round": 3,
+          "koRef": "d29_02",
+          "ko": "너 운전해?",
+          "en": "Do you",
+          "note": "행동·가짐·앎을 물으면 → 두유 (Do you)"
+        },
+        {
+          "id": "s30_16",
+          "sprint": true,
+          "onset": "Are you",
+          "round": 3,
+          "koRef": "d29_07",
+          "ko": "너 배고파?",
+          "en": "Are you",
+          "note": "상태(기분)를 물으면 → 어유 (Are you)"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "verb": "시작어",
+      "phase": "시작어 스프린트 · 첫 단어 0.1초",
+      "ready": true,
+      "sprint": true,
+      "title": "시작어 스프린트 · 캔유 vs 캔아이 vs 캔아이겟",
+      "concept": "오늘은 캔으로 시작하는 세 가지를 갈라요. 도와줄래? 처럼 남이 해주는 부탁이면 캔유, Can you. 들어가도 돼? 처럼 내가 해도 되냐 물으면 캔아이, Can I. 커피 주세요 처럼 물건을 달라면 캔아이겟, Can I get. 줄래는 캔유, 돼는 캔아이, 주세요는 캔아이겟. 어제처럼 한 통씩 굳히고 번갈아 섞어요. 시작어만 빨리 뱉는 연습이에요.",
+      "items": [
+        {
+          "id": "s31_01",
+          "sprint": true,
+          "onset": "Can you",
+          "round": 1,
+          "koRef": "d29_09",
+          "ko": "도와줄래?",
+          "en": "Can you",
+          "note": "네가 해줘(부탁) → 캔유 (Can you)"
+        },
+        {
+          "id": "s31_02",
+          "sprint": true,
+          "onset": "Can you",
+          "round": 1,
+          "koRef": "d29_10",
+          "ko": "천천히 말해 줄래?",
+          "en": "Can you",
+          "note": "네가 해줘(부탁) → 캔유 (Can you)"
+        },
+        {
+          "id": "s31_03",
+          "sprint": true,
+          "onset": "Can I",
+          "round": 1,
+          "koRef": "d29_13",
+          "ko": "화장실 써도 돼?",
+          "en": "Can I",
+          "note": "내가 해도 돼(허락) → 캔아이 (Can I)"
+        },
+        {
+          "id": "s31_04",
+          "sprint": true,
+          "onset": "Can I",
+          "round": 1,
+          "koRef": "d29_14",
+          "ko": "나 들어가도 돼?",
+          "en": "Can I",
+          "note": "내가 해도 돼(허락) → 캔아이 (Can I)"
+        },
+        {
+          "id": "s31_05",
+          "sprint": true,
+          "onset": "Can I get",
+          "round": 1,
+          "koRef": "d29_17",
+          "ko": "커피 하나 주세요.",
+          "en": "Can I get",
+          "note": "물건 주세요(주문) → 캔아이겟 (Can I get)"
+        },
+        {
+          "id": "s31_06",
+          "sprint": true,
+          "onset": "Can I get",
+          "round": 1,
+          "koRef": "d29_18",
+          "ko": "물 좀 주세요.",
+          "en": "Can I get",
+          "note": "물건 주세요(주문) → 캔아이겟 (Can I get)"
+        },
+        {
+          "id": "s31_07",
+          "sprint": true,
+          "onset": "Can you",
+          "round": 2,
+          "koRef": "d29_11",
+          "ko": "이거 고쳐 줄래?",
+          "en": "Can you",
+          "note": "네가 해줘(부탁) → 캔유 (Can you)"
+        },
+        {
+          "id": "s31_08",
+          "sprint": true,
+          "onset": "Can I",
+          "round": 2,
+          "koRef": "d29_15",
+          "ko": "나 여기 앉아도 돼?",
+          "en": "Can I",
+          "note": "내가 해도 돼(허락) → 캔아이 (Can I)"
+        },
+        {
+          "id": "s31_09",
+          "sprint": true,
+          "onset": "Can I get",
+          "round": 2,
+          "koRef": "d29_19",
+          "ko": "메뉴판 주세요.",
+          "en": "Can I get",
+          "note": "물건 주세요(주문) → 캔아이겟 (Can I get)"
+        },
+        {
+          "id": "s31_10",
+          "sprint": true,
+          "onset": "Can you",
+          "round": 2,
+          "koRef": "d29_12",
+          "ko": "사진 찍어 줄래?",
+          "en": "Can you",
+          "note": "네가 해줘(부탁) → 캔유 (Can you)"
+        },
+        {
+          "id": "s31_11",
+          "sprint": true,
+          "onset": "Can I",
+          "round": 2,
+          "koRef": "d29_16",
+          "ko": "나 네 펜 써도 돼?",
+          "en": "Can I",
+          "note": "내가 해도 돼(허락) → 캔아이 (Can I)"
+        },
+        {
+          "id": "s31_12",
+          "sprint": true,
+          "onset": "Can I get",
+          "round": 2,
+          "koRef": "d29_20",
+          "ko": "하나 더 주세요.",
+          "en": "Can I get",
+          "note": "물건 주세요(주문) → 캔아이겟 (Can I get)"
+        },
+        {
+          "id": "s31_13",
+          "sprint": true,
+          "onset": "Can you",
+          "round": 3,
+          "koRef": "d15_15",
+          "ko": "다시 말해 줄래요?",
+          "en": "Can you",
+          "note": "네가 해줘(부탁) → 캔유 (Can you)"
+        },
+        {
+          "id": "s31_14",
+          "sprint": true,
+          "onset": "Can I get",
+          "round": 3,
+          "koRef": "d26_05",
+          "ko": "계산서 주세요.",
+          "en": "Can I get",
+          "note": "물건 주세요(주문) → 캔아이겟 (Can I get)"
+        },
+        {
+          "id": "s31_15",
+          "sprint": true,
+          "onset": "Can I",
+          "round": 3,
+          "koRef": "d29_13",
+          "ko": "화장실 써도 돼?",
+          "en": "Can I",
+          "note": "내가 해도 돼(허락) → 캔아이 (Can I)"
+        },
+        {
+          "id": "s31_16",
+          "sprint": true,
+          "onset": "Can I get",
+          "round": 3,
+          "koRef": "d29_18",
+          "ko": "물 좀 주세요.",
+          "en": "Can I get",
+          "note": "물건 주세요(주문) → 캔아이겟 (Can I get)"
         }
       ]
     }

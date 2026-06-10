@@ -219,9 +219,14 @@
     <span class="count"><span id="cur">1</span> / <span id="total">0</span></span>
   </div>
   <div class="subrow">
-    <div class="modes">
+    <div class="modes" id="normalModes">
       <button id="mListen" class="on">🔊 듣기</button>
       <button id="mOrder">🧩 조용한 곳용</button>
+    </div>
+    <div class="modes" id="sprintCtl" style="display:none">
+      <button data-lv="1" class="on">🐢 1.5초</button>
+      <button data-lv="2">🏃 0.8초</button>
+      <button data-lv="3">⚡ 무음</button>
     </div>
     <label class="auto"><input type="checkbox" id="autoChk" checked> 자동 넘김</label>
   </div>
@@ -308,7 +313,10 @@ function playSrc(src, onend){
   if(p && p.then) p.then(()=>{ const h=$("#ahint"); if(h) h.style.display="none"; })
     .catch(()=>{ const h=$("#ahint"); if(h) h.style.display="block"; if(onend) setTimeout(onend, 1000); });
 }
-const clip = (id,lang)=> "audio/" + id + "_" + lang + ".mp3";
+function clip(id,lang){
+  if(lang==="ko"){ const it=ITEM[id]; if(it && it.koRef) return "audio/"+it.koRef+"_ko.mp3"; }
+  return "audio/" + id + "_" + lang + ".mp3";
+}
 const sceneClip = id => "audio/" + id + "_scene.mp3";
 const introSrc = day => "audio/d" + day.day + "_intro.mp3";
 
@@ -409,7 +417,21 @@ function togglePlay(){
   }
 }
 
+// ===== 시작어 스프린트 =====
+// 빠르기 단계: 1=느림(1.5초), 2=빠름(0.8초), 3=무음(0.6초·정답음성 OFF·자가채점)
+function sprintLevel(){ const v=+(localStorage.getItem("ee_sprintLv")||1); return (v>=1&&v<=3)?v:1; }
+function setSprintLevel(v){ try{ localStorage.setItem("ee_sprintLv", v); }catch(e){} }
+function sprintGap(){ return {1:1500,2:800,3:600}[sprintLevel()]; }
+// R1(한 통 굳히기)·R2(짝 번갈아)는 짠 순서대로, R3(섞기)만 무작위.
+function buildSprint(items){
+  const head = items.filter(it=> it.round!==3);
+  const tail = shuffle(items.filter(it=> it.round===3));
+  return head.concat(tail);
+}
+
 function buildSession(){
+  // 시작어 스프린트 전용일: 복습 prepend 없이 라운드 순서대로.
+  if(day && day.sprint){ sess = buildSprint(day.items); return; }
   // 시제·묻기 전용일(27·28·29)은 개념 비교 학습이라 복습 prepend 없이 그대로.
   if(day && [27,28,29].includes(day.day)){ sess = day.items.slice(); return; }
   const rev=[];
@@ -449,16 +471,21 @@ function runListen(){
 }
 function startCountdown(){
   if(paused) return;
-  requestAnimationFrame(()=>{ barFill.style.transition="width 3s linear"; barFill.style.width="100%"; });
+  const it0 = curItem();
+  const sp = !!(it0 && it0.sprint);
+  const gap = sp ? sprintGap() : 3000;
+  requestAnimationFrame(()=>{ barFill.style.transition="width "+gap+"ms linear"; barFill.style.width="100%"; });
   timer = setTimeout(()=>{
     enEl.classList.add("show"); replayBtn.classList.add("show");
     const it = curItem();
-    playSrc(clip(it.id,"en"), ()=>{
-      // 자동 넘김(운전)이면 흐름 유지(평가 생략). 수동이면 평가 버튼 노출(복습 문장 제외).
-      if(autoChk.checked && !paused){ timer=setTimeout(nextItem, 1100); }
-      else if(!it._rev){ rateEl.classList.add("show"); }
-    });
-  }, 3000);
+    const adv = ()=>{
+      // 자동 넘김(운전)이면 흐름 유지(평가 생략). 수동이면 평가 버튼 노출(복습·스프린트 제외).
+      if(autoChk.checked && !paused){ timer=setTimeout(nextItem, sp?700:1100); }
+      else if(!it._rev && !sp){ rateEl.classList.add("show"); }
+    };
+    if(sp && sprintLevel()>=3){ adv(); }   // 무음 단계: 정답 음성 없이 바로(자가채점)
+    else playSrc(clip(it.id,"en"), adv);
+  }, gap);
 }
 
 function norm(w){ return w.toLowerCase().replace(/[^a-z0-9']/g,""); }
@@ -520,18 +547,30 @@ function render(){
   paused = false; setPP();
   const it = curItem();
   curEl.textContent = idx+1;
+  // 스프린트 전용 빠르기 컨트롤 토글
+  const isSprint = !!(day && day.sprint);
+  $("#sprintCtl").style.display = isSprint ? "flex" : "none";
+  $("#normalModes").style.display = isSprint ? "none" : "flex";
+  if(isSprint){ document.querySelectorAll("#sprintCtl button").forEach(b=> b.classList.toggle("on", +b.dataset.lv===sprintLevel())); }
   // 시제값: Day27·28은 tag가 곧 시제, 그 외는 tense 필드.
   const tval = it.tag && ["평소","과거","미래","지금"].includes(it.tag) ? it.tag : it.tense;
-  if(it._rev){
+  if(it.sprint){
+    // 시작어 스프린트 — 시작어 배지(한국어 소리 + 영어)
+    const scls = {"Do you":"q-fact","Are you":"p-state","Can you":"q-askyou","Can I":"q-aski","Can I get":"p-have","I'm":"p-state","I":"p-action"}[it.onset] || "q-fact";
+    const sko = {"Do you":"두유","Are you":"어유","Can you":"캔유","Can I":"캔아이","Can I get":"캔아이겟","I'm":"아임","I":"아이"}[it.onset] || "";
+    tagEl.className = "ptag " + scls;
+    tagEl.innerHTML = "⚡ " + sko + " <span class='mean'>· " + it.onset + "</span>";
+  } else if(it._rev){
     tagEl.className = "tag rev"; tagEl.textContent = "복습";
   } else if(it.compound){
     tagEl.className = "ptag p-state"; tagEl.innerHTML = "🔗 두 문장 <span class='mean'>· 짧은 문장 둘을 이어 말하기</span>";
   } else if(["사실","상태","부탁","허락","주문"].includes(it.tag)){
     // Day29 묻기 종류 — 색 배지 + 의미 한 줄 (다른 day와 통일)
     const qcls = {"사실":"q-fact","상태":"p-state","부탁":"q-askyou","허락":"q-aski","주문":"p-have"}[it.tag];
-    const qmean = {"사실":"평소 그래?(Do you)","상태":"~한 상태야?(Are you)","부탁":"네가 해줘(Can you)","허락":"내가 해도 돼?(Can I)","주문":"~ 주세요(Can I get)"}[it.tag];
+    const qword = {"사실":"평소","상태":"상태","부탁":"부탁","허락":"허락","주문":"주문"}[it.tag];
+    const qmean = {"사실":"너 ~해?(Do you)","상태":"~한 상태야?(Are you)","부탁":"네가 해줘(Can you)","허락":"내가 해도 돼?(Can I)","주문":"~ 주세요(Can I get)"}[it.tag];
     tagEl.className = "ptag " + qcls;
-    tagEl.innerHTML = it.tag + " <span class='mean'>· " + qmean + "</span>";
+    tagEl.innerHTML = qword + " <span class='mean'>· " + qmean + "</span>";
   } else if(["평소","과거","미래","지금"].includes(it.tag)){
     // Day27·28 시제 — 색 배지 + 의미 한 줄
     const tcls = {"평소":"t-usual","과거":"t-past","미래":"t-fut","지금":"t-now"}[it.tag];
@@ -636,6 +675,12 @@ ppBtn.onclick=togglePlay;
 replayBtn.onclick=()=> playSrc(clip(curItem().id,"en"));
 $("#mListen").onclick=()=>{ mode="listen"; $("#mListen").classList.add("on"); $("#mOrder").classList.remove("on"); render(); };
 $("#mOrder").onclick=()=>{ mode="order"; $("#mOrder").classList.add("on"); $("#mListen").classList.remove("on"); render(); };
+document.querySelectorAll("#sprintCtl button").forEach(b=> b.onclick=()=>{
+  setSprintLevel(+b.dataset.lv);
+  document.querySelectorAll("#sprintCtl button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on");
+  clearTimeout(timer); audioEl.pause(); paused=false; render();   // 새 빠르기로 현재 문장부터 다시
+});
 document.querySelectorAll("#rate button").forEach(b=> b.onclick=()=> rateAndNext(+b.dataset.lv));
 document.querySelectorAll("#review .seg button").forEach(b=> b.onclick=()=>{
   reviewSeg=b.dataset.seg;
