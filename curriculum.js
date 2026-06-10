@@ -5813,6 +5813,177 @@ window.CURRICULUM = {
           "note": "물건 주세요(주문) → 캔아이겟 (Can I get)"
         }
       ]
+    },
+    {
+      "day": 32,
+      "verb": "과거형",
+      "phase": "과거형 스프린트 · 어제 한 일",
+      "ready": true,
+      "sprint": true,
+      "title": "과거형 스프린트 · 갔어 went · 안 갔어 didn't go",
+      "concept": "오늘은 과거예요. 어제 한 일. 딱 두 가지만 잡아요. 하나, 자주 쓰는 과거는 모양이 통째로 바껴요. go는 went, eat은 ate, get은 got, do는 did, drink는 drank, make는 made. ed 안 붙어요, 통째로 외워요. 둘, 안 했다고 할 땐 didn't 하나면 끝이에요. 그런데 didn't 뒤는 원형이에요. 안 갔어는 didn't went 아니라 didn't go. 갔어는 went, 안 갔어는 didn't go. 들으면 바로 한 마디만 뱉어요. 굳히고, 번갈아, 섞어요.",
+      "items": [
+        {
+          "id": "s32_01",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 1,
+          "koRef": "d27_07",
+          "ko": "나 어제 거기 갔어.",
+          "en": "went",
+          "note": "갔어 → went (goed 아님). 통째로 외워."
+        },
+        {
+          "id": "s32_02",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 1,
+          "koRef": "d27_06",
+          "ko": "나 어제 먹었어.",
+          "en": "ate",
+          "note": "먹었어 → ate (eated 아님)."
+        },
+        {
+          "id": "s32_03",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 1,
+          "koRef": "d10_06",
+          "ko": "나 표 구했어.",
+          "en": "got",
+          "note": "받았어·샀어·구했어 → got (get의 과거)."
+        },
+        {
+          "id": "s32_04",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 1,
+          "koRef": "d27_10",
+          "ko": "나 어제 그거 했어.",
+          "en": "did",
+          "note": "했어 → did (do의 과거)."
+        },
+        {
+          "id": "s32_05",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 1,
+          "koRef": "d27_08",
+          "ko": "나 어제 커피 마셨어.",
+          "en": "drank",
+          "note": "마셨어 → drank."
+        },
+        {
+          "id": "s32_06",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 1,
+          "koRef": "d20_07",
+          "ko": "나 실수했어.",
+          "en": "made",
+          "note": "만들었어·했어 → made (maked 아님)."
+        },
+        {
+          "id": "s32_07",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 2,
+          "koRef": "d28_07",
+          "ko": "나 어제 거기 안 갔어.",
+          "en": "didn't go",
+          "note": "안 했어 = didn't + 원형. didn't 뒤는 원형(went 아니라 go)!"
+        },
+        {
+          "id": "s32_08",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 2,
+          "koRef": "d28_06",
+          "ko": "나 어제 안 먹었어.",
+          "en": "didn't eat",
+          "note": "안 먹었어 → didn't eat (ate 아니고 eat)."
+        },
+        {
+          "id": "s32_09",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 2,
+          "koRef": "d28_10",
+          "ko": "나 어제 그거 안 했어.",
+          "en": "didn't do",
+          "note": "안 했어 = didn't + 원형. didn't 뒤는 원형(went 아니라 go)!"
+        },
+        {
+          "id": "s32_10",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 2,
+          "koRef": "d28_08",
+          "ko": "나 어제 커피 안 마셨어.",
+          "en": "didn't drink",
+          "note": "안 했어 = didn't + 원형. didn't 뒤는 원형(went 아니라 go)!"
+        },
+        {
+          "id": "s32_11",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 2,
+          "koRef": "d10_12",
+          "ko": "나 그거 못 샀어.",
+          "en": "didn't get",
+          "note": "못 샀어·못 받았어 → didn't get."
+        },
+        {
+          "id": "s32_12",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 2,
+          "koRef": "d26_11",
+          "ko": "이거 안 시켰어요.",
+          "en": "didn't order",
+          "note": "안 했어 = didn't + 원형. didn't 뒤는 원형(went 아니라 go)!"
+        },
+        {
+          "id": "s32_13",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 3,
+          "koRef": "d27_07",
+          "ko": "나 어제 거기 갔어.",
+          "en": "went",
+          "note": "자주 쓰는 과거는 통째로 바껴요(ed 아님)."
+        },
+        {
+          "id": "s32_14",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 3,
+          "koRef": "d28_07",
+          "ko": "나 어제 거기 안 갔어.",
+          "en": "didn't go",
+          "note": "갔어=went, 안 갔어=didn't go. 등 붙여 기억."
+        },
+        {
+          "id": "s32_15",
+          "sprint": true,
+          "onset": "과거형",
+          "round": 3,
+          "koRef": "d10_06",
+          "ko": "나 표 구했어.",
+          "en": "got",
+          "note": "자주 쓰는 과거는 통째로 바껴요(ed 아님)."
+        },
+        {
+          "id": "s32_16",
+          "sprint": true,
+          "onset": "didn't",
+          "round": 3,
+          "koRef": "d28_06",
+          "ko": "나 어제 안 먹었어.",
+          "en": "didn't eat",
+          "note": "안 했어 = didn't + 원형. didn't 뒤는 원형(went 아니라 go)!"
+        }
+      ]
     }
   ]
 };

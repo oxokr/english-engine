@@ -556,10 +556,10 @@ function render(){
   const tval = it.tag && ["평소","과거","미래","지금"].includes(it.tag) ? it.tag : it.tense;
   if(it.sprint){
     // 시작어 스프린트 — 시작어 배지(한국어 소리 + 영어)
-    const scls = {"Do you":"q-fact","Are you":"p-state","Can you":"q-askyou","Can I":"q-aski","Can I get":"p-have","I'm":"p-state","I":"p-action"}[it.onset] || "q-fact";
+    const scls = {"Do you":"q-fact","Are you":"p-state","Can you":"q-askyou","Can I":"q-aski","Can I get":"p-have","I'm":"p-state","I":"p-action","과거형":"p-have","didn't":"p-need"}[it.onset] || "q-fact";
     const sko = {"Do you":"두유","Are you":"어유","Can you":"캔유","Can I":"캔아이","Can I get":"캔아이겟","I'm":"아임","I":"아이"}[it.onset] || "";
     tagEl.className = "ptag " + scls;
-    tagEl.innerHTML = "⚡ " + sko + " <span class='mean'>· " + it.onset + "</span>";
+    tagEl.innerHTML = "⚡ " + (sko || it.onset) + (sko ? " <span class='mean'>· " + it.onset + "</span>" : "");
   } else if(it._rev){
     tagEl.className = "tag rev"; tagEl.textContent = "복습";
   } else if(it.compound){

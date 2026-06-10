@@ -465,6 +465,17 @@ SP31_CONCEPT = ("오늘은 캔으로 시작하는 세 가지를 갈라요. "
   "줄래는 캔유, 돼는 캔아이, 주세요는 캔아이겟. "
   "어제처럼 한 통씩 굳히고 번갈아 섞어요. 시작어만 빨리 뱉는 연습이에요.")
 
+SP32_CONCEPT = ("오늘은 과거예요. 어제 한 일. 딱 두 가지만 잡아요. "
+  "하나, 자주 쓰는 과거는 모양이 통째로 바껴요. go는 went, eat은 ate, get은 got, do는 did, "
+  "drink는 drank, make는 made. ed 안 붙어요, 통째로 외워요. "
+  "둘, 안 했다고 할 땐 didn't 하나면 끝이에요. 그런데 didn't 뒤는 원형이에요. "
+  "안 갔어는 didn't went 아니라 didn't go. 갔어는 went, 안 갔어는 didn't go. "
+  "들으면 바로 한 마디만 뱉어요. 굳히고, 번갈아, 섞어요.")
+
+# 과거형 스프린트 노트
+N_PAST  = "자주 쓰는 과거는 통째로 바껴요(ed 아님)."
+N_DIDNT = "안 했어 = didn't + 원형. didn't 뒤는 원형(went 아니라 go)!"
+
 # 시작어별 트리거 한 줄 노트(반복 사용)
 N_DO  = "행동·가짐·앎을 물으면 → 두유 (Do you)"
 N_ARE = "상태(기분)를 물으면 → 어유 (Are you)"
@@ -512,6 +523,25 @@ SPRINT_DAYS = [
     sp(31,14,"Can I get","d26_05","계산서 주세요.","Can I get",3,N_CANIG),
     sp(31,15,"Can I","d29_13","화장실 써도 돼?","Can I",3,N_CANI),
     sp(31,16,"Can I get","d29_18","물 좀 주세요.","Can I get",3,N_CANIG),
+   ]},
+  {"day":32, "verb":"과거형", "phase":"과거형 스프린트 · 어제 한 일", "ready":True, "sprint":True,
+   "title":"과거형 스프린트 · 갔어 went · 안 갔어 didn't go", "concept":SP32_CONCEPT, "items":[
+    sp(32,1,"과거형","d27_07","나 어제 거기 갔어.","went",1,"갔어 → went (goed 아님). 통째로 외워."),
+    sp(32,2,"과거형","d27_06","나 어제 먹었어.","ate",1,"먹었어 → ate (eated 아님)."),
+    sp(32,3,"과거형","d10_06","나 표 구했어.","got",1,"받았어·샀어·구했어 → got (get의 과거)."),
+    sp(32,4,"과거형","d27_10","나 어제 그거 했어.","did",1,"했어 → did (do의 과거)."),
+    sp(32,5,"과거형","d27_08","나 어제 커피 마셨어.","drank",1,"마셨어 → drank."),
+    sp(32,6,"과거형","d20_07","나 실수했어.","made",1,"만들었어·했어 → made (maked 아님)."),
+    sp(32,7,"didn't","d28_07","나 어제 거기 안 갔어.","didn't go",2,N_DIDNT),
+    sp(32,8,"didn't","d28_06","나 어제 안 먹었어.","didn't eat",2,"안 먹었어 → didn't eat (ate 아니고 eat)."),
+    sp(32,9,"didn't","d28_10","나 어제 그거 안 했어.","didn't do",2,N_DIDNT),
+    sp(32,10,"didn't","d28_08","나 어제 커피 안 마셨어.","didn't drink",2,N_DIDNT),
+    sp(32,11,"didn't","d10_12","나 그거 못 샀어.","didn't get",2,"못 샀어·못 받았어 → didn't get."),
+    sp(32,12,"didn't","d26_11","이거 안 시켰어요.","didn't order",2,N_DIDNT),
+    sp(32,13,"과거형","d27_07","나 어제 거기 갔어.","went",3,N_PAST),
+    sp(32,14,"didn't","d28_07","나 어제 거기 안 갔어.","didn't go",3,"갔어=went, 안 갔어=didn't go. 등 붙여 기억."),
+    sp(32,15,"과거형","d10_06","나 표 구했어.","got",3,N_PAST),
+    sp(32,16,"didn't","d28_06","나 어제 안 먹었어.","didn't eat",3,N_DIDNT),
    ]},
 ]
 
@@ -597,7 +627,7 @@ C["days"].sort(key=lambda d: d["day"])
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
 # 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
 PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
-SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31])
+SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32])
 for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))
