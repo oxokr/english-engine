@@ -5984,6 +5984,177 @@ window.CURRICULUM = {
           "note": "안 했어 = didn't + 원형. didn't 뒤는 원형(went 아니라 go)!"
         }
       ]
+    },
+    {
+      "day": 33,
+      "verb": "아임/아이",
+      "phase": "시작어 스프린트 · 첫 단어 0.1초",
+      "ready": true,
+      "sprint": true,
+      "title": "시작어 스프린트 · 아임 vs 아이",
+      "concept": "오늘은 나 얘기예요. 나로 시작할 때 아임이냐 아이냐. 이게 어유 두유랑 똑같은 갈림이에요. 기분이나 상태, 어디 있는지면 아임. 나 괜찮아 I'm okay, 나 여기 있어 I'm here. 뭘 가졌거나 하거나 필요하면 아이 더하기 동사. 나 차 있어 I have, 나 필요해 I need, 나 할 수 있어 I can. 조심할 거 하나. 같은 있어인데 갈려요. 여기 있어는 자리라서 아임, 차 있어는 가졌다라서 아이. 들으면 바로 아임이냐 아이냐 한 마디. 굳히고, 번갈아, 섞어요.",
+      "items": [
+        {
+          "id": "s33_01",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 1,
+          "koRef": "d1_01",
+          "ko": "나 괜찮아.",
+          "en": "I'm",
+          "note": "기분·상태·자리 → 아임 (I'm)."
+        },
+        {
+          "id": "s33_02",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 1,
+          "koRef": "d1_05",
+          "ko": "나 배고파.",
+          "en": "I'm",
+          "note": "기분·상태·자리 → 아임 (I'm)."
+        },
+        {
+          "id": "s33_03",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 1,
+          "koRef": "d1_03",
+          "ko": "나 준비됐어.",
+          "en": "I'm",
+          "note": "기분·상태·자리 → 아임 (I'm)."
+        },
+        {
+          "id": "s33_04",
+          "sprint": true,
+          "onset": "I",
+          "round": 1,
+          "koRef": "d3_01",
+          "ko": "나 차 있어.",
+          "en": "I have",
+          "note": "가짐·함·필요 → 아이 + 동사 (I + 동사, 'm 없음)."
+        },
+        {
+          "id": "s33_05",
+          "sprint": true,
+          "onset": "I",
+          "round": 1,
+          "koRef": "d16_08",
+          "ko": "나 이거 필요해.",
+          "en": "I need",
+          "note": "가짐·함·필요 → 아이 + 동사 (I + 동사, 'm 없음)."
+        },
+        {
+          "id": "s33_06",
+          "sprint": true,
+          "onset": "I",
+          "round": 1,
+          "koRef": "d15_01",
+          "ko": "나 할 수 있어.",
+          "en": "I can",
+          "note": "가짐·함·필요 → 아이 + 동사 (I + 동사, 'm 없음)."
+        },
+        {
+          "id": "s33_07",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 2,
+          "koRef": "d1_07",
+          "ko": "나 여기 있어.",
+          "en": "I'm",
+          "note": "여기 있어 = 자리(상태) → 아임 (I'm here). '차 있어'(I have)랑 갈려."
+        },
+        {
+          "id": "s33_08",
+          "sprint": true,
+          "onset": "I",
+          "round": 2,
+          "koRef": "d3_01",
+          "ko": "나 차 있어.",
+          "en": "I have",
+          "note": "차 있어 = 가졌다 → 아이 (I have). '여기 있어'(I'm)랑 갈려."
+        },
+        {
+          "id": "s33_09",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 2,
+          "koRef": "d1_06",
+          "ko": "나 피곤해.",
+          "en": "I'm",
+          "note": "기분·상태·자리 → 아임 (I'm)."
+        },
+        {
+          "id": "s33_10",
+          "sprint": true,
+          "onset": "I",
+          "round": 2,
+          "koRef": "d4_07",
+          "ko": "나 가야 해.",
+          "en": "I have to",
+          "note": "가짐·함·필요 → 아이 + 동사 (I + 동사, 'm 없음)."
+        },
+        {
+          "id": "s33_11",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 2,
+          "koRef": "d13_07",
+          "ko": "나 거의 다 왔어.",
+          "en": "I'm",
+          "note": "거의 다 왔어 = 상태 → 아임 (I'm almost there)."
+        },
+        {
+          "id": "s33_12",
+          "sprint": true,
+          "onset": "I",
+          "round": 2,
+          "koRef": "d14_04",
+          "ko": "나 가고 싶어.",
+          "en": "I want to",
+          "note": "가짐·함·필요 → 아이 + 동사 (I + 동사, 'm 없음)."
+        },
+        {
+          "id": "s33_13",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 3,
+          "koRef": "d1_05",
+          "ko": "나 배고파.",
+          "en": "I'm",
+          "note": "기분·상태·자리 → 아임 (I'm)."
+        },
+        {
+          "id": "s33_14",
+          "sprint": true,
+          "onset": "I",
+          "round": 3,
+          "koRef": "d3_03",
+          "ko": "나 시간 없어.",
+          "en": "I don't have",
+          "note": "시간 없어 = 가짐(없음) → 아이 (I don't have)."
+        },
+        {
+          "id": "s33_15",
+          "sprint": true,
+          "onset": "I'm",
+          "round": 3,
+          "koRef": "d1_01",
+          "ko": "나 괜찮아.",
+          "en": "I'm",
+          "note": "기분·상태·자리 → 아임 (I'm)."
+        },
+        {
+          "id": "s33_16",
+          "sprint": true,
+          "onset": "I",
+          "round": 3,
+          "koRef": "d16_08",
+          "ko": "나 이거 필요해.",
+          "en": "I need",
+          "note": "가짐·함·필요 → 아이 + 동사 (I + 동사, 'm 없음)."
+        }
+      ]
     }
   ]
 };
