@@ -148,6 +148,14 @@
     border:1px solid #34264a; border-left:3px solid var(--eq);
     border-radius:11px; padding:13px 15px; display:none;}
   .eqnote.show{display:block;}
+  .use{font-size:15.5px; line-height:1.55; color:#d2efe6; background:#10201c;
+    border:1px solid #1f3a33; border-left:3px solid #2ec4a6;
+    border-radius:11px; padding:13px 15px; display:none;}
+  .use.show{display:block;}
+  .apply{font-size:15px; line-height:1.55; color:#ecdcc0; background:#211a10;
+    border:1px solid #3a2f1c; border-left:3px solid #d8a84b;
+    border-radius:11px; padding:12px 15px; display:none;}
+  .apply.show{display:block;}
 
   /* 자가평가 4버튼 */
   .rate{display:none; gap:8px;}
@@ -248,6 +256,8 @@
       <div class="verdict" id="verdict"></div>
     </div>
 
+    <div class="use" id="use"></div>
+    <div class="apply" id="apply"></div>
     <div class="note" id="note"></div>
     <div class="eqnote" id="eqnote"></div>
 
@@ -405,7 +415,7 @@ const koEl=$("#ko"), enEl=$("#en"), tagEl=$("#tag"), barFill=$("#barFill");
 const curEl=$("#cur"), totalEl=$("#total"), replayBtn=$("#replay");
 const listenUI=$("#listenUI"), orderUI=$("#orderUI");
 const slotsEl=$("#slots"), chipsEl=$("#chips"), verdictEl=$("#verdict"), autoChk=$("#autoChk");
-const ppBtn=$("#playPause"), noteEl=$("#note"), sceneEl=$("#scene"), eqEl=$("#eqnote"), rateEl=$("#rate");
+const ppBtn=$("#playPause"), noteEl=$("#note"), sceneEl=$("#scene"), eqEl=$("#eqnote"), rateEl=$("#rate"), useEl=$("#use"), applyEl=$("#apply");
 
 function setPP(){ ppBtn.textContent = paused ? "▶ 재생" : "⏸ 정지"; }
 function togglePlay(){
@@ -594,6 +604,10 @@ function render(){
   koEl.textContent = it.ko; enEl.textContent = it.en;
   if(it.scene && !it._rev){ sceneEl.textContent = "🎬 " + it.scene; sceneEl.classList.add("show"); }
   else { sceneEl.classList.remove("show"); }
+  if(it.use){ useEl.innerHTML = "🗣️ " + it.use; useEl.classList.add("show"); }
+  else { useEl.classList.remove("show"); }
+  if(it.apply){ applyEl.innerHTML = "➕ " + it.apply; applyEl.classList.add("show"); }
+  else { applyEl.classList.remove("show"); }
   if(it.note){ noteEl.innerHTML = "💡 " + it.note; noteEl.classList.add("show"); }
   else { noteEl.classList.remove("show"); }
   // 같은뜻(🔁)·관계쌍(↔)은 조용한 곳용에서만

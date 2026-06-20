@@ -179,6 +179,9 @@ KO_FIX = {
   "d14_13": "더 줘.",
   "d14_15": "마실 거 줄까?",
   "d21_18": "뭐 줄까?",
+  # 260620 nin 지적 — 직역이 뜻 왜곡(과시·문자그대로 오해). 영어는 유지, 한국어만 자연화.
+  "d21_14": "누가 알겠어.",      # Who knows? — 물음 아니라 체념
+  "d20_18": "나 소소하게 좀 벌어.",  # I make some money — 과시 아님
 }
 
 # 장면(scene) — 지시어(이거/그거/거기)·모호한 문장에만. 큐 음성 앞에 짧게 재생 + 화면 표시.
@@ -227,6 +230,50 @@ APPLY_NOTES = {
   "d26_05": "Can I get the ~? 식당에서. check면 계산서, bill도 같은 뜻.",
 }
 
+# ===== 쓰임(USE) — 어떤 상황·어떤 뉘앙스로 쓰는지 한 줄. 화면 노트(운전 중 음성 흐름 유지). =====
+# 260620 nin 녹음 발주: 직역 한 줄만 보면 언제·어떤 기분으로 쓰는지 몰라 오해한다.
+#   → 모든 문장에 '쓰임'(상황+뉘앙스) 한 줄. 짧게(차 안 청취), 번역체 금지, 한국 일상어로.
+#   Phase 2 워크플로가 Day1~29 전수 채움. 아래는 golden 앵커(nin 직접 지적분).
+USE = {
+  "d21_14": "답을 알 수 없을 때 어깨 으쓱하며. '쟤 왜 저래?'—'누가 알겠어.'",
+  "d20_18": "큰돈 아니고 부수입 좀 있다고 담담하게. 과시 아님.",
+  "d21_20": "여러 개 중 하나 고를 때. 여행지 가게서 점원에게.",
+  "d21_22": "몇 명이냐 물어오면 '저 혼자요'. 식당·예약·입장에서.",
+  "d21_09": "같이 가는데 출발 시각이 궁금할 때. 배·차 기다리며 '우리 언제 가?'",
+  "d19_10": "아픈 가족 챙기듯 다정하게 '약 먹어'. (싫어도 받아들여라는 관용도 됨)",
+  "d19_16": "재촉 안 하고 '천천히 해도 돼' 배려할 때. 부담 주기 싫을 때.",
+  "d19_03": "'이거 한번 봐 봐' 하고 시선 끌 때.",
+  "d19_11": "지칠 때 '잠깐 쉬어'. 같이 쉬자면 Let's take a break.",
+  "d19_09": "이동·요리 등 '얼마나 걸려?' 소요시간 물을 때.",
+  "d21_17": "이동·요리 등 '얼마나 걸려?' 소요시간 물을 때.",
+  "d24_14": "투어·이동 시간 '얼마나 걸려요?' 현지서 자주.",
+  "d20_01": "겨우 해내고 '나 해냈어'. make를 '만들다' 말고 '해내다'로.",
+  "d20_02": "힘들어하는 사람에게 '너 할 수 있어' 응원할 때.",
+}
+
+# 응용(APPLY) — 슬롯 바꿔 늘리는 패턴. golden 추가분(nin 지적 응용 갈증).
+APPLY_GOLD = {
+  "d21_20": "Which one + do you like / do you recommend / should we ~? 로 키워.",
+  "d19_09": "뒤에 붙여: ~ to get downtown(시내까지) / for the package to arrive(택배).",
+  "d21_17": "뒤에 붙여: ~ to get there(거기까지) / to cook(요리).",
+  "d19_03": "Take a look at this. 처럼 at + 대상 붙여.",
+}
+
+# 전수 저작분 로드(use_data.json — 워크플로 산출, 톤검수 통과).
+#   구조: {"use":{id:..}, "apply":{id:..}, "ko_fix":{id:..}}. 없으면 golden/hand만 사용.
+#   우선순위: USE  = 워크플로 < golden(USE).
+#            APPLY = 워크플로 < hand(APPLY_NOTES) < golden(APPLY_GOLD).
+USE_ALL, APPLY_ALL, KO_FIX_USE = {}, {}, {}
+_ud_path = os.path.join(BASE, "use_data.json")
+if os.path.exists(_ud_path):
+    _ud = json.load(open(_ud_path, encoding="utf-8"))
+    USE_ALL.update({k: v for k, v in (_ud.get("use") or {}).items() if v})
+    APPLY_ALL.update({k: v for k, v in (_ud.get("apply") or {}).items() if v})
+    KO_FIX_USE = {k: v for k, v in (_ud.get("ko_fix") or {}).items() if v}
+APPLY_ALL.update(APPLY_NOTES)   # hand-curated 패턴 우선
+APPLY_ALL.update(APPLY_GOLD)    # golden 최우선
+USE_ALL.update(USE)             # golden 최우선
+
 # d14_03: want+명사 예시로 정리(to 규칙과 분리)
 D14_03 = {"ko": "나 커피 줘.", "en": "I want a coffee.", "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to."}
 
@@ -254,6 +301,7 @@ ADD_ITEMS = {
 }
 
 KO_FIX.update(KO_FIX_EXTRA)
+KO_FIX.update(KO_FIX_USE)   # 전수 저작 중 오해유발 직역 교정(영어 불변, 한국어만)
 
 # ===== 문장 목적 분류 + 관계쌍 (ultracode 워크플로 산출, 적대검증 통과) =====
 import json as _json
@@ -575,7 +623,7 @@ SPRINT_DAYS = [
    ]},
 ]
 
-n_concept = n_note = n_scene = n_eq = 0
+n_concept = n_note = n_scene = n_eq = n_apply = n_use = 0
 for d in C["days"]:
     if d["day"] in TITLES:
         d["title"] = TITLES[d["day"]]
@@ -644,8 +692,15 @@ for d in C["days"]:
             it["eq"] = EQ[it["id"]]; n_eq += 1
         if it["id"] in NOTES:
             it["note"] = NOTES[it["id"]]; n_note += 1
-        elif it["id"] in APPLY_NOTES:
-            it["note"] = APPLY_NOTES[it["id"]]; n_note += 1
+        # 응용(apply)·쓰임(use)은 note와 별개 줄(전수 저작 USE_ALL/APPLY_ALL).
+        if it["id"] in APPLY_ALL:
+            it["apply"] = APPLY_ALL[it["id"]]; n_apply += 1
+        else:
+            it.pop("apply", None)
+        if it["id"] in USE_ALL:
+            it["use"] = USE_ALL[it["id"]]; n_use += 1
+        else:
+            it.pop("use", None)
 
 # 전용 미니 단계(Day 27~29 시제·묻기 + Day 30~ 스프린트) — 있으면 최신 정의로 교체, 없으면 추가(멱등)
 _SPECIAL = TENSE_DAYS + SPRINT_DAYS
@@ -662,11 +717,20 @@ for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))
 
+# 쓰임·응용 최종 주입 — 특수일(Day29 묻기 등) 교체 후에도 보장. 스프린트(s..)·Day27·28 id는 USE_ALL에 없어 자동 제외.
+_nu2 = 0
+for d in C["days"]:
+    for it in d["items"]:
+        if it["id"] in USE_ALL and not it.get("use"):
+            it["use"] = USE_ALL[it["id"]]; _nu2 += 1
+        if it["id"] in APPLY_ALL and not it.get("apply"):
+            it["apply"] = APPLY_ALL[it["id"]]
+
 header = ("// 영어 엔진 커리큘럼 — 단일 소스(자동 생성됨). 앱과 generate_audio.py가 함께 읽는다.\n"
           "// 수정은 enhance.py 또는 직접. items[].id = 음성파일, items[].note = 혼란 포인트 설명.\n")
 out = header + "window.CURRICULUM = " + json.dumps(C, ensure_ascii=False, indent=2) + ";\n"
 open(os.path.join(BASE, "curriculum.js"), "w", encoding="utf-8").write(out)
 from collections import Counter
 tc = Counter(it.get("tense") for d in C["days"] if d["day"] not in (27,28) for it in d["items"])
-print(f"개념 갱신: {n_concept}일 / 노트: {n_note}개 / 장면: {n_scene}개 / 같은뜻: {n_eq}개")
+print(f"개념 갱신: {n_concept}일 / 노트: {n_note}개 / 장면: {n_scene}개 / 같은뜻: {n_eq}개 / 쓰임: {n_use}개 / 응용: {n_apply}개")
 print(f"시제 태그(인라인): 평소{tc.get('평소',0)} 과거{tc.get('과거',0)} 미래{tc.get('미래',0)} 지금{tc.get('지금',0)} / 태그없음{tc.get(None,0)}")
