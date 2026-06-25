@@ -309,6 +309,18 @@ C.days.forEach(d => (d.items||[]).forEach(it => { ITEM[it.id]=it; ITEMDAY[it.id]
 // ===== 자가평가 저장 (id → 1~4) =====
 function loadRates(){ try{ return JSON.parse(localStorage.getItem("ee_rate")||"{}"); }catch(e){ return {}; } }
 function setRate(id, lv){ const r=loadRates(); r[id]=lv; try{ localStorage.setItem("ee_rate", JSON.stringify(r)); }catch(e){} }
+// 같은 문장이 여러 단계에 있어(예: '얼마나 걸려요?' D19·21·24) 여러 id로 평가되면 복습에 중복됨.
+// → 영어(en) 기준으로 1개만 남겨 합친다. 해당 레벨로 평가된 대표 id 목록 반환.
+function ratedUniqByEn(lv){
+  const r=loadRates(), seen=new Set(), out=[];
+  for(const id of Object.keys(r)){
+    if(r[id]!==lv || !ITEM[id]) continue;
+    const k=(ITEM[id].en||"").trim().toLowerCase();
+    if(seen.has(k)) continue;
+    seen.add(k); out.push(id);
+  }
+  return out;
+}
 
 // ===== 음성 =====
 const KO_RATE = 1.35, EN_RATE = 1.0;
@@ -385,8 +397,7 @@ function renderHome(){
     } else rb.style.display="none";
   }catch(e){}
   // 복습 버튼 — 항상 보임. 평가가 쌓이면 숫자, 없으면 안내.
-  const r=loadRates(); let hard=0, under=0, slow=0;
-  Object.keys(r).forEach(id=>{ if(r[id]===4) hard++; else if(r[id]===3) under++; else if(r[id]===2) slow++; });
+  const hard=ratedUniqByEn(4).length, under=ratedUniqByEn(3).length, slow=ratedUniqByEn(2).length;
   const rb2=$("#reviewBtn"); rb2.style.display="flex";
   if(hard+under+slow>0){
     rb2.innerHTML = "🔁 복습하기 <span class='rc'>"+
@@ -442,8 +453,8 @@ function buildSprint(items){
 function buildSession(){
   // 시작어 스프린트 전용일: 복습 prepend 없이 라운드 순서대로.
   if(day && day.sprint){ sess = buildSprint(day.items); return; }
-  // 시제·묻기 전용일(27·28·29)은 개념 비교 학습이라 복습 prepend 없이 그대로.
-  if(day && [27,28,29].includes(day.day)){ sess = day.items.slice(); return; }
+  // 시제·묻기(27·28·29)·한 문장 변신(34) 전용일은 개념 비교 학습이라 복습 prepend 없이 base 순서 그대로.
+  if(day && [27,28,29,34].includes(day.day)){ sess = day.items.slice(); return; }
   const rev=[];
   const pick=(arr,ixs)=> ixs.map(i=>arr[i % arr.length]).filter(Boolean);
   const prev=C.days[dayIdx-1], weekAgo=C.days[dayIdx-7];
@@ -581,11 +592,10 @@ function render(){
     const qmean = {"사실":"너 ~해?(Do you)","상태":"~한 상태야?(Are you)","부탁":"네가 해줘(Can you)","허락":"내가 해도 돼?(Can I)","주문":"~ 주세요(Can I get)"}[it.tag];
     tagEl.className = "ptag " + qcls;
     tagEl.innerHTML = qword + " <span class='mean'>· " + qmean + "</span>";
-  } else if(["평소","과거","미래","지금"].includes(it.tag)){
-    // Day27·28 시제 — 색 배지 + 의미 한 줄
-    const tcls = {"평소":"t-usual","과거":"t-past","미래":"t-fut","지금":"t-now"}[it.tag];
-    const tmean = {"평소":"늘·반복","과거":"어제·했어","미래":"내일·할 거야","지금":"지금·하는 중"}[it.tag];
-    tagEl.className = "ptag tense " + ({"평소":"p-want","과거":"p-state","미래":"p-have","지금":"p-action"}[it.tag]);
+  } else if(["평소","과거","미래","지금","부정","질문"].includes(it.tag)){
+    // Day27·28 시제 + Day34 변신 손잡이(부정·질문 포함) — 색 배지 + 의미 한 줄
+    const tmean = {"평소":"늘·반복","과거":"어제·했어","미래":"내일·할 거야","지금":"지금·하는 중","부정":"아니라고","질문":"물어보면"}[it.tag];
+    tagEl.className = "ptag tense " + ({"평소":"p-want","과거":"p-state","미래":"p-have","지금":"p-action","부정":"p-need","질문":"q-fact"}[it.tag]);
     tagEl.innerHTML = it.tag + " <span class='mean'>· " + tmean + "</span>";
   } else if(it.purposeLabel){
     // 종류 라벨(색) + 의미 한 줄. 시제 있으면 흐린 텍스트로 곁들임.
@@ -634,14 +644,13 @@ function openReview(){
   show("review"); renderReviewStats(); renderReviewList();
 }
 function renderReviewStats(){
-  const r=loadRates(); let c=[0,0,0,0];
-  Object.values(r).forEach(lv=>{ if(lv>=1&&lv<=4) c[lv-1]++; });
-  $("#s1").textContent=c[0]; $("#s2").textContent=c[1]; $("#s3").textContent=c[2]; $("#s4").textContent=c[3];
+  // en 기준 중복 제거 — 같은 문장이 여러 단계에서 평가돼도 1개로.
+  $("#s1").textContent=ratedUniqByEn(1).length; $("#s2").textContent=ratedUniqByEn(2).length;
+  $("#s3").textContent=ratedUniqByEn(3).length; $("#s4").textContent=ratedUniqByEn(4).length;
 }
 function reviewIds(seg){
-  const r=loadRates();
-  const want = seg==="hard"?[4] : seg==="under"?[3] : [2];
-  return Object.keys(r).filter(id=> want.includes(r[id]) && ITEM[id]);
+  // en 기준 중복 제거된 대표 id만 (목록·드릴 둘 다 사용).
+  return ratedUniqByEn(seg==="hard"?4 : seg==="under"?3 : 2);
 }
 function renderReviewList(){
   const list=$("#reviewList"); list.innerHTML="";

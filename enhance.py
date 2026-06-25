@@ -623,6 +623,57 @@ SPRINT_DAYS = [
    ]},
 ]
 
+# ===== 한 문장 변신 (Day 34) — 문장 하나 고정, 손잡이(시간·부정·질문)만 돌려 원리 깨우치기 =====
+# 260625 nin 발주: Day27~29는 '서로 다른 문장'을 한 번씩 변형 → 변형이 문장에 묻혀 원리가 흐려짐.
+#   여기선 '같은 문장'을 붙잡고 6개 손잡이를 연달아 돌림(base별로 묶어) → 구조→뜻 매핑이 또렷.
+#   외우기 아니라 원리. 기존 차(듣기)/집(정렬) 두 모드 그대로 물려받음.
+def tf(n, knob, ko, en, note=None):
+    it = {"id": "d34_%02d" % n, "tag": knob, "ko": ko, "en": en}
+    if note: it["note"] = note
+    return it
+
+D34_CONCEPT = ("오늘은 좀 특별해요. 새 문장 안 배워요. 아는 문장 하나를 붙잡고 손잡이만 돌려볼 거예요. "
+  "나 집에 가, I go home. 이 문장 그대로 두고 시간 손잡이를 돌리면, 어제는 I went home, "
+  "내일은 I'll go home, 지금은 I'm going home. 보세요, 집에 가는 건 그대론데 동사만 변하죠. "
+  "아니라고 하려면 don't 한 칸 끼워서 I don't go home. 물어보려면 앞에 Do you 붙여서 Do you go home. "
+  "같은 문장에 손잡이 여섯 개. 이걸 네 문장으로 계속 돌려볼 거예요. "
+  "외우는 게 아니라, 구조가 이만큼 바뀌면 뜻이 이만큼 바뀐다, 그 느낌만 손에 익히면 "
+  "어떤 문장이든 스스로 바꿔 말할 수 있어요.")
+
+TRANSFORM_DAYS = [
+  {"day":34, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
+   "dlabel":"변신", "title":"한 문장 변신 · 시간·부정·질문", "concept":D34_CONCEPT, "items":[
+    # base 1: go home — 손잡이 6개 전부 원리 노트(여기서 한 번 제대로)
+    tf(1,"평소","나 집에 가.","I go home.","평소·늘 하는 일은 그냥 원형. I go."),
+    tf(2,"과거","나 집에 갔어.","I went home.","go의 과거는 went — 통째로 바뀌어(ed 아님). home은 그대로."),
+    tf(3,"미래","나 집에 갈 거야.","I'll go home.","미래는 앞에 I'll. 동사는 원형 go 그대로."),
+    tf(4,"지금","나 집에 가는 중이야.","I'm going home.","지금 하는 중은 I'm + 동사ing(going)."),
+    tf(5,"부정","나 집에 안 가.","I don't go home.","아니라고 할 땐 don't 한 칸 끼우기. go는 그대로."),
+    tf(6,"질문","너 집에 가?","Do you go home?","물어보면 앞에 Do you 붙이기. go는 그대로."),
+    # base 2: eat lunch — 과거(ate)만 노트
+    tf(7,"평소","나 점심 먹어.","I eat lunch."),
+    tf(8,"과거","나 점심 먹었어.","I ate lunch.","eat의 과거는 ate — 또 통째로 바뀜."),
+    tf(9,"미래","나 점심 먹을 거야.","I'll eat lunch."),
+    tf(10,"지금","나 점심 먹는 중이야.","I'm eating lunch."),
+    tf(11,"부정","나 점심 안 먹어.","I don't eat lunch."),
+    tf(12,"질문","너 점심 먹어?","Do you eat lunch?"),
+    # base 3: drink coffee — 과거(drank)만 노트
+    tf(13,"평소","나 커피 마셔.","I drink coffee."),
+    tf(14,"과거","나 커피 마셨어.","I drank coffee.","drink의 과거는 drank — 또 통째로."),
+    tf(15,"미래","나 커피 마실 거야.","I'll drink coffee."),
+    tf(16,"지금","나 커피 마시는 중이야.","I'm drinking coffee."),
+    tf(17,"부정","나 커피 안 마셔.","I don't drink coffee."),
+    tf(18,"질문","너 커피 마셔?","Do you drink coffee?"),
+    # base 4: work — 규칙(worked) 대비로 과거 노트
+    tf(19,"평소","나 일해.","I work."),
+    tf(20,"과거","나 일했어.","I worked.","work는 규칙! 뒤에 ed 붙여 worked. went·ate·drank처럼 안 바뀌는 것도 있어요."),
+    tf(21,"미래","나 일할 거야.","I'll work."),
+    tf(22,"지금","나 일하는 중이야.","I'm working."),
+    tf(23,"부정","나 일 안 해.","I don't work."),
+    tf(24,"질문","너 일해?","Do you work?"),
+   ]},
+]
+
 n_concept = n_note = n_scene = n_eq = n_apply = n_use = 0
 for d in C["days"]:
     if d["day"] in TITLES:
@@ -642,7 +693,7 @@ for d in C["days"]:
         if it["id"] in KO_FIX:
             it["ko"] = KO_FIX[it["id"]]
         # 전 문장 시제 자동분류(Day 27·28·29 전용일 제외 — 거긴 tag가 곧 라벨)
-        if d["day"] not in (27, 28, 29):
+        if d["day"] not in (27, 28, 29, 34):
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
@@ -650,7 +701,7 @@ for d in C["days"]:
         _parts = [p for p in re.split(r'[.?!]', it["en"]) if p.strip()]
         is_compound = len(_parts) >= 2
         # 라벨 부여. (Day27~29 전용일·복합문은 단일 라벨 제외)
-        if d["day"] in (27, 28, 29):
+        if d["day"] in (27, 28, 29, 34):
             it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None); it.pop("compound", None)
         elif is_compound:
             # 복합문 = 두 목적이 이어진 것. 단일 라벨 대신 '두 문장' 표시.
@@ -703,7 +754,7 @@ for d in C["days"]:
             it.pop("use", None)
 
 # 전용 미니 단계(Day 27~29 시제·묻기 + Day 30~ 스프린트) — 있으면 최신 정의로 교체, 없으면 추가(멱등)
-_SPECIAL = TENSE_DAYS + SPRINT_DAYS
+_SPECIAL = TENSE_DAYS + SPRINT_DAYS + TRANSFORM_DAYS
 _td_by_day = {td["day"]: td for td in _SPECIAL}
 C["days"] = [td for td in _SPECIAL if td["day"] not in {d["day"] for d in C["days"]}] + \
             [(_td_by_day[d["day"]] if d["day"] in _td_by_day else d) for d in C["days"]]
@@ -712,7 +763,7 @@ C["days"].sort(key=lambda d: d["day"])
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
 # 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
 PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
-SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32,33])
+SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32,33,34])
 for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))

@@ -7015,6 +7015,170 @@ window.CURRICULUM = {
           "note": "가짐·함·필요 → 아이 + 동사 (I + 동사, 'm 없음)."
         }
       ]
+    },
+    {
+      "day": 34,
+      "verb": "변신",
+      "phase": "한 문장 변신 · 손잡이 돌리기",
+      "ready": true,
+      "dlabel": "변신",
+      "title": "한 문장 변신 · 시간·부정·질문",
+      "concept": "오늘은 좀 특별해요. 새 문장 안 배워요. 아는 문장 하나를 붙잡고 손잡이만 돌려볼 거예요. 나 집에 가, I go home. 이 문장 그대로 두고 시간 손잡이를 돌리면, 어제는 I went home, 내일은 I'll go home, 지금은 I'm going home. 보세요, 집에 가는 건 그대론데 동사만 변하죠. 아니라고 하려면 don't 한 칸 끼워서 I don't go home. 물어보려면 앞에 Do you 붙여서 Do you go home. 같은 문장에 손잡이 여섯 개. 이걸 네 문장으로 계속 돌려볼 거예요. 외우는 게 아니라, 구조가 이만큼 바뀌면 뜻이 이만큼 바뀐다, 그 느낌만 손에 익히면 어떤 문장이든 스스로 바꿔 말할 수 있어요.",
+      "items": [
+        {
+          "id": "d34_01",
+          "tag": "평소",
+          "ko": "나 집에 가.",
+          "en": "I go home.",
+          "note": "평소·늘 하는 일은 그냥 원형. I go."
+        },
+        {
+          "id": "d34_02",
+          "tag": "과거",
+          "ko": "나 집에 갔어.",
+          "en": "I went home.",
+          "note": "go의 과거는 went — 통째로 바뀌어(ed 아님). home은 그대로."
+        },
+        {
+          "id": "d34_03",
+          "tag": "미래",
+          "ko": "나 집에 갈 거야.",
+          "en": "I'll go home.",
+          "note": "미래는 앞에 I'll. 동사는 원형 go 그대로."
+        },
+        {
+          "id": "d34_04",
+          "tag": "지금",
+          "ko": "나 집에 가는 중이야.",
+          "en": "I'm going home.",
+          "note": "지금 하는 중은 I'm + 동사ing(going)."
+        },
+        {
+          "id": "d34_05",
+          "tag": "부정",
+          "ko": "나 집에 안 가.",
+          "en": "I don't go home.",
+          "note": "아니라고 할 땐 don't 한 칸 끼우기. go는 그대로."
+        },
+        {
+          "id": "d34_06",
+          "tag": "질문",
+          "ko": "너 집에 가?",
+          "en": "Do you go home?",
+          "note": "물어보면 앞에 Do you 붙이기. go는 그대로."
+        },
+        {
+          "id": "d34_07",
+          "tag": "평소",
+          "ko": "나 점심 먹어.",
+          "en": "I eat lunch."
+        },
+        {
+          "id": "d34_08",
+          "tag": "과거",
+          "ko": "나 점심 먹었어.",
+          "en": "I ate lunch.",
+          "note": "eat의 과거는 ate — 또 통째로 바뀜."
+        },
+        {
+          "id": "d34_09",
+          "tag": "미래",
+          "ko": "나 점심 먹을 거야.",
+          "en": "I'll eat lunch."
+        },
+        {
+          "id": "d34_10",
+          "tag": "지금",
+          "ko": "나 점심 먹는 중이야.",
+          "en": "I'm eating lunch."
+        },
+        {
+          "id": "d34_11",
+          "tag": "부정",
+          "ko": "나 점심 안 먹어.",
+          "en": "I don't eat lunch."
+        },
+        {
+          "id": "d34_12",
+          "tag": "질문",
+          "ko": "너 점심 먹어?",
+          "en": "Do you eat lunch?"
+        },
+        {
+          "id": "d34_13",
+          "tag": "평소",
+          "ko": "나 커피 마셔.",
+          "en": "I drink coffee."
+        },
+        {
+          "id": "d34_14",
+          "tag": "과거",
+          "ko": "나 커피 마셨어.",
+          "en": "I drank coffee.",
+          "note": "drink의 과거는 drank — 또 통째로."
+        },
+        {
+          "id": "d34_15",
+          "tag": "미래",
+          "ko": "나 커피 마실 거야.",
+          "en": "I'll drink coffee."
+        },
+        {
+          "id": "d34_16",
+          "tag": "지금",
+          "ko": "나 커피 마시는 중이야.",
+          "en": "I'm drinking coffee."
+        },
+        {
+          "id": "d34_17",
+          "tag": "부정",
+          "ko": "나 커피 안 마셔.",
+          "en": "I don't drink coffee."
+        },
+        {
+          "id": "d34_18",
+          "tag": "질문",
+          "ko": "너 커피 마셔?",
+          "en": "Do you drink coffee?"
+        },
+        {
+          "id": "d34_19",
+          "tag": "평소",
+          "ko": "나 일해.",
+          "en": "I work."
+        },
+        {
+          "id": "d34_20",
+          "tag": "과거",
+          "ko": "나 일했어.",
+          "en": "I worked.",
+          "note": "work는 규칙! 뒤에 ed 붙여 worked. went·ate·drank처럼 안 바뀌는 것도 있어요."
+        },
+        {
+          "id": "d34_21",
+          "tag": "미래",
+          "ko": "나 일할 거야.",
+          "en": "I'll work."
+        },
+        {
+          "id": "d34_22",
+          "tag": "지금",
+          "ko": "나 일하는 중이야.",
+          "en": "I'm working."
+        },
+        {
+          "id": "d34_23",
+          "tag": "부정",
+          "ko": "나 일 안 해.",
+          "en": "I don't work."
+        },
+        {
+          "id": "d34_24",
+          "tag": "질문",
+          "ko": "너 일해?",
+          "en": "Do you work?"
+        }
+      ]
     }
   ]
 };
