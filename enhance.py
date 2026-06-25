@@ -627,8 +627,8 @@ SPRINT_DAYS = [
 # 260625 nin 발주: Day27~29는 '서로 다른 문장'을 한 번씩 변형 → 변형이 문장에 묻혀 원리가 흐려짐.
 #   여기선 '같은 문장'을 붙잡고 6개 손잡이를 연달아 돌림(base별로 묶어) → 구조→뜻 매핑이 또렷.
 #   외우기 아니라 원리. 기존 차(듣기)/집(정렬) 두 모드 그대로 물려받음.
-def tf(n, knob, ko, en, note=None):
-    it = {"id": "d34_%02d" % n, "tag": knob, "ko": ko, "en": en}
+def tf(day, n, knob, ko, en, note=None):
+    it = {"id": "d%d_%02d" % (day, n), "tag": knob, "ko": ko, "en": en}
     if note: it["note"] = note
     return it
 
@@ -640,37 +640,74 @@ D34_CONCEPT = ("오늘은 좀 특별해요. 새 문장 안 배워요. 아는 문
   "외우는 게 아니라, 구조가 이만큼 바뀌면 뜻이 이만큼 바뀐다, 그 느낌만 손에 익히면 "
   "어떤 문장이든 스스로 바꿔 말할 수 있어요.")
 
+D35_CONCEPT = ("어제 한 거 또 해요. 새 동사라도 방식은 똑같아요. 문장 하나 붙잡고 손잡이만 돌려요. "
+  "나 버스 타, I take the bus. 어제는 I took the bus, 내일은 I'll take the bus, 지금은 I'm taking the bus. "
+  "타는 건 그대로, take만 변하죠. 안 탄다고 하려면 I don't take the bus. 물어볼 땐 Do you take the bus. "
+  "오늘은 take, make, do, get 네 동사를 돌려요. 과거가 took, made, did, got. 다 통째로 바뀌는 애들이에요. "
+  "이것도 외우지 말고, 손잡이 돌리는 그 느낌만 또 익히면 돼요.")
+
 TRANSFORM_DAYS = [
   {"day":34, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
    "dlabel":"변신", "title":"한 문장 변신 · 시간·부정·질문", "concept":D34_CONCEPT, "items":[
     # base 1: go home — 손잡이 6개 전부 원리 노트(여기서 한 번 제대로)
-    tf(1,"평소","나 집에 가.","I go home.","평소·늘 하는 일은 그냥 원형. I go."),
-    tf(2,"과거","나 집에 갔어.","I went home.","go의 과거는 went — 통째로 바뀌어(ed 아님). home은 그대로."),
-    tf(3,"미래","나 집에 갈 거야.","I'll go home.","미래는 앞에 I'll. 동사는 원형 go 그대로."),
-    tf(4,"지금","나 집에 가는 중이야.","I'm going home.","지금 하는 중은 I'm + 동사ing(going)."),
-    tf(5,"부정","나 집에 안 가.","I don't go home.","아니라고 할 땐 don't 한 칸 끼우기. go는 그대로."),
-    tf(6,"질문","너 집에 가?","Do you go home?","물어보면 앞에 Do you 붙이기. go는 그대로."),
+    tf(34,1,"평소","나 집에 가.","I go home.","평소·늘 하는 일은 그냥 원형. I go."),
+    tf(34,2,"과거","나 집에 갔어.","I went home.","go의 과거는 went — 통째로 바뀌어(ed 아님). home은 그대로."),
+    tf(34,3,"미래","나 집에 갈 거야.","I'll go home.","미래는 앞에 I'll. 동사는 원형 go 그대로."),
+    tf(34,4,"지금","나 집에 가는 중이야.","I'm going home.","지금 하는 중은 I'm + 동사ing(going)."),
+    tf(34,5,"부정","나 집에 안 가.","I don't go home.","아니라고 할 땐 don't 한 칸 끼우기. go는 그대로."),
+    tf(34,6,"질문","너 집에 가?","Do you go home?","물어보면 앞에 Do you 붙이기. go는 그대로."),
     # base 2: eat lunch — 과거(ate)만 노트
-    tf(7,"평소","나 점심 먹어.","I eat lunch."),
-    tf(8,"과거","나 점심 먹었어.","I ate lunch.","eat의 과거는 ate — 또 통째로 바뀜."),
-    tf(9,"미래","나 점심 먹을 거야.","I'll eat lunch."),
-    tf(10,"지금","나 점심 먹는 중이야.","I'm eating lunch."),
-    tf(11,"부정","나 점심 안 먹어.","I don't eat lunch."),
-    tf(12,"질문","너 점심 먹어?","Do you eat lunch?"),
+    tf(34,7,"평소","나 점심 먹어.","I eat lunch."),
+    tf(34,8,"과거","나 점심 먹었어.","I ate lunch.","eat의 과거는 ate — 또 통째로 바뀜."),
+    tf(34,9,"미래","나 점심 먹을 거야.","I'll eat lunch."),
+    tf(34,10,"지금","나 점심 먹는 중이야.","I'm eating lunch."),
+    tf(34,11,"부정","나 점심 안 먹어.","I don't eat lunch."),
+    tf(34,12,"질문","너 점심 먹어?","Do you eat lunch?"),
     # base 3: drink coffee — 과거(drank)만 노트
-    tf(13,"평소","나 커피 마셔.","I drink coffee."),
-    tf(14,"과거","나 커피 마셨어.","I drank coffee.","drink의 과거는 drank — 또 통째로."),
-    tf(15,"미래","나 커피 마실 거야.","I'll drink coffee."),
-    tf(16,"지금","나 커피 마시는 중이야.","I'm drinking coffee."),
-    tf(17,"부정","나 커피 안 마셔.","I don't drink coffee."),
-    tf(18,"질문","너 커피 마셔?","Do you drink coffee?"),
+    tf(34,13,"평소","나 커피 마셔.","I drink coffee."),
+    tf(34,14,"과거","나 커피 마셨어.","I drank coffee.","drink의 과거는 drank — 또 통째로."),
+    tf(34,15,"미래","나 커피 마실 거야.","I'll drink coffee."),
+    tf(34,16,"지금","나 커피 마시는 중이야.","I'm drinking coffee."),
+    tf(34,17,"부정","나 커피 안 마셔.","I don't drink coffee."),
+    tf(34,18,"질문","너 커피 마셔?","Do you drink coffee?"),
     # base 4: work — 규칙(worked) 대비로 과거 노트
-    tf(19,"평소","나 일해.","I work."),
-    tf(20,"과거","나 일했어.","I worked.","work는 규칙! 뒤에 ed 붙여 worked. went·ate·drank처럼 안 바뀌는 것도 있어요."),
-    tf(21,"미래","나 일할 거야.","I'll work."),
-    tf(22,"지금","나 일하는 중이야.","I'm working."),
-    tf(23,"부정","나 일 안 해.","I don't work."),
-    tf(24,"질문","너 일해?","Do you work?"),
+    tf(34,19,"평소","나 일해.","I work."),
+    tf(34,20,"과거","나 일했어.","I worked.","work는 규칙! 뒤에 ed 붙여 worked. went·ate·drank처럼 안 바뀌는 것도 있어요."),
+    tf(34,21,"미래","나 일할 거야.","I'll work."),
+    tf(34,22,"지금","나 일하는 중이야.","I'm working."),
+    tf(34,23,"부정","나 일 안 해.","I don't work."),
+    tf(34,24,"질문","너 일해?","Do you work?"),
+   ]},
+  {"day":35, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
+   "dlabel":"변신 ②", "title":"한 문장 변신 ② · take·make·do·get", "concept":D35_CONCEPT, "items":[
+    # base 1: take the bus — take→took
+    tf(35,1,"평소","나 버스 타.","I take the bus.","take는 여기서 (교통수단을) 타다."),
+    tf(35,2,"과거","나 버스 탔어.","I took the bus.","take의 과거는 took — 통째로 바뀜."),
+    tf(35,3,"미래","나 버스 탈 거야.","I'll take the bus."),
+    tf(35,4,"지금","나 버스 타는 중이야.","I'm taking the bus."),
+    tf(35,5,"부정","나 버스 안 타.","I don't take the bus."),
+    tf(35,6,"질문","너 버스 타?","Do you take the bus?"),
+    # base 2: make dinner — make→made
+    tf(35,7,"평소","나 저녁 해.","I make dinner.","make는 여기서 (음식을) 만들다·요리하다."),
+    tf(35,8,"과거","나 저녁 했어.","I made dinner.","make의 과거는 made — 통째로."),
+    tf(35,9,"미래","나 저녁 할 거야.","I'll make dinner."),
+    tf(35,10,"지금","나 저녁 하는 중이야.","I'm making dinner."),
+    tf(35,11,"부정","나 저녁 안 해.","I don't make dinner."),
+    tf(35,12,"질문","너 저녁 해?","Do you make dinner?"),
+    # base 3: do it — do→did, 질문에서 do 겹침
+    tf(35,13,"평소","나 그거 해.","I do it."),
+    tf(35,14,"과거","나 그거 했어.","I did it.","do의 과거는 did."),
+    tf(35,15,"미래","나 그거 할 거야.","I'll do it."),
+    tf(35,16,"지금","나 그거 하는 중이야.","I'm doing it."),
+    tf(35,17,"부정","나 그거 안 해.","I don't do it."),
+    tf(35,18,"질문","너 그거 해?","Do you do it?","묻는 Do you + 하는 do가 겹쳐 Do you do it? — 앞 Do는 묻는 신호, 뒤 do가 진짜 '하다'."),
+    # base 4: get a taxi — get→got
+    tf(35,19,"평소","나 택시 타.","I get a taxi.","get은 여기서 (택시를) 잡다·타다."),
+    tf(35,20,"과거","나 택시 탔어.","I got a taxi.","get의 과거는 got — 통째로."),
+    tf(35,21,"미래","나 택시 탈 거야.","I'll get a taxi."),
+    tf(35,22,"지금","나 택시 잡는 중이야.","I'm getting a taxi."),
+    tf(35,23,"부정","나 택시 안 타.","I don't get a taxi."),
+    tf(35,24,"질문","너 택시 타?","Do you get a taxi?"),
    ]},
 ]
 
@@ -693,7 +730,7 @@ for d in C["days"]:
         if it["id"] in KO_FIX:
             it["ko"] = KO_FIX[it["id"]]
         # 전 문장 시제 자동분류(Day 27·28·29 전용일 제외 — 거긴 tag가 곧 라벨)
-        if d["day"] not in (27, 28, 29, 34):
+        if d["day"] not in (27, 28, 29, 34, 35):
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
@@ -701,7 +738,7 @@ for d in C["days"]:
         _parts = [p for p in re.split(r'[.?!]', it["en"]) if p.strip()]
         is_compound = len(_parts) >= 2
         # 라벨 부여. (Day27~29 전용일·복합문은 단일 라벨 제외)
-        if d["day"] in (27, 28, 29, 34):
+        if d["day"] in (27, 28, 29, 34, 35):
             it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None); it.pop("compound", None)
         elif is_compound:
             # 복합문 = 두 목적이 이어진 것. 단일 라벨 대신 '두 문장' 표시.
@@ -763,7 +800,7 @@ C["days"].sort(key=lambda d: d["day"])
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
 # 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
 PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
-SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32,33,34])
+SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32,33,34,35])
 for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))

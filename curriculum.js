@@ -7179,6 +7179,169 @@ window.CURRICULUM = {
           "en": "Do you work?"
         }
       ]
+    },
+    {
+      "day": 35,
+      "verb": "변신",
+      "phase": "한 문장 변신 · 손잡이 돌리기",
+      "ready": true,
+      "dlabel": "변신 ②",
+      "title": "한 문장 변신 ② · take·make·do·get",
+      "concept": "어제 한 거 또 해요. 새 동사라도 방식은 똑같아요. 문장 하나 붙잡고 손잡이만 돌려요. 나 버스 타, I take the bus. 어제는 I took the bus, 내일은 I'll take the bus, 지금은 I'm taking the bus. 타는 건 그대로, take만 변하죠. 안 탄다고 하려면 I don't take the bus. 물어볼 땐 Do you take the bus. 오늘은 take, make, do, get 네 동사를 돌려요. 과거가 took, made, did, got. 다 통째로 바뀌는 애들이에요. 이것도 외우지 말고, 손잡이 돌리는 그 느낌만 또 익히면 돼요.",
+      "items": [
+        {
+          "id": "d35_01",
+          "tag": "평소",
+          "ko": "나 버스 타.",
+          "en": "I take the bus.",
+          "note": "take는 여기서 (교통수단을) 타다."
+        },
+        {
+          "id": "d35_02",
+          "tag": "과거",
+          "ko": "나 버스 탔어.",
+          "en": "I took the bus.",
+          "note": "take의 과거는 took — 통째로 바뀜."
+        },
+        {
+          "id": "d35_03",
+          "tag": "미래",
+          "ko": "나 버스 탈 거야.",
+          "en": "I'll take the bus."
+        },
+        {
+          "id": "d35_04",
+          "tag": "지금",
+          "ko": "나 버스 타는 중이야.",
+          "en": "I'm taking the bus."
+        },
+        {
+          "id": "d35_05",
+          "tag": "부정",
+          "ko": "나 버스 안 타.",
+          "en": "I don't take the bus."
+        },
+        {
+          "id": "d35_06",
+          "tag": "질문",
+          "ko": "너 버스 타?",
+          "en": "Do you take the bus?"
+        },
+        {
+          "id": "d35_07",
+          "tag": "평소",
+          "ko": "나 저녁 해.",
+          "en": "I make dinner.",
+          "note": "make는 여기서 (음식을) 만들다·요리하다."
+        },
+        {
+          "id": "d35_08",
+          "tag": "과거",
+          "ko": "나 저녁 했어.",
+          "en": "I made dinner.",
+          "note": "make의 과거는 made — 통째로."
+        },
+        {
+          "id": "d35_09",
+          "tag": "미래",
+          "ko": "나 저녁 할 거야.",
+          "en": "I'll make dinner."
+        },
+        {
+          "id": "d35_10",
+          "tag": "지금",
+          "ko": "나 저녁 하는 중이야.",
+          "en": "I'm making dinner."
+        },
+        {
+          "id": "d35_11",
+          "tag": "부정",
+          "ko": "나 저녁 안 해.",
+          "en": "I don't make dinner."
+        },
+        {
+          "id": "d35_12",
+          "tag": "질문",
+          "ko": "너 저녁 해?",
+          "en": "Do you make dinner?"
+        },
+        {
+          "id": "d35_13",
+          "tag": "평소",
+          "ko": "나 그거 해.",
+          "en": "I do it."
+        },
+        {
+          "id": "d35_14",
+          "tag": "과거",
+          "ko": "나 그거 했어.",
+          "en": "I did it.",
+          "note": "do의 과거는 did."
+        },
+        {
+          "id": "d35_15",
+          "tag": "미래",
+          "ko": "나 그거 할 거야.",
+          "en": "I'll do it."
+        },
+        {
+          "id": "d35_16",
+          "tag": "지금",
+          "ko": "나 그거 하는 중이야.",
+          "en": "I'm doing it."
+        },
+        {
+          "id": "d35_17",
+          "tag": "부정",
+          "ko": "나 그거 안 해.",
+          "en": "I don't do it."
+        },
+        {
+          "id": "d35_18",
+          "tag": "질문",
+          "ko": "너 그거 해?",
+          "en": "Do you do it?",
+          "note": "묻는 Do you + 하는 do가 겹쳐 Do you do it? — 앞 Do는 묻는 신호, 뒤 do가 진짜 '하다'."
+        },
+        {
+          "id": "d35_19",
+          "tag": "평소",
+          "ko": "나 택시 타.",
+          "en": "I get a taxi.",
+          "note": "get은 여기서 (택시를) 잡다·타다."
+        },
+        {
+          "id": "d35_20",
+          "tag": "과거",
+          "ko": "나 택시 탔어.",
+          "en": "I got a taxi.",
+          "note": "get의 과거는 got — 통째로."
+        },
+        {
+          "id": "d35_21",
+          "tag": "미래",
+          "ko": "나 택시 탈 거야.",
+          "en": "I'll get a taxi."
+        },
+        {
+          "id": "d35_22",
+          "tag": "지금",
+          "ko": "나 택시 잡는 중이야.",
+          "en": "I'm getting a taxi."
+        },
+        {
+          "id": "d35_23",
+          "tag": "부정",
+          "ko": "나 택시 안 타.",
+          "en": "I don't get a taxi."
+        },
+        {
+          "id": "d35_24",
+          "tag": "질문",
+          "ko": "너 택시 타?",
+          "en": "Do you get a taxi?"
+        }
+      ]
     }
   ]
 };

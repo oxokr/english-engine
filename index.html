@@ -454,7 +454,7 @@ function buildSession(){
   // 시작어 스프린트 전용일: 복습 prepend 없이 라운드 순서대로.
   if(day && day.sprint){ sess = buildSprint(day.items); return; }
   // 시제·묻기(27·28·29)·한 문장 변신(34) 전용일은 개념 비교 학습이라 복습 prepend 없이 base 순서 그대로.
-  if(day && [27,28,29,34].includes(day.day)){ sess = day.items.slice(); return; }
+  if(day && [27,28,29,34,35].includes(day.day)){ sess = day.items.slice(); return; }
   const rev=[];
   const pick=(arr,ixs)=> ixs.map(i=>arr[i % arr.length]).filter(Boolean);
   const prev=C.days[dayIdx-1], weekAgo=C.days[dayIdx-7];
