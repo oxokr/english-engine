@@ -647,6 +647,24 @@ D35_CONCEPT = ("오늘은 평문을 질문이랑 부정으로 돌려요. 제일 
   "아니라고 할 땐, be 문장은 not, 나머지는 don't, 할 수 있다는 can't. "
   "다 아는 문장으로 돌려볼 거예요. 평문 하나만 알면 질문도 부정도 따라와요.")
 
+D36_CONCEPT = ("오늘도 평문을 질문이랑 부정으로 돌려요. 내 상태랑 필요한 걸로요. "
+  "기분이나 몸 상태는 be 문장이라 물을 때 어유, Are you hungry. "
+  "필요한 건 need 문장이라 두유, Do you need help. 둘 다 내 얘기지만 묻는 앞말이 갈리죠. "
+  "아니라고 할 땐, 상태는 I'm not, 필요는 I don't need. "
+  "다 아는 문장이에요. 평문만 잡으면 질문도 부정도 따라와요.")
+
+D37_CONCEPT = ("오늘은 가진 거랑 할 수 있는 걸 돌려요. "
+  "가졌냐고 물으면 두유 해브, Do you have a car. 할 수 있냐면 캔유, Can you drive. "
+  "아니라고 할 땐, 가짐은 I don't have, 능력은 I can't. "
+  "여행에서 많이 써요. Do you have a reservation, 예약 있어요? 같은 거요. "
+  "다 아는 문장으로 돌려봐요.")
+
+D38_CONCEPT = ("오늘은 원하는 거랑 평소 하는 걸 돌려요. "
+  "하고 싶냐고 물으면 두유 원투, Do you want to go. 평소 그러냐고 물어도 두유, Do you like this. "
+  "둘 다 두유로 물어요. 아니라고 할 땐 don't. "
+  "가고 싶어 I want to go, 가고 싶어? Do you want to go, 가기 싫어 I don't want to go. "
+  "want 뒤에 to 동사가 붙으면 하고 싶다예요. 다 아는 문장이에요.")
+
 TRANSFORM_DAYS = [
   {"day":34, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
    "dlabel":"변신", "title":"한 문장 변신 · 시간·부정·질문", "concept":D34_CONCEPT, "items":[
@@ -707,6 +725,75 @@ TRANSFORM_DAYS = [
     tf(35,17,"질문","너 커피 마셔?","Do you drink coffee?","행동을 물으면 Do you."),
     tf(35,18,"부정","나 커피 안 마셔.","I don't drink coffee."),
    ]},
+  {"day":36, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
+   "dlabel":"변신 ③", "title":"한 문장 변신 ③ · 상태·필요", "concept":D36_CONCEPT, "items":[
+    # be 상태 — Are you / I'm not
+    tf(36,1,"평문","나 배고파.","I'm hungry.","몸 상태 문장."),
+    tf(36,2,"질문","너 배고파?","Are you hungry?","상태 물으면 Are you."),
+    tf(36,3,"부정","나 안 배고파.","I'm not hungry.","be 부정은 not."),
+    tf(36,4,"평문","나 피곤해.","I'm tired."),
+    tf(36,5,"질문","너 피곤해?","Are you tired?"),
+    tf(36,6,"부정","나 안 피곤해.","I'm not tired."),
+    tf(36,7,"평문","나 행복해.","I'm happy."),
+    tf(36,8,"질문","너 행복해?","Are you happy?"),
+    tf(36,9,"부정","나 안 행복해.","I'm not happy."),
+    # need 필요 — Do you need / I don't need
+    tf(36,10,"평문","나 도움 필요해.","I need help.","필요한 거 문장."),
+    tf(36,11,"질문","너 도움 필요해?","Do you need help?","필요는 Do you need."),
+    tf(36,12,"부정","나 도움 필요 없어.","I don't need help.","필요 부정은 don't need."),
+    tf(36,13,"평문","나 물 필요해.","I need water."),
+    tf(36,14,"질문","너 물 필요해?","Do you need water?"),
+    tf(36,15,"부정","나 물 필요 없어.","I don't need water."),
+    tf(36,16,"평문","나 의사 필요해.","I need a doctor."),
+    tf(36,17,"질문","너 의사 필요해?","Do you need a doctor?","아픈 사람 챙길 때도."),
+    tf(36,18,"부정","나 의사 필요 없어.","I don't need a doctor."),
+   ]},
+  {"day":37, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
+   "dlabel":"변신 ④", "title":"한 문장 변신 ④ · 가짐·능력", "concept":D37_CONCEPT, "items":[
+    # have 가짐 — Do you have / I don't have
+    tf(37,1,"평문","나 차 있어.","I have a car.","가짐 문장."),
+    tf(37,2,"질문","너 차 있어?","Do you have a car?","가졌냐는 Do you have."),
+    tf(37,3,"부정","나 차 없어.","I don't have a car.","가짐 부정은 don't have."),
+    tf(37,4,"평문","나 질문 있어.","I have a question."),
+    tf(37,5,"질문","너 질문 있어?","Do you have a question?"),
+    tf(37,6,"부정","나 질문 없어.","I don't have any questions.","질문 없다는 보통 any questions(복수)로 말해."),
+    tf(37,7,"평문","나 예약 있어.","I have a reservation."),
+    tf(37,8,"질문","예약 있어요?","Do you have a reservation?","호텔·식당서 많이 들어."),
+    tf(37,9,"부정","나 예약 없어.","I don't have a reservation."),
+    # can 능력 — Can you / I can't
+    tf(37,10,"평문","나 운전할 수 있어.","I can drive.","능력 문장."),
+    tf(37,11,"질문","너 운전할 수 있어?","Can you drive?","할 수 있냐는 Can you."),
+    tf(37,12,"부정","나 운전 못 해.","I can't drive.","can 부정은 can't."),
+    tf(37,13,"평문","나 도와줄 수 있어.","I can help you."),
+    tf(37,14,"질문","도와줄 수 있어요?","Can you help me?","물을 땐 you→me. 도와달라는 부탁."),
+    tf(37,15,"부정","나 못 도와줘.","I can't help you."),
+    tf(37,16,"평문","나 영어 할 줄 알아.","I can speak English."),
+    tf(37,17,"질문","영어 할 줄 알아요?","Can you speak English?","여행서 많이 써."),
+    tf(37,18,"부정","나 영어 잘 못해.","I can't speak English."),
+   ]},
+  {"day":38, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
+   "dlabel":"변신 ⑤", "title":"한 문장 변신 ⑤ · 원함·일상", "concept":D38_CONCEPT, "items":[
+    # want to + 동사 — Do you want to / I don't want to
+    tf(38,1,"평문","나 가고 싶어.","I want to go.","하고 싶다 = want to + 동사."),
+    tf(38,2,"질문","너 가고 싶어?","Do you want to go?","하고 싶냐는 Do you want to."),
+    tf(38,3,"부정","나 가기 싫어.","I don't want to go.","하기 싫다 = don't want to."),
+    tf(38,4,"평문","나 자고 싶어.","I want to sleep."),
+    tf(38,5,"질문","너 자고 싶어?","Do you want to sleep?"),
+    tf(38,6,"부정","나 자기 싫어.","I don't want to sleep."),
+    tf(38,7,"평문","나 쉬고 싶어.","I want to rest."),
+    tf(38,8,"질문","너 쉬고 싶어?","Do you want to rest?"),
+    tf(38,9,"부정","나 쉬기 싫어.","I don't want to rest."),
+    tf(38,10,"평문","나 집에 가고 싶어.","I want to go home."),
+    tf(38,11,"질문","너 집에 가고 싶어?","Do you want to go home?"),
+    tf(38,12,"부정","나 집에 가기 싫어.","I don't want to go home."),
+    # 취향·일상 행동 — Do you / I don't
+    tf(38,13,"평문","나 이거 좋아.","I like this.","취향 문장."),
+    tf(38,14,"질문","너 이거 좋아?","Do you like this?","좋아하냐는 Do you."),
+    tf(38,15,"부정","나 이거 별로야.","I don't like this."),
+    tf(38,16,"평문","나 일찍 일어나.","I get up early.","평소 하는 일 문장."),
+    tf(38,17,"질문","너 일찍 일어나?","Do you get up early?","평소 그러냐는 Do you."),
+    tf(38,18,"부정","나 일찍 안 일어나.","I don't get up early."),
+   ]},
 ]
 
 n_concept = n_note = n_scene = n_eq = n_apply = n_use = 0
@@ -728,7 +815,7 @@ for d in C["days"]:
         if it["id"] in KO_FIX:
             it["ko"] = KO_FIX[it["id"]]
         # 전 문장 시제 자동분류(Day 27·28·29 전용일 제외 — 거긴 tag가 곧 라벨)
-        if d["day"] not in (27, 28, 29, 34, 35):
+        if d["day"] not in (27, 28, 29, 34, 35, 36, 37, 38):
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
@@ -736,7 +823,7 @@ for d in C["days"]:
         _parts = [p for p in re.split(r'[.?!]', it["en"]) if p.strip()]
         is_compound = len(_parts) >= 2
         # 라벨 부여. (Day27~29 전용일·복합문은 단일 라벨 제외)
-        if d["day"] in (27, 28, 29, 34, 35):
+        if d["day"] in (27, 28, 29, 34, 35, 36, 37, 38):
             it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None); it.pop("compound", None)
         elif is_compound:
             # 복합문 = 두 목적이 이어진 것. 단일 라벨 대신 '두 문장' 표시.
@@ -798,7 +885,7 @@ C["days"].sort(key=lambda d: d["day"])
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
 # 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
 PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
-SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32,33,34,35])
+SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38])
 for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))

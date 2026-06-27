@@ -7312,6 +7312,387 @@ window.CURRICULUM = {
           "en": "I don't drink coffee."
         }
       ]
+    },
+    {
+      "day": 36,
+      "verb": "변신",
+      "phase": "한 문장 변신 · 손잡이 돌리기",
+      "ready": true,
+      "dlabel": "변신 ③",
+      "title": "한 문장 변신 ③ · 상태·필요",
+      "concept": "오늘도 평문을 질문이랑 부정으로 돌려요. 내 상태랑 필요한 걸로요. 기분이나 몸 상태는 be 문장이라 물을 때 어유, Are you hungry. 필요한 건 need 문장이라 두유, Do you need help. 둘 다 내 얘기지만 묻는 앞말이 갈리죠. 아니라고 할 땐, 상태는 I'm not, 필요는 I don't need. 다 아는 문장이에요. 평문만 잡으면 질문도 부정도 따라와요.",
+      "items": [
+        {
+          "id": "d36_01",
+          "tag": "평문",
+          "ko": "나 배고파.",
+          "en": "I'm hungry.",
+          "note": "몸 상태 문장."
+        },
+        {
+          "id": "d36_02",
+          "tag": "질문",
+          "ko": "너 배고파?",
+          "en": "Are you hungry?",
+          "note": "상태 물으면 Are you."
+        },
+        {
+          "id": "d36_03",
+          "tag": "부정",
+          "ko": "나 안 배고파.",
+          "en": "I'm not hungry.",
+          "note": "be 부정은 not."
+        },
+        {
+          "id": "d36_04",
+          "tag": "평문",
+          "ko": "나 피곤해.",
+          "en": "I'm tired."
+        },
+        {
+          "id": "d36_05",
+          "tag": "질문",
+          "ko": "너 피곤해?",
+          "en": "Are you tired?"
+        },
+        {
+          "id": "d36_06",
+          "tag": "부정",
+          "ko": "나 안 피곤해.",
+          "en": "I'm not tired."
+        },
+        {
+          "id": "d36_07",
+          "tag": "평문",
+          "ko": "나 행복해.",
+          "en": "I'm happy."
+        },
+        {
+          "id": "d36_08",
+          "tag": "질문",
+          "ko": "너 행복해?",
+          "en": "Are you happy?"
+        },
+        {
+          "id": "d36_09",
+          "tag": "부정",
+          "ko": "나 안 행복해.",
+          "en": "I'm not happy."
+        },
+        {
+          "id": "d36_10",
+          "tag": "평문",
+          "ko": "나 도움 필요해.",
+          "en": "I need help.",
+          "note": "필요한 거 문장."
+        },
+        {
+          "id": "d36_11",
+          "tag": "질문",
+          "ko": "너 도움 필요해?",
+          "en": "Do you need help?",
+          "note": "필요는 Do you need."
+        },
+        {
+          "id": "d36_12",
+          "tag": "부정",
+          "ko": "나 도움 필요 없어.",
+          "en": "I don't need help.",
+          "note": "필요 부정은 don't need."
+        },
+        {
+          "id": "d36_13",
+          "tag": "평문",
+          "ko": "나 물 필요해.",
+          "en": "I need water."
+        },
+        {
+          "id": "d36_14",
+          "tag": "질문",
+          "ko": "너 물 필요해?",
+          "en": "Do you need water?"
+        },
+        {
+          "id": "d36_15",
+          "tag": "부정",
+          "ko": "나 물 필요 없어.",
+          "en": "I don't need water."
+        },
+        {
+          "id": "d36_16",
+          "tag": "평문",
+          "ko": "나 의사 필요해.",
+          "en": "I need a doctor."
+        },
+        {
+          "id": "d36_17",
+          "tag": "질문",
+          "ko": "너 의사 필요해?",
+          "en": "Do you need a doctor?",
+          "note": "아픈 사람 챙길 때도."
+        },
+        {
+          "id": "d36_18",
+          "tag": "부정",
+          "ko": "나 의사 필요 없어.",
+          "en": "I don't need a doctor."
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "verb": "변신",
+      "phase": "한 문장 변신 · 손잡이 돌리기",
+      "ready": true,
+      "dlabel": "변신 ④",
+      "title": "한 문장 변신 ④ · 가짐·능력",
+      "concept": "오늘은 가진 거랑 할 수 있는 걸 돌려요. 가졌냐고 물으면 두유 해브, Do you have a car. 할 수 있냐면 캔유, Can you drive. 아니라고 할 땐, 가짐은 I don't have, 능력은 I can't. 여행에서 많이 써요. Do you have a reservation, 예약 있어요? 같은 거요. 다 아는 문장으로 돌려봐요.",
+      "items": [
+        {
+          "id": "d37_01",
+          "tag": "평문",
+          "ko": "나 차 있어.",
+          "en": "I have a car.",
+          "note": "가짐 문장."
+        },
+        {
+          "id": "d37_02",
+          "tag": "질문",
+          "ko": "너 차 있어?",
+          "en": "Do you have a car?",
+          "note": "가졌냐는 Do you have."
+        },
+        {
+          "id": "d37_03",
+          "tag": "부정",
+          "ko": "나 차 없어.",
+          "en": "I don't have a car.",
+          "note": "가짐 부정은 don't have."
+        },
+        {
+          "id": "d37_04",
+          "tag": "평문",
+          "ko": "나 질문 있어.",
+          "en": "I have a question."
+        },
+        {
+          "id": "d37_05",
+          "tag": "질문",
+          "ko": "너 질문 있어?",
+          "en": "Do you have a question?"
+        },
+        {
+          "id": "d37_06",
+          "tag": "부정",
+          "ko": "나 질문 없어.",
+          "en": "I don't have any questions.",
+          "note": "질문 없다는 보통 any questions(복수)로 말해."
+        },
+        {
+          "id": "d37_07",
+          "tag": "평문",
+          "ko": "나 예약 있어.",
+          "en": "I have a reservation."
+        },
+        {
+          "id": "d37_08",
+          "tag": "질문",
+          "ko": "예약 있어요?",
+          "en": "Do you have a reservation?",
+          "note": "호텔·식당서 많이 들어."
+        },
+        {
+          "id": "d37_09",
+          "tag": "부정",
+          "ko": "나 예약 없어.",
+          "en": "I don't have a reservation."
+        },
+        {
+          "id": "d37_10",
+          "tag": "평문",
+          "ko": "나 운전할 수 있어.",
+          "en": "I can drive.",
+          "note": "능력 문장."
+        },
+        {
+          "id": "d37_11",
+          "tag": "질문",
+          "ko": "너 운전할 수 있어?",
+          "en": "Can you drive?",
+          "note": "할 수 있냐는 Can you."
+        },
+        {
+          "id": "d37_12",
+          "tag": "부정",
+          "ko": "나 운전 못 해.",
+          "en": "I can't drive.",
+          "note": "can 부정은 can't."
+        },
+        {
+          "id": "d37_13",
+          "tag": "평문",
+          "ko": "나 도와줄 수 있어.",
+          "en": "I can help you."
+        },
+        {
+          "id": "d37_14",
+          "tag": "질문",
+          "ko": "도와줄 수 있어요?",
+          "en": "Can you help me?",
+          "note": "물을 땐 you→me. 도와달라는 부탁."
+        },
+        {
+          "id": "d37_15",
+          "tag": "부정",
+          "ko": "나 못 도와줘.",
+          "en": "I can't help you."
+        },
+        {
+          "id": "d37_16",
+          "tag": "평문",
+          "ko": "나 영어 할 줄 알아.",
+          "en": "I can speak English."
+        },
+        {
+          "id": "d37_17",
+          "tag": "질문",
+          "ko": "영어 할 줄 알아요?",
+          "en": "Can you speak English?",
+          "note": "여행서 많이 써."
+        },
+        {
+          "id": "d37_18",
+          "tag": "부정",
+          "ko": "나 영어 잘 못해.",
+          "en": "I can't speak English."
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "verb": "변신",
+      "phase": "한 문장 변신 · 손잡이 돌리기",
+      "ready": true,
+      "dlabel": "변신 ⑤",
+      "title": "한 문장 변신 ⑤ · 원함·일상",
+      "concept": "오늘은 원하는 거랑 평소 하는 걸 돌려요. 하고 싶냐고 물으면 두유 원투, Do you want to go. 평소 그러냐고 물어도 두유, Do you like this. 둘 다 두유로 물어요. 아니라고 할 땐 don't. 가고 싶어 I want to go, 가고 싶어? Do you want to go, 가기 싫어 I don't want to go. want 뒤에 to 동사가 붙으면 하고 싶다예요. 다 아는 문장이에요.",
+      "items": [
+        {
+          "id": "d38_01",
+          "tag": "평문",
+          "ko": "나 가고 싶어.",
+          "en": "I want to go.",
+          "note": "하고 싶다 = want to + 동사."
+        },
+        {
+          "id": "d38_02",
+          "tag": "질문",
+          "ko": "너 가고 싶어?",
+          "en": "Do you want to go?",
+          "note": "하고 싶냐는 Do you want to."
+        },
+        {
+          "id": "d38_03",
+          "tag": "부정",
+          "ko": "나 가기 싫어.",
+          "en": "I don't want to go.",
+          "note": "하기 싫다 = don't want to."
+        },
+        {
+          "id": "d38_04",
+          "tag": "평문",
+          "ko": "나 자고 싶어.",
+          "en": "I want to sleep."
+        },
+        {
+          "id": "d38_05",
+          "tag": "질문",
+          "ko": "너 자고 싶어?",
+          "en": "Do you want to sleep?"
+        },
+        {
+          "id": "d38_06",
+          "tag": "부정",
+          "ko": "나 자기 싫어.",
+          "en": "I don't want to sleep."
+        },
+        {
+          "id": "d38_07",
+          "tag": "평문",
+          "ko": "나 쉬고 싶어.",
+          "en": "I want to rest."
+        },
+        {
+          "id": "d38_08",
+          "tag": "질문",
+          "ko": "너 쉬고 싶어?",
+          "en": "Do you want to rest?"
+        },
+        {
+          "id": "d38_09",
+          "tag": "부정",
+          "ko": "나 쉬기 싫어.",
+          "en": "I don't want to rest."
+        },
+        {
+          "id": "d38_10",
+          "tag": "평문",
+          "ko": "나 집에 가고 싶어.",
+          "en": "I want to go home."
+        },
+        {
+          "id": "d38_11",
+          "tag": "질문",
+          "ko": "너 집에 가고 싶어?",
+          "en": "Do you want to go home?"
+        },
+        {
+          "id": "d38_12",
+          "tag": "부정",
+          "ko": "나 집에 가기 싫어.",
+          "en": "I don't want to go home."
+        },
+        {
+          "id": "d38_13",
+          "tag": "평문",
+          "ko": "나 이거 좋아.",
+          "en": "I like this.",
+          "note": "취향 문장."
+        },
+        {
+          "id": "d38_14",
+          "tag": "질문",
+          "ko": "너 이거 좋아?",
+          "en": "Do you like this?",
+          "note": "좋아하냐는 Do you."
+        },
+        {
+          "id": "d38_15",
+          "tag": "부정",
+          "ko": "나 이거 별로야.",
+          "en": "I don't like this."
+        },
+        {
+          "id": "d38_16",
+          "tag": "평문",
+          "ko": "나 일찍 일어나.",
+          "en": "I get up early.",
+          "note": "평소 하는 일 문장."
+        },
+        {
+          "id": "d38_17",
+          "tag": "질문",
+          "ko": "너 일찍 일어나?",
+          "en": "Do you get up early?",
+          "note": "평소 그러냐는 Do you."
+        },
+        {
+          "id": "d38_18",
+          "tag": "부정",
+          "ko": "나 일찍 안 일어나.",
+          "en": "I don't get up early."
+        }
+      ]
     }
   ]
 };
