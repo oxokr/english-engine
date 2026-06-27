@@ -592,10 +592,10 @@ function render(){
     const qmean = {"사실":"너 ~해?(Do you)","상태":"~한 상태야?(Are you)","부탁":"네가 해줘(Can you)","허락":"내가 해도 돼?(Can I)","주문":"~ 주세요(Can I get)"}[it.tag];
     tagEl.className = "ptag " + qcls;
     tagEl.innerHTML = qword + " <span class='mean'>· " + qmean + "</span>";
-  } else if(["평소","과거","미래","지금","부정","질문"].includes(it.tag)){
-    // Day27·28 시제 + Day34 변신 손잡이(부정·질문 포함) — 색 배지 + 의미 한 줄
-    const tmean = {"평소":"늘·반복","과거":"어제·했어","미래":"내일·할 거야","지금":"지금·하는 중","부정":"아니라고","질문":"물어보면"}[it.tag];
-    tagEl.className = "ptag tense " + ({"평소":"p-want","과거":"p-state","미래":"p-have","지금":"p-action","부정":"p-need","질문":"q-fact"}[it.tag]);
+  } else if(["평소","과거","미래","지금","부정","질문","평문"].includes(it.tag)){
+    // Day27·28 시제 + Day34·35 변신 손잡이(평문·부정·질문 포함) — 색 배지 + 의미 한 줄
+    const tmean = {"평소":"늘·반복","과거":"어제·했어","미래":"내일·할 거야","지금":"지금·하는 중","부정":"아니라고","질문":"물어보면","평문":"그냥 말"}[it.tag];
+    tagEl.className = "ptag tense " + ({"평소":"p-want","과거":"p-state","미래":"p-have","지금":"p-action","부정":"p-need","질문":"q-fact","평문":"p-state"}[it.tag]);
     tagEl.innerHTML = it.tag + " <span class='mean'>· " + tmean + "</span>";
   } else if(it.purposeLabel){
     // 종류 라벨(색) + 의미 한 줄. 시제 있으면 흐린 텍스트로 곁들임.

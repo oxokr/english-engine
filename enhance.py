@@ -640,11 +640,12 @@ D34_CONCEPT = ("오늘은 좀 특별해요. 새 문장 안 배워요. 아는 문
   "외우는 게 아니라, 구조가 이만큼 바뀌면 뜻이 이만큼 바뀐다, 그 느낌만 손에 익히면 "
   "어떤 문장이든 스스로 바꿔 말할 수 있어요.")
 
-D35_CONCEPT = ("어제 한 거 또 해요. 새 동사라도 방식은 똑같아요. 문장 하나 붙잡고 손잡이만 돌려요. "
-  "나 버스 타, I take the bus. 어제는 I took the bus, 내일은 I'll take the bus, 지금은 I'm taking the bus. "
-  "타는 건 그대로, take만 변하죠. 안 탄다고 하려면 I don't take the bus. 물어볼 땐 Do you take the bus. "
-  "오늘은 take, make, do, get 네 동사를 돌려요. 과거가 took, made, did, got. 다 통째로 바뀌는 애들이에요. "
-  "이것도 외우지 말고, 손잡이 돌리는 그 느낌만 또 익히면 돼요.")
+D35_CONCEPT = ("오늘은 평문을 질문이랑 부정으로 돌려요. 제일 중요한 거 하나. "
+  "물어볼 때 앞에 붙는 말이 문장마다 달라요. 기분이나 상태면 어유, Are you okay. "
+  "가졌냐고 물으면 두유 해브, Do you have time. 행동이나 원하는 거면 두유, Do you drink coffee. "
+  "할 수 있냐면 캔유, Can you swim. 같은 너 ~? 인데 앞말이 갈리죠. "
+  "아니라고 할 땐, be 문장은 not, 나머지는 don't, 할 수 있다는 can't. "
+  "다 아는 문장으로 돌려볼 거예요. 평문 하나만 알면 질문도 부정도 따라와요.")
 
 TRANSFORM_DAYS = [
   {"day":34, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
@@ -679,35 +680,32 @@ TRANSFORM_DAYS = [
     tf(34,24,"질문","너 일해?","Do you work?"),
    ]},
   {"day":35, "verb":"변신", "phase":"한 문장 변신 · 손잡이 돌리기", "ready":True,
-   "dlabel":"변신 ②", "title":"한 문장 변신 ② · take·make·do·get", "concept":D35_CONCEPT, "items":[
-    # base 1: take the bus — take→took
-    tf(35,1,"평소","나 버스 타.","I take the bus.","take는 여기서 (교통수단을) 타다."),
-    tf(35,2,"과거","나 버스 탔어.","I took the bus.","take의 과거는 took — 통째로 바뀜."),
-    tf(35,3,"미래","나 버스 탈 거야.","I'll take the bus."),
-    tf(35,4,"지금","나 버스 타는 중이야.","I'm taking the bus."),
-    tf(35,5,"부정","나 버스 안 타.","I don't take the bus."),
-    tf(35,6,"질문","너 버스 타?","Do you take the bus?"),
-    # base 2: make dinner — make→made
-    tf(35,7,"평소","나 저녁 해.","I make dinner.","make는 여기서 (음식을) 만들다·요리하다."),
-    tf(35,8,"과거","나 저녁 했어.","I made dinner.","make의 과거는 made — 통째로."),
-    tf(35,9,"미래","나 저녁 할 거야.","I'll make dinner."),
-    tf(35,10,"지금","나 저녁 하는 중이야.","I'm making dinner."),
-    tf(35,11,"부정","나 저녁 안 해.","I don't make dinner."),
-    tf(35,12,"질문","너 저녁 해?","Do you make dinner?"),
-    # base 3: do it — do→did, 질문에서 do 겹침
-    tf(35,13,"평소","나 그거 해.","I do it."),
-    tf(35,14,"과거","나 그거 했어.","I did it.","do의 과거는 did."),
-    tf(35,15,"미래","나 그거 할 거야.","I'll do it."),
-    tf(35,16,"지금","나 그거 하는 중이야.","I'm doing it."),
-    tf(35,17,"부정","나 그거 안 해.","I don't do it."),
-    tf(35,18,"질문","너 그거 해?","Do you do it?","묻는 Do you + 하는 do가 겹쳐 Do you do it? — 앞 Do는 묻는 신호, 뒤 do가 진짜 '하다'."),
-    # base 4: get a taxi — get→got
-    tf(35,19,"평소","나 택시 타.","I get a taxi.","get은 여기서 (택시를) 잡다·타다."),
-    tf(35,20,"과거","나 택시 탔어.","I got a taxi.","get의 과거는 got — 통째로."),
-    tf(35,21,"미래","나 택시 탈 거야.","I'll get a taxi."),
-    tf(35,22,"지금","나 택시 잡는 중이야.","I'm getting a taxi."),
-    tf(35,23,"부정","나 택시 안 타.","I don't get a taxi."),
-    tf(35,24,"질문","너 택시 타?","Do you get a taxi?"),
+   "dlabel":"변신 ②", "title":"한 문장 변신 ② · 평문↔질문↔부정", "concept":D35_CONCEPT, "items":[
+    # 이미 배운 문장으로 평문→질문→부정. 질문은 문장 종류마다 앞말이 갈림(원리 핵심). 6개 강요 안 함.
+    # be 상태 — 질문은 Are you
+    tf(35,1,"평문","나 괜찮아.","I'm okay.","기분·상태 문장."),
+    tf(35,2,"질문","너 괜찮아?","Are you okay?","상태를 물으면 앞에 Are you (두유 아님)."),
+    tf(35,3,"부정","나 안 괜찮아.","I'm not okay.","be 문장 부정은 not."),
+    # be 준비 — Are you
+    tf(35,4,"평문","나 준비됐어.","I'm ready."),
+    tf(35,5,"질문","너 준비됐어?","Are you ready?","이것도 상태라 Are you."),
+    tf(35,6,"부정","나 준비 안 됐어.","I'm not ready."),
+    # have 가짐 — 질문은 Do you have
+    tf(35,7,"평문","나 시간 있어.","I have time.","가지고 있다는 문장."),
+    tf(35,8,"질문","너 시간 있어?","Do you have time?","가졌냐고 물으면 Do you have."),
+    tf(35,9,"부정","나 시간 없어.","I don't have time.","가짐 부정은 don't have."),
+    # want 욕구 — Do you
+    tf(35,10,"평문","나 물 마시고 싶어.","I want water.","원함·욕구 문장."),
+    tf(35,11,"질문","너 물 마실래?","Do you want water?","원하냐고 물으면 Do you."),
+    tf(35,12,"부정","나 물 안 마실래.","I don't want water."),
+    # can 능력 — Can you
+    tf(35,13,"평문","나 수영할 수 있어.","I can swim.","할 수 있다는 문장."),
+    tf(35,14,"질문","너 수영할 수 있어?","Can you swim?","할 수 있냐고 물으면 Can you."),
+    tf(35,15,"부정","나 수영 못 해.","I can't swim.","can 부정은 can't."),
+    # do 행동 — Do you
+    tf(35,16,"평문","나 커피 마셔.","I drink coffee.","평소 하는 행동 문장."),
+    tf(35,17,"질문","너 커피 마셔?","Do you drink coffee?","행동을 물으면 Do you."),
+    tf(35,18,"부정","나 커피 안 마셔.","I don't drink coffee."),
    ]},
 ]
 
