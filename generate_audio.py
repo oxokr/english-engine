@@ -70,7 +70,10 @@ for d in C["days"]:
         for lang in ("ko", "en"):
             if lang == "ko" and it.get("koRef"):
                 continue  # 스프린트: 한국어 큐는 기존 문장 음성(koRef) 재활용 — 새로 안 굽는다
-            jobs.append((it["id"]+"_"+lang, it[lang], lang, os.path.join(AUDIO, f"{it['id']}_{lang}.mp3")))
+            # 영어 음성은 enSpoken(회화 줄임꼴 wanna/gonna/gotta)이 있으면 그걸로 굽는다.
+            # 지문 텍스트(it["en"])는 정식형 그대로 — 화면엔 정식형, 소리만 줄임.
+            text = it["enSpoken"] if (lang == "en" and it.get("enSpoken")) else it[lang]
+            jobs.append((it["id"]+"_"+lang, text, lang, os.path.join(AUDIO, f"{it['id']}_{lang}.mp3")))
 
 total = len(jobs)
 for i, (name, text, lang, out) in enumerate(jobs, 1):

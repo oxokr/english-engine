@@ -823,7 +823,8 @@ window.CURRICULUM = {
           "rel": "↔ '가야 해'(의무)는 have to, '가고 싶어'(욕구)는 want to. 끝소리로 갈려요.",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "go 자리에 work, wait, leave, eat.",
-          "use": "일어서며 '나 가야 해'. have to=해야만 한다. '가져야' 아님."
+          "use": "일어서며 '나 가야 해'. have to=해야만 한다. '가져야' 아님.",
+          "enSpoken": "I gotta go."
         },
         {
           "id": "d4_08",
@@ -834,7 +835,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "work 자리에 go, study, cook.",
-          "use": "약속 미루며 '나 일해야 해'. 어쩔 수 없다는 톤."
+          "use": "약속 미루며 '나 일해야 해'. 어쩔 수 없다는 톤.",
+          "enSpoken": "I gotta work."
         },
         {
           "id": "d4_09",
@@ -857,7 +859,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "끝에 now / right now / soon.",
-          "use": "지금 당장 일어서며 '나 지금 가야 해'. now가 급한 느낌 더함."
+          "use": "지금 당장 일어서며 '나 지금 가야 해'. now가 급한 느낌 더함.",
+          "enSpoken": "I gotta go now."
         },
         {
           "id": "d4_11",
@@ -868,7 +871,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "wait 자리에 go, hurry, stay.",
-          "use": "줄·차례에서 '우리 기다려야 해'. 어쩔 수 없이 기다린다는 톤."
+          "use": "줄·차례에서 '우리 기다려야 해'. 어쩔 수 없이 기다린다는 톤.",
+          "enSpoken": "We gotta wait."
         },
         {
           "id": "d4_12",
@@ -890,7 +894,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "see this 자리에 try this, taste this.",
-          "use": "신기한 거 보여주며 '너 이거 꼭 봐야 해'. 의무 아니라 강추하는 톤."
+          "use": "신기한 거 보여주며 '너 이거 꼭 봐야 해'. 의무 아니라 강추하는 톤.",
+          "enSpoken": "You gotta see this."
         },
         {
           "id": "d4_19",
@@ -903,7 +908,8 @@ window.CURRICULUM = {
           "rel": "↔ '자야 해'(의무) have to ↔ '자고 싶어'(욕구) want to.",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "sleep 자리에 rest, go, lie down.",
-          "use": "졸려서 일어서며 '나 자야 해'. 더 못 버틴다는 톤."
+          "use": "졸려서 일어서며 '나 자야 해'. 더 못 버틴다는 톤.",
+          "enSpoken": "I gotta sleep."
         },
         {
           "id": "d4_20",
@@ -914,7 +920,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "hurry 자리에 go, leave, run.",
-          "use": "시간 빠듯할 때 '우리 서둘러야 해'. 같이 움직이자고 재촉."
+          "use": "시간 빠듯할 때 '우리 서둘러야 해'. 같이 움직이자고 재촉.",
+          "enSpoken": "We gotta hurry."
         },
         {
           "id": "d4_05",
@@ -1211,7 +1218,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "so I have to + go(가야)/sleep(자야)/wait(기다려야).",
-          "use": "배고파서 뭐라도 먹어야겠다 할 때. so는 '그래서'."
+          "use": "배고파서 뭐라도 먹어야겠다 할 때. so는 '그래서'.",
+          "enSpoken": "I'm hungry, so I gotta eat."
         },
         {
           "id": "d6_02",
@@ -1222,7 +1230,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "I don't have + time / money / a pen.",
-          "use": "시간 없어서 자리 떠야 할 때. 미안한 듯 짧게."
+          "use": "시간 없어서 자리 떠야 할 때. 미안한 듯 짧게.",
+          "enSpoken": "I don't have time, so I gotta go."
         },
         {
           "id": "d6_03",
@@ -1243,7 +1252,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "I'm tired, so I have to + go / rest / stop.",
-          "use": "피곤해서 먼저 자야겠다 양해 구할 때. 다정하게."
+          "use": "피곤해서 먼저 자야겠다 양해 구할 때. 다정하게.",
+          "enSpoken": "I'm tired, so I gotta sleep."
         },
         {
           "id": "d6_05",
@@ -1263,7 +1273,8 @@ window.CURRICULUM = {
           "en": "Are you ready? We have to go.",
           "compound": true,
           "apply": "Are you ready? We have to + go / hurry / leave.",
-          "use": "같이 나가야 할 때 일행 재촉. '준비됐어? 가자.'"
+          "use": "같이 나가야 할 때 일행 재촉. '준비됐어? 가자.'",
+          "enSpoken": "Are you ready? We gotta go."
         },
         {
           "id": "d6_07",
@@ -1324,7 +1335,8 @@ window.CURRICULUM = {
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
           "apply": "We're late, so we have to + hurry / go / run.",
-          "use": "늦어서 서둘러야 할 때 일행 재촉. so는 '그러니까'."
+          "use": "늦어서 서둘러야 할 때 일행 재촉. so는 '그러니까'.",
+          "enSpoken": "We're late, so we gotta hurry."
         },
         {
           "id": "d6_13",
@@ -1578,7 +1590,8 @@ window.CURRICULUM = {
           "ko": "우리 늦었어, 가야 해.",
           "en": "We're late. We have to go.",
           "compound": true,
-          "use": "늦어서 '우리 가야 해' 자리 정리할 때. go=떠나다, have to=꼭."
+          "use": "늦어서 '우리 가야 해' 자리 정리할 때. go=떠나다, have to=꼭.",
+          "enSpoken": "We're late. We gotta go."
         }
       ]
     },
@@ -1600,7 +1613,8 @@ window.CURRICULUM = {
           "purposeLabel": "상태",
           "purposeMean": "그냥 그러함·~이다",
           "apply": "be okay 자리에 be fine / be all right.",
-          "use": "걱정하는 사람 다독일 때. '다 잘될 거야' 토닥토닥."
+          "use": "걱정하는 사람 다독일 때. '다 잘될 거야' 토닥토닥.",
+          "enSpoken": "We're gonna be okay."
         },
         {
           "id": "d8_01",
@@ -1613,7 +1627,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "eat 자리에 sleep, rest, wait 넣어 계획 말하기.",
-          "use": "지금 말고 곧 먹겠다 할 때. '이따 먹을 거야' 느낌."
+          "use": "지금 말고 곧 먹겠다 할 때. '이따 먹을 거야' 느낌.",
+          "enSpoken": "I'm gonna eat."
         },
         {
           "id": "d8_02",
@@ -1625,7 +1640,8 @@ window.CURRICULUM = {
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
           "apply": "do 자리에 eat, say, buy 넣어 'What are you going to ~?'",
-          "use": "상대 계획 물을 때. '이제 뭐 할 거야?' 가볍게."
+          "use": "상대 계획 물을 때. '이제 뭐 할 거야?' 가볍게.",
+          "enSpoken": "What are you gonna do?"
         },
         {
           "id": "d8_03",
@@ -1636,7 +1652,8 @@ window.CURRICULUM = {
           "purpose": "action",
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
-          "use": "이제 잘 거라 알릴 때. '나 먼저 잘게' 느낌."
+          "use": "이제 잘 거라 알릴 때. '나 먼저 잘게' 느낌.",
+          "enSpoken": "I'm gonna sleep."
         },
         {
           "id": "d8_04",
@@ -1649,7 +1666,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "late 자리에 early 넣으면 '일찍 올 거야'.",
-          "use": "늦을 게 뻔히 보일 때. '이러다 늦겠다' 조바심."
+          "use": "늦을 게 뻔히 보일 때. '이러다 늦겠다' 조바심.",
+          "enSpoken": "We're gonna be late."
         },
         {
           "id": "d8_05",
@@ -1663,7 +1681,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "going to 뒤 동사만 바꾸면 다 미래. ask 자리에 eat, call, try.",
-          "use": "직접 물어보겠다 마음먹을 때. '내가 걔한테 물어볼게'."
+          "use": "직접 물어보겠다 마음먹을 때. '내가 걔한테 물어볼게'.",
+          "enSpoken": "I'm gonna ask him."
         },
         {
           "id": "d8_06",
@@ -1675,7 +1694,8 @@ window.CURRICULUM = {
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
           "apply": "buy 자리에 take, try, get 넣어 'Are you going to ~ it?'",
-          "use": "살 마음 있나 떠볼 때. 가게서 같이 온 사람에게 '그거 살 거야?'"
+          "use": "살 마음 있나 떠볼 때. 가게서 같이 온 사람에게 '그거 살 거야?'",
+          "enSpoken": "Are you gonna buy it?"
         },
         {
           "id": "d8_07",
@@ -1687,7 +1707,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "go 자리에 eat, wait, ask 넣어 'I'm not going to ~.'",
-          "use": "안 갈 거라 마음 정했을 때. '나 안 갈래' 단호하게."
+          "use": "안 갈 거라 마음 정했을 때. '나 안 갈래' 단호하게.",
+          "enSpoken": "I'm not gonna go."
         },
         {
           "id": "d8_08",
@@ -1699,7 +1720,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "rain 자리에 snow 넣으면 '눈 오겠다'.",
-          "use": "하늘 보고 비 올 것 같을 때. 예감으로 '비 오겠다'."
+          "use": "하늘 보고 비 올 것 같을 때. 예감으로 '비 오겠다'.",
+          "enSpoken": "It's gonna rain."
         },
         {
           "id": "d8_09",
@@ -1711,7 +1733,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "wait 자리에 stay, rest, try.",
-          "use": "재촉 말고 그냥 기다리겠다 할 때. '난 기다릴게'."
+          "use": "재촉 말고 그냥 기다리겠다 할 때. '난 기다릴게'.",
+          "enSpoken": "I'm gonna wait."
         },
         {
           "id": "d8_10",
@@ -1723,7 +1746,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "dive 자리에 swim, snorkel, hike.",
-          "use": "다이빙 일정 잡고 들떠서. '우리 다이빙할 거야!'"
+          "use": "다이빙 일정 잡고 들떠서. '우리 다이빙할 거야!'",
+          "enSpoken": "We're gonna dive."
         },
         {
           "id": "d8_11",
@@ -1735,7 +1759,8 @@ window.CURRICULUM = {
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
           "apply": "go 자리에 eat, stay 넣어 'Where are you going to ~?'",
-          "use": "어디 갈 계획인지 물을 때. '너 어디 갈 거야?' 동선 챙길 때."
+          "use": "어디 갈 계획인지 물을 때. '너 어디 갈 거야?' 동선 챙길 때.",
+          "enSpoken": "Where are you gonna go?"
         },
         {
           "id": "d8_12",
@@ -1747,7 +1772,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "try it 자리에 try this / try that.",
-          "use": "처음 보는 거 한번 해보겠다 할 때. '나 이거 도전해볼래'."
+          "use": "처음 보는 거 한번 해보겠다 할 때. '나 이거 도전해볼래'.",
+          "enSpoken": "I'm gonna try it."
         },
         {
           "id": "d8_13",
@@ -1759,7 +1785,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "come 자리에 call, help, stay.",
-          "use": "그 사람 오기로 돼 있을 때. '걔 올 거야' 안심시키듯."
+          "use": "그 사람 오기로 돼 있을 때. '걔 올 거야' 안심시키듯.",
+          "enSpoken": "He's gonna come."
         },
         {
           "id": "d8_14",
@@ -1771,7 +1798,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "rest 자리에 sleep, stay, wait.",
-          "use": "이제 좀 쉬겠다 할 때. rest는 '쉬다'. '나 좀 쉴게'."
+          "use": "이제 좀 쉬겠다 할 때. rest는 '쉬다'. '나 좀 쉴게'.",
+          "enSpoken": "I'm gonna rest."
         },
         {
           "id": "d8_15",
@@ -1783,7 +1811,8 @@ window.CURRICULUM = {
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
           "apply": "help 자리에 come, stay, wait 넣어 'Are you going to ~?'",
-          "use": "도와줄 마음 있나 물을 때. '너 도와줄 거야?' 살짝 기대하며."
+          "use": "도와줄 마음 있나 물을 때. '너 도와줄 거야?' 살짝 기대하며.",
+          "enSpoken": "Are you gonna help?"
         },
         {
           "id": "d8_16",
@@ -1795,7 +1824,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "stay home 자리에 stay here / stay inside.",
-          "use": "안 나가고 집에 있겠다 할 때. stay home은 '집에 머물다'."
+          "use": "안 나가고 집에 있겠다 할 때. stay home은 '집에 머물다'.",
+          "enSpoken": "I'm gonna stay home."
         },
         {
           "id": "d8_18",
@@ -1809,7 +1839,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "call you 자리에 text you / ask you.",
-          "use": "지금 말고 이따 전화하겠다 할 때. '이따 전화할게' 약속하듯."
+          "use": "지금 말고 이따 전화하겠다 할 때. '이따 전화할게' 약속하듯.",
+          "enSpoken": "I'm gonna call you later."
         },
         {
           "id": "d8_19",
@@ -1821,7 +1852,8 @@ window.CURRICULUM = {
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
           "apply": "go 자리에 leave, come, start 넣어 'When are you going to ~?'",
-          "use": "언제 떠날 건지 물을 때. '너 언제 갈 거야?' 일정 잡을 때."
+          "use": "언제 떠날 건지 물을 때. '너 언제 갈 거야?' 일정 잡을 때.",
+          "enSpoken": "When are you gonna go?"
         },
         {
           "id": "d8_20",
@@ -1833,7 +1865,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "finish 자리에 leave, start, eat.",
-          "use": "거의 다 했고 곧 끝낸다 할 때. '나 금방 끝낼게' 안심시키듯."
+          "use": "거의 다 했고 곧 끝낸다 할 때. '나 금방 끝낼게' 안심시키듯.",
+          "enSpoken": "I'm gonna finish soon."
         }
       ]
     },
@@ -2098,7 +2131,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "get 대신 grab도 됨: I'm going to grab a coffee.",
-          "use": "잠깐 나가서 '사 올게'. get=사다. '가져와' 명령 아님, 가볍게."
+          "use": "잠깐 나가서 '사 올게'. get=사다. '가져와' 명령 아님, 가볍게.",
+          "enSpoken": "I'm gonna get a coffee."
         },
         {
           "id": "d10_04",
@@ -2123,7 +2157,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "taxi 대신 a cab, an Uber, a ride.",
-          "use": "길에서 '택시 잡을게'. get a taxi=택시 잡다. 손 흔드는 그림."
+          "use": "길에서 '택시 잡을게'. get a taxi=택시 잡다. 손 흔드는 그림.",
+          "enSpoken": "I'm gonna get a taxi."
         },
         {
           "id": "d10_06",
@@ -2226,7 +2261,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "a car 대신 a bike, a scooter.",
-          "use": "여행지서 '차 빌릴게'. 여기선 get 대신 rent로 빌리다(사는 거 아님)."
+          "use": "여행지서 '차 빌릴게'. 여기선 get 대신 rent로 빌리다(사는 거 아님).",
+          "enSpoken": "I'm gonna rent a car."
         },
         {
           "id": "d10_20",
@@ -2372,7 +2408,8 @@ window.CURRICULUM = {
           "purposeLabel": "상태",
           "purposeMean": "그냥 그러함·~이다",
           "apply": "dark 자리에 cold, late, hot.",
-          "use": "해 지기 전이라 마음 급할 때. '곧 깜깜해져, 서두르자' 느낌."
+          "use": "해 지기 전이라 마음 급할 때. '곧 깜깜해져, 서두르자' 느낌.",
+          "enSpoken": "It's gonna get dark soon."
         },
         {
           "id": "d11_01",
@@ -2803,7 +2840,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "get a + coffee / water / snack 으로 바꿔.",
-          "use": "커피 사러 잠깐 나갈 때. go는 '가다', get은 '사 오다'."
+          "use": "커피 사러 잠깐 나갈 때. go는 '가다', get은 '사 오다'.",
+          "enSpoken": "I'm gonna get a coffee."
         },
         {
           "id": "d13_03",
@@ -2987,7 +3025,8 @@ window.CURRICULUM = {
           "rel": "↔ '가고 싶어'(욕구)는 want to, '가야 해'(의무)는 have to.",
           "purposeMean": "하고 싶음·원함",
           "apply": "go 자리에 eat, sleep, leave, rest.",
-          "use": "그 자리 뜨고 싶을 때 '나 갈래'. want to가 '~하고 싶다' 기본 틀."
+          "use": "그 자리 뜨고 싶을 때 '나 갈래'. want to가 '~하고 싶다' 기본 틀.",
+          "enSpoken": "I wanna go."
         },
         {
           "id": "d14_05",
@@ -2998,7 +3037,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "go home 자리에 go back, stay.",
-          "use": "지쳐서 '집 가고 싶다' 할 때. 짜증 아니고 솔직한 마음."
+          "use": "지쳐서 '집 가고 싶다' 할 때. 짜증 아니고 솔직한 마음.",
+          "enSpoken": "I wanna go home."
         },
         {
           "id": "d14_06",
@@ -3010,7 +3050,8 @@ window.CURRICULUM = {
           "rel": "↔ '갈래?'(의향 질문) Do you want to go? ↔ '가자'(제안) Let's go.",
           "purposeMean": "하고 싶음·원함",
           "apply": "go 자리에 eat, come, try.",
-          "use": "같이 갈지 슬쩍 물을 때. '갈래?' 다정하게 권하는 톤."
+          "use": "같이 갈지 슬쩍 물을 때. '갈래?' 다정하게 권하는 톤.",
+          "enSpoken": "Do you wanna go?"
         },
         {
           "id": "d14_07",
@@ -3021,7 +3062,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "rel": "↔ '자고 싶어'(욕구) want to ↔ '자야 해'(의무) have to.",
           "purposeMean": "하고 싶음·원함",
-          "use": "졸리고 지칠 때 '자고 싶다'. 그냥 솔직한 바람."
+          "use": "졸리고 지칠 때 '자고 싶다'. 그냥 솔직한 바람.",
+          "enSpoken": "I wanna sleep."
         },
         {
           "id": "d14_08",
@@ -3057,7 +3099,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "rest 자리에 sleep, sit down, go home.",
-          "use": "지쳐서 '좀 쉬고 싶다' 할 때. 여행 다니다 딱."
+          "use": "지쳐서 '좀 쉬고 싶다' 할 때. 여행 다니다 딱.",
+          "enSpoken": "I wanna rest."
         },
         {
           "id": "d14_11",
@@ -3068,7 +3111,8 @@ window.CURRICULUM = {
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
           "apply": "eat 자리에 do, drink, see.",
-          "use": "식당 정하기 전 '뭐 먹을래?' 물을 때."
+          "use": "식당 정하기 전 '뭐 먹을래?' 물을 때.",
+          "enSpoken": "What do you wanna eat?"
         },
         {
           "id": "d14_12",
@@ -3079,7 +3123,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "with you 자리에 with them.",
-          "use": "같이 가자고 마음 표현할 때 '너랑 갈래'. 다정한 톤."
+          "use": "같이 가자고 마음 표현할 때 '너랑 갈래'. 다정한 톤.",
+          "enSpoken": "I wanna go with you."
         },
         {
           "id": "d14_13",
@@ -3101,7 +3146,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "now 자리에 soon, later. go 자리에 leave.",
-          "use": "지금 떠나고 싶을 때 '나 지금 갈래'. 살짝 재촉하는 마음."
+          "use": "지금 떠나고 싶을 때 '나 지금 갈래'. 살짝 재촉하는 마음.",
+          "enSpoken": "I wanna go now."
         },
         {
           "id": "d14_15",
@@ -3124,7 +3170,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "dive 자리에 swim, snorkel, try it.",
-          "use": "'다이빙해 보고 싶어' 할 때. 설레는 마음 담아."
+          "use": "'다이빙해 보고 싶어' 할 때. 설레는 마음 담아.",
+          "enSpoken": "I wanna dive."
         },
         {
           "id": "d14_17",
@@ -3135,7 +3182,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "go 자리에 wait, do it.",
-          "use": "가기 싫을 때 '안 갈래'. don't want to가 핵심 부정 틀."
+          "use": "가기 싫을 때 '안 갈래'. don't want to가 핵심 부정 틀.",
+          "enSpoken": "I don't wanna go."
         },
         {
           "id": "d14_18",
@@ -3146,7 +3194,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "stay home 자리에 stay here, stay in.",
-          "use": "나가기 싫을 때 '집에 있을래'. stay는 '안 나가고 버틴다'."
+          "use": "나가기 싫을 때 '집에 있을래'. stay는 '안 나가고 버틴다'.",
+          "enSpoken": "I wanna stay home."
         },
         {
           "id": "d14_19",
@@ -3157,7 +3206,8 @@ window.CURRICULUM = {
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
           "apply": "do 자리에 eat, see, buy.",
-          "use": "계획 정할 때 일행에게 '뭐 하고 싶어?'."
+          "use": "계획 정할 때 일행에게 '뭐 하고 싶어?'.",
+          "enSpoken": "What do you wanna do?"
         },
         {
           "id": "d14_20",
@@ -3168,7 +3218,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "rest 자리에 sleep, stay home, sit here.",
-          "use": "딴거 말고 그냥 쉬고 싶을 때. just가 '그냥' 느낌 살림."
+          "use": "딴거 말고 그냥 쉬고 싶을 때. just가 '그냥' 느낌 살림.",
+          "enSpoken": "I just wanna rest."
         }
       ]
     },
@@ -3864,7 +3915,8 @@ window.CURRICULUM = {
           "en": "I want to rest. Let's take a break.",
           "compound": true,
           "apply": "take a break 자리에 take a rest / stop for a bit.",
-          "use": "지치면 '쉬자'. take a break은 잠깐 멈추고 한숨 돌리자는 말."
+          "use": "지치면 '쉬자'. take a break은 잠깐 멈추고 한숨 돌리자는 말.",
+          "enSpoken": "I wanna rest. Let's take a break."
         },
         {
           "id": "d18_02",
@@ -3884,7 +3936,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "want to ~, but I can't 뒤에 go / stay / wait / help.",
-          "use": "가고 싶은데 사정상 못 갈 때. '미안, 마음은 있는데 못 가.'"
+          "use": "가고 싶은데 사정상 못 갈 때. '미안, 마음은 있는데 못 가.'",
+          "enSpoken": "I wanna go, but I can't."
         },
         {
           "id": "d18_04",
@@ -3971,7 +4024,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "I want to 자리에 dive / swim / try it.",
-          "use": "물에 뛰어들고 싶을 때 '다이빙하고 싶어'. 신나 들뜬 톤."
+          "use": "물에 뛰어들고 싶을 때 '다이빙하고 싶어'. 신나 들뜬 톤.",
+          "enSpoken": "I wanna dive."
         },
         {
           "id": "d18_13",
@@ -4036,7 +4090,8 @@ window.CURRICULUM = {
           "purpose": "action",
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
-          "use": "경치 보고 '나 사진 한 장 찍을게' 담담히 알릴 때. take=찍다."
+          "use": "경치 보고 '나 사진 한 장 찍을게' 담담히 알릴 때. take=찍다.",
+          "enSpoken": "I'm gonna take a photo."
         },
         {
           "id": "d19_07",
@@ -4047,7 +4102,8 @@ window.CURRICULUM = {
           "purpose": "action",
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
-          "use": "'나 택시 타고 갈래' 정해서 알릴 때. take a taxi=택시를 타다."
+          "use": "'나 택시 타고 갈래' 정해서 알릴 때. take a taxi=택시를 타다.",
+          "enSpoken": "I'm gonna take a taxi."
         },
         {
           "id": "d19_19",
@@ -4058,7 +4114,8 @@ window.CURRICULUM = {
           "purpose": "action",
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
-          "use": "'나 샤워 좀 할게' 알릴 때. take a shower=샤워하다(통째 외우기)."
+          "use": "'나 샤워 좀 할게' 알릴 때. take a shower=샤워하다(통째 외우기).",
+          "enSpoken": "I'm gonna take a shower."
         },
         {
           "id": "d19_20",
@@ -4312,7 +4369,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "make + dinner / breakfast / coffee / a sandwich.",
-          "use": "이따 저녁 요리하겠다고 할 때. 여기 make는 음식 '만들다=요리하다'."
+          "use": "이따 저녁 요리하겠다고 할 때. 여기 make는 음식 '만들다=요리하다'.",
+          "enSpoken": "I'm gonna make dinner."
         },
         {
           "id": "d20_12",
@@ -4355,7 +4413,8 @@ window.CURRICULUM = {
           "purpose": "action",
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
-          "use": "힘들어하는 사람 다독이며 '너 해낼 거야, 잘될 거야'. make it=해내다."
+          "use": "힘들어하는 사람 다독이며 '너 해낼 거야, 잘될 거야'. make it=해내다.",
+          "enSpoken": "You're gonna make it."
         },
         {
           "id": "d20_02",
@@ -4785,7 +4844,8 @@ window.CURRICULUM = {
           "purpose": "need",
           "purposeLabel": "의무",
           "purposeMean": "어쩔 수 없이 해야 함",
-          "use": "급히 갈 때 'Sorry' 붙여 미안한 톤으로. 무례하지 않게 빠지는 말."
+          "use": "급히 갈 때 'Sorry' 붙여 미안한 톤으로. 무례하지 않게 빠지는 말.",
+          "enSpoken": "Sorry, I gotta go."
         },
         {
           "id": "d22_07",
@@ -4796,7 +4856,8 @@ window.CURRICULUM = {
           "purposeLabel": "욕구",
           "purposeMean": "하고 싶음·원함",
           "apply": "to eat 자리에 to drink.",
-          "use": "같이 먹자 권할 때. get은 '사 먹으러 가자'는 느낌."
+          "use": "같이 먹자 권할 때. get은 '사 먹으러 가자'는 느낌.",
+          "enSpoken": "Do you wanna get something to eat?"
         },
         {
           "id": "d22_08",
@@ -4816,7 +4877,8 @@ window.CURRICULUM = {
           "purpose": "ask",
           "purposeLabel": "질문",
           "purposeMean": "궁금해서 물음",
-          "use": "상대 입맛 물을 때 '뭐 먹고 싶어?'. 메뉴 정하기 전 다정하게."
+          "use": "상대 입맛 물을 때 '뭐 먹고 싶어?'. 메뉴 정하기 전 다정하게.",
+          "enSpoken": "What do you wanna eat?"
         },
         {
           "id": "d22_10",
@@ -4988,7 +5050,8 @@ window.CURRICULUM = {
           "purposeLabel": "행동",
           "purposeMean": "무언가를 함",
           "apply": "for + two weeks / ten days(열흘) / a month(한 달).",
-          "use": "'얼마나 머무냐' 물으면 자신 있게 '2주요'."
+          "use": "'얼마나 머무냐' 물으면 자신 있게 '2주요'.",
+          "enSpoken": "I'm gonna stay for two weeks."
         },
         {
           "id": "d23_06",
@@ -7582,75 +7645,87 @@ window.CURRICULUM = {
           "tag": "평문",
           "ko": "나 가고 싶어.",
           "en": "I want to go.",
-          "note": "하고 싶다 = want to + 동사."
+          "note": "하고 싶다 = want to + 동사.",
+          "enSpoken": "I wanna go."
         },
         {
           "id": "d38_02",
           "tag": "질문",
           "ko": "너 가고 싶어?",
           "en": "Do you want to go?",
-          "note": "하고 싶냐는 Do you want to."
+          "note": "하고 싶냐는 Do you want to.",
+          "enSpoken": "Do you wanna go?"
         },
         {
           "id": "d38_03",
           "tag": "부정",
           "ko": "나 가기 싫어.",
           "en": "I don't want to go.",
-          "note": "하기 싫다 = don't want to."
+          "note": "하기 싫다 = don't want to.",
+          "enSpoken": "I don't wanna go."
         },
         {
           "id": "d38_04",
           "tag": "평문",
           "ko": "나 자고 싶어.",
-          "en": "I want to sleep."
+          "en": "I want to sleep.",
+          "enSpoken": "I wanna sleep."
         },
         {
           "id": "d38_05",
           "tag": "질문",
           "ko": "너 자고 싶어?",
-          "en": "Do you want to sleep?"
+          "en": "Do you want to sleep?",
+          "enSpoken": "Do you wanna sleep?"
         },
         {
           "id": "d38_06",
           "tag": "부정",
           "ko": "나 자기 싫어.",
-          "en": "I don't want to sleep."
+          "en": "I don't want to sleep.",
+          "enSpoken": "I don't wanna sleep."
         },
         {
           "id": "d38_07",
           "tag": "평문",
           "ko": "나 쉬고 싶어.",
-          "en": "I want to rest."
+          "en": "I want to rest.",
+          "enSpoken": "I wanna rest."
         },
         {
           "id": "d38_08",
           "tag": "질문",
           "ko": "너 쉬고 싶어?",
-          "en": "Do you want to rest?"
+          "en": "Do you want to rest?",
+          "enSpoken": "Do you wanna rest?"
         },
         {
           "id": "d38_09",
           "tag": "부정",
           "ko": "나 쉬기 싫어.",
-          "en": "I don't want to rest."
+          "en": "I don't want to rest.",
+          "enSpoken": "I don't wanna rest."
         },
         {
           "id": "d38_10",
           "tag": "평문",
           "ko": "나 집에 가고 싶어.",
-          "en": "I want to go home."
+          "en": "I want to go home.",
+          "enSpoken": "I wanna go home."
         },
         {
           "id": "d38_11",
           "tag": "질문",
           "ko": "너 집에 가고 싶어?",
-          "en": "Do you want to go home?"
+          "en": "Do you want to go home?",
+          "enSpoken": "Do you wanna go home?"
         },
         {
           "id": "d38_12",
           "tag": "부정",
           "ko": "나 집에 가기 싫어.",
-          "en": "I don't want to go home."
+          "en": "I don't want to go home.",
+          "enSpoken": "I don't wanna go home."
         },
         {
           "id": "d38_13",

@@ -274,6 +274,13 @@ APPLY_ALL.update(APPLY_NOTES)   # hand-curated 패턴 우선
 APPLY_ALL.update(APPLY_GOLD)    # golden 최우선
 USE_ALL.update(USE)             # golden 최우선
 
+# 회화 줄임 음성(spoken_data.json — id→줄임꼴 영어). 지문(en)은 정식형 유지, _en.mp3만 이 소리로.
+#   wanna/gonna/gotta. 원어민 적대검수 통과분(don't gotta·Do you gotta? 등 어색한 건 제외됨).
+SPOKEN = {}
+_sp_path = os.path.join(BASE, "spoken_data.json")
+if os.path.exists(_sp_path):
+    SPOKEN = {k: v for k, v in json.load(open(_sp_path, encoding="utf-8")).items() if v}
+
 # d14_03: want+명사 예시로 정리(to 규칙과 분리)
 D14_03 = {"ko": "나 커피 줘.", "en": "I want a coffee.", "note": "want 뒤에 물건이면 to 없이. 동사일 때만 want to."}
 
@@ -891,13 +898,18 @@ for d in C["days"]:
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))
 
 # 쓰임·응용 최종 주입 — 특수일(Day29 묻기 등) 교체 후에도 보장. 스프린트(s..)·Day27·28 id는 USE_ALL에 없어 자동 제외.
-_nu2 = 0
+_nu2 = n_spoken = 0
 for d in C["days"]:
     for it in d["items"]:
         if it["id"] in USE_ALL and not it.get("use"):
             it["use"] = USE_ALL[it["id"]]; _nu2 += 1
         if it["id"] in APPLY_ALL and not it.get("apply"):
             it["apply"] = APPLY_ALL[it["id"]]
+        # 회화 줄임 음성용 enSpoken(지문 en은 불변). 스프린트 등 koRef 카드는 제외.
+        if it["id"] in SPOKEN and not it.get("koRef"):
+            it["enSpoken"] = SPOKEN[it["id"]]; n_spoken += 1
+        else:
+            it.pop("enSpoken", None)
 
 header = ("// 영어 엔진 커리큘럼 — 단일 소스(자동 생성됨). 앱과 generate_audio.py가 함께 읽는다.\n"
           "// 수정은 enhance.py 또는 직접. items[].id = 음성파일, items[].note = 혼란 포인트 설명.\n")
