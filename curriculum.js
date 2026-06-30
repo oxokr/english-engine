@@ -7768,6 +7768,1883 @@ window.CURRICULUM = {
           "en": "I don't get up early."
         }
       ]
+    },
+    {
+      "day": 39,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "How do you ___?",
+      "concept": "오늘 틀은 How do you, 뒤에 말을 붙여요. 어떻게 ~해요? 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d39_01",
+          "tag": "패턴",
+          "ko": "이거 어떻게 써요?",
+          "en": "How do you use it?"
+        },
+        {
+          "id": "d39_02",
+          "tag": "패턴",
+          "ko": "이거 어떻게 말해요?",
+          "en": "How do you say it?"
+        },
+        {
+          "id": "d39_03",
+          "tag": "패턴",
+          "ko": "거기 어떻게 가요?",
+          "en": "How do you get there?"
+        },
+        {
+          "id": "d39_04",
+          "tag": "패턴",
+          "ko": "이거 어떻게 열어요?",
+          "en": "How do you open this?"
+        },
+        {
+          "id": "d39_05",
+          "tag": "패턴",
+          "ko": "이거 어떻게 만들어요?",
+          "en": "How do you make this?"
+        },
+        {
+          "id": "d39_06",
+          "tag": "패턴",
+          "ko": "이거 어떻게 먹어요?",
+          "en": "How do you eat this?"
+        },
+        {
+          "id": "d39_07",
+          "tag": "패턴",
+          "ko": "이거 어떻게 켜요?",
+          "en": "How do you turn it on?"
+        },
+        {
+          "id": "d39_08",
+          "tag": "패턴",
+          "ko": "어떻게 알아요?",
+          "en": "How do you know?"
+        },
+        {
+          "id": "d39_09",
+          "tag": "패턴",
+          "ko": "그거 철자가 어떻게 돼요?",
+          "en": "How do you spell it?"
+        },
+        {
+          "id": "d39_10",
+          "tag": "패턴",
+          "ko": "여기선 어떻게 계산해요?",
+          "en": "How do you pay here?"
+        },
+        {
+          "id": "d39_11",
+          "tag": "패턴",
+          "ko": "이거 어떻게 읽어요?",
+          "en": "How do you read this?"
+        },
+        {
+          "id": "d39_12",
+          "tag": "패턴",
+          "ko": "이거 어떻게 하고 싶어요?",
+          "en": "How do you want to do this?",
+          "enSpoken": "How do you wanna do this?"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Where is ___?",
+      "concept": "오늘 틀은 Where is, 뒤에 말을 붙여요. ~ 어디예요? 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d40_01",
+          "tag": "패턴",
+          "ko": "화장실 어디예요?",
+          "en": "Where is the bathroom?"
+        },
+        {
+          "id": "d40_02",
+          "tag": "패턴",
+          "ko": "출구 어디예요?",
+          "en": "Where is the exit?"
+        },
+        {
+          "id": "d40_03",
+          "tag": "패턴",
+          "ko": "제 자리 어디예요?",
+          "en": "Where is my seat?"
+        },
+        {
+          "id": "d40_04",
+          "tag": "패턴",
+          "ko": "지하철 어디예요?",
+          "en": "Where is the subway?"
+        },
+        {
+          "id": "d40_05",
+          "tag": "패턴",
+          "ko": "택시 타는 곳 어디예요?",
+          "en": "Where is the taxi stand?"
+        },
+        {
+          "id": "d40_06",
+          "tag": "패턴",
+          "ko": "제 방 어디예요?",
+          "en": "Where is my room?"
+        },
+        {
+          "id": "d40_07",
+          "tag": "패턴",
+          "ko": "엘리베이터 어디예요?",
+          "en": "Where is the elevator?"
+        },
+        {
+          "id": "d40_08",
+          "tag": "패턴",
+          "ko": "버스 정류장 어디예요?",
+          "en": "Where is the bus stop?"
+        },
+        {
+          "id": "d40_09",
+          "tag": "패턴",
+          "ko": "입구 어디예요?",
+          "en": "Where is the entrance?"
+        },
+        {
+          "id": "d40_10",
+          "tag": "패턴",
+          "ko": "바닷가 어디예요?",
+          "en": "Where is the beach?"
+        },
+        {
+          "id": "d40_11",
+          "tag": "패턴",
+          "ko": "현금인출기 어디예요?",
+          "en": "Where is the ATM?"
+        },
+        {
+          "id": "d40_12",
+          "tag": "패턴",
+          "ko": "약국 어디예요?",
+          "en": "Where is the pharmacy?"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Where can I ___?",
+      "concept": "오늘 틀은 Where can I, 뒤에 말을 붙여요. 어디서 ~할 수 있어요? 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d41_01",
+          "tag": "패턴",
+          "ko": "택시 어디서 타요?",
+          "en": "Where can I get a taxi?"
+        },
+        {
+          "id": "d41_02",
+          "tag": "패턴",
+          "ko": "표 어디서 사요?",
+          "en": "Where can I buy a ticket?"
+        },
+        {
+          "id": "d41_03",
+          "tag": "패턴",
+          "ko": "물 어디서 사요?",
+          "en": "Where can I buy water?"
+        },
+        {
+          "id": "d41_04",
+          "tag": "패턴",
+          "ko": "폰 어디서 충전해요?",
+          "en": "Where can I charge my phone?"
+        },
+        {
+          "id": "d41_05",
+          "tag": "패턴",
+          "ko": "화장실 어디 있어요?",
+          "en": "Where can I find a bathroom?"
+        },
+        {
+          "id": "d41_06",
+          "tag": "패턴",
+          "ko": "유심 어디서 사요?",
+          "en": "Where can I buy a SIM card?"
+        },
+        {
+          "id": "d41_07",
+          "tag": "패턴",
+          "ko": "현금 어디서 뽑아요?",
+          "en": "Where can I get cash?"
+        },
+        {
+          "id": "d41_08",
+          "tag": "패턴",
+          "ko": "버스 어디서 타요?",
+          "en": "Where can I catch the bus?"
+        },
+        {
+          "id": "d41_09",
+          "tag": "패턴",
+          "ko": "이 근처 어디서 먹어요?",
+          "en": "Where can I eat around here?"
+        },
+        {
+          "id": "d41_10",
+          "tag": "패턴",
+          "ko": "현지 음식 어디서 먹어봐요?",
+          "en": "Where can I try the local food?"
+        },
+        {
+          "id": "d41_11",
+          "tag": "패턴",
+          "ko": "사진 어디서 잘 나와요?",
+          "en": "Where can I take a good photo?"
+        },
+        {
+          "id": "d41_12",
+          "tag": "패턴",
+          "ko": "자전거 어디서 빌려요?",
+          "en": "Where can I rent a bike?"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "How much is ___?",
+      "concept": "오늘 틀은 How much is, 뒤에 말을 붙여요. ~ 얼마예요? 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d42_01",
+          "tag": "패턴",
+          "ko": "이거 얼마예요?",
+          "en": "How much is this?"
+        },
+        {
+          "id": "d42_02",
+          "tag": "패턴",
+          "ko": "방 얼마예요?",
+          "en": "How much is the room?"
+        },
+        {
+          "id": "d42_03",
+          "tag": "패턴",
+          "ko": "커피 한 잔 얼마예요?",
+          "en": "How much is a coffee?"
+        },
+        {
+          "id": "d42_04",
+          "tag": "패턴",
+          "ko": "표 얼마예요?",
+          "en": "How much is the ticket?"
+        },
+        {
+          "id": "d42_05",
+          "tag": "패턴",
+          "ko": "맥주 한 잔 얼마예요?",
+          "en": "How much is a beer?"
+        },
+        {
+          "id": "d42_06",
+          "tag": "패턴",
+          "ko": "택시 얼마예요?",
+          "en": "How much is the taxi?"
+        },
+        {
+          "id": "d42_07",
+          "tag": "패턴",
+          "ko": "하룻밤에 얼마예요?",
+          "en": "How much is one night?"
+        },
+        {
+          "id": "d42_08",
+          "tag": "패턴",
+          "ko": "버스 얼마예요?",
+          "en": "How much is the bus?"
+        },
+        {
+          "id": "d42_09",
+          "tag": "패턴",
+          "ko": "이 모자 얼마예요?",
+          "en": "How much is this hat?"
+        },
+        {
+          "id": "d42_10",
+          "tag": "패턴",
+          "ko": "물 얼마예요?",
+          "en": "How much is the water?"
+        },
+        {
+          "id": "d42_11",
+          "tag": "패턴",
+          "ko": "투어 얼마예요?",
+          "en": "How much is the tour?"
+        },
+        {
+          "id": "d42_12",
+          "tag": "패턴",
+          "ko": "이거 다 해서 얼마예요?",
+          "en": "How much is all of this?"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "How long does it take to ___?",
+      "concept": "오늘 틀은 How long does it take to, 뒤에 말을 붙여요. ~하는 데 얼마나 걸려요? 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d43_01",
+          "tag": "패턴",
+          "ko": "거기까지 가는 데 얼마나 걸려요?",
+          "en": "How long does it take to get there?"
+        },
+        {
+          "id": "d43_02",
+          "tag": "패턴",
+          "ko": "시내까지 가는 데 얼마나 걸려요?",
+          "en": "How long does it take to get downtown?"
+        },
+        {
+          "id": "d43_03",
+          "tag": "패턴",
+          "ko": "공항까지 가는 데 얼마나 걸려요?",
+          "en": "How long does it take to get to the airport?"
+        },
+        {
+          "id": "d43_04",
+          "tag": "패턴",
+          "ko": "해변까지 가는 데 얼마나 걸려요?",
+          "en": "How long does it take to get to the beach?"
+        },
+        {
+          "id": "d43_05",
+          "tag": "패턴",
+          "ko": "호텔까지 가는 데 얼마나 걸려요?",
+          "en": "How long does it take to get to the hotel?"
+        },
+        {
+          "id": "d43_06",
+          "tag": "패턴",
+          "ko": "거기까지 걸어가는 데 얼마나 걸려요?",
+          "en": "How long does it take to walk there?"
+        },
+        {
+          "id": "d43_07",
+          "tag": "패턴",
+          "ko": "택시 잡는 데 얼마나 걸려요?",
+          "en": "How long does it take to get a taxi?"
+        },
+        {
+          "id": "d43_08",
+          "tag": "패턴",
+          "ko": "체크인하는 데 얼마나 걸려요?",
+          "en": "How long does it take to check in?"
+        },
+        {
+          "id": "d43_09",
+          "tag": "패턴",
+          "ko": "음식 나오는 데 얼마나 걸려요?",
+          "en": "How long does it take to get our food?"
+        },
+        {
+          "id": "d43_10",
+          "tag": "패턴",
+          "ko": "환불받는 데 얼마나 걸려요?",
+          "en": "How long does it take to get a refund?"
+        },
+        {
+          "id": "d43_11",
+          "tag": "패턴",
+          "ko": "역까지 가는 데 얼마나 걸려요?",
+          "en": "How long does it take to get to the station?"
+        },
+        {
+          "id": "d43_12",
+          "tag": "패턴",
+          "ko": "버스로 가면 얼마나 걸려요?",
+          "en": "How long does it take to get there by bus?"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Is there ___?",
+      "concept": "오늘 틀은 Is there, 뒤에 말을 붙여요. ~ 있어요? (존재) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d44_01",
+          "tag": "패턴",
+          "ko": "이 근처에 화장실 있어요?",
+          "en": "Is there a bathroom near here?"
+        },
+        {
+          "id": "d44_02",
+          "tag": "패턴",
+          "ko": "근처에 가게 있어요?",
+          "en": "Is there a store nearby?"
+        },
+        {
+          "id": "d44_03",
+          "tag": "패턴",
+          "ko": "무슨 문제 있어요?",
+          "en": "Is there a problem?"
+        },
+        {
+          "id": "d44_04",
+          "tag": "패턴",
+          "ko": "공항 가는 버스 있어요?",
+          "en": "Is there a bus to the airport?"
+        },
+        {
+          "id": "d44_05",
+          "tag": "패턴",
+          "ko": "더 싼 거 있어요?",
+          "en": "Is there a cheaper one?"
+        },
+        {
+          "id": "d44_06",
+          "tag": "패턴",
+          "ko": "여기 현금인출기 있어요?",
+          "en": "Is there an ATM here?"
+        },
+        {
+          "id": "d44_07",
+          "tag": "패턴",
+          "ko": "여기 와이파이 있어요?",
+          "en": "Is there Wi-Fi here?"
+        },
+        {
+          "id": "d44_08",
+          "tag": "패턴",
+          "ko": "두 명 자리 있어요?",
+          "en": "Is there a table for two?"
+        },
+        {
+          "id": "d44_09",
+          "tag": "패턴",
+          "ko": "이 근처에 약국 있어요?",
+          "en": "Is there a pharmacy near here?"
+        },
+        {
+          "id": "d44_10",
+          "tag": "패턴",
+          "ko": "할인 있어요?",
+          "en": "Is there a discount?"
+        },
+        {
+          "id": "d44_11",
+          "tag": "패턴",
+          "ko": "다른 사이즈 있어요?",
+          "en": "Is there another size?"
+        },
+        {
+          "id": "d44_12",
+          "tag": "패턴",
+          "ko": "뭐 먹을 거 있어요?",
+          "en": "Is there anything to eat?"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Can you ___?",
+      "concept": "오늘 틀은 Can you, 뒤에 말을 붙여요. ~해줄래요? (상대가) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d45_01",
+          "tag": "패턴",
+          "ko": "좀 도와줄래요?",
+          "en": "Can you help me?"
+        },
+        {
+          "id": "d45_02",
+          "tag": "패턴",
+          "ko": "다시 한번 말해줄래요?",
+          "en": "Can you say that again?"
+        },
+        {
+          "id": "d45_03",
+          "tag": "패턴",
+          "ko": "천천히 말해줄래요?",
+          "en": "Can you speak slowly?"
+        },
+        {
+          "id": "d45_04",
+          "tag": "패턴",
+          "ko": "사진 좀 찍어줄래요?",
+          "en": "Can you take a photo?"
+        },
+        {
+          "id": "d45_05",
+          "tag": "패턴",
+          "ko": "잠깐만 기다려줄래요?",
+          "en": "Can you wait a minute?"
+        },
+        {
+          "id": "d45_06",
+          "tag": "패턴",
+          "ko": "길 좀 알려줄래요?",
+          "en": "Can you show me the way?"
+        },
+        {
+          "id": "d45_07",
+          "tag": "패턴",
+          "ko": "그거 좀 적어줄래요?",
+          "en": "Can you write it down?"
+        },
+        {
+          "id": "d45_08",
+          "tag": "패턴",
+          "ko": "택시 좀 불러줄래요?",
+          "en": "Can you call a taxi?"
+        },
+        {
+          "id": "d45_09",
+          "tag": "패턴",
+          "ko": "문 좀 열어줄래요?",
+          "en": "Can you open the door?"
+        },
+        {
+          "id": "d45_10",
+          "tag": "패턴",
+          "ko": "메뉴판 좀 갖다줄래요?",
+          "en": "Can you bring me the menu?"
+        },
+        {
+          "id": "d45_11",
+          "tag": "패턴",
+          "ko": "이것 좀 확인해줄래요?",
+          "en": "Can you check this for me?"
+        },
+        {
+          "id": "d45_12",
+          "tag": "패턴",
+          "ko": "불 좀 켜줄래요?",
+          "en": "Can you turn on the light?"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Can I ___?",
+      "concept": "오늘 틀은 Can I, 뒤에 말을 붙여요. (내가) ~해도 돼요? 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d46_01",
+          "tag": "패턴",
+          "ko": "여기 앉아도 돼요?",
+          "en": "Can I sit here?"
+        },
+        {
+          "id": "d46_02",
+          "tag": "패턴",
+          "ko": "이거 입어봐도 돼요?",
+          "en": "Can I try this on?"
+        },
+        {
+          "id": "d46_03",
+          "tag": "패턴",
+          "ko": "이거 써도 돼요?",
+          "en": "Can I use this?"
+        },
+        {
+          "id": "d46_04",
+          "tag": "패턴",
+          "ko": "들어가도 돼요?",
+          "en": "Can I come in?"
+        },
+        {
+          "id": "d46_05",
+          "tag": "패턴",
+          "ko": "메뉴 좀 볼 수 있어요?",
+          "en": "Can I see the menu?"
+        },
+        {
+          "id": "d46_06",
+          "tag": "패턴",
+          "ko": "카드로 계산해도 돼요?",
+          "en": "Can I pay by card?"
+        },
+        {
+          "id": "d46_07",
+          "tag": "패턴",
+          "ko": "사진 찍어도 돼요?",
+          "en": "Can I take a picture?"
+        },
+        {
+          "id": "d46_08",
+          "tag": "패턴",
+          "ko": "물 좀 주실 수 있어요?",
+          "en": "Can I get some water?"
+        },
+        {
+          "id": "d46_09",
+          "tag": "패턴",
+          "ko": "계산서 좀 주시겠어요?",
+          "en": "Can I have the check?"
+        },
+        {
+          "id": "d46_10",
+          "tag": "패턴",
+          "ko": "뭐 하나 물어봐도 돼요?",
+          "en": "Can I ask you something?"
+        },
+        {
+          "id": "d46_11",
+          "tag": "패턴",
+          "ko": "가방 여기 맡겨둬도 돼요?",
+          "en": "Can I leave my bag here?"
+        },
+        {
+          "id": "d46_12",
+          "tag": "패턴",
+          "ko": "더 큰 걸로 받을 수 있어요?",
+          "en": "Can I get a bigger one?"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Can I get ___?",
+      "concept": "오늘 틀은 Can I get, 뒤에 말을 붙여요. ~ 주세요 (가게서) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d47_01",
+          "tag": "패턴",
+          "ko": "커피 한 잔 주세요.",
+          "en": "Can I get a coffee?"
+        },
+        {
+          "id": "d47_02",
+          "tag": "패턴",
+          "ko": "물 좀 주세요.",
+          "en": "Can I get some water?"
+        },
+        {
+          "id": "d47_03",
+          "tag": "패턴",
+          "ko": "계산서 주세요.",
+          "en": "Can I get the check?"
+        },
+        {
+          "id": "d47_04",
+          "tag": "패턴",
+          "ko": "메뉴판 주세요.",
+          "en": "Can I get a menu?"
+        },
+        {
+          "id": "d47_05",
+          "tag": "패턴",
+          "ko": "맥주 두 잔 주세요.",
+          "en": "Can I get two beers?"
+        },
+        {
+          "id": "d47_06",
+          "tag": "패턴",
+          "ko": "하나 더 주세요.",
+          "en": "Can I get one more?"
+        },
+        {
+          "id": "d47_07",
+          "tag": "패턴",
+          "ko": "냅킨 좀 주세요.",
+          "en": "Can I get some napkins?"
+        },
+        {
+          "id": "d47_08",
+          "tag": "패턴",
+          "ko": "봉투 하나 주세요.",
+          "en": "Can I get a bag?"
+        },
+        {
+          "id": "d47_09",
+          "tag": "패턴",
+          "ko": "영수증 주세요.",
+          "en": "Can I get the receipt?"
+        },
+        {
+          "id": "d47_10",
+          "tag": "패턴",
+          "ko": "포크 하나 주세요.",
+          "en": "Can I get a fork?"
+        },
+        {
+          "id": "d47_11",
+          "tag": "패턴",
+          "ko": "얼음 좀 주세요.",
+          "en": "Can I get some ice?"
+        },
+        {
+          "id": "d47_12",
+          "tag": "패턴",
+          "ko": "이거 포장해 주세요.",
+          "en": "Can I get this to go?"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "I want to ___.",
+      "concept": "오늘 틀은 I want to, 뒤에 말을 붙여요. ~하고 싶어요. 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d48_01",
+          "tag": "패턴",
+          "ko": "집에 가고 싶어요.",
+          "en": "I want to go home.",
+          "enSpoken": "I wanna go home."
+        },
+        {
+          "id": "d48_02",
+          "tag": "패턴",
+          "ko": "좀 쉬고 싶어요.",
+          "en": "I want to rest.",
+          "enSpoken": "I wanna rest."
+        },
+        {
+          "id": "d48_03",
+          "tag": "패턴",
+          "ko": "뭐 좀 먹고 싶어요.",
+          "en": "I want to eat something.",
+          "enSpoken": "I wanna eat something."
+        },
+        {
+          "id": "d48_04",
+          "tag": "패턴",
+          "ko": "물 좀 마시고 싶어요.",
+          "en": "I want to drink some water.",
+          "enSpoken": "I wanna drink some water."
+        },
+        {
+          "id": "d48_05",
+          "tag": "패턴",
+          "ko": "여기 앉고 싶어요.",
+          "en": "I want to sit here.",
+          "enSpoken": "I wanna sit here."
+        },
+        {
+          "id": "d48_06",
+          "tag": "패턴",
+          "ko": "그거 보고 싶어요.",
+          "en": "I want to see it.",
+          "enSpoken": "I wanna see it."
+        },
+        {
+          "id": "d48_07",
+          "tag": "패턴",
+          "ko": "이거 한번 해 보고 싶어요.",
+          "en": "I want to try this.",
+          "enSpoken": "I wanna try this."
+        },
+        {
+          "id": "d48_08",
+          "tag": "패턴",
+          "ko": "택시 타고 싶어요.",
+          "en": "I want to take a taxi.",
+          "enSpoken": "I wanna take a taxi."
+        },
+        {
+          "id": "d48_09",
+          "tag": "패턴",
+          "ko": "이거 사고 싶어요.",
+          "en": "I want to buy this.",
+          "enSpoken": "I wanna buy this."
+        },
+        {
+          "id": "d48_10",
+          "tag": "패턴",
+          "ko": "지금 계산하고 싶어요.",
+          "en": "I want to pay now.",
+          "enSpoken": "I wanna pay now."
+        },
+        {
+          "id": "d48_11",
+          "tag": "패턴",
+          "ko": "바닷가에 가고 싶어요.",
+          "en": "I want to go to the beach.",
+          "enSpoken": "I wanna go to the beach."
+        },
+        {
+          "id": "d48_12",
+          "tag": "패턴",
+          "ko": "여기서 사진 찍고 싶어요.",
+          "en": "I want to take a photo here.",
+          "enSpoken": "I wanna take a photo here."
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "I'm going to ___.",
+      "concept": "오늘 틀은 I'm going to, 뒤에 말을 붙여요. ~할 거예요. 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d49_01",
+          "tag": "패턴",
+          "ko": "저 이제 갈게요.",
+          "en": "I'm going to leave now.",
+          "enSpoken": "I'm gonna leave now."
+        },
+        {
+          "id": "d49_02",
+          "tag": "패턴",
+          "ko": "체크인 할게요.",
+          "en": "I'm going to check in.",
+          "enSpoken": "I'm gonna check in."
+        },
+        {
+          "id": "d49_03",
+          "tag": "패턴",
+          "ko": "카드로 계산할게요.",
+          "en": "I'm going to pay by card.",
+          "enSpoken": "I'm gonna pay by card."
+        },
+        {
+          "id": "d49_04",
+          "tag": "패턴",
+          "ko": "이거 주문할게요.",
+          "en": "I'm going to order this.",
+          "enSpoken": "I'm gonna order this."
+        },
+        {
+          "id": "d49_05",
+          "tag": "패턴",
+          "ko": "표 한 장 살게요.",
+          "en": "I'm going to buy a ticket.",
+          "enSpoken": "I'm gonna buy a ticket."
+        },
+        {
+          "id": "d49_06",
+          "tag": "패턴",
+          "ko": "산책 좀 할게요.",
+          "en": "I'm going to take a walk.",
+          "enSpoken": "I'm gonna take a walk."
+        },
+        {
+          "id": "d49_07",
+          "tag": "패턴",
+          "ko": "좀 둘러볼게요.",
+          "en": "I'm going to look around.",
+          "enSpoken": "I'm gonna look around."
+        },
+        {
+          "id": "d49_08",
+          "tag": "패턴",
+          "ko": "직원한테 물어볼게요.",
+          "en": "I'm going to ask the staff.",
+          "enSpoken": "I'm gonna ask the staff."
+        },
+        {
+          "id": "d49_09",
+          "tag": "패턴",
+          "ko": "버스 탈게요.",
+          "en": "I'm going to take the bus.",
+          "enSpoken": "I'm gonna take the bus."
+        },
+        {
+          "id": "d49_10",
+          "tag": "패턴",
+          "ko": "현금 좀 뽑을게요.",
+          "en": "I'm going to get some cash.",
+          "enSpoken": "I'm gonna get some cash."
+        },
+        {
+          "id": "d49_11",
+          "tag": "패턴",
+          "ko": "핸드폰 충전할게요.",
+          "en": "I'm going to charge my phone.",
+          "enSpoken": "I'm gonna charge my phone."
+        },
+        {
+          "id": "d49_12",
+          "tag": "패턴",
+          "ko": "오늘 밤에 친구 만날 거예요.",
+          "en": "I'm going to meet a friend tonight.",
+          "enSpoken": "I'm gonna meet a friend tonight."
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "I need to ___.",
+      "concept": "오늘 틀은 I need to, 뒤에 말을 붙여요. ~해야 해요. (필요) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d50_01",
+          "tag": "패턴",
+          "ko": "나 가야 해요.",
+          "en": "I need to go."
+        },
+        {
+          "id": "d50_02",
+          "tag": "패턴",
+          "ko": "나 좀 쉬어야겠어요.",
+          "en": "I need to rest."
+        },
+        {
+          "id": "d50_03",
+          "tag": "패턴",
+          "ko": "화장실 좀 찾아야 해요.",
+          "en": "I need to find a bathroom."
+        },
+        {
+          "id": "d50_04",
+          "tag": "패턴",
+          "ko": "뭐 좀 먹어야겠어요.",
+          "en": "I need to eat something."
+        },
+        {
+          "id": "d50_05",
+          "tag": "패턴",
+          "ko": "물 좀 마셔야겠어요.",
+          "en": "I need to drink some water."
+        },
+        {
+          "id": "d50_06",
+          "tag": "패턴",
+          "ko": "좀 앉아야겠어요.",
+          "en": "I need to sit down."
+        },
+        {
+          "id": "d50_07",
+          "tag": "패턴",
+          "ko": "잠깐 쉬어야겠어요.",
+          "en": "I need to take a break."
+        },
+        {
+          "id": "d50_08",
+          "tag": "패턴",
+          "ko": "폰 충전해야 해요.",
+          "en": "I need to charge my phone."
+        },
+        {
+          "id": "d50_09",
+          "tag": "패턴",
+          "ko": "현금 좀 뽑아야 해요.",
+          "en": "I need to get some cash."
+        },
+        {
+          "id": "d50_10",
+          "tag": "패턴",
+          "ko": "집에 가야 해요.",
+          "en": "I need to go home."
+        },
+        {
+          "id": "d50_11",
+          "tag": "패턴",
+          "ko": "택시 불러야 해요.",
+          "en": "I need to call a taxi."
+        },
+        {
+          "id": "d50_12",
+          "tag": "패턴",
+          "ko": "열 시까지 공항에 가 있어야 해요.",
+          "en": "I need to be at the airport by ten."
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "I have to ___.",
+      "concept": "오늘 틀은 I have to, 뒤에 말을 붙여요. ~해야 해요. (어쩔 수 없이) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d51_01",
+          "tag": "패턴",
+          "ko": "나 가야 해요.",
+          "en": "I have to go.",
+          "enSpoken": "I gotta go."
+        },
+        {
+          "id": "d51_02",
+          "tag": "패턴",
+          "ko": "나 지금 가야 해요.",
+          "en": "I have to go now.",
+          "enSpoken": "I gotta go now."
+        },
+        {
+          "id": "d51_03",
+          "tag": "패턴",
+          "ko": "나 여기서 기다려야 해요.",
+          "en": "I have to wait here.",
+          "enSpoken": "I gotta wait here."
+        },
+        {
+          "id": "d51_04",
+          "tag": "패턴",
+          "ko": "서둘러야 해요.",
+          "en": "I have to hurry.",
+          "enSpoken": "I gotta hurry."
+        },
+        {
+          "id": "d51_05",
+          "tag": "패턴",
+          "ko": "나 오늘 일해야 해요.",
+          "en": "I have to work today.",
+          "enSpoken": "I gotta work today."
+        },
+        {
+          "id": "d51_06",
+          "tag": "패턴",
+          "ko": "나 뭐라도 먹어야 해요.",
+          "en": "I have to eat something.",
+          "enSpoken": "I gotta eat something."
+        },
+        {
+          "id": "d51_07",
+          "tag": "패턴",
+          "ko": "집에 전화해야 해요.",
+          "en": "I have to call home.",
+          "enSpoken": "I gotta call home."
+        },
+        {
+          "id": "d51_08",
+          "tag": "패턴",
+          "ko": "화장실 좀 찾아야 해요.",
+          "en": "I have to find a bathroom.",
+          "enSpoken": "I gotta find a bathroom."
+        },
+        {
+          "id": "d51_09",
+          "tag": "패턴",
+          "ko": "이 가방 챙겨 가야 해요.",
+          "en": "I have to take this bag.",
+          "enSpoken": "I gotta take this bag."
+        },
+        {
+          "id": "d51_10",
+          "tag": "패턴",
+          "ko": "환전 좀 해야 해요.",
+          "en": "I have to change some money.",
+          "enSpoken": "I gotta change some money."
+        },
+        {
+          "id": "d51_11",
+          "tag": "패턴",
+          "ko": "폰 충전해야 해요.",
+          "en": "I have to charge my phone.",
+          "enSpoken": "I gotta charge my phone."
+        },
+        {
+          "id": "d51_12",
+          "tag": "패턴",
+          "ko": "열 시까지 거기 가 있어야 해요.",
+          "en": "I have to be there by ten.",
+          "enSpoken": "I gotta be there by ten."
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Let's ___.",
+      "concept": "오늘 틀은 Let's, 뒤에 말을 붙여요. ~하자. 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d52_01",
+          "tag": "패턴",
+          "ko": "가자.",
+          "en": "Let's go."
+        },
+        {
+          "id": "d52_02",
+          "tag": "패턴",
+          "ko": "여기서 먹자.",
+          "en": "Let's eat here."
+        },
+        {
+          "id": "d52_03",
+          "tag": "패턴",
+          "ko": "택시 타자.",
+          "en": "Let's take a taxi."
+        },
+        {
+          "id": "d52_04",
+          "tag": "패턴",
+          "ko": "물 좀 사자.",
+          "en": "Let's get some water."
+        },
+        {
+          "id": "d52_05",
+          "tag": "패턴",
+          "ko": "이쪽으로 가자.",
+          "en": "Let's go this way."
+        },
+        {
+          "id": "d52_06",
+          "tag": "패턴",
+          "ko": "7시에 만나자.",
+          "en": "Let's meet at seven."
+        },
+        {
+          "id": "d52_07",
+          "tag": "패턴",
+          "ko": "사진 찍자.",
+          "en": "Let's take a photo."
+        },
+        {
+          "id": "d52_08",
+          "tag": "패턴",
+          "ko": "누구한테 물어보자.",
+          "en": "Let's ask someone."
+        },
+        {
+          "id": "d52_09",
+          "tag": "패턴",
+          "ko": "저기 앉자.",
+          "en": "Let's sit over there."
+        },
+        {
+          "id": "d52_10",
+          "tag": "패턴",
+          "ko": "계산 나눠서 내자.",
+          "en": "Let's split the bill."
+        },
+        {
+          "id": "d52_11",
+          "tag": "패턴",
+          "ko": "호텔로 돌아가자.",
+          "en": "Let's go back to the hotel."
+        },
+        {
+          "id": "d52_12",
+          "tag": "패턴",
+          "ko": "잠깐 쉬자.",
+          "en": "Let's take a break."
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Let me ___.",
+      "concept": "오늘 틀은 Let me, 뒤에 말을 붙여요. 내가 ~할게요. 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d53_01",
+          "tag": "패턴",
+          "ko": "어디 봐요.",
+          "en": "Let me see."
+        },
+        {
+          "id": "d53_02",
+          "tag": "패턴",
+          "ko": "내가 한번 해볼게요.",
+          "en": "Let me try."
+        },
+        {
+          "id": "d53_03",
+          "tag": "패턴",
+          "ko": "내가 낼게요.",
+          "en": "Let me pay."
+        },
+        {
+          "id": "d53_04",
+          "tag": "패턴",
+          "ko": "직원한테 물어볼게요.",
+          "en": "Let me ask the staff."
+        },
+        {
+          "id": "d53_05",
+          "tag": "패턴",
+          "ko": "시간 좀 볼게요.",
+          "en": "Let me check the time."
+        },
+        {
+          "id": "d53_06",
+          "tag": "패턴",
+          "ko": "휴대폰 좀 가져올게요.",
+          "en": "Let me get my phone."
+        },
+        {
+          "id": "d53_07",
+          "tag": "패턴",
+          "ko": "사진 하나 보여줄게요.",
+          "en": "Let me show you a photo."
+        },
+        {
+          "id": "d53_08",
+          "tag": "패턴",
+          "ko": "가방 좀 챙길게요.",
+          "en": "Let me grab my bag."
+        },
+        {
+          "id": "d53_09",
+          "tag": "패턴",
+          "ko": "지도 좀 볼게요.",
+          "en": "Let me check the map."
+        },
+        {
+          "id": "d53_10",
+          "tag": "패턴",
+          "ko": "내가 적어둘게요.",
+          "en": "Let me write it down."
+        },
+        {
+          "id": "d53_11",
+          "tag": "패턴",
+          "ko": "내가 택시 부를게요.",
+          "en": "Let me call a taxi."
+        },
+        {
+          "id": "d53_12",
+          "tag": "패턴",
+          "ko": "좀 생각해볼게요.",
+          "en": "Let me think about it."
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Do you want to ___?",
+      "concept": "오늘 틀은 Do you want to, 뒤에 말을 붙여요. ~할래요? 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d54_01",
+          "tag": "패턴",
+          "ko": "갈래요?",
+          "en": "Do you want to go?",
+          "enSpoken": "Do you wanna go?"
+        },
+        {
+          "id": "d54_02",
+          "tag": "패턴",
+          "ko": "뭐 좀 먹을래요?",
+          "en": "Do you want to eat?",
+          "enSpoken": "Do you wanna eat?"
+        },
+        {
+          "id": "d54_03",
+          "tag": "패턴",
+          "ko": "커피 마실래요?",
+          "en": "Do you want to get some coffee?",
+          "enSpoken": "Do you wanna get some coffee?"
+        },
+        {
+          "id": "d54_04",
+          "tag": "패턴",
+          "ko": "좀 쉴래요?",
+          "en": "Do you want to take a break?",
+          "enSpoken": "Do you wanna take a break?"
+        },
+        {
+          "id": "d54_05",
+          "tag": "패턴",
+          "ko": "나랑 같이 갈래요?",
+          "en": "Do you want to come with me?",
+          "enSpoken": "Do you wanna come with me?"
+        },
+        {
+          "id": "d54_06",
+          "tag": "패턴",
+          "ko": "여기 앉을래요?",
+          "en": "Do you want to sit here?",
+          "enSpoken": "Do you wanna sit here?"
+        },
+        {
+          "id": "d54_07",
+          "tag": "패턴",
+          "ko": "메뉴 볼래요?",
+          "en": "Do you want to see the menu?",
+          "enSpoken": "Do you wanna see the menu?"
+        },
+        {
+          "id": "d54_08",
+          "tag": "패턴",
+          "ko": "이거 한번 먹어볼래요?",
+          "en": "Do you want to try this?",
+          "enSpoken": "Do you wanna try this?"
+        },
+        {
+          "id": "d54_09",
+          "tag": "패턴",
+          "ko": "집에 갈래요?",
+          "en": "Do you want to go home?",
+          "enSpoken": "Do you wanna go home?"
+        },
+        {
+          "id": "d54_10",
+          "tag": "패턴",
+          "ko": "여기서 기다릴래요?",
+          "en": "Do you want to wait here?",
+          "enSpoken": "Do you wanna wait here?"
+        },
+        {
+          "id": "d54_11",
+          "tag": "패턴",
+          "ko": "지금 주문할래요?",
+          "en": "Do you want to order now?",
+          "enSpoken": "Do you wanna order now?"
+        },
+        {
+          "id": "d54_12",
+          "tag": "패턴",
+          "ko": "걸어갈래요?",
+          "en": "Do you want to walk?",
+          "enSpoken": "Do you wanna walk?"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Do you have ___?",
+      "concept": "오늘 틀은 Do you have, 뒤에 말을 붙여요. ~ 있어요? (가짐) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d55_01",
+          "tag": "패턴",
+          "ko": "메뉴 있어요?",
+          "en": "Do you have a menu?"
+        },
+        {
+          "id": "d55_02",
+          "tag": "패턴",
+          "ko": "충전기 있어요?",
+          "en": "Do you have a charger?"
+        },
+        {
+          "id": "d55_03",
+          "tag": "패턴",
+          "ko": "물 있어요?",
+          "en": "Do you have water?"
+        },
+        {
+          "id": "d55_04",
+          "tag": "패턴",
+          "ko": "봉투 있어요?",
+          "en": "Do you have a bag?"
+        },
+        {
+          "id": "d55_05",
+          "tag": "패턴",
+          "ko": "예약 있어요?",
+          "en": "Do you have a reservation?"
+        },
+        {
+          "id": "d55_06",
+          "tag": "패턴",
+          "ko": "방 있어요?",
+          "en": "Do you have a room?"
+        },
+        {
+          "id": "d55_07",
+          "tag": "패턴",
+          "ko": "시간 있어요?",
+          "en": "Do you have time?"
+        },
+        {
+          "id": "d55_08",
+          "tag": "패턴",
+          "ko": "펜 있어요?",
+          "en": "Do you have a pen?"
+        },
+        {
+          "id": "d55_09",
+          "tag": "패턴",
+          "ko": "더 큰 사이즈 있어요?",
+          "en": "Do you have a bigger size?"
+        },
+        {
+          "id": "d55_10",
+          "tag": "패턴",
+          "ko": "지도 있어요?",
+          "en": "Do you have a map?"
+        },
+        {
+          "id": "d55_11",
+          "tag": "패턴",
+          "ko": "잔돈 있어요?",
+          "en": "Do you have change?"
+        },
+        {
+          "id": "d55_12",
+          "tag": "패턴",
+          "ko": "두 명 자리 있어요?",
+          "en": "Do you have a table for two?"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Are you ___?",
+      "concept": "오늘 틀은 Are you, 뒤에 말을 붙여요. ~해요? (상태) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d56_01",
+          "tag": "패턴",
+          "ko": "괜찮아요?",
+          "en": "Are you okay?"
+        },
+        {
+          "id": "d56_02",
+          "tag": "패턴",
+          "ko": "준비됐어요?",
+          "en": "Are you ready?"
+        },
+        {
+          "id": "d56_03",
+          "tag": "패턴",
+          "ko": "확실해요?",
+          "en": "Are you sure?"
+        },
+        {
+          "id": "d56_04",
+          "tag": "패턴",
+          "ko": "배고파요?",
+          "en": "Are you hungry?"
+        },
+        {
+          "id": "d56_05",
+          "tag": "패턴",
+          "ko": "목말라요?",
+          "en": "Are you thirsty?"
+        },
+        {
+          "id": "d56_06",
+          "tag": "패턴",
+          "ko": "피곤해요?",
+          "en": "Are you tired?"
+        },
+        {
+          "id": "d56_07",
+          "tag": "패턴",
+          "ko": "추워요?",
+          "en": "Are you cold?"
+        },
+        {
+          "id": "d56_08",
+          "tag": "패턴",
+          "ko": "바빠요?",
+          "en": "Are you busy?"
+        },
+        {
+          "id": "d56_09",
+          "tag": "패턴",
+          "ko": "혼자 왔어요?",
+          "en": "Are you alone?"
+        },
+        {
+          "id": "d56_10",
+          "tag": "패턴",
+          "ko": "길 잃었어요?",
+          "en": "Are you lost?"
+        },
+        {
+          "id": "d56_11",
+          "tag": "패턴",
+          "ko": "진심이에요?",
+          "en": "Are you serious?"
+        },
+        {
+          "id": "d56_12",
+          "tag": "패턴",
+          "ko": "내일 시간 있어요?",
+          "en": "Are you free tomorrow?"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Do you ___?",
+      "concept": "오늘 틀은 Do you, 뒤에 말을 붙여요. ~해요? (행동·습관) 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d57_01",
+          "tag": "패턴",
+          "ko": "영어 해요?",
+          "en": "Do you speak English?"
+        },
+        {
+          "id": "d57_02",
+          "tag": "패턴",
+          "ko": "한국어 해요?",
+          "en": "Do you speak Korean?"
+        },
+        {
+          "id": "d57_03",
+          "tag": "패턴",
+          "ko": "카드 받아요?",
+          "en": "Do you take cards?"
+        },
+        {
+          "id": "d57_04",
+          "tag": "패턴",
+          "ko": "달러 받아요?",
+          "en": "Do you accept dollars?"
+        },
+        {
+          "id": "d57_05",
+          "tag": "패턴",
+          "ko": "길 알아요?",
+          "en": "Do you know the way?"
+        },
+        {
+          "id": "d57_06",
+          "tag": "패턴",
+          "ko": "여기 살아요?",
+          "en": "Do you live here?"
+        },
+        {
+          "id": "d57_07",
+          "tag": "패턴",
+          "ko": "여기서 일해요?",
+          "en": "Do you work here?"
+        },
+        {
+          "id": "d57_08",
+          "tag": "패턴",
+          "ko": "좀 드실래요?",
+          "en": "Do you want some?"
+        },
+        {
+          "id": "d57_09",
+          "tag": "패턴",
+          "ko": "이해돼요?",
+          "en": "Do you understand?"
+        },
+        {
+          "id": "d57_10",
+          "tag": "패턴",
+          "ko": "배달돼요?",
+          "en": "Do you deliver?"
+        },
+        {
+          "id": "d57_11",
+          "tag": "패턴",
+          "ko": "커피 마셔요?",
+          "en": "Do you drink coffee?"
+        },
+        {
+          "id": "d57_12",
+          "tag": "패턴",
+          "ko": "좋은 데 알아요?",
+          "en": "Do you know a good place?"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "Thank you for ___.",
+      "concept": "오늘 틀은 Thank you for, 뒤에 말을 붙여요. ~ 고마워요. 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d58_01",
+          "tag": "패턴",
+          "ko": "도와줘서 고마워요.",
+          "en": "Thank you for your help."
+        },
+        {
+          "id": "d58_02",
+          "tag": "패턴",
+          "ko": "기다려 줘서 고마워요.",
+          "en": "Thank you for waiting."
+        },
+        {
+          "id": "d58_03",
+          "tag": "패턴",
+          "ko": "커피 고마워요.",
+          "en": "Thank you for the coffee."
+        },
+        {
+          "id": "d58_04",
+          "tag": "패턴",
+          "ko": "와 줘서 고마워요.",
+          "en": "Thank you for coming."
+        },
+        {
+          "id": "d58_05",
+          "tag": "패턴",
+          "ko": "다 고마워요.",
+          "en": "Thank you for everything."
+        },
+        {
+          "id": "d58_06",
+          "tag": "패턴",
+          "ko": "태워 줘서 고마워요.",
+          "en": "Thank you for the ride."
+        },
+        {
+          "id": "d58_07",
+          "tag": "패턴",
+          "ko": "음식 고마워요.",
+          "en": "Thank you for the food."
+        },
+        {
+          "id": "d58_08",
+          "tag": "패턴",
+          "ko": "알려 줘서 고마워요.",
+          "en": "Thank you for letting me know."
+        },
+        {
+          "id": "d58_09",
+          "tag": "패턴",
+          "ko": "시간 내 줘서 고마워요.",
+          "en": "Thank you for your time."
+        },
+        {
+          "id": "d58_10",
+          "tag": "패턴",
+          "ko": "이해해 줘서 고마워요.",
+          "en": "Thank you for understanding."
+        },
+        {
+          "id": "d58_11",
+          "tag": "패턴",
+          "ko": "선물 고마워요.",
+          "en": "Thank you for the gift."
+        },
+        {
+          "id": "d58_12",
+          "tag": "패턴",
+          "ko": "전화해 줘서 고마워요.",
+          "en": "Thank you for calling."
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "I'm sorry, but ___.",
+      "concept": "오늘 틀은 I'm sorry, but, 뒤에 말을 붙여요. 미안한데 ~. 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d59_01",
+          "tag": "패턴",
+          "ko": "미안한데 나 가봐야 해.",
+          "en": "I'm sorry, but I have to go.",
+          "enSpoken": "I'm sorry, but I gotta go."
+        },
+        {
+          "id": "d59_02",
+          "tag": "패턴",
+          "ko": "미안한데 나 못 해.",
+          "en": "I'm sorry, but I can't."
+        },
+        {
+          "id": "d59_03",
+          "tag": "패턴",
+          "ko": "미안한데 나 늦었어.",
+          "en": "I'm sorry, but I'm late."
+        },
+        {
+          "id": "d59_04",
+          "tag": "패턴",
+          "ko": "미안한데 나 시간이 없어.",
+          "en": "I'm sorry, but I don't have time."
+        },
+        {
+          "id": "d59_05",
+          "tag": "패턴",
+          "ko": "미안한데 무슨 말인지 모르겠어요.",
+          "en": "I'm sorry, but I don't understand."
+        },
+        {
+          "id": "d59_06",
+          "tag": "패턴",
+          "ko": "미안한데 나 지금 바빠.",
+          "en": "I'm sorry, but I'm busy right now."
+        },
+        {
+          "id": "d59_07",
+          "tag": "패턴",
+          "ko": "미안한데 오늘은 안 되겠어.",
+          "en": "I'm sorry, but not today."
+        },
+        {
+          "id": "d59_08",
+          "tag": "패턴",
+          "ko": "미안한데 이거 제가 주문한 게 아니에요.",
+          "en": "I'm sorry, but this isn't what I ordered."
+        },
+        {
+          "id": "d59_09",
+          "tag": "패턴",
+          "ko": "미안한데 나 지금 가야 해.",
+          "en": "I'm sorry, but I have to leave now.",
+          "enSpoken": "I'm sorry, but I gotta leave now."
+        },
+        {
+          "id": "d59_10",
+          "tag": "패턴",
+          "ko": "미안한데 제가 영어를 잘 못해요.",
+          "en": "I'm sorry, but I don't speak English well."
+        },
+        {
+          "id": "d59_11",
+          "tag": "패턴",
+          "ko": "미안한데 시간이 조금 더 필요해요.",
+          "en": "I'm sorry, but I need a little more time."
+        },
+        {
+          "id": "d59_12",
+          "tag": "패턴",
+          "ko": "미안한데 그건 제가 도와드릴 수가 없어요.",
+          "en": "I'm sorry, but I can't help you with that."
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "verb": "패턴",
+      "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+      "ready": true,
+      "dlabel": "패턴",
+      "title": "I think ___.",
+      "concept": "오늘 틀은 I think, 뒤에 말을 붙여요. ~인 것 같아요. 할 때 써요. 앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. 틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.",
+      "items": [
+        {
+          "id": "d60_01",
+          "tag": "패턴",
+          "ko": "괜찮은 것 같아요.",
+          "en": "I think it's good."
+        },
+        {
+          "id": "d60_02",
+          "tag": "패턴",
+          "ko": "당신 말이 맞는 것 같아요.",
+          "en": "I think you're right."
+        },
+        {
+          "id": "d60_03",
+          "tag": "패턴",
+          "ko": "너무 비싼 것 같아요.",
+          "en": "I think it's too expensive."
+        },
+        {
+          "id": "d60_04",
+          "tag": "패턴",
+          "ko": "우리 늦은 것 같아요.",
+          "en": "I think we're late."
+        },
+        {
+          "id": "d60_05",
+          "tag": "패턴",
+          "ko": "별 문제 없는 것 같아요.",
+          "en": "I think it's okay."
+        },
+        {
+          "id": "d60_06",
+          "tag": "패턴",
+          "ko": "우리 길 잃은 것 같아요.",
+          "en": "I think we're lost."
+        },
+        {
+          "id": "d60_07",
+          "tag": "패턴",
+          "ko": "(가게가) 문 닫은 것 같아요.",
+          "en": "I think it's closed."
+        },
+        {
+          "id": "d60_08",
+          "tag": "패턴",
+          "ko": "여기가 거기인 것 같아요.",
+          "en": "I think this is the place."
+        },
+        {
+          "id": "d60_09",
+          "tag": "패턴",
+          "ko": "너무 먼 것 같아요.",
+          "en": "I think it's too far."
+        },
+        {
+          "id": "d60_10",
+          "tag": "패턴",
+          "ko": "당신이 틀린 것 같아요.",
+          "en": "I think you're wrong."
+        },
+        {
+          "id": "d60_11",
+          "tag": "패턴",
+          "ko": "값이 괜찮은 것 같아요.",
+          "en": "I think it's a good price."
+        },
+        {
+          "id": "d60_12",
+          "tag": "패턴",
+          "ko": "지금 가는 게 좋을 것 같아요.",
+          "en": "I think we should go now."
+        }
+      ]
     }
   ]
 };

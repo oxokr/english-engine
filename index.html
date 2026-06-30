@@ -50,8 +50,16 @@
   .rc .o{color:#1a0a00; background:var(--g3);} .rc .x{color:#fff; background:var(--g4);}
   .tip{color:var(--dim); font-size:13px; line-height:1.5; margin:0 2px 18px;}
 
-  .phase-h{font-size:13px; font-weight:700; letter-spacing:.1em; color:var(--accent);
-           text-transform:uppercase; margin:22px 4px 12px;}
+  .phase-h{display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+           font-size:13px; font-weight:700; letter-spacing:.08em; color:var(--accent);
+           background:none; border:none; padding:14px 4px; margin:8px 0 2px; cursor:pointer;}
+  .phase-h .pchev{transition:transform .15s; font-size:12px; flex:none;}
+  .phase-h.open .pchev{transform:rotate(90deg);}
+  .phase-h .pname{flex:0 1 auto; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .phase-h .pcount{margin-left:auto; flex:none; font-weight:700; color:var(--dim); font-size:12px;
+           background:var(--card); border:1px solid var(--line); border-radius:20px; padding:2px 10px;}
+  .phase-sec{display:flex; flex-direction:column; gap:10px; margin-bottom:6px;}
+  .phase-sec.collapsed{display:none;}
   .day-card{display:flex; align-items:center; gap:14px; width:100%; text-align:left;
     background:var(--card); border:1px solid var(--line); border-radius:18px;
     padding:18px 18px; margin-bottom:10px; color:var(--txt);}
@@ -370,10 +378,16 @@ function renderHome(){
   $("#ddayNum").innerHTML = n > 0 ? "D-<b>"+n+"</b>" : (n===0 ? "D-<b>DAY</b>" : "여행 후");
   const list = $("#dayList"); list.innerHTML = "";
   const laps = loadLaps();
-  let phase = "";
+  // phase별로 묶기(순서 보존)
+  const groups = []; const gi = {};
   C.days.forEach((d,i)=>{
-    if(d.phase !== phase){ phase = d.phase;
-      const h = document.createElement("div"); h.className="phase-h"; h.textContent=phase; list.appendChild(h); }
+    if(!(d.phase in gi)){ gi[d.phase]=groups.length; groups.push({phase:d.phase, items:[]}); }
+    groups[gi[d.phase]].items.push({d,i});
+  });
+  // 펼칠 phase: 이어듣기(마지막 위치) day의 phase, 없으면 첫 phase
+  let active = groups.length ? groups[0].phase : "";
+  try{ const pos=JSON.parse(localStorage.getItem("ee_pos")||"null"); if(pos && C.days[pos.d]) active=C.days[pos.d].phase; }catch(e){}
+  const makeCard = ({d,i})=>{
     const b = document.createElement("button");
     b.className = "day-card" + (d.ready ? " ready" : "");
     const lap = laps[d.day] || 0;
@@ -384,7 +398,24 @@ function renderHome(){
       (lap>0 ? '<span class="lap">'+lap+'회</span>' : '') +
       (d.ready ? '<span class="lock">▶</span>' : '<span class="lock">준비 중</span>');
     if(d.ready) b.onclick = ()=> openDay(i);
-    list.appendChild(b);
+    return b;
+  };
+  groups.forEach(g=>{
+    const open = g.phase===active;
+    const h = document.createElement("button");
+    h.className = "phase-h" + (open?" open":"");
+    h.innerHTML = '<span class="pchev">▶</span><span class="pname">'+g.phase+'</span><span class="pcount">'+g.items.length+'일</span>';
+    const sec = document.createElement("div");
+    sec.className = "phase-sec" + (open?"":" collapsed");
+    g.items.forEach(it=> sec.appendChild(makeCard(it)));
+    h.onclick = ()=>{
+      const wasOpen = h.classList.contains("open");
+      // 아코디언: 다 닫고
+      list.querySelectorAll(".phase-h").forEach(x=>x.classList.remove("open"));
+      list.querySelectorAll(".phase-sec").forEach(x=>x.classList.add("collapsed"));
+      if(!wasOpen){ h.classList.add("open"); sec.classList.remove("collapsed"); h.scrollIntoView({block:"start",behavior:"smooth"}); }
+    };
+    list.appendChild(h); list.appendChild(sec);
   });
   // 이어듣기
   try{
@@ -454,7 +485,7 @@ function buildSession(){
   // 시작어 스프린트 전용일: 복습 prepend 없이 라운드 순서대로.
   if(day && day.sprint){ sess = buildSprint(day.items); return; }
   // 시제·묻기(27·28·29)·한 문장 변신(34) 전용일은 개념 비교 학습이라 복습 prepend 없이 base 순서 그대로.
-  if(day && [27,28,29,34,35,36,37,38].includes(day.day)){ sess = day.items.slice(); return; }
+  if(day && ([27,28,29].includes(day.day) || (day.day>=34 && day.day<=60))){ sess = day.items.slice(); return; }
   const rev=[];
   const pick=(arr,ixs)=> ixs.map(i=>arr[i % arr.length]).filter(Boolean);
   const prev=C.days[dayIdx-1], weekAgo=C.days[dayIdx-7];

@@ -822,7 +822,7 @@ for d in C["days"]:
         if it["id"] in KO_FIX:
             it["ko"] = KO_FIX[it["id"]]
         # 전 문장 시제 자동분류(Day 27·28·29 전용일 제외 — 거긴 tag가 곧 라벨)
-        if d["day"] not in (27, 28, 29, 34, 35, 36, 37, 38):
+        if d["day"] not in ({27, 28, 29} | set(range(34, 61))):
             tv = classify_tense(it["en"], it["id"])
             if tv: it["tense"] = tv
             elif "tense" in it: del it["tense"]
@@ -830,7 +830,7 @@ for d in C["days"]:
         _parts = [p for p in re.split(r'[.?!]', it["en"]) if p.strip()]
         is_compound = len(_parts) >= 2
         # 라벨 부여. (Day27~29 전용일·복합문은 단일 라벨 제외)
-        if d["day"] in (27, 28, 29, 34, 35, 36, 37, 38):
+        if d["day"] in ({27, 28, 29} | set(range(34, 61))):
             it.pop("purpose", None); it.pop("purposeLabel", None); it.pop("purposeMean", None); it.pop("compound", None)
         elif is_compound:
             # 복합문 = 두 목적이 이어진 것. 단일 라벨 대신 '두 문장' 표시.
@@ -882,8 +882,24 @@ for d in C["days"]:
         else:
             it.pop("use", None)
 
-# 전용 미니 단계(Day 27~29 시제·묻기 + Day 30~ 스프린트) — 있으면 최신 정의로 교체, 없으면 추가(멱등)
-_SPECIAL = TENSE_DAYS + SPRINT_DAYS + TRANSFORM_DAYS
+# ===== 패턴 응용 (Day 39~60) — 틀 고정 + 뒤 내용 붙인 예시 12문장/일 (pattern_data.json) =====
+# nin 발주: "How do you ___?" 처럼 틀 하나 익히고 뒤만 바꿔 일상 응용. 원어민 검수 통과.
+PATTERN_DAYS = []
+_pdp = os.path.join(BASE, "pattern_data.json")
+if os.path.exists(_pdp):
+    for p in json.load(open(_pdp, encoding="utf-8")):
+        _day = p["day"]; _frame = p["frame"]; _fko = p["ko"]
+        _head = _frame.replace("___", "").replace("  ", " ").strip().rstrip("?.").strip()
+        _concept = (f"오늘 틀은 {_head}, 뒤에 말을 붙여요. {_fko} 할 때 써요. "
+                    "앞부분은 그대로 두고 뒤만 바꾸면 열두 개가 돼요. "
+                    "틀 하나가 입에 붙으면 뒤만 갈아끼워서 어디서든 써먹어요. 외우지 말고 틀을 손에 쥐세요.")
+        _items = [{"id": "d%d_%02d" % (_day, i + 1), "tag": "패턴", "ko": it["ko"], "en": it["en"]}
+                  for i, it in enumerate(p["items"])]
+        PATTERN_DAYS.append({"day": _day, "verb": "패턴", "phase": "패턴 응용 · 틀 하나로 일상 다 말하기",
+                             "ready": True, "dlabel": "패턴", "title": _frame, "concept": _concept, "items": _items})
+
+# 전용 미니 단계(Day 27~29 시제·묻기 + Day 30~ 스프린트 + 34~38 변신 + 39~60 패턴) — 있으면 최신 정의로 교체(멱등)
+_SPECIAL = TENSE_DAYS + SPRINT_DAYS + TRANSFORM_DAYS + PATTERN_DAYS
 _td_by_day = {td["day"]: td for td in _SPECIAL}
 C["days"] = [td for td in _SPECIAL if td["day"] not in {d["day"] for d in C["days"]}] + \
             [(_td_by_day[d["day"]] if d["day"] in _td_by_day else d) for d in C["days"]]
@@ -892,7 +908,7 @@ C["days"].sort(key=lambda d: d["day"])
 # day 내 목적순 안정 재배치 — 같은 목적끼리 뭉쳐 패턴 학습.
 # 복습일(mix)·시제전용(27,28)·trip(23~26)은 의도적 흐름이라 제외. 일반 동사 학습일만.
 PURPOSE_ORDER = {"state":0, "have":1, "action":2, "need":3, "want":4, "ask":5, "tell":6, "none":7, None:7}
-SKIP_REORDER = set([6,13,18,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38])
+SKIP_REORDER = set([6,13,18,22,23,24,25,26]) | set(range(27, 61))
 for d in C["days"]:
     if d["day"] in SKIP_REORDER: continue
     d["items"].sort(key=lambda it: PURPOSE_ORDER.get(PURPOSE.get(it["id"]), 7))
